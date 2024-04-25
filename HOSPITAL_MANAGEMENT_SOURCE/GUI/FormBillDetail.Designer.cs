@@ -588,7 +588,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuDataGridViewBillDetail.EnableHeadersVisualStyles = false;
             this.bunifuDataGridViewBillDetail.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.bunifuDataGridViewBillDetail.HeaderBackColor = System.Drawing.Color.DodgerBlue;
-            this.bunifuDataGridViewBillDetail.HeaderBgColor = System.Drawing.Color.Empty;
+            this.bunifuDataGridViewBillDetail.HeaderBackColor = System.Drawing.Color.Empty;
             this.bunifuDataGridViewBillDetail.HeaderForeColor = System.Drawing.Color.White;
             this.bunifuDataGridViewBillDetail.Location = new System.Drawing.Point(507, 307);
             this.bunifuDataGridViewBillDetail.Name = "bunifuDataGridViewBillDetail";
@@ -1206,7 +1206,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuTextBoxPatientName.SelectionLength = 0;
             this.bunifuTextBoxPatientName.SelectionStart = 0;
             this.bunifuTextBoxPatientName.ShortcutsEnabled = true;
-            this.bunifuTextBoxPatientName.Size = new System.Drawing.Size(310, 39);
+            this.bunifuTextBoxPatientName.Size = new System.Drawing.Size(307, 39);
             this.bunifuTextBoxPatientName.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
             this.bunifuTextBoxPatientName.TabIndex = 64;
             this.bunifuTextBoxPatientName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;

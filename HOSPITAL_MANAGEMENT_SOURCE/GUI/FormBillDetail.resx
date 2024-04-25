@@ -348,10 +348,10 @@
   </data>
   <data name="bunifuTextBoxPatientName.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAATYAAAAnCAYAAACFQWQjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABNSURBVHhe7cMBDQAACAMg+5fyzdQcDjYKAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/kjSd1R/zCy2l+44kcCXTgAAAABJRU5E
-        rkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAATMAAAAnCAYAAABjaK9nAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABOSURBVHhe7cMBCQBACASw71/Ka6Z+DGGDPQAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL4ktVv17vQAwDXke71HQpsAAAAASUVO
+        RK5CYII=
 </value>
   </data>
   <data name="bunifuButtonClose.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

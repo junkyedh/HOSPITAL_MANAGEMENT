@@ -158,6 +158,18 @@
     <Compile Include="GUI\FormBillDetail.Designer.cs">
       <DependentUpon>FormBillDetail.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\FormDCDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormDCDetail.Designer.cs">
+      <DependentUpon>FormDCDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormDepartmentDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormDepartmentDetail.Designer.cs">
+      <DependentUpon>FormDepartmentDetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\FormAssignDetail.resx">
@@ -165,6 +177,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\FormBillDetail.resx">
       <DependentUpon>FormBillDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormDCDetail.resx">
+      <DependentUpon>FormDCDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormDepartmentDetail.resx">
+      <DependentUpon>FormDepartmentDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -237,6 +255,7 @@
     <Content Include="Resources\minimize.png" />
     <Content Include="Resources\notification_icon-icons.com_73719.ico" />
     <Content Include="Resources\OL1V2Q0-removebg-preview.png" />
+    <Content Include="Resources\pngtree-roundtable-png-image_5410543.jpg" />
     <Content Include="Resources\retro-error-message-illustration-in-pixel-style-vector-removebg-preview.png" />
     <Content Include="Resources\Screenshot 2023-12-31 163312.png" />
     <Content Include="Resources\Screenshot 2023-12-31 163445.png" />
