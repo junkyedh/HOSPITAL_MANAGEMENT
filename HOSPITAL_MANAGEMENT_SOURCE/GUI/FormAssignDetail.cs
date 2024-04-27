@@ -66,5 +66,10 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
         {
 
         }
+
+        private void labelX3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

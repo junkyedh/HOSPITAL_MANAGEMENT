@@ -466,6 +466,16 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pngtree_roundtable_png_image_5410543 {
+            get {
+                object obj = ResourceManager.GetObject("pngtree_roundtable_png_image_5410543", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap retro_error_message_illustration_in_pixel_style_vector_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("retro_error_message_illustration_in_pixel_style_vector_removebg_preview", resourceCulture);

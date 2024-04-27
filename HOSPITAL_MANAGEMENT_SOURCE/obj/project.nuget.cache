@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "JaCq8ukJTBoxhI/3IExdSBxuNBtO7Mn9TzbubQgg83n1PjyzxyMMIh8NaKSVPQ5c9sdjX+TYbFJ1ZWUkJqBtFQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\HOSPITAL_MANAGEMENT_SOURCE.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\system.configuration.configurationmanager\\8.0.0\\system.configuration.configurationmanager.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
