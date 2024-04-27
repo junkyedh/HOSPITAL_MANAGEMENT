@@ -146,6 +146,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL\SqlResult.cs" />
+    <Compile Include="DTO\Desease.cs" />
+    <Compile Include="DTO\ElipseControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="GUI\FormAssignDetail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,6 +175,12 @@
     <Compile Include="GUI\FormDepartmentDetail.Designer.cs">
       <DependentUpon>FormDepartmentDetail.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\FormDiseaseDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormDiseaseDetail.Designer.cs">
+      <DependentUpon>FormDiseaseDetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\FormAssignDetail.resx">
@@ -183,6 +194,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\FormDepartmentDetail.resx">
       <DependentUpon>FormDepartmentDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormDiseaseDetail.resx">
+      <DependentUpon>FormDiseaseDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -210,8 +224,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="BUS\" />
-    <Folder Include="DAL\" />
-    <Folder Include="DTO\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\10130-removebg-preview.png" />
@@ -284,6 +296,14 @@
     <Content Include="Resources\z5030631053744_2e9b4f844cb98aa60abede7ce3520931-removebg-preview.png" />
     <Content Include="Resources\z5030631053744_2e9b4f844cb98aa60abede7ce3520931-removebg-preview1.png" />
     <Content Include="Resources\z5030867747912_8bf5b5c157107b7c880b4fc92925e287-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Configuration.ConfigurationManager">
+      <Version>8.0.0</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
