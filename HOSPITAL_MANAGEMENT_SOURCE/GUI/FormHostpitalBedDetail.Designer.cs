@@ -1,7 +1,7 @@
 ﻿
 namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
 {
-    partial class FormDiseaseDetail
+    partial class FormHostpitalBedDetail
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDiseaseDetail));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormHostpitalBedDetail));
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
@@ -41,30 +41,24 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuSnackbar1 = new Bunifu.UI.WinForms.BunifuSnackbar(this.components);
             this.bunifuToolTip1 = new Bunifu.UI.WinForms.BunifuToolTip(this.components);
             this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.bunifuShadowPanel2 = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.labelState = new Bunifu.UI.WinForms.BunifuLabel();
+            this.labelPatientID = new Bunifu.UI.WinForms.BunifuLabel();
+            this.labelHospitalBedID = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
             this.buttonClose = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.buttonOk = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.labelDiseaseSymptom = new Bunifu.UI.WinForms.BunifuLabel();
-            this.textBoxDiseaseSymptom = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.labelDiseaseName = new Bunifu.UI.WinForms.BunifuLabel();
-            this.textBoxDiseaseName = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.textBoxDiseaseID = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.bunifuLabel23 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel24 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.comboBoxState = new Bunifu.UI.WinForms.BunifuDropdown();
+            this.textBoxPatientID = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.textBoxHospitalBedID = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.bunifuPictureBox2 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.bunifuGradientPanel1.SuspendLayout();
             this.bunifuShadowPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -192,8 +186,8 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(912, 726);
-            this.bunifuGradientPanel1.TabIndex = 1;
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(892, 615);
+            this.bunifuGradientPanel1.TabIndex = 2;
             this.bunifuToolTip1.SetToolTip(this.bunifuGradientPanel1, "");
             this.bunifuToolTip1.SetToolTipIcon(this.bunifuGradientPanel1, null);
             this.bunifuToolTip1.SetToolTipTitle(this.bunifuGradientPanel1, "");
@@ -204,17 +198,16 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuShadowPanel2.BorderColor = System.Drawing.Color.DarkSlateGray;
             this.bunifuShadowPanel2.BorderRadius = 20;
             this.bunifuShadowPanel2.BorderThickness = 2;
+            this.bunifuShadowPanel2.Controls.Add(this.labelState);
+            this.bunifuShadowPanel2.Controls.Add(this.labelPatientID);
+            this.bunifuShadowPanel2.Controls.Add(this.labelHospitalBedID);
+            this.bunifuShadowPanel2.Controls.Add(this.bunifuLabel4);
             this.bunifuShadowPanel2.Controls.Add(this.buttonClose);
             this.bunifuShadowPanel2.Controls.Add(this.buttonOk);
-            this.bunifuShadowPanel2.Controls.Add(this.labelDiseaseSymptom);
-            this.bunifuShadowPanel2.Controls.Add(this.textBoxDiseaseSymptom);
-            this.bunifuShadowPanel2.Controls.Add(this.labelDiseaseName);
-            this.bunifuShadowPanel2.Controls.Add(this.textBoxDiseaseName);
-            this.bunifuShadowPanel2.Controls.Add(this.textBoxDiseaseID);
-            this.bunifuShadowPanel2.Controls.Add(this.bunifuLabel23);
-            this.bunifuShadowPanel2.Controls.Add(this.bunifuLabel24);
+            this.bunifuShadowPanel2.Controls.Add(this.comboBoxState);
+            this.bunifuShadowPanel2.Controls.Add(this.textBoxPatientID);
+            this.bunifuShadowPanel2.Controls.Add(this.textBoxHospitalBedID);
             this.bunifuShadowPanel2.Controls.Add(this.bunifuPictureBox1);
-            this.bunifuShadowPanel2.Controls.Add(this.bunifuPictureBox2);
             this.bunifuShadowPanel2.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Gradient;
             this.bunifuShadowPanel2.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
             this.bunifuShadowPanel2.Location = new System.Drawing.Point(26, 14);
@@ -227,15 +220,99 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuShadowPanel2.ShadowDepth = 5;
             this.bunifuShadowPanel2.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
             this.bunifuShadowPanel2.ShadowTopLeftVisible = false;
-            this.bunifuShadowPanel2.Size = new System.Drawing.Size(858, 682);
+            this.bunifuShadowPanel2.Size = new System.Drawing.Size(841, 573);
             this.bunifuShadowPanel2.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.bunifuShadowPanel2.TabIndex = 41;
             this.bunifuToolTip1.SetToolTip(this.bunifuShadowPanel2, "");
             this.bunifuToolTip1.SetToolTipIcon(this.bunifuShadowPanel2, null);
             this.bunifuToolTip1.SetToolTipTitle(this.bunifuShadowPanel2, "");
+            this.bunifuShadowPanel2.ControlAdded += new System.Windows.Forms.ControlEventHandler(this.bunifuShadowPanel2_ControlAdded);
+            // 
+            // labelState
+            // 
+            this.labelState.AllowParentOverrides = false;
+            this.labelState.AutoEllipsis = false;
+            this.labelState.CursorType = null;
+            this.labelState.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(70)))), ((int)(((byte)(113)))));
+            this.labelState.Location = new System.Drawing.Point(51, 318);
+            this.labelState.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.labelState.Name = "labelState";
+            this.labelState.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.labelState.Size = new System.Drawing.Size(114, 28);
+            this.labelState.TabIndex = 38;
+            this.labelState.Text = "Trạng thái";
+            this.labelState.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.labelState.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuToolTip1.SetToolTip(this.labelState, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.labelState, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.labelState, "");
+            // 
+            // labelPatientID
+            // 
+            this.labelPatientID.AllowParentOverrides = false;
+            this.labelPatientID.AutoEllipsis = false;
+            this.labelPatientID.CursorType = null;
+            this.labelPatientID.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPatientID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(70)))), ((int)(((byte)(113)))));
+            this.labelPatientID.Location = new System.Drawing.Point(51, 242);
+            this.labelPatientID.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.labelPatientID.Name = "labelPatientID";
+            this.labelPatientID.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.labelPatientID.Size = new System.Drawing.Size(153, 28);
+            this.labelPatientID.TabIndex = 36;
+            this.labelPatientID.Text = "Mã bệnh nhân";
+            this.labelPatientID.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.labelPatientID.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuToolTip1.SetToolTip(this.labelPatientID, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.labelPatientID, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.labelPatientID, "");
+            // 
+            // labelHospitalBedID
+            // 
+            this.labelHospitalBedID.AllowParentOverrides = false;
+            this.labelHospitalBedID.AutoEllipsis = false;
+            this.labelHospitalBedID.Cursor = System.Windows.Forms.Cursors.Default;
+            this.labelHospitalBedID.CursorType = System.Windows.Forms.Cursors.Default;
+            this.labelHospitalBedID.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelHospitalBedID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(70)))), ((int)(((byte)(113)))));
+            this.labelHospitalBedID.Location = new System.Drawing.Point(51, 160);
+            this.labelHospitalBedID.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.labelHospitalBedID.Name = "labelHospitalBedID";
+            this.labelHospitalBedID.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.labelHospitalBedID.Size = new System.Drawing.Size(177, 28);
+            this.labelHospitalBedID.TabIndex = 33;
+            this.labelHospitalBedID.Text = "Mã giường bệnh";
+            this.labelHospitalBedID.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.labelHospitalBedID.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuToolTip1.SetToolTip(this.labelHospitalBedID, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.labelHospitalBedID, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.labelHospitalBedID, "");
+            // 
+            // bunifuLabel4
+            // 
+            this.bunifuLabel4.AllowParentOverrides = false;
+            this.bunifuLabel4.AutoEllipsis = false;
+            this.bunifuLabel4.Cursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel4.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel4.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(70)))), ((int)(((byte)(113)))));
+            this.bunifuLabel4.Location = new System.Drawing.Point(282, 60);
+            this.bunifuLabel4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuLabel4.Name = "bunifuLabel4";
+            this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel4.Size = new System.Drawing.Size(242, 42);
+            this.bunifuLabel4.TabIndex = 32;
+            this.bunifuLabel4.Text = "GIƯỜNG BỆNH";
+            this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel4.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuToolTip1.SetToolTip(this.bunifuLabel4, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.bunifuLabel4, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.bunifuLabel4, "");
             // 
             // buttonClose
             // 
+            this.buttonClose.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.buttonClose.AllowAnimations = true;
             this.buttonClose.AllowMouseEffects = true;
             this.buttonClose.AllowToggling = false;
@@ -281,7 +358,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.buttonClose.IdleIconLeftImage = null;
             this.buttonClose.IdleIconRightImage = null;
             this.buttonClose.IndicateFocus = false;
-            this.buttonClose.Location = new System.Drawing.Point(639, 536);
+            this.buttonClose.Location = new System.Drawing.Point(632, 432);
             this.buttonClose.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
@@ -316,8 +393,8 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.buttonClose.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.buttonClose.OnPressedState.IconLeftImage = null;
             this.buttonClose.OnPressedState.IconRightImage = null;
-            this.buttonClose.Size = new System.Drawing.Size(156, 72);
-            this.buttonClose.TabIndex = 31;
+            this.buttonClose.Size = new System.Drawing.Size(148, 73);
+            this.buttonClose.TabIndex = 30;
             this.buttonClose.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.buttonClose.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.buttonClose.TextMarginLeft = 0;
@@ -326,10 +403,10 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuToolTip1.SetToolTipIcon(this.buttonClose, null);
             this.bunifuToolTip1.SetToolTipTitle(this.buttonClose, "");
             this.buttonClose.UseDefaultRadiusAndThickness = true;
-            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
             // buttonOk
             // 
+            this.buttonOk.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.buttonOk.AllowAnimations = true;
             this.buttonOk.AllowMouseEffects = true;
             this.buttonOk.AllowToggling = false;
@@ -375,7 +452,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.buttonOk.IdleIconLeftImage = null;
             this.buttonOk.IdleIconRightImage = null;
             this.buttonOk.IndicateFocus = false;
-            this.buttonOk.Location = new System.Drawing.Point(437, 536);
+            this.buttonOk.Location = new System.Drawing.Point(432, 432);
             this.buttonOk.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonOk.Name = "buttonOk";
             this.buttonOk.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
@@ -410,8 +487,8 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.buttonOk.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.buttonOk.OnPressedState.IconLeftImage = null;
             this.buttonOk.OnPressedState.IconRightImage = null;
-            this.buttonOk.Size = new System.Drawing.Size(153, 72);
-            this.buttonOk.TabIndex = 30;
+            this.buttonOk.Size = new System.Drawing.Size(148, 73);
+            this.buttonOk.TabIndex = 29;
             this.buttonOk.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.buttonOk.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.buttonOk.TextMarginLeft = 0;
@@ -420,383 +497,249 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuToolTip1.SetToolTipIcon(this.buttonOk, null);
             this.bunifuToolTip1.SetToolTipTitle(this.buttonOk, "");
             this.buttonOk.UseDefaultRadiusAndThickness = true;
-            this.buttonOk.Click += new System.EventHandler(this.buttonOk_Click);
             // 
-            // labelDiseaseSymptom
+            // comboBoxState
             // 
-            this.labelDiseaseSymptom.AllowParentOverrides = false;
-            this.labelDiseaseSymptom.AutoEllipsis = false;
-            this.labelDiseaseSymptom.CursorType = null;
-            this.labelDiseaseSymptom.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold);
-            this.labelDiseaseSymptom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(70)))), ((int)(((byte)(113)))));
-            this.labelDiseaseSymptom.Location = new System.Drawing.Point(69, 355);
-            this.labelDiseaseSymptom.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.labelDiseaseSymptom.Name = "labelDiseaseSymptom";
-            this.labelDiseaseSymptom.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.labelDiseaseSymptom.Size = new System.Drawing.Size(134, 28);
-            this.labelDiseaseSymptom.TabIndex = 27;
-            this.labelDiseaseSymptom.Text = "Triệu chứng";
-            this.labelDiseaseSymptom.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.labelDiseaseSymptom.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            this.bunifuToolTip1.SetToolTip(this.labelDiseaseSymptom, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.labelDiseaseSymptom, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.labelDiseaseSymptom, "");
+            this.comboBoxState.BackColor = System.Drawing.Color.Transparent;
+            this.comboBoxState.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(252)))), ((int)(((byte)(245)))));
+            this.comboBoxState.BorderColor = System.Drawing.Color.Silver;
+            this.comboBoxState.BorderRadius = 1;
+            this.comboBoxState.Color = System.Drawing.Color.Silver;
+            this.comboBoxState.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
+            this.comboBoxState.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.comboBoxState.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.comboBoxState.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.comboBoxState.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.comboBoxState.DisabledIndicatorColor = System.Drawing.Color.DarkGray;
+            this.comboBoxState.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.comboBoxState.DropdownBorderThickness = Bunifu.UI.WinForms.BunifuDropdown.BorderThickness.Thin;
+            this.comboBoxState.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxState.DropDownTextAlign = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
+            this.comboBoxState.FillDropDown = true;
+            this.comboBoxState.FillIndicator = false;
+            this.comboBoxState.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxState.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.comboBoxState.ForeColor = System.Drawing.Color.Black;
+            this.comboBoxState.FormattingEnabled = true;
+            this.comboBoxState.Icon = null;
+            this.comboBoxState.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
+            this.comboBoxState.IndicatorColor = System.Drawing.Color.Gray;
+            this.comboBoxState.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
+            this.comboBoxState.ItemBackColor = System.Drawing.Color.White;
+            this.comboBoxState.ItemBorderColor = System.Drawing.Color.White;
+            this.comboBoxState.ItemForeColor = System.Drawing.Color.Black;
+            this.comboBoxState.ItemHeight = 26;
+            this.comboBoxState.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
+            this.comboBoxState.ItemHighLightForeColor = System.Drawing.Color.White;
+            this.comboBoxState.Items.AddRange(new object[] {
+            "Trống",
+            "Đã có bệnh nhân"});
+            this.comboBoxState.ItemTopMargin = 3;
+            this.comboBoxState.Location = new System.Drawing.Point(232, 312);
+            this.comboBoxState.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.comboBoxState.Name = "comboBoxState";
+            this.comboBoxState.Size = new System.Drawing.Size(436, 32);
+            this.comboBoxState.TabIndex = 28;
+            this.comboBoxState.Text = null;
+            this.comboBoxState.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
+            this.comboBoxState.TextLeftMargin = 5;
+            this.bunifuToolTip1.SetToolTip(this.comboBoxState, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.comboBoxState, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.comboBoxState, "");
             // 
-            // textBoxDiseaseSymptom
+            // textBoxPatientID
             // 
-            this.textBoxDiseaseSymptom.AcceptsReturn = false;
-            this.textBoxDiseaseSymptom.AcceptsTab = false;
-            this.textBoxDiseaseSymptom.AnimationSpeed = 200;
-            this.textBoxDiseaseSymptom.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.textBoxDiseaseSymptom.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.textBoxDiseaseSymptom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(252)))), ((int)(((byte)(245)))));
-            this.textBoxDiseaseSymptom.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("textBoxDiseaseSymptom.BackgroundImage")));
-            this.textBoxDiseaseSymptom.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.textBoxDiseaseSymptom.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.textBoxDiseaseSymptom.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.textBoxDiseaseSymptom.BorderColorIdle = System.Drawing.Color.Silver;
-            this.textBoxDiseaseSymptom.BorderRadius = 10;
-            this.textBoxDiseaseSymptom.BorderThickness = 1;
-            this.textBoxDiseaseSymptom.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.textBoxDiseaseSymptom.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBoxDiseaseSymptom.DefaultFont = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textBoxDiseaseSymptom.DefaultText = "";
-            this.textBoxDiseaseSymptom.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(252)))), ((int)(((byte)(245)))));
-            this.textBoxDiseaseSymptom.ForeColor = System.Drawing.Color.Black;
-            this.textBoxDiseaseSymptom.HideSelection = true;
-            this.textBoxDiseaseSymptom.IconLeft = null;
-            this.textBoxDiseaseSymptom.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBoxDiseaseSymptom.IconPadding = 10;
-            this.textBoxDiseaseSymptom.IconRight = null;
-            this.textBoxDiseaseSymptom.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBoxDiseaseSymptom.Lines = new string[0];
-            this.textBoxDiseaseSymptom.Location = new System.Drawing.Point(270, 339);
-            this.textBoxDiseaseSymptom.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBoxDiseaseSymptom.MaxLength = 32767;
-            this.textBoxDiseaseSymptom.MinimumSize = new System.Drawing.Size(2, 2);
-            this.textBoxDiseaseSymptom.Modified = false;
-            this.textBoxDiseaseSymptom.Multiline = false;
-            this.textBoxDiseaseSymptom.Name = "textBoxDiseaseSymptom";
+            this.textBoxPatientID.AcceptsReturn = false;
+            this.textBoxPatientID.AcceptsTab = false;
+            this.textBoxPatientID.AnimationSpeed = 200;
+            this.textBoxPatientID.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.textBoxPatientID.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.textBoxPatientID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(252)))), ((int)(((byte)(245)))));
+            this.textBoxPatientID.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("textBoxPatientID.BackgroundImage")));
+            this.textBoxPatientID.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.textBoxPatientID.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.textBoxPatientID.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.textBoxPatientID.BorderColorIdle = System.Drawing.Color.Silver;
+            this.textBoxPatientID.BorderRadius = 10;
+            this.textBoxPatientID.BorderThickness = 1;
+            this.textBoxPatientID.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.textBoxPatientID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBoxPatientID.DefaultFont = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.textBoxPatientID.DefaultText = "";
+            this.textBoxPatientID.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(252)))), ((int)(((byte)(245)))));
+            this.textBoxPatientID.ForeColor = System.Drawing.Color.Black;
+            this.textBoxPatientID.HideSelection = true;
+            this.textBoxPatientID.IconLeft = null;
+            this.textBoxPatientID.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBoxPatientID.IconPadding = 10;
+            this.textBoxPatientID.IconRight = null;
+            this.textBoxPatientID.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBoxPatientID.Lines = new string[0];
+            this.textBoxPatientID.Location = new System.Drawing.Point(232, 231);
+            this.textBoxPatientID.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxPatientID.MaxLength = 32767;
+            this.textBoxPatientID.MinimumSize = new System.Drawing.Size(2, 2);
+            this.textBoxPatientID.Modified = false;
+            this.textBoxPatientID.Multiline = false;
+            this.textBoxPatientID.Name = "textBoxPatientID";
             stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
             stateProperties1.FillColor = System.Drawing.Color.Empty;
             stateProperties1.ForeColor = System.Drawing.Color.Empty;
             stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.textBoxDiseaseSymptom.OnActiveState = stateProperties1;
+            this.textBoxPatientID.OnActiveState = stateProperties1;
             stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.textBoxDiseaseSymptom.OnDisabledState = stateProperties2;
+            this.textBoxPatientID.OnDisabledState = stateProperties2;
             stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             stateProperties3.FillColor = System.Drawing.Color.Empty;
             stateProperties3.ForeColor = System.Drawing.Color.Empty;
             stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.textBoxDiseaseSymptom.OnHoverState = stateProperties3;
+            this.textBoxPatientID.OnHoverState = stateProperties3;
             stateProperties4.BorderColor = System.Drawing.Color.Silver;
             stateProperties4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(252)))), ((int)(((byte)(245)))));
             stateProperties4.ForeColor = System.Drawing.Color.Black;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.textBoxDiseaseSymptom.OnIdleState = stateProperties4;
-            this.textBoxDiseaseSymptom.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBoxDiseaseSymptom.PasswordChar = '\0';
-            this.textBoxDiseaseSymptom.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.textBoxDiseaseSymptom.PlaceholderText = "Nhập triệu chứng";
-            this.textBoxDiseaseSymptom.ReadOnly = false;
-            this.textBoxDiseaseSymptom.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.textBoxDiseaseSymptom.SelectedText = "";
-            this.textBoxDiseaseSymptom.SelectionLength = 0;
-            this.textBoxDiseaseSymptom.SelectionStart = 0;
-            this.textBoxDiseaseSymptom.ShortcutsEnabled = true;
-            this.textBoxDiseaseSymptom.Size = new System.Drawing.Size(525, 161);
-            this.textBoxDiseaseSymptom.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
-            this.textBoxDiseaseSymptom.TabIndex = 26;
-            this.textBoxDiseaseSymptom.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.textBoxDiseaseSymptom.TextMarginBottom = 0;
-            this.textBoxDiseaseSymptom.TextMarginLeft = 3;
-            this.textBoxDiseaseSymptom.TextMarginTop = -30;
-            this.textBoxDiseaseSymptom.TextPlaceholder = "Nhập triệu chứng";
-            this.bunifuToolTip1.SetToolTip(this.textBoxDiseaseSymptom, "Không chứa số và ký tự đặc biệt");
-            this.bunifuToolTip1.SetToolTipIcon(this.textBoxDiseaseSymptom, global::HOSPITAL_MANAGEMENT_SOURCE.Properties.Resources.retro_error_message_illustration_in_pixel_style_vector_removebg_preview);
-            this.bunifuToolTip1.SetToolTipTitle(this.textBoxDiseaseSymptom, "Warning");
-            this.textBoxDiseaseSymptom.UseSystemPasswordChar = false;
-            this.textBoxDiseaseSymptom.WordWrap = true;
-            this.textBoxDiseaseSymptom.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxDiseaseSymptom_KeyPress);
+            this.textBoxPatientID.OnIdleState = stateProperties4;
+            this.textBoxPatientID.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxPatientID.PasswordChar = '\0';
+            this.textBoxPatientID.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.textBoxPatientID.PlaceholderText = "Nhập mã bệnh nhân";
+            this.textBoxPatientID.ReadOnly = false;
+            this.textBoxPatientID.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.textBoxPatientID.SelectedText = "";
+            this.textBoxPatientID.SelectionLength = 0;
+            this.textBoxPatientID.SelectionStart = 0;
+            this.textBoxPatientID.ShortcutsEnabled = true;
+            this.textBoxPatientID.Size = new System.Drawing.Size(436, 48);
+            this.textBoxPatientID.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
+            this.textBoxPatientID.TabIndex = 13;
+            this.textBoxPatientID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.textBoxPatientID.TextMarginBottom = 0;
+            this.textBoxPatientID.TextMarginLeft = 3;
+            this.textBoxPatientID.TextMarginTop = 0;
+            this.textBoxPatientID.TextPlaceholder = "Nhập mã bệnh nhân";
+            this.bunifuToolTip1.SetToolTip(this.textBoxPatientID, "Chỉ chứa 8 chữ số");
+            this.bunifuToolTip1.SetToolTipIcon(this.textBoxPatientID, global::HOSPITAL_MANAGEMENT_SOURCE.Properties.Resources.handdrawn_vector_61_removebg_preview);
+            this.bunifuToolTip1.SetToolTipTitle(this.textBoxPatientID, "Warning");
+            this.textBoxPatientID.UseSystemPasswordChar = false;
+            this.textBoxPatientID.WordWrap = true;
             // 
-            // labelDiseaseName
+            // textBoxHospitalBedID
             // 
-            this.labelDiseaseName.AllowParentOverrides = false;
-            this.labelDiseaseName.AutoEllipsis = false;
-            this.labelDiseaseName.CursorType = null;
-            this.labelDiseaseName.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold);
-            this.labelDiseaseName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(70)))), ((int)(((byte)(113)))));
-            this.labelDiseaseName.Location = new System.Drawing.Point(69, 255);
-            this.labelDiseaseName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.labelDiseaseName.Name = "labelDiseaseName";
-            this.labelDiseaseName.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.labelDiseaseName.Size = new System.Drawing.Size(102, 28);
-            this.labelDiseaseName.TabIndex = 16;
-            this.labelDiseaseName.Text = "Tên bệnh";
-            this.labelDiseaseName.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.labelDiseaseName.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            this.bunifuToolTip1.SetToolTip(this.labelDiseaseName, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.labelDiseaseName, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.labelDiseaseName, "");
-            // 
-            // textBoxDiseaseName
-            // 
-            this.textBoxDiseaseName.AcceptsReturn = false;
-            this.textBoxDiseaseName.AcceptsTab = false;
-            this.textBoxDiseaseName.AnimationSpeed = 200;
-            this.textBoxDiseaseName.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.textBoxDiseaseName.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.textBoxDiseaseName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(252)))), ((int)(((byte)(245)))));
-            this.textBoxDiseaseName.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("textBoxDiseaseName.BackgroundImage")));
-            this.textBoxDiseaseName.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.textBoxDiseaseName.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.textBoxDiseaseName.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.textBoxDiseaseName.BorderColorIdle = System.Drawing.Color.Silver;
-            this.textBoxDiseaseName.BorderRadius = 10;
-            this.textBoxDiseaseName.BorderThickness = 1;
-            this.textBoxDiseaseName.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.textBoxDiseaseName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBoxDiseaseName.DefaultFont = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textBoxDiseaseName.DefaultText = "";
-            this.textBoxDiseaseName.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(252)))), ((int)(((byte)(245)))));
-            this.textBoxDiseaseName.ForeColor = System.Drawing.Color.Black;
-            this.textBoxDiseaseName.HideSelection = true;
-            this.textBoxDiseaseName.IconLeft = null;
-            this.textBoxDiseaseName.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBoxDiseaseName.IconPadding = 10;
-            this.textBoxDiseaseName.IconRight = null;
-            this.textBoxDiseaseName.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBoxDiseaseName.Lines = new string[0];
-            this.textBoxDiseaseName.Location = new System.Drawing.Point(270, 241);
-            this.textBoxDiseaseName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBoxDiseaseName.MaxLength = 32767;
-            this.textBoxDiseaseName.MinimumSize = new System.Drawing.Size(2, 2);
-            this.textBoxDiseaseName.Modified = false;
-            this.textBoxDiseaseName.Multiline = false;
-            this.textBoxDiseaseName.Name = "textBoxDiseaseName";
+            this.textBoxHospitalBedID.AcceptsReturn = false;
+            this.textBoxHospitalBedID.AcceptsTab = false;
+            this.textBoxHospitalBedID.AnimationSpeed = 200;
+            this.textBoxHospitalBedID.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.textBoxHospitalBedID.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.textBoxHospitalBedID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(252)))), ((int)(((byte)(245)))));
+            this.textBoxHospitalBedID.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("textBoxHospitalBedID.BackgroundImage")));
+            this.textBoxHospitalBedID.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.textBoxHospitalBedID.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.textBoxHospitalBedID.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.textBoxHospitalBedID.BorderColorIdle = System.Drawing.Color.Silver;
+            this.textBoxHospitalBedID.BorderRadius = 20;
+            this.textBoxHospitalBedID.BorderThickness = 1;
+            this.textBoxHospitalBedID.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.textBoxHospitalBedID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBoxHospitalBedID.DefaultFont = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.textBoxHospitalBedID.DefaultText = "";
+            this.textBoxHospitalBedID.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(252)))), ((int)(((byte)(245)))));
+            this.textBoxHospitalBedID.ForeColor = System.Drawing.Color.Black;
+            this.textBoxHospitalBedID.HideSelection = true;
+            this.textBoxHospitalBedID.IconLeft = null;
+            this.textBoxHospitalBedID.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBoxHospitalBedID.IconPadding = 10;
+            this.textBoxHospitalBedID.IconRight = null;
+            this.textBoxHospitalBedID.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBoxHospitalBedID.Lines = new string[0];
+            this.textBoxHospitalBedID.Location = new System.Drawing.Point(232, 148);
+            this.textBoxHospitalBedID.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxHospitalBedID.MaxLength = 32767;
+            this.textBoxHospitalBedID.MinimumSize = new System.Drawing.Size(2, 2);
+            this.textBoxHospitalBedID.Modified = false;
+            this.textBoxHospitalBedID.Multiline = false;
+            this.textBoxHospitalBedID.Name = "textBoxHospitalBedID";
             stateProperties5.BorderColor = System.Drawing.Color.DodgerBlue;
             stateProperties5.FillColor = System.Drawing.Color.Empty;
             stateProperties5.ForeColor = System.Drawing.Color.Empty;
             stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.textBoxDiseaseName.OnActiveState = stateProperties5;
+            this.textBoxHospitalBedID.OnActiveState = stateProperties5;
             stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             stateProperties6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             stateProperties6.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.textBoxDiseaseName.OnDisabledState = stateProperties6;
+            this.textBoxHospitalBedID.OnDisabledState = stateProperties6;
             stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             stateProperties7.FillColor = System.Drawing.Color.Empty;
             stateProperties7.ForeColor = System.Drawing.Color.Empty;
             stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.textBoxDiseaseName.OnHoverState = stateProperties7;
+            this.textBoxHospitalBedID.OnHoverState = stateProperties7;
             stateProperties8.BorderColor = System.Drawing.Color.Silver;
             stateProperties8.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(252)))), ((int)(((byte)(245)))));
             stateProperties8.ForeColor = System.Drawing.Color.Black;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.textBoxDiseaseName.OnIdleState = stateProperties8;
-            this.textBoxDiseaseName.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBoxDiseaseName.PasswordChar = '\0';
-            this.textBoxDiseaseName.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.textBoxDiseaseName.PlaceholderText = "Nhập tên bệnh";
-            this.textBoxDiseaseName.ReadOnly = false;
-            this.textBoxDiseaseName.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.textBoxDiseaseName.SelectedText = "";
-            this.textBoxDiseaseName.SelectionLength = 0;
-            this.textBoxDiseaseName.SelectionStart = 0;
-            this.textBoxDiseaseName.ShortcutsEnabled = true;
-            this.textBoxDiseaseName.Size = new System.Drawing.Size(525, 49);
-            this.textBoxDiseaseName.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
-            this.textBoxDiseaseName.TabIndex = 13;
-            this.textBoxDiseaseName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.textBoxDiseaseName.TextMarginBottom = 0;
-            this.textBoxDiseaseName.TextMarginLeft = 3;
-            this.textBoxDiseaseName.TextMarginTop = 0;
-            this.textBoxDiseaseName.TextPlaceholder = "Nhập tên bệnh";
-            this.bunifuToolTip1.SetToolTip(this.textBoxDiseaseName, "Không chứa số và ký tự đặc biệt");
-            this.bunifuToolTip1.SetToolTipIcon(this.textBoxDiseaseName, global::HOSPITAL_MANAGEMENT_SOURCE.Properties.Resources.retro_error_message_illustration_in_pixel_style_vector_removebg_preview);
-            this.bunifuToolTip1.SetToolTipTitle(this.textBoxDiseaseName, "Warning");
-            this.textBoxDiseaseName.UseSystemPasswordChar = false;
-            this.textBoxDiseaseName.WordWrap = true;
-            this.textBoxDiseaseName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxDiseaseName_KeyPress);
-            // 
-            // textBoxDiseaseID
-            // 
-            this.textBoxDiseaseID.AcceptsReturn = false;
-            this.textBoxDiseaseID.AcceptsTab = false;
-            this.textBoxDiseaseID.AnimationSpeed = 200;
-            this.textBoxDiseaseID.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.textBoxDiseaseID.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.textBoxDiseaseID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(252)))), ((int)(((byte)(245)))));
-            this.textBoxDiseaseID.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("textBoxDiseaseID.BackgroundImage")));
-            this.textBoxDiseaseID.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.textBoxDiseaseID.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.textBoxDiseaseID.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.textBoxDiseaseID.BorderColorIdle = System.Drawing.Color.Silver;
-            this.textBoxDiseaseID.BorderRadius = 20;
-            this.textBoxDiseaseID.BorderThickness = 1;
-            this.textBoxDiseaseID.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.textBoxDiseaseID.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBoxDiseaseID.DefaultFont = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textBoxDiseaseID.DefaultText = "";
-            this.textBoxDiseaseID.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(252)))), ((int)(((byte)(245)))));
-            this.textBoxDiseaseID.ForeColor = System.Drawing.Color.Black;
-            this.textBoxDiseaseID.HideSelection = true;
-            this.textBoxDiseaseID.IconLeft = null;
-            this.textBoxDiseaseID.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBoxDiseaseID.IconPadding = 10;
-            this.textBoxDiseaseID.IconRight = null;
-            this.textBoxDiseaseID.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBoxDiseaseID.Lines = new string[0];
-            this.textBoxDiseaseID.Location = new System.Drawing.Point(270, 145);
-            this.textBoxDiseaseID.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBoxDiseaseID.MaxLength = 32767;
-            this.textBoxDiseaseID.MinimumSize = new System.Drawing.Size(2, 2);
-            this.textBoxDiseaseID.Modified = false;
-            this.textBoxDiseaseID.Multiline = false;
-            this.textBoxDiseaseID.Name = "textBoxDiseaseID";
-            stateProperties9.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties9.FillColor = System.Drawing.Color.Empty;
-            stateProperties9.ForeColor = System.Drawing.Color.Empty;
-            stateProperties9.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.textBoxDiseaseID.OnActiveState = stateProperties9;
-            stateProperties10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties10.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.textBoxDiseaseID.OnDisabledState = stateProperties10;
-            stateProperties11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties11.FillColor = System.Drawing.Color.Empty;
-            stateProperties11.ForeColor = System.Drawing.Color.Empty;
-            stateProperties11.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.textBoxDiseaseID.OnHoverState = stateProperties11;
-            stateProperties12.BorderColor = System.Drawing.Color.Silver;
-            stateProperties12.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(252)))), ((int)(((byte)(245)))));
-            stateProperties12.ForeColor = System.Drawing.Color.Black;
-            stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.textBoxDiseaseID.OnIdleState = stateProperties12;
-            this.textBoxDiseaseID.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBoxDiseaseID.PasswordChar = '\0';
-            this.textBoxDiseaseID.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.textBoxDiseaseID.PlaceholderText = "Nhập mã nhân viên";
-            this.textBoxDiseaseID.ReadOnly = true;
-            this.textBoxDiseaseID.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.textBoxDiseaseID.SelectedText = "";
-            this.textBoxDiseaseID.SelectionLength = 0;
-            this.textBoxDiseaseID.SelectionStart = 0;
-            this.textBoxDiseaseID.ShortcutsEnabled = true;
-            this.textBoxDiseaseID.Size = new System.Drawing.Size(525, 49);
-            this.textBoxDiseaseID.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
-            this.textBoxDiseaseID.TabIndex = 12;
-            this.textBoxDiseaseID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.textBoxDiseaseID.TextMarginBottom = 0;
-            this.textBoxDiseaseID.TextMarginLeft = 3;
-            this.textBoxDiseaseID.TextMarginTop = 0;
-            this.textBoxDiseaseID.TextPlaceholder = "Nhập mã nhân viên";
-            this.bunifuToolTip1.SetToolTip(this.textBoxDiseaseID, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.textBoxDiseaseID, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.textBoxDiseaseID, "");
-            this.textBoxDiseaseID.UseSystemPasswordChar = false;
-            this.textBoxDiseaseID.WordWrap = true;
-            // 
-            // bunifuLabel23
-            // 
-            this.bunifuLabel23.AllowParentOverrides = false;
-            this.bunifuLabel23.AutoEllipsis = false;
-            this.bunifuLabel23.Cursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel23.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel23.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold);
-            this.bunifuLabel23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(70)))), ((int)(((byte)(113)))));
-            this.bunifuLabel23.Location = new System.Drawing.Point(69, 152);
-            this.bunifuLabel23.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.bunifuLabel23.Name = "bunifuLabel23";
-            this.bunifuLabel23.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel23.Size = new System.Drawing.Size(93, 28);
-            this.bunifuLabel23.TabIndex = 2;
-            this.bunifuLabel23.Text = "Mã bệnh";
-            this.bunifuLabel23.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel23.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            this.bunifuToolTip1.SetToolTip(this.bunifuLabel23, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.bunifuLabel23, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.bunifuLabel23, "");
-            // 
-            // bunifuLabel24
-            // 
-            this.bunifuLabel24.AllowParentOverrides = false;
-            this.bunifuLabel24.AutoEllipsis = false;
-            this.bunifuLabel24.Cursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel24.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel24.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold);
-            this.bunifuLabel24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(70)))), ((int)(((byte)(113)))));
-            this.bunifuLabel24.Location = new System.Drawing.Point(297, 52);
-            this.bunifuLabel24.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.bunifuLabel24.Name = "bunifuLabel24";
-            this.bunifuLabel24.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel24.Size = new System.Drawing.Size(187, 42);
-            this.bunifuLabel24.TabIndex = 1;
-            this.bunifuLabel24.Text = "BỆNH DỊCH";
-            this.bunifuLabel24.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel24.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            this.bunifuToolTip1.SetToolTip(this.bunifuLabel24, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.bunifuLabel24, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.bunifuLabel24, "");
+            this.textBoxHospitalBedID.OnIdleState = stateProperties8;
+            this.textBoxHospitalBedID.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxHospitalBedID.PasswordChar = '\0';
+            this.textBoxHospitalBedID.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.textBoxHospitalBedID.PlaceholderText = "Nhập mã giường";
+            this.textBoxHospitalBedID.ReadOnly = true;
+            this.textBoxHospitalBedID.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.textBoxHospitalBedID.SelectedText = "";
+            this.textBoxHospitalBedID.SelectionLength = 0;
+            this.textBoxHospitalBedID.SelectionStart = 0;
+            this.textBoxHospitalBedID.ShortcutsEnabled = true;
+            this.textBoxHospitalBedID.Size = new System.Drawing.Size(436, 45);
+            this.textBoxHospitalBedID.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
+            this.textBoxHospitalBedID.TabIndex = 12;
+            this.textBoxHospitalBedID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.textBoxHospitalBedID.TextMarginBottom = 0;
+            this.textBoxHospitalBedID.TextMarginLeft = 3;
+            this.textBoxHospitalBedID.TextMarginTop = 0;
+            this.textBoxHospitalBedID.TextPlaceholder = "Nhập mã giường";
+            this.bunifuToolTip1.SetToolTip(this.textBoxHospitalBedID, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.textBoxHospitalBedID, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.textBoxHospitalBedID, "");
+            this.textBoxHospitalBedID.UseSystemPasswordChar = false;
+            this.textBoxHospitalBedID.WordWrap = true;
             // 
             // bunifuPictureBox1
             // 
             this.bunifuPictureBox1.AllowFocused = false;
             this.bunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bunifuPictureBox1.AutoSizeHeight = true;
-            this.bunifuPictureBox1.BorderRadius = 50;
-            this.bunifuPictureBox1.Image = global::HOSPITAL_MANAGEMENT_SOURCE.Properties.Resources._5l61_4oxe_180209_removebg_preview;
-            this.bunifuPictureBox1.IsCircle = true;
-            this.bunifuPictureBox1.Location = new System.Drawing.Point(512, 37);
+            this.bunifuPictureBox1.BorderRadius = 95;
+            this.bunifuPictureBox1.Image = global::HOSPITAL_MANAGEMENT_SOURCE.Properties.Resources._7091_removebg_preview;
+            this.bunifuPictureBox1.IsCircle = false;
+            this.bunifuPictureBox1.Location = new System.Drawing.Point(114, 28);
+            this.bunifuPictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuPictureBox1.Name = "bunifuPictureBox1";
-            this.bunifuPictureBox1.Size = new System.Drawing.Size(100, 100);
+            this.bunifuPictureBox1.Size = new System.Drawing.Size(190, 190);
             this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuPictureBox1.TabIndex = 28;
+            this.bunifuPictureBox1.TabIndex = 31;
             this.bunifuPictureBox1.TabStop = false;
             this.bunifuToolTip1.SetToolTip(this.bunifuPictureBox1, "");
             this.bunifuToolTip1.SetToolTipIcon(this.bunifuPictureBox1, null);
             this.bunifuToolTip1.SetToolTipTitle(this.bunifuPictureBox1, "");
             this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
-            this.bunifuPictureBox1.Click += new System.EventHandler(this.bunifuPictureBox1_Click);
             // 
-            // bunifuPictureBox2
-            // 
-            this.bunifuPictureBox2.AllowFocused = false;
-            this.bunifuPictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuPictureBox2.AutoSizeHeight = true;
-            this.bunifuPictureBox2.BorderRadius = 48;
-            this.bunifuPictureBox2.Image = global::HOSPITAL_MANAGEMENT_SOURCE.Properties.Resources.i88i_lnik_180209_removebg_preview;
-            this.bunifuPictureBox2.IsCircle = true;
-            this.bunifuPictureBox2.Location = new System.Drawing.Point(194, 37);
-            this.bunifuPictureBox2.Name = "bunifuPictureBox2";
-            this.bunifuPictureBox2.Size = new System.Drawing.Size(96, 96);
-            this.bunifuPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuPictureBox2.TabIndex = 29;
-            this.bunifuPictureBox2.TabStop = false;
-            this.bunifuToolTip1.SetToolTip(this.bunifuPictureBox2, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.bunifuPictureBox2, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.bunifuPictureBox2, "");
-            this.bunifuPictureBox2.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
-            // 
-            // FormDiseaseDetail
+            // FormHostpitalBedDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(912, 726);
+            this.ClientSize = new System.Drawing.Size(892, 615);
             this.Controls.Add(this.bunifuGradientPanel1);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(70)))), ((int)(((byte)(113)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FormDiseaseDetail";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormDiseaseDetail";
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Name = "FormHostpitalBedDetail";
+            this.Text = "FormHospitalBedDetail";
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuShadowPanel2.ResumeLayout(false);
             this.bunifuShadowPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -805,18 +748,17 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
 
         private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel1;
         private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel2;
-        private Bunifu.UI.WinForms.BunifuLabel labelDiseaseSymptom;
-        private Bunifu.UI.WinForms.BunifuTextBox textBoxDiseaseSymptom;
-        private Bunifu.UI.WinForms.BunifuLabel labelDiseaseName;
-        private Bunifu.UI.WinForms.BunifuTextBox textBoxDiseaseName;
-        private Bunifu.UI.WinForms.BunifuTextBox textBoxDiseaseID;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel23;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel24;
+        private Bunifu.UI.WinForms.BunifuTextBox textBoxPatientID;
+        private Bunifu.UI.WinForms.BunifuTextBox textBoxHospitalBedID;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
-        private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
-        private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox2;
+        private Bunifu.UI.WinForms.BunifuDropdown comboBoxState;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton buttonClose;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton buttonOk;
+        private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
+        private Bunifu.UI.WinForms.BunifuLabel labelState;
+        private Bunifu.UI.WinForms.BunifuLabel labelPatientID;
+        private Bunifu.UI.WinForms.BunifuLabel labelHospitalBedID;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel4;
         private Bunifu.UI.WinForms.BunifuSnackbar bunifuSnackbar1;
         private Bunifu.UI.WinForms.BunifuToolTip bunifuToolTip1;
     }

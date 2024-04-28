@@ -111,5 +111,10 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
                           (e.KeyChar >= 'À' && e.KeyChar <= 'ỹ') || // Vietnamese characters and accented vowels
                           (e.KeyChar >= 'à' && e.KeyChar <= 'ỹ'));
         }
+
+        private void bunifuPictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

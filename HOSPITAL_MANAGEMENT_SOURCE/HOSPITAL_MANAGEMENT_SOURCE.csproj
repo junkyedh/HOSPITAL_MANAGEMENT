@@ -148,8 +148,23 @@
   <ItemGroup>
     <Compile Include="DAL\SqlResult.cs" />
     <Compile Include="DTO\Desease.cs" />
-    <Compile Include="DTO\ElipseControl.cs">
-      <SubType>Component</SubType>
+    <Compile Include="GUI\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormHCDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormHCDetail.Designer.cs">
+      <DependentUpon>FormHCDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormECDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormECDetail.Designer.cs">
+      <DependentUpon>FormECDetail.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\FormAssignDetail.cs">
       <SubType>Form</SubType>
@@ -181,8 +196,47 @@
     <Compile Include="GUI\FormDiseaseDetail.Designer.cs">
       <DependentUpon>FormDiseaseDetail.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\FormHFDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormHFDetail.Designer.cs">
+      <DependentUpon>FormHFDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormHICDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormHICDetail.Designer.cs">
+      <DependentUpon>FormHICDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormHNDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormHNDetail.Designer.cs">
+      <DependentUpon>FormHNDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormHostpitalBedDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormHostpitalBedDetail.Designer.cs">
+      <DependentUpon>FormHostpitalBedDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormLogin_SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormLogin_SignUp.Designer.cs">
+      <DependentUpon>FormLogin_SignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormMainBed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormMainBed.Designer.cs">
+      <DependentUpon>FormMainBed.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\FormAssignDetail.resx">
       <DependentUpon>FormAssignDetail.cs</DependentUpon>
     </EmbeddedResource>
@@ -197,6 +251,30 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\FormDiseaseDetail.resx">
       <DependentUpon>FormDiseaseDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormECDetail.resx">
+      <DependentUpon>FormECDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormHCDetail.resx">
+      <DependentUpon>FormHCDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormHFDetail.resx">
+      <DependentUpon>FormHFDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormHICDetail.resx">
+      <DependentUpon>FormHICDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormHNDetail.resx">
+      <DependentUpon>FormHNDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormHostpitalBedDetail.resx">
+      <DependentUpon>FormHostpitalBedDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormLogin_SignUp.resx">
+      <DependentUpon>FormLogin_SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormMainBed.resx">
+      <DependentUpon>FormMainBed.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
