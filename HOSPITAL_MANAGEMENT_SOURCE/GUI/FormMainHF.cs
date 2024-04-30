@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
 {
-    public partial class Form1 : Form
+    public partial class FormMainHF : UserControl
     {
-        public Form1()
+        public FormMainHF()
         {
             InitializeComponent();
         }

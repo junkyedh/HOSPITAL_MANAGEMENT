@@ -148,12 +148,6 @@
   <ItemGroup>
     <Compile Include="DAL\SqlResult.cs" />
     <Compile Include="DTO\Desease.cs" />
-    <Compile Include="GUI\Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="GUI\FormHCDetail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -232,11 +226,62 @@
     <Compile Include="GUI\FormMainBed.Designer.cs">
       <DependentUpon>FormMainBed.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\FormMainBill.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\FormMainBill.Designer.cs">
+      <DependentUpon>FormMainBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormMainDischarged.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\FormMainDischarged.Designer.cs">
+      <DependentUpon>FormMainDischarged.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormMainDisease.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\FormMainDisease.Designer.cs">
+      <DependentUpon>FormMainDisease.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormMainEC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\FormMainEC.Designer.cs">
+      <DependentUpon>FormMainEC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormMainHF.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\FormMainHF.Designer.cs">
+      <DependentUpon>FormMainHF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormMainHospitalization.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\FormMainHospitalization.Designer.cs">
+      <DependentUpon>FormMainHospitalization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormMainMaterial.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\FormMainMaterial.Designer.cs">
+      <DependentUpon>FormMainMaterial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormMainMedicine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\FormMainMedicine.Designer.cs">
+      <DependentUpon>FormMainMedicine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormMainMonitor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\FormMainMonitor.Designer.cs">
+      <DependentUpon>FormMainMonitor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="GUI\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="GUI\FormAssignDetail.resx">
       <DependentUpon>FormAssignDetail.cs</DependentUpon>
     </EmbeddedResource>
@@ -275,6 +320,33 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\FormMainBed.resx">
       <DependentUpon>FormMainBed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormMainBill.resx">
+      <DependentUpon>FormMainBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormMainDischarged.resx">
+      <DependentUpon>FormMainDischarged.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormMainDisease.resx">
+      <DependentUpon>FormMainDisease.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormMainEC.resx">
+      <DependentUpon>FormMainEC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormMainHF.resx">
+      <DependentUpon>FormMainHF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormMainHospitalization.resx">
+      <DependentUpon>FormMainHospitalization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormMainMaterial.resx">
+      <DependentUpon>FormMainMaterial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormMainMedicine.resx">
+      <DependentUpon>FormMainMedicine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormMainMonitor.resx">
+      <DependentUpon>FormMainMonitor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
