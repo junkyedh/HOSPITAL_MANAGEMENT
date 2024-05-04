@@ -147,7 +147,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAL\SqlResult.cs" />
+    <Compile Include="DTO\Assignment.cs" />
+    <Compile Include="DTO\AssignmentDetail.cs" />
+    <Compile Include="DTO\Bill.cs" />
     <Compile Include="DTO\Desease.cs" />
+    <Compile Include="DTO\HospitalizationCertificate.cs" />
+    <Compile Include="DTO\MedicineBillDetail.cs" />
+    <Compile Include="DTO\Patient.cs" />
+    <Compile Include="DTO\RentMaterialBillDetail.cs" />
+    <Compile Include="DTO\ServiceBillDetail.cs" />
+    <Compile Include="DTO\Staff.cs" />
     <Compile Include="GUI\FormHCDetail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -372,9 +381,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="BUS\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Resources\10130-removebg-preview.png" />
     <Content Include="Resources\145411-OTQZ7A-227-removebg-preview.png" />

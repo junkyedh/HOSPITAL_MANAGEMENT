@@ -6,7 +6,8 @@ using System.Data;
 using System.Data.SqlClient;
 using HOSPITAL_MANAGEMENT_SOURCE.DAL;
 
-namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
+namespace HOSPITAL_MANAGEMENT_SOURCE.DTO
+
 { 
     public class Disease
     {

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using HOSPITAL_MANAGEMENT_SOURCE.DTO;
 
 namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
 {
