@@ -1,0 +1,57 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Admin\\source\\repos\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\HOSPITAL_MANAGEMENT_SOURCE.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Admin\\source\\repos\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\HOSPITAL_MANAGEMENT_SOURCE.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\HOSPITAL_MANAGEMENT_SOURCE.csproj",
+        "projectName": "HOSPITAL_MANAGEMENT_SOURCE",
+        "projectPath": "C:\\Users\\Admin\\source\\repos\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\HOSPITAL_MANAGEMENT_SOURCE.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\source\\repos\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

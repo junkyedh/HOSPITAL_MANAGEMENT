@@ -33,8 +33,108 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu.UI.WinForms.1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\NhapMonSE\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuButton">
+      <HintPath>D:\NhapMonSE\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuCheckBox">
+      <HintPath>D:\NhapMonSE\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuCheckBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuCircleProgress">
+      <HintPath>D:\NhapMonSE\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuCircleProgress.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuColorTransition">
+      <HintPath>D:\NhapMonSE\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuColorTransition.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDataGridView">
+      <HintPath>D:\NhapMonSE\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDatePicker">
+      <HintPath>D:\NhapMonSE\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuDatePicker.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDropdown">
+      <HintPath>D:\NhapMonSE\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuDropdown.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuFormDock, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\NhapMonSE\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuFormDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuGauge">
+      <HintPath>D:\NhapMonSE\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuGauge.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuGradientPanel">
+      <HintPath>D:\NhapMonSE\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuGradientPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuGroupBox, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\NhapMonSE\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuGroupBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuImageButton">
+      <HintPath>D:\NhapMonSE\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuImageButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuLabel">
+      <HintPath>D:\NhapMonSE\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuLabel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPages">
+      <HintPath>D:\NhapMonSE\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuPages.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPanel">
+      <HintPath>D:\NhapMonSE\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPictureBox">
+      <HintPath>D:\NhapMonSE\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuPictureBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuProgressBar">
+      <HintPath>D:\NhapMonSE\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuRadioButton">
+      <HintPath>D:\NhapMonSE\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuRadioButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuRating">
+      <HintPath>D:\NhapMonSE\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuRating.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuScrollBar">
+      <HintPath>D:\NhapMonSE\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuScrollBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuSeparator">
+      <HintPath>D:\NhapMonSE\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuSeparator.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuShadowPanel">
+      <HintPath>D:\NhapMonSE\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuShadowPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuShapes">
+      <HintPath>D:\NhapMonSE\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuShapes.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuSlider">
+      <HintPath>D:\NhapMonSE\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuSlider.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuSnackbar">
+      <HintPath>D:\NhapMonSE\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuSnackbar.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTextbox">
+      <HintPath>D:\NhapMonSE\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuTextbox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuToggleSwitch">
+      <HintPath>D:\NhapMonSE\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuToggleSwitch.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuToolTip">
+      <HintPath>D:\NhapMonSE\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuToolTip.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTransition">
+      <HintPath>D:\NhapMonSE\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuTransition.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuUserControl">
+      <HintPath>D:\NhapMonSE\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuUserControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.Deprecated">
+      <HintPath>D:\NhapMonSE\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.Deprecated.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,8 +146,209 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL\SqlResult.cs" />
+    <Compile Include="DTO\Desease.cs" />
+    <Compile Include="GUI\FormHCDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormHCDetail.Designer.cs">
+      <DependentUpon>FormHCDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormECDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormECDetail.Designer.cs">
+      <DependentUpon>FormECDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormAssignDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormAssignDetail.Designer.cs">
+      <DependentUpon>FormAssignDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormBillDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormBillDetail.Designer.cs">
+      <DependentUpon>FormBillDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormDCDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormDCDetail.Designer.cs">
+      <DependentUpon>FormDCDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormDepartmentDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormDepartmentDetail.Designer.cs">
+      <DependentUpon>FormDepartmentDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormDiseaseDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormDiseaseDetail.Designer.cs">
+      <DependentUpon>FormDiseaseDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormHFDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormHFDetail.Designer.cs">
+      <DependentUpon>FormHFDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormHICDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormHICDetail.Designer.cs">
+      <DependentUpon>FormHICDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormHNDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormHNDetail.Designer.cs">
+      <DependentUpon>FormHNDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormHostpitalBedDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormHostpitalBedDetail.Designer.cs">
+      <DependentUpon>FormHostpitalBedDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormLogin_SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormLogin_SignUp.Designer.cs">
+      <DependentUpon>FormLogin_SignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormMainBed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormMainBed.Designer.cs">
+      <DependentUpon>FormMainBed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormMainBill.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\FormMainBill.Designer.cs">
+      <DependentUpon>FormMainBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormMainDischarged.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\FormMainDischarged.Designer.cs">
+      <DependentUpon>FormMainDischarged.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormMainDisease.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\FormMainDisease.Designer.cs">
+      <DependentUpon>FormMainDisease.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormMainEC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\FormMainEC.Designer.cs">
+      <DependentUpon>FormMainEC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormMainHF.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\FormMainHF.Designer.cs">
+      <DependentUpon>FormMainHF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormMainHospitalization.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\FormMainHospitalization.Designer.cs">
+      <DependentUpon>FormMainHospitalization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormMainMaterial.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\FormMainMaterial.Designer.cs">
+      <DependentUpon>FormMainMaterial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormMainMedicine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\FormMainMedicine.Designer.cs">
+      <DependentUpon>FormMainMedicine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormMainMonitor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\FormMainMonitor.Designer.cs">
+      <DependentUpon>FormMainMonitor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\FormAssignDetail.resx">
+      <DependentUpon>FormAssignDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormBillDetail.resx">
+      <DependentUpon>FormBillDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormDCDetail.resx">
+      <DependentUpon>FormDCDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormDepartmentDetail.resx">
+      <DependentUpon>FormDepartmentDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormDiseaseDetail.resx">
+      <DependentUpon>FormDiseaseDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormECDetail.resx">
+      <DependentUpon>FormECDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormHCDetail.resx">
+      <DependentUpon>FormHCDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormHFDetail.resx">
+      <DependentUpon>FormHFDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormHICDetail.resx">
+      <DependentUpon>FormHICDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormHNDetail.resx">
+      <DependentUpon>FormHNDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormHostpitalBedDetail.resx">
+      <DependentUpon>FormHostpitalBedDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormLogin_SignUp.resx">
+      <DependentUpon>FormLogin_SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormMainBed.resx">
+      <DependentUpon>FormMainBed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormMainBill.resx">
+      <DependentUpon>FormMainBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormMainDischarged.resx">
+      <DependentUpon>FormMainDischarged.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormMainDisease.resx">
+      <DependentUpon>FormMainDisease.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormMainEC.resx">
+      <DependentUpon>FormMainEC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormMainHF.resx">
+      <DependentUpon>FormMainHF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormMainHospitalization.resx">
+      <DependentUpon>FormMainHospitalization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormMainMaterial.resx">
+      <DependentUpon>FormMainMaterial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormMainMedicine.resx">
+      <DependentUpon>FormMainMedicine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormMainMonitor.resx">
+      <DependentUpon>FormMainMonitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -56,6 +357,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -72,10 +374,86 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="BUS\" />
-    <Folder Include="DAL\" />
-    <Folder Include="DTO\" />
-    <Folder Include="GUI\" />
-    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\10130-removebg-preview.png" />
+    <Content Include="Resources\145411-OTQZ7A-227-removebg-preview.png" />
+    <Content Include="Resources\19767-removebg-preview.png" />
+    <Content Include="Resources\1_generated-removebg-preview.png" />
+    <Content Include="Resources\2001.i105.001_isometric_surgeon_doctor_flowchart-removebg-preview.png" />
+    <Content Include="Resources\2318_R0lVIEFOTiAwNzAtMTA5-removebg-preview.png" />
+    <Content Include="Resources\25591-removebg-preview.png" />
+    <Content Include="Resources\3varbuq4-removebg-preview %281%29.png" />
+    <Content Include="Resources\3varbuq4-removebg-preview %281%291.png" />
+    <Content Include="Resources\3varbuq4-removebg-preview %281%292 - Copy - Copy.png" />
+    <Content Include="Resources\3varbuq4-removebg-preview %281%292 - Copy.png" />
+    <Content Include="Resources\3varbuq4-removebg-preview %281%292.png" />
+    <Content Include="Resources\3varbuq4-removebg-preview %282%292 - Copy.png" />
+    <Content Include="Resources\3varbuq4-removebg-preview.png" />
+    <Content Include="Resources\40300-removebg-preview.png" />
+    <Content Include="Resources\5245433-removebg-preview.png" />
+    <Content Include="Resources\5413809-effects-removebg-preview.png" />
+    <Content Include="Resources\5l61_4oxe_180209-removebg-preview - Copy.png" />
+    <Content Include="Resources\5l61_4oxe_180209-removebg-preview.png" />
+    <Content Include="Resources\7071-removebg-preview.png" />
+    <Content Include="Resources\7091-removebg-preview.png" />
+    <Content Include="Resources\7317129-removebg-preview.png" />
+    <Content Include="Resources\76b414fe4610989ff694005085de921a-removebg-preview.png" />
+    <Content Include="Resources\78pf2th5-removebg-preview.png" />
+    <Content Include="Resources\81328514-removebg-preview.png" />
+    <Content Include="Resources\81328524-removebg-preview.png" />
+    <Content Include="Resources\823_generated-removebg-preview.png" />
+    <Content Include="Resources\Biomedical_Fresh_And_Simple_Medical_Technology_Poster_Background_Wallpaper_Image_For_Free_Download_-_Pngtree-removebg-preview.png" />
+    <Content Include="Resources\Blue_Hospital_Medical_Western_Medicine_Poster_Background_Wallpaper_Image_For_Free_Download_-_Pngtree-removebg-preview.png" />
+    <Content Include="Resources\close.png" />
+    <Content Include="Resources\Free__Medical__Health__Research_Background_Images__Medical_Health_Poster_Background_Photo_Background_PNG_and_Vectors-removebg-preview.png" />
+    <Content Include="Resources\handdrawn_vector_61-removebg-preview.png" />
+    <Content Include="Resources\handdrawn_vector_61-removebg-preview1.png" />
+    <Content Include="Resources\handdrawn_vector_61-removebg-preview2.png" />
+    <Content Include="Resources\i88i_lnik_180209-removebg-preview.png" />
+    <Content Include="Resources\icons8-closed-eye-40.png" />
+    <Content Include="Resources\icons8-eye-48.png" />
+    <Content Include="Resources\maximize.png" />
+    <Content Include="Resources\minimize.png" />
+    <Content Include="Resources\notification_icon-icons.com_73719.ico" />
+    <Content Include="Resources\OL1V2Q0-removebg-preview.png" />
+    <Content Include="Resources\pngtree-roundtable-png-image_5410543.jpg" />
+    <Content Include="Resources\retro-error-message-illustration-in-pixel-style-vector-removebg-preview.png" />
+    <Content Include="Resources\Screenshot 2023-12-31 163312.png" />
+    <Content Include="Resources\Screenshot 2023-12-31 163445.png" />
+    <Content Include="Resources\Screenshot 2023-12-31 163600.png" />
+    <Content Include="Resources\Screenshot 2023-12-31 163629.png" />
+    <Content Include="Resources\Screenshot 2024-01-02 185836.png" />
+    <Content Include="Resources\Screenshot 2024-01-02 185900.png" />
+    <Content Include="Resources\Screenshot_2024-01-02_185836-removebg-preview.png" />
+    <Content Include="Resources\Screenshot_2024-01-02_185900-removebg-preview.png" />
+    <Content Include="Resources\tai_xuong__1_-removebg-preview.png" />
+    <Content Include="Resources\tai_xuong__2_-removebg-preview.png" />
+    <Content Include="Resources\Telegram-removebg-preview.png" />
+    <Content Include="Resources\vecteezy_3d-rendered-icon-medical-hospital-illustraion_27252245.png" />
+    <Content Include="Resources\vecteezy_a-medical-staff-group-of-doctors-and-nurses-standing-in_7382696-removebg-preview.png" />
+    <Content Include="Resources\vecteezy_a-patient-consults-a-doctor-and-nurse_-removebg-preview.png" />
+    <Content Include="Resources\vecteezy_blood-test-vector-icon_18758827-removebg-preview.png" />
+    <Content Include="Resources\vecteezy_cute-adorable-cartoon-stationery-yellow-pen-pencil-boy_15737572-1-removebg-preview.png" />
+    <Content Include="Resources\vecteezy_cute-adorable-cartoon-stationery-yellow-pen-pencil-boy_15737572-1-removebg-preview1.png" />
+    <Content Include="Resources\vecteezy_cute-adorable-cartoon-stationery-yellow-pen-pencil-boy_15737572-1-removebg-preview2.png" />
+    <Content Include="Resources\vecteezy_flat-isometric-illustration-concept-symbol-of-the-best_7885579-removebg-preview.png" />
+    <Content Include="Resources\vecteezy_hospital-bed-in-circle-icon-intensive-care-unit-icon_4745587-removebg-preview.png" />
+    <Content Include="Resources\vecteezy_hospital-bed-in-circle-icon-intensive-care-unit-icon_4745587.jpg" />
+    <Content Include="Resources\vecteezy_interface-plus-user-business-flat-line-filled-icon-vector_19177343-removebg-preview %281%29.png" />
+    <Content Include="Resources\warning_attention_notification_caution_priority_high_alert_sticker_icon_258419.ico" />
+    <Content Include="Resources\z4953206934367_014bc3b5af9952b68f5b02289aaceeca.png" />
+    <Content Include="Resources\z5030631053744_2e9b4f844cb98aa60abede7ce3520931-removebg-preview.png" />
+    <Content Include="Resources\z5030631053744_2e9b4f844cb98aa60abede7ce3520931-removebg-preview1.png" />
+    <Content Include="Resources\z5030867747912_8bf5b5c157107b7c880b4fc92925e287-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Configuration.ConfigurationManager">
+      <Version>8.0.0</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
