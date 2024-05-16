@@ -1,5 +1,4 @@
-﻿using AutoMapper;
-using HOSPITAL_MANAGEMENT_SOURCE.DTO;
+﻿using HOSPITAL_MANAGEMENT_SOURCE.DTO;
 using Npgsql;
 using System;
 using System.Data;
