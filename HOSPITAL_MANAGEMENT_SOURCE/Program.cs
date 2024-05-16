@@ -16,7 +16,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new GUI.TestCSDL());
+            Application.Run(new GUI.FormBillDetail());
         }
     }
 }
