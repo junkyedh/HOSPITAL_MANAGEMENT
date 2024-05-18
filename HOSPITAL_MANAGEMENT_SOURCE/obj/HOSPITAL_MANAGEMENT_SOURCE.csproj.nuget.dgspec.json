@@ -1,21 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\source\\repos\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\HOSPITAL_MANAGEMENT_SOURCE.csproj": {}
+    "D:\\CoSoNganh\\NhapMonCongNghePhanMem\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\HOSPITAL_MANAGEMENT_SOURCE.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\source\\repos\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\HOSPITAL_MANAGEMENT_SOURCE.csproj": {
+    "D:\\CoSoNganh\\NhapMonCongNghePhanMem\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\HOSPITAL_MANAGEMENT_SOURCE.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\HOSPITAL_MANAGEMENT_SOURCE.csproj",
+        "projectUniqueName": "D:\\CoSoNganh\\NhapMonCongNghePhanMem\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\HOSPITAL_MANAGEMENT_SOURCE.csproj",
         "projectName": "HOSPITAL_MANAGEMENT_SOURCE",
-        "projectPath": "C:\\Users\\Admin\\source\\repos\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\HOSPITAL_MANAGEMENT_SOURCE.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\source\\repos\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\obj\\",
+        "projectPath": "D:\\CoSoNganh\\NhapMonCongNghePhanMem\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\HOSPITAL_MANAGEMENT_SOURCE.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "D:\\CoSoNganh\\NhapMonCongNghePhanMem\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -34,6 +38,18 @@
       "frameworks": {
         "net472": {
           "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.35, )"
+            },
+            "Dapper.Contrib": {
+              "target": "Package",
+              "version": "[2.0.78, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
               "version": "[8.0.0, )"
@@ -43,6 +59,9 @@
       },
       "runtimes": {
         "win": {
+          "#import": []
+        },
+        "win-arm64": {
           "#import": []
         },
         "win-x64": {
