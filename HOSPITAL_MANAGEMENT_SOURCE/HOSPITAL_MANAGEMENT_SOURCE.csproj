@@ -373,6 +373,12 @@
     <Compile Include="GUI\FormMainTest.Designer.cs">
       <DependentUpon>FormMainTest.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\FormMainUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormMainUser.Designer.cs">
+      <DependentUpon>FormMainUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\FormMajorDetail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -527,6 +533,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\FormMainTest.resx">
       <DependentUpon>FormMainTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormMainUser.resx">
+      <DependentUpon>FormMainUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\FormMajorDetail.resx">
       <DependentUpon>FormMajorDetail.cs</DependentUpon>
