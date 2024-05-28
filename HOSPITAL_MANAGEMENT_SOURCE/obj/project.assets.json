@@ -2,7 +2,19 @@
   "version": 3,
   "targets": {
     ".NETFramework,Version=v4.7.2": {
-      "System.Configuration.ConfigurationManager/8.0.0": {
+      "AutoMapper/8.1.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/net461/AutoMapper.dll": {}
+        },
+        "runtime": {
+          "lib/net461/AutoMapper.dll": {}
+        }
+      },
+      "System.Configuration.ConfigurationManager/9.0.0-preview.3.24172.9": {
         "type": "package",
         "frameworkAssemblies": [
           "System.Configuration"
@@ -19,7 +31,19 @@
       }
     },
     ".NETFramework,Version=v4.7.2/win": {
-      "System.Configuration.ConfigurationManager/8.0.0": {
+      "AutoMapper/8.1.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/net461/AutoMapper.dll": {}
+        },
+        "runtime": {
+          "lib/net461/AutoMapper.dll": {}
+        }
+      },
+      "System.Configuration.ConfigurationManager/9.0.0-preview.3.24172.9": {
         "type": "package",
         "frameworkAssemblies": [
           "System.Configuration"
@@ -36,7 +60,19 @@
       }
     },
     ".NETFramework,Version=v4.7.2/win-x64": {
-      "System.Configuration.ConfigurationManager/8.0.0": {
+      "AutoMapper/8.1.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/net461/AutoMapper.dll": {}
+        },
+        "runtime": {
+          "lib/net461/AutoMapper.dll": {}
+        }
+      },
+      "System.Configuration.ConfigurationManager/9.0.0-preview.3.24172.9": {
         "type": "package",
         "frameworkAssemblies": [
           "System.Configuration"
@@ -53,7 +89,19 @@
       }
     },
     ".NETFramework,Version=v4.7.2/win-x86": {
-      "System.Configuration.ConfigurationManager/8.0.0": {
+      "AutoMapper/8.1.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/net461/AutoMapper.dll": {}
+        },
+        "runtime": {
+          "lib/net461/AutoMapper.dll": {}
+        }
+      },
+      "System.Configuration.ConfigurationManager/9.0.0-preview.3.24172.9": {
         "type": "package",
         "frameworkAssemblies": [
           "System.Configuration"
@@ -71,10 +119,27 @@
     }
   },
   "libraries": {
-    "System.Configuration.ConfigurationManager/8.0.0": {
-      "sha512": "JlYi9XVvIREURRUlGMr1F6vOFLk7YSY4p1vHo4kX3tQ0AGrjqlRWHDi66ImHhy6qwXBG3BJ6Y1QlYQ+Qz6Xgww==",
+    "AutoMapper/8.1.1": {
+      "sha512": "GKBliBukkLG0z/U0T4Jy+yEpr5bKDImQ9nEy/T8jqNulwNkWDjiEWa9TL4yCxIhleDbmVmw2xYSaJ3Eb2OcSUg==",
       "type": "package",
-      "path": "system.configuration.configurationmanager/8.0.0",
+      "path": "automapper/8.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "automapper.8.1.1.nupkg.sha512",
+        "automapper.nuspec",
+        "lib/net461/AutoMapper.dll",
+        "lib/net461/AutoMapper.pdb",
+        "lib/net461/AutoMapper.xml",
+        "lib/netstandard2.0/AutoMapper.dll",
+        "lib/netstandard2.0/AutoMapper.pdb",
+        "lib/netstandard2.0/AutoMapper.xml"
+      ]
+    },
+    "System.Configuration.ConfigurationManager/9.0.0-preview.3.24172.9": {
+      "sha512": "runfNU7hYhiU7KtXidbvbTKcSHgzRQRjuc6spGbYRAIeqVljo17sNvSpql+5c/ujzR5RRmj7KFvkeq0d3B7PsA==",
+      "type": "package",
+      "path": "system.configuration.configurationmanager/9.0.0-preview.3.24172.9",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -84,19 +149,17 @@
         "THIRD-PARTY-NOTICES.TXT",
         "buildTransitive/net461/System.Configuration.ConfigurationManager.targets",
         "buildTransitive/net462/_._",
-        "buildTransitive/net6.0/_._",
+        "buildTransitive/net8.0/_._",
         "buildTransitive/netcoreapp2.0/System.Configuration.ConfigurationManager.targets",
         "lib/net462/System.Configuration.ConfigurationManager.dll",
         "lib/net462/System.Configuration.ConfigurationManager.xml",
-        "lib/net6.0/System.Configuration.ConfigurationManager.dll",
-        "lib/net6.0/System.Configuration.ConfigurationManager.xml",
-        "lib/net7.0/System.Configuration.ConfigurationManager.dll",
-        "lib/net7.0/System.Configuration.ConfigurationManager.xml",
         "lib/net8.0/System.Configuration.ConfigurationManager.dll",
         "lib/net8.0/System.Configuration.ConfigurationManager.xml",
+        "lib/net9.0/System.Configuration.ConfigurationManager.dll",
+        "lib/net9.0/System.Configuration.ConfigurationManager.xml",
         "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll",
         "lib/netstandard2.0/System.Configuration.ConfigurationManager.xml",
-        "system.configuration.configurationmanager.8.0.0.nupkg.sha512",
+        "system.configuration.configurationmanager.9.0.0-preview.3.24172.9.nupkg.sha512",
         "system.configuration.configurationmanager.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -104,7 +167,8 @@
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.7.2": [
-      "System.Configuration.ConfigurationManager >= 8.0.0"
+      "AutoMapper >= 8.1.1",
+      "System.Configuration.ConfigurationManager >= 9.0.0-preview.3.24172.9"
     ]
   },
   "packageFolders": {
@@ -140,9 +204,13 @@
     "frameworks": {
       "net472": {
         "dependencies": {
+          "AutoMapper": {
+            "target": "Package",
+            "version": "[8.1.1, )"
+          },
           "System.Configuration.ConfigurationManager": {
             "target": "Package",
-            "version": "[8.0.0, )"
+            "version": "[9.0.0-preview.3.24172.9, )"
           }
         }
       }

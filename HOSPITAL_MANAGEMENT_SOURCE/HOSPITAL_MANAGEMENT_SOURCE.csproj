@@ -146,6 +146,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL\Assignment.cs" />
+    <Compile Include="DAL\AssignmentDetail.cs" />
     <Compile Include="DAL\SqlResult.cs" />
     <Compile Include="DTO\Assignment.cs" />
     <Compile Include="DTO\AssignmentDetail.cs" />
@@ -458,8 +460,11 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="AutoMapper">
+      <Version>8.1.1</Version>
+    </PackageReference>
     <PackageReference Include="System.Configuration.ConfigurationManager">
-      <Version>8.0.0</Version>
+      <Version>9.0.0-preview.3.24172.9</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

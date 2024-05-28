@@ -34,6 +34,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         }
 
         // Mapping configuration
+        [Obsolete]
         public static void ConfigureMapping()
         {
             Mapper.Initialize(cfg =>

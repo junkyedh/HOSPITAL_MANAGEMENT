@@ -22,7 +22,9 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             this.AssignID = assignID;
             this.StaffID = staffID;
         }
+
         // Mapping configuration
+        [Obsolete]
         public static void ConfigureMapping()
         {
             Mapper.Initialize(cfg =>
