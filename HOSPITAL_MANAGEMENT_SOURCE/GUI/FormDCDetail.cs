@@ -26,5 +26,15 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
         {
 
         }
+
+        private void bunifuGradientPanel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuShadowPanel1_ControlAdded(object sender, ControlEventArgs e)
+        {
+
+        }
     }
 }

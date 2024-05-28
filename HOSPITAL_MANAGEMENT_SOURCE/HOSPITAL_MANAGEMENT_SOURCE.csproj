@@ -149,8 +149,6 @@
     <Compile Include="DAL\Assignment.cs" />
     <Compile Include="DAL\AssignmentDetail.cs" />
     <Compile Include="DAL\SqlResult.cs" />
-    <Compile Include="DTO\Assignment.cs" />
-    <Compile Include="DTO\AssignmentDetail.cs" />
     <Compile Include="DTO\Bill.cs" />
     <Compile Include="DTO\Desease.cs" />
     <Compile Include="DTO\HospitalizationCertificate.cs" />

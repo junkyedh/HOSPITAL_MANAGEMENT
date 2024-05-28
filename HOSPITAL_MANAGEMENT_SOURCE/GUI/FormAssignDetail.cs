@@ -14,7 +14,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
 {
     public partial class FormAssignDetail : Form
     {
-        public Assignment AssignDetail { get; set; }
+       /// public Assignment AssignDetail { get; set; }
         public String UserAction { get; set; }
         private static List<Staff> listStaff = new List<Staff>();
         private static List<AssignmentDetail> listAD = new List<AssignmentDetail>();
@@ -49,8 +49,8 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             }
             listBoxSystemStaff.SelectedIndex = 0;
 
-            DataTable dtAD = AssignmentDetail.GetListAssignmentDetails(assignDetail.AssignID);
-            for (int i = 0; i < dtAD.Rows.Count; i++)
+           /* DataTable dtAD = AssignmentDetail.GetListAssignmentDetails(assignDetail.AssignID);*/
+            /*for (int i = 0; i < dtAD.Rows.Count; i++)
             {
                 String staffName = dtAD.Rows[i][2].ToString() + " " + dtAD.Rows[i][3].ToString();
                 AssignmentDetail newAD = new AssignmentDetail();
@@ -58,10 +58,12 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
                 newAD.StaffID = Convert.ToInt32(dtAD.Rows[i][1]);
                 listAD.Add(newAD);
                 listBoxCurrentStaff.Items.Add(staffName);
-            }
+            }*/
             if (listBoxCurrentStaff.Items.Count > 0)
                 listBoxCurrentStaff.SelectedIndex = 0;
         }
+
+       
         private void SetADForInsert(int patientID)
         {
             HospitalizationCertificate newHC = HospitalizationCertificate.GetHC(Convert.ToDecimal(patientID));
@@ -200,7 +202,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
 
         private void bunifuGradientPanel1_Click(object sender, EventArgs e)
         {
-
+                    
         }
 
         private void bunifuShadowPanel1_ControlAdded(object sender, ControlEventArgs e)
