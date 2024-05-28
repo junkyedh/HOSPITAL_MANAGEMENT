@@ -146,20 +146,83 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL\Assignment.cs" />
+    <Compile Include="DAL\AssignmentDetail.cs" />
+    <Compile Include="DAL\Bcrypt.cs" />
+    <Compile Include="DAL\Bill.cs" />
+    <Compile Include="DAL\BillType.cs" />
+    <Compile Include="DAL\DbConnect.cs" />
+    <Compile Include="DAL\Department.cs" />
+    <Compile Include="DAL\DischargeCertificate.cs" />
+    <Compile Include="DAL\Disease.cs" />
+    <Compile Include="DAL\ExaminationCertificate.cs" />
+    <Compile Include="DAL\HealthFile.cs" />
+    <Compile Include="DAL\HealthMonitoringNote.cs" />
+    <Compile Include="DAL\HIC.cs" />
+    <Compile Include="DAL\HospitalBed.cs" />
+    <Compile Include="DAL\HospitalizationCerificate.cs" />
+    <Compile Include="DAL\Major.cs" />
+    <Compile Include="DAL\Material.cs" />
+    <Compile Include="DAL\Medicine.cs" />
+    <Compile Include="DAL\MedicineBillDetail.cs" />
+    <Compile Include="DAL\NpgSqlResult.cs" />
+    <Compile Include="DAL\Patient.cs" />
+    <Compile Include="DAL\Prescription.cs" />
+    <Compile Include="DAL\PrescriptionDetail.cs" />
+    <Compile Include="DAL\RentMaterialBillDetail.cs" />
+    <Compile Include="DAL\Role.cs" />
+    <Compile Include="DAL\RoleDetail.cs" />
+    <Compile Include="DAL\RoleFunction.cs" />
+    <Compile Include="DAL\Service.cs" />
+    <Compile Include="DAL\ServiceBillDetail.cs" />
     <Compile Include="DAL\SqlResult.cs" />
+    <Compile Include="DAL\Staff.cs" />
+    <Compile Include="DAL\Surgical.cs" />
+    <Compile Include="DAL\SurgicalDetail.cs" />
+    <Compile Include="DAL\TestCertificate.cs" />
+    <Compile Include="DAL\TestDetail.cs" />
+    <Compile Include="DAL\TestType.cs" />
+    <Compile Include="DTO\Assignment.cs" />
+    <Compile Include="DTO\AssignmentDetail.cs" />
+    <Compile Include="DTO\Bcrypt.cs" />
+    <Compile Include="DTO\Bill.cs" />
+    <Compile Include="DTO\BillType.cs" />
+    <Compile Include="DTO\Constant.cs" />
+    <Compile Include="DTO\DbConnect.cs" />
+    <Compile Include="DTO\Department.cs" />
     <Compile Include="DTO\Desease.cs" />
-    <Compile Include="GUI\FormHCDetail.cs">
-      <SubType>Form</SubType>
+    <Compile Include="DTO\DischargeCertificate.cs" />
+    <Compile Include="DTO\Disease.cs" />
+    <Compile Include="DTO\ElipseControl.cs">
+      <SubType>Component</SubType>
     </Compile>
-    <Compile Include="GUI\FormHCDetail.Designer.cs">
-      <DependentUpon>FormHCDetail.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\FormECDetail.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\FormECDetail.Designer.cs">
-      <DependentUpon>FormECDetail.cs</DependentUpon>
-    </Compile>
+    <Compile Include="DTO\ExaminationCertificate.cs" />
+    <Compile Include="DTO\HealthFile.cs" />
+    <Compile Include="DTO\HealthMonitoringNote.cs" />
+    <Compile Include="DTO\HIC.cs" />
+    <Compile Include="DTO\HospitalBed.cs" />
+    <Compile Include="DTO\HospitalizationCerificate.cs" />
+    <Compile Include="DTO\Ini.cs" />
+    <Compile Include="DTO\Major.cs" />
+    <Compile Include="DTO\Material.cs" />
+    <Compile Include="DTO\Medicine.cs" />
+    <Compile Include="DTO\MedicineBillDetail.cs" />
+    <Compile Include="DTO\Patient.cs" />
+    <Compile Include="DTO\PostgreHelper.cs" />
+    <Compile Include="DTO\Prescription.cs" />
+    <Compile Include="DTO\PrescriptionDetail.cs" />
+    <Compile Include="DTO\RentMaterialBillDetail.cs" />
+    <Compile Include="DTO\Role.cs" />
+    <Compile Include="DTO\RoleDetail.cs" />
+    <Compile Include="DTO\RoleFunction.cs" />
+    <Compile Include="DTO\Service.cs" />
+    <Compile Include="DTO\ServiceBillDetail.cs" />
+    <Compile Include="DTO\Staff.cs" />
+    <Compile Include="DTO\Surgical.cs" />
+    <Compile Include="DTO\SurgicalDetail.cs" />
+    <Compile Include="DTO\TestCertificate.cs" />
+    <Compile Include="DTO\TestDetail.cs" />
+    <Compile Include="DTO\TestType.cs" />
     <Compile Include="GUI\FormAssignDetail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -189,6 +252,18 @@
     </Compile>
     <Compile Include="GUI\FormDiseaseDetail.Designer.cs">
       <DependentUpon>FormDiseaseDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormECDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormECDetail.Designer.cs">
+      <DependentUpon>FormECDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormHCDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormHCDetail.Designer.cs">
+      <DependentUpon>FormHCDetail.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\FormHFDetail.cs">
       <SubType>Form</SubType>
@@ -280,6 +355,108 @@
     <Compile Include="GUI\FormMainMonitor.Designer.cs">
       <DependentUpon>FormMainMonitor.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\FormMainRole.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\FormMainRole.Designer.cs">
+      <DependentUpon>FormMainRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormMainSurgeryDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\FormMainSurgeryDetail.Designer.cs">
+      <DependentUpon>FormMainSurgeryDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormMainTest.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\FormMainTest.Designer.cs">
+      <DependentUpon>FormMainTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormMainUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormMainUser.Designer.cs">
+      <DependentUpon>FormMainUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormMajorDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormMajorDetail.Designer.cs">
+      <DependentUpon>FormMajorDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormMaterialDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormMaterialDetail.Designer.cs">
+      <DependentUpon>FormMaterialDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormMedicineDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormMedicineDetail.Designer.cs">
+      <DependentUpon>FormMedicineDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormPatientDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormPatientDetail.Designer.cs">
+      <DependentUpon>FormPatientDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormPayment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\FormPayment.Designer.cs">
+      <DependentUpon>FormPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormPrescriptionDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormPrescriptionDetail.Designer.cs">
+      <DependentUpon>FormPrescriptionDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormRoleDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\FormRoleDetail.Designer.cs">
+      <DependentUpon>FormRoleDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormRoleFunctionDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormRoleFunctionDetail.Designer.cs">
+      <DependentUpon>FormRoleFunctionDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormService.Designer.cs">
+      <DependentUpon>FormService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormStaffDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormStaffDetail.Designer.cs">
+      <DependentUpon>FormStaffDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormSurgicalDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormSurgicalDetail.Designer.cs">
+      <DependentUpon>FormSurgicalDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormTestDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormTestDetail.Designer.cs">
+      <DependentUpon>FormTestDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\TestCSDL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\TestCSDL.Designer.cs">
+      <DependentUpon>TestCSDL.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\FormAssignDetail.resx">
@@ -347,6 +524,57 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\FormMainMonitor.resx">
       <DependentUpon>FormMainMonitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormMainRole.resx">
+      <DependentUpon>FormMainRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormMainSurgeryDetail.resx">
+      <DependentUpon>FormMainSurgeryDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormMainTest.resx">
+      <DependentUpon>FormMainTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormMainUser.resx">
+      <DependentUpon>FormMainUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormMajorDetail.resx">
+      <DependentUpon>FormMajorDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormMaterialDetail.resx">
+      <DependentUpon>FormMaterialDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormMedicineDetail.resx">
+      <DependentUpon>FormMedicineDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormPatientDetail.resx">
+      <DependentUpon>FormPatientDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormPayment.resx">
+      <DependentUpon>FormPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormPrescriptionDetail.resx">
+      <DependentUpon>FormPrescriptionDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormRoleDetail.resx">
+      <DependentUpon>FormRoleDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormRoleFunctionDetail.resx">
+      <DependentUpon>FormRoleFunctionDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormService.resx">
+      <DependentUpon>FormService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormStaffDetail.resx">
+      <DependentUpon>FormStaffDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormSurgicalDetail.resx">
+      <DependentUpon>FormSurgicalDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormTestDetail.resx">
+      <DependentUpon>FormTestDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\TestCSDL.resx">
+      <DependentUpon>TestCSDL.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -451,6 +679,15 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Dapper">
+      <Version>2.1.35</Version>
+    </PackageReference>
+    <PackageReference Include="Dapper.Contrib">
+      <Version>2.0.78</Version>
+    </PackageReference>
+    <PackageReference Include="Npgsql">
+      <Version>8.0.3</Version>
+    </PackageReference>
     <PackageReference Include="System.Configuration.ConfigurationManager">
       <Version>8.0.0</Version>
     </PackageReference>
