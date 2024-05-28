@@ -244,5 +244,10 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
         {
 
         }
+
+        private void dateHospitalize_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
