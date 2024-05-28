@@ -378,7 +378,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             stateProperties4.ForeColor = System.Drawing.Color.Black;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.bunifuTextBox5.OnIdleState = stateProperties4;
-            this.bunifuTextBox5.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.bunifuTextBox5.Padding = new System.Windows.Forms.Padding(3);
             this.bunifuTextBox5.PasswordChar = '\0';
             this.bunifuTextBox5.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(20)))), ((int)(((byte)(59)))));
             this.bunifuTextBox5.PlaceholderText = "Nhập mật khẩu";
@@ -456,7 +456,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             stateProperties8.ForeColor = System.Drawing.Color.Black;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.bunifuTextBox6.OnIdleState = stateProperties8;
-            this.bunifuTextBox6.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.bunifuTextBox6.Padding = new System.Windows.Forms.Padding(3);
             this.bunifuTextBox6.PasswordChar = '\0';
             this.bunifuTextBox6.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(20)))), ((int)(((byte)(59)))));
             this.bunifuTextBox6.PlaceholderText = "Nhập tài khoản";
@@ -874,9 +874,9 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.groupBox2.Controls.Add(this.bunifuTextBox2);
             this.groupBox2.Controls.Add(this.bunifuPictureBox5);
             this.groupBox2.Location = new System.Drawing.Point(87, 148);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(429, 123);
             this.groupBox2.TabIndex = 18;
             this.groupBox2.TabStop = false;
@@ -938,7 +938,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             stateProperties12.ForeColor = System.Drawing.Color.Black;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.bunifuTextBox1.OnIdleState = stateProperties12;
-            this.bunifuTextBox1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.bunifuTextBox1.Padding = new System.Windows.Forms.Padding(3);
             this.bunifuTextBox1.PasswordChar = '\0';
             this.bunifuTextBox1.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(109)))), ((int)(((byte)(160)))));
             this.bunifuTextBox1.PlaceholderText = "Nhập Số điện thoại";
@@ -970,7 +970,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuPictureBox4.BorderRadius = 13;
             this.bunifuPictureBox4.Image = global::HOSPITAL_MANAGEMENT_SOURCE.Properties.Resources.icons8_closed_eye_40;
             this.bunifuPictureBox4.IsCircle = true;
-            this.bunifuPictureBox4.Location = new System.Drawing.Point(398, 81);
+            this.bunifuPictureBox4.Location = new System.Drawing.Point(397, 81);
             this.bunifuPictureBox4.Name = "bunifuPictureBox4";
             this.bunifuPictureBox4.Size = new System.Drawing.Size(27, 27);
             this.bunifuPictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -980,6 +980,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuToolTip1.SetToolTipIcon(this.bunifuPictureBox4, null);
             this.bunifuToolTip1.SetToolTipTitle(this.bunifuPictureBox4, "");
             this.bunifuPictureBox4.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
+            this.bunifuPictureBox4.Click += new System.EventHandler(this.bunifuPictureBox4_Click);
             // 
             // bunifuTextBox2
             // 
@@ -1035,7 +1036,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             stateProperties16.ForeColor = System.Drawing.Color.Black;
             stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.bunifuTextBox2.OnIdleState = stateProperties16;
-            this.bunifuTextBox2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.bunifuTextBox2.Padding = new System.Windows.Forms.Padding(3);
             this.bunifuTextBox2.PasswordChar = '*';
             this.bunifuTextBox2.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(109)))), ((int)(((byte)(160)))));
             this.bunifuTextBox2.PlaceholderText = "Nhập mật khẩu";
@@ -1077,6 +1078,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuToolTip1.SetToolTipIcon(this.bunifuPictureBox5, null);
             this.bunifuToolTip1.SetToolTipTitle(this.bunifuPictureBox5, "");
             this.bunifuPictureBox5.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
+            this.bunifuPictureBox5.Click += new System.EventHandler(this.bunifuPictureBox5_Click);
             // 
             // bunifuButton10
             // 
@@ -1459,9 +1461,9 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.groupBox1.Controls.Add(this.bunifuTextBoxPassword);
             this.groupBox1.Controls.Add(this.bunifuPictureBoxEyeOpen);
             this.groupBox1.Location = new System.Drawing.Point(87, 148);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(429, 123);
             this.groupBox1.TabIndex = 17;
             this.groupBox1.TabStop = false;
@@ -1525,7 +1527,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             stateProperties20.ForeColor = System.Drawing.Color.Black;
             stateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.bunifuTextBoxUsername.OnIdleState = stateProperties20;
-            this.bunifuTextBoxUsername.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.bunifuTextBoxUsername.Padding = new System.Windows.Forms.Padding(3);
             this.bunifuTextBoxUsername.PasswordChar = '\0';
             this.bunifuTextBoxUsername.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(109)))), ((int)(((byte)(160)))));
             this.bunifuTextBoxUsername.PlaceholderText = "Nhập số điện thoại";
@@ -1622,7 +1624,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             stateProperties24.ForeColor = System.Drawing.Color.Black;
             stateProperties24.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.bunifuTextBoxPassword.OnIdleState = stateProperties24;
-            this.bunifuTextBoxPassword.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.bunifuTextBoxPassword.Padding = new System.Windows.Forms.Padding(3);
             this.bunifuTextBoxPassword.PasswordChar = '*';
             this.bunifuTextBoxPassword.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(109)))), ((int)(((byte)(160)))));
             this.bunifuTextBoxPassword.PlaceholderText = "Nhập mật khẩu";
@@ -1669,7 +1671,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.Location = new System.Drawing.Point(111, 362);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(15, 14);
             this.checkBox1.TabIndex = 16;
@@ -1865,6 +1867,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuToolTip1.SetToolTipIcon(this.bunifuButtonLogin, null);
             this.bunifuToolTip1.SetToolTipTitle(this.bunifuButtonLogin, "");
             this.bunifuButtonLogin.UseDefaultRadiusAndThickness = true;
+            this.bunifuButtonLogin.Click += new System.EventHandler(this.bunifuButtonLogin_Click);
             // 
             // bunifuLabel1
             // 
@@ -2084,7 +2087,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             stateProperties28.ForeColor = System.Drawing.Color.Black;
             stateProperties28.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.bunifuTextBox3.OnIdleState = stateProperties28;
-            this.bunifuTextBox3.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.bunifuTextBox3.Padding = new System.Windows.Forms.Padding(3);
             this.bunifuTextBox3.PasswordChar = '\0';
             this.bunifuTextBox3.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(20)))), ((int)(((byte)(59)))));
             this.bunifuTextBox3.PlaceholderText = "Nhập mật khẩu";
@@ -2162,7 +2165,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             stateProperties32.ForeColor = System.Drawing.Color.Black;
             stateProperties32.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.bunifuTextBox4.OnIdleState = stateProperties32;
-            this.bunifuTextBox4.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.bunifuTextBox4.Padding = new System.Windows.Forms.Padding(3);
             this.bunifuTextBox4.PasswordChar = '\0';
             this.bunifuTextBox4.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(20)))), ((int)(((byte)(59)))));
             this.bunifuTextBox4.PlaceholderText = "Nhập tài khoản";
