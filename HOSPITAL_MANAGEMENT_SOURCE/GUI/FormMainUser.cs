@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HOSPITAL_MANAGEMENT_SOURCE.DAL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,11 +13,28 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
 {
     public partial class FormMainUser : Form
     {
+        private Staff loginStaff { get; set; }
+        public Point mouseLocation;
+        private Bunifu.UI.WinForms.BunifuShadowPanel lastClickedPanel;
         public FormMainUser()
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
             Original();
+        }
+        public FormMainUser(Staff staff)
+        {
+            InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
+            Original();
+
+            loginStaff = staff;
+            bunifuSnackbar1.Show(this, "Đăng nhập thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
+            GetStaffInformation();
+        }
+        private void GetStaffInformation()
+        {
+
         }
         private void bunifuLabel1_Click(object sender, EventArgs e)
         {
@@ -26,32 +44,26 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
         {
 
         }
-
         private void bunifuGradientPanel1_Click(object sender, EventArgs e)
         {
 
         }
-
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
 
         }
-
         private void bunifuPictureBox4_Click(object sender, EventArgs e)
         {
 
         }
-
         private void bunifuButton11_Click(object sender, EventArgs e)
         {
-           
-        }
 
+        }
         private void bunifuButton10_Click(object sender, EventArgs e)
         {
 
         }
-
         private void bunifuShadowPanel2_ControlAdded(object sender, ControlEventArgs e)
         {
 
@@ -143,6 +155,14 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
         {
             Original();
             Button3View();
+        }
+
+        private void bunifuButton29_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            this.Close();
+            FormLogin_SignUp loginSignup = new FormLogin_SignUp();
+            loginSignup.ShowDialog();
         }
     }
 }
