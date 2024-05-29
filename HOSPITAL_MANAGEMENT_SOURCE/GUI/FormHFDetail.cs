@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using HOSPITAL_MANAGEMENT_SOURCE.DAL;
+using HOSPITAL_MANAGEMENT_SOURCE.DTO;
 using System.Windows.Forms;
 
 namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
@@ -25,7 +26,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             InitializeComponent();
             SetHFDetail(patientID);
         }
-        public FormHFDetail(HealthFile hfDetail, String userAction)
+        public FormHFDetail(HealthFileDTO hfDetail, String userAction)
         {
             InitializeComponent();
             this.UserAction = userAction;
@@ -43,7 +44,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             dateCreate.Value = DateTime.Today;
         }
         //For edit feature
-        private void SetHFDetail(HealthFile hfDetail)
+        private void SetHFDetail(HealthFileDTO hfDetail)
         {
             textBoxHFID.Text = hfDetail.HeathFileID.ToString();
             textBoxPatientID.Text = hfDetail.PatientID.ToString();

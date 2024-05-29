@@ -296,7 +296,7 @@
       <DependentUpon>FormLogin_SignUp.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\FormMainBed.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="GUI\FormMainBed.Designer.cs">
       <DependentUpon>FormMainBed.cs</DependentUpon>

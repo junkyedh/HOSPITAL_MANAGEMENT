@@ -5,7 +5,7 @@ using HOSPITAL_MANAGEMENT_SOURCE.DTO;
 
 namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 {
-    public class HeathMonitoringNote
+    public class HealthMonitoringNote
     {
         public int HNID { get; set; }
         public int PatientID { get; set; }
@@ -92,6 +92,21 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
                 };
             }
             return null;
+        }
+
+        public HealthMonitoringNoteDTO ToDTO ()
+        {
+            return new HealthMonitoringNoteDTO
+            {
+                HNID = this.HNID,
+                PatientID = this.PatientID,
+                StaffID = this.StaffID,
+                Date = this.Date,
+                Weight = this.Weight,
+                BloodPressure = this.BloodPressure,
+                PatientState = this.PatientState
+
+            };
         }
     }
 }

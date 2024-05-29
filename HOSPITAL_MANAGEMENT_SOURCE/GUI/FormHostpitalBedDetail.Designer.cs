@@ -224,7 +224,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuToolTip1.SetToolTip(this.bunifuShadowPanel2, "");
             this.bunifuToolTip1.SetToolTipIcon(this.bunifuShadowPanel2, null);
             this.bunifuToolTip1.SetToolTipTitle(this.bunifuShadowPanel2, "");
-            this.bunifuShadowPanel2.ControlAdded += new System.Windows.Forms.ControlEventHandler(this.bunifuShadowPanel2_ControlAdded);
+            //this.bunifuShadowPanel2.ControlAdded += new System.Windows.Forms.ControlEventHandler(this.bunifuShadowPanel2_ControlAdded);
             // 
             // labelState
             // 

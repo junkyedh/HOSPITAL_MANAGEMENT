@@ -16,9 +16,9 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
 {
     public partial class FormBillDetail : Form
     {
-        public BillDTO BillDetail { get; set; }
+        public BillDTO BillDetail { get; set; }       // O day sua thanh DTO 
         public Staff StaffDetail { get; set; }
-        public Patient PatientDetail { get; set; }
+        public PatientDTO PatientDetail { get; set; }
         public string UserAction { get; set; }
         public int PrescriptionID { get; set; }
         public int HICID { get; set; }
@@ -29,6 +29,19 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
         public FormBillDetail()
         {
             InitializeComponent();
+        }
+
+        public FormBillDetail(string userAction, BillDTO bill)
+        {
+            InitializeComponent();
+
+            // Set useraction and bill            
+            this.BillDetail = bill;
+            this.UserAction = userAction;
+            this.StaffDetail = Staff.GetStaff(BillDetail.StaffID);
+            this.PatientDetail = Patient.GetPatient(BillDetail.PatientID);
+
+            //reFreshForm();
         }
 
         private void bunifuButtonSave_Click(object sender, EventArgs e)

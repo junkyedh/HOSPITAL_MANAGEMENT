@@ -37,7 +37,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             dateCreate.Enabled = false;
         }
         //This constructor for update in Heath Note Management
-        public FormHNDetail(HeathMonitoringNote hnDetail, String userAction)
+        public FormHNDetail(HealthMonitoringNote hnDetail, String userAction)
         {
             InitializeComponent();
             this.UserAction = userAction;
@@ -53,7 +53,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
 
         private void SetAutoComplete()
         {
-            DataTable dtPatientID = Patient.GetListPatientID();
+            DataTable dtPatientID = Patient.GetListPatient();
             for (int i = 0; i < dtPatientID.Rows.Count; i++)
             {
                 textBoxPatientID.AutoCompleteCustomSource.Add(dtPatientID.Rows[i][0].ToString());
@@ -82,7 +82,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
                 {
                     if (UserAction == "edit")
                     {
-                        HeathMonitoringNote newHN = new HeathMonitoringNote();
+                        HealthMonitoringNote newHN = new HealthMonitoringNote();
                         newHN.HNID = int.Parse(textBoxHNID.Text);
                         newHN.PatientID = int.Parse(textBoxPatientID.Text);
                         newHN.StaffID = int.Parse(textBoxStaffID.Text);
@@ -93,7 +93,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
                         DialogResult dialogResult = MessageBox.Show("Xác nhận cập nhập thông tin phiếu theo dõi sức khỏe", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                         if (dialogResult == DialogResult.Yes)
                         {
-                            if (HeathMonitoringNote.UpdateHN(newHN) > 0)
+                            if (HealthMonitoringNote.UpdateHN(newHN.ToDTO()) > 0)
                             {
                                 bunifuSnackbar1.Show(this, "Cập nhật thông tin phiếu theo dõi sức khỏe thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                                 return;
@@ -103,7 +103,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
                     }
                     else
                     {
-                        HeathMonitoringNote newHN = new HeathMonitoringNote();
+                        HealthMonitoringNote newHN = new HealthMonitoringNote();
                         newHN.HNID = 0;
                         newHN.PatientID = int.Parse(textBoxPatientID.Text);
                         newHN.StaffID = int.Parse(textBoxStaffID.Text);
@@ -111,7 +111,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
                         newHN.Weight = textBoxWeight.Text;
                         newHN.BloodPressure = textBoxBloodPressure.Text;
                         newHN.Date = dateCreate.Value;
-                        if (HeathMonitoringNote.InsertHN(newHN) > 0)
+                        if (HealthMonitoringNote.InsertHN(newHN.ToDTO()) > 0)
                         {
                             bunifuSnackbar1.Show(this, "Thêm phiếu theo dõi sức khỏe thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                             return;

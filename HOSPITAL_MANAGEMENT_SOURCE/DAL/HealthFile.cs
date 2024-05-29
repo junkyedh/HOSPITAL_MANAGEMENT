@@ -68,7 +68,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return NpgSqlResult.ExecuteNonQuery(sqlDelete, npgsqlParameters);
         }
 
-        public DataTable GetListHeathFile()
+        public static DataTable GetListHeathFile()   //cho nay co doi thanh static de chay dc trong formmainhf
         {
             string sqlSelect = @"SELECT HEATHFILEID, PATIENTID, DATE, PATIENTSTATE, PREHISTORY, DISEASE, TREATMENT
                                  FROM HEATHFILE";

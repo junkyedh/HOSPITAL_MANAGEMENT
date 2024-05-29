@@ -14,7 +14,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
 {
     public partial class FormDCDetail : Form
     {
-        public DischargeCertificate DCDetail { get; set; }
+        public DischargeCertificateDTO DCDetail { get; set; }
         public String UserAction { get; set; }
         public FormDCDetail()
         {
@@ -36,14 +36,14 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             bunifuDropdownState.Enabled = false;
         }
         //This constructor for update, confirm feature
-        public FormDCDetail(DischargeCertificate dcDetail, String userAction)
+        public FormDCDetail(DischargeCertificateDTO dcDetail, String userAction)
         {
             InitializeComponent();
             this.DCDetail = dcDetail;
             this.UserAction = userAction;
             SetDCForUpdate(dcDetail);
         }
-        private void SetDCForUpdate(DischargeCertificate dcDetail)
+        private void SetDCForUpdate(DischargeCertificateDTO dcDetail)
         {
             bunifuTextBoxDCID.Text = dcDetail.DCID.ToString();
             bunifuTextBoxPatientID.Text = dcDetail.PatientID.ToString();

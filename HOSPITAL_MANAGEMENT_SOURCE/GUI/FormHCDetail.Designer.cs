@@ -833,6 +833,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuToolTip1.SetToolTipTitle(this.bunifuTextBoxHICD, "");
             this.bunifuTextBoxHICD.UseSystemPasswordChar = false;
             this.bunifuTextBoxHICD.WordWrap = true;
+            this.bunifuTextBoxHICD.TextChanged += new System.EventHandler(this.bunifuTextBoxHICD_TextChanged);
             // 
             // bunifuLabel7
             // 
@@ -999,7 +1000,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(780, 820);
+            this.ClientSize = new System.Drawing.Size(780, 781);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Font = new System.Drawing.Font("Cambria", 11F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

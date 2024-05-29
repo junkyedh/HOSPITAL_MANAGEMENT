@@ -75,10 +75,9 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(110)))), ((int)(((byte)(129)))));
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(110)))), ((int)(((byte)(129)))));
             this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(1500, 1226);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(1000, 797);
             this.bunifuGradientPanel1.TabIndex = 6;
             // 
             // bunifuShadowPanel1
@@ -100,8 +99,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuShadowPanel1.Controls.Add(this.bunifuTextBoxDiseaseSearch);
             this.bunifuShadowPanel1.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Gradient;
             this.bunifuShadowPanel1.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
-            this.bunifuShadowPanel1.Location = new System.Drawing.Point(34, 36);
-            this.bunifuShadowPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuShadowPanel1.Location = new System.Drawing.Point(23, 23);
             this.bunifuShadowPanel1.Name = "bunifuShadowPanel1";
             this.bunifuShadowPanel1.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(220)))), ((int)(((byte)(213)))));
             this.bunifuShadowPanel1.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(255)))), ((int)(((byte)(232)))));
@@ -110,7 +108,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuShadowPanel1.ShadowDepth = 0;
             this.bunifuShadowPanel1.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
             this.bunifuShadowPanel1.ShadowTopLeftVisible = false;
-            this.bunifuShadowPanel1.Size = new System.Drawing.Size(1427, 1146);
+            this.bunifuShadowPanel1.Size = new System.Drawing.Size(951, 745);
             this.bunifuShadowPanel1.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.bunifuShadowPanel1.TabIndex = 5;
             // 
@@ -118,10 +116,9 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::HOSPITAL_MANAGEMENT_SOURCE.Properties.Resources.vecteezy_cute_adorable_cartoon_stationery_yellow_pen_pencil_boy_15737572_1_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(985, 1055);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox1.Location = new System.Drawing.Point(665, 678);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 51);
+            this.pictureBox1.Size = new System.Drawing.Size(33, 33);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
@@ -130,10 +127,9 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = global::HOSPITAL_MANAGEMENT_SOURCE.Properties.Resources.z5030631053744_2e9b4f844cb98aa60abede7ce3520931_removebg_preview;
-            this.pictureBox3.Location = new System.Drawing.Point(755, 1055);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox3.Location = new System.Drawing.Point(510, 678);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(54, 51);
+            this.pictureBox3.Size = new System.Drawing.Size(36, 33);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 15;
             this.pictureBox3.TabStop = false;
@@ -185,8 +181,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuButtonDiseaseDelete.IdleIconLeftImage = null;
             this.bunifuButtonDiseaseDelete.IdleIconRightImage = null;
             this.bunifuButtonDiseaseDelete.IndicateFocus = false;
-            this.bunifuButtonDiseaseDelete.Location = new System.Drawing.Point(739, 1042);
-            this.bunifuButtonDiseaseDelete.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuButtonDiseaseDelete.Location = new System.Drawing.Point(493, 663);
             this.bunifuButtonDiseaseDelete.Name = "bunifuButtonDiseaseDelete";
             this.bunifuButtonDiseaseDelete.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButtonDiseaseDelete.OnDisabledState.BorderRadius = 60;
@@ -220,7 +215,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuButtonDiseaseDelete.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.bunifuButtonDiseaseDelete.OnPressedState.IconLeftImage = null;
             this.bunifuButtonDiseaseDelete.OnPressedState.IconRightImage = null;
-            this.bunifuButtonDiseaseDelete.Size = new System.Drawing.Size(190, 78);
+            this.bunifuButtonDiseaseDelete.Size = new System.Drawing.Size(136, 65);
             this.bunifuButtonDiseaseDelete.TabIndex = 14;
             this.bunifuButtonDiseaseDelete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButtonDiseaseDelete.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -232,10 +227,9 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = global::HOSPITAL_MANAGEMENT_SOURCE.Properties.Resources.vecteezy_interface_plus_user_business_flat_line_filled_icon_vector_19177343_removebg_preview__1_;
-            this.pictureBox2.Location = new System.Drawing.Point(1216, 1055);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox2.Location = new System.Drawing.Point(816, 678);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(50, 51);
+            this.pictureBox2.Size = new System.Drawing.Size(33, 33);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 13;
             this.pictureBox2.TabStop = false;
@@ -287,8 +281,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuButtonDiseaseEdit.IdleIconLeftImage = null;
             this.bunifuButtonDiseaseEdit.IdleIconRightImage = null;
             this.bunifuButtonDiseaseEdit.IndicateFocus = false;
-            this.bunifuButtonDiseaseEdit.Location = new System.Drawing.Point(972, 1042);
-            this.bunifuButtonDiseaseEdit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuButtonDiseaseEdit.Location = new System.Drawing.Point(648, 663);
             this.bunifuButtonDiseaseEdit.Name = "bunifuButtonDiseaseEdit";
             this.bunifuButtonDiseaseEdit.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButtonDiseaseEdit.OnDisabledState.BorderRadius = 60;
@@ -322,13 +315,14 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuButtonDiseaseEdit.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.bunifuButtonDiseaseEdit.OnPressedState.IconLeftImage = null;
             this.bunifuButtonDiseaseEdit.OnPressedState.IconRightImage = null;
-            this.bunifuButtonDiseaseEdit.Size = new System.Drawing.Size(190, 78);
+            this.bunifuButtonDiseaseEdit.Size = new System.Drawing.Size(149, 65);
             this.bunifuButtonDiseaseEdit.TabIndex = 12;
             this.bunifuButtonDiseaseEdit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButtonDiseaseEdit.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.bunifuButtonDiseaseEdit.TextMarginLeft = 0;
             this.bunifuButtonDiseaseEdit.TextPadding = new System.Windows.Forms.Padding(0);
             this.bunifuButtonDiseaseEdit.UseDefaultRadiusAndThickness = true;
+            this.bunifuButtonDiseaseEdit.Click += new System.EventHandler(this.bunifuButtonDiseaseEdit_Click);
             // 
             // bunifuButtonDiseaseAdd
             // 
@@ -377,8 +371,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuButtonDiseaseAdd.IdleIconLeftImage = null;
             this.bunifuButtonDiseaseAdd.IdleIconRightImage = null;
             this.bunifuButtonDiseaseAdd.IndicateFocus = false;
-            this.bunifuButtonDiseaseAdd.Location = new System.Drawing.Point(1204, 1042);
-            this.bunifuButtonDiseaseAdd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuButtonDiseaseAdd.Location = new System.Drawing.Point(803, 663);
             this.bunifuButtonDiseaseAdd.Name = "bunifuButtonDiseaseAdd";
             this.bunifuButtonDiseaseAdd.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButtonDiseaseAdd.OnDisabledState.BorderRadius = 60;
@@ -412,7 +405,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuButtonDiseaseAdd.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.bunifuButtonDiseaseAdd.OnPressedState.IconLeftImage = null;
             this.bunifuButtonDiseaseAdd.OnPressedState.IconRightImage = null;
-            this.bunifuButtonDiseaseAdd.Size = new System.Drawing.Size(190, 78);
+            this.bunifuButtonDiseaseAdd.Size = new System.Drawing.Size(145, 65);
             this.bunifuButtonDiseaseAdd.TabIndex = 11;
             this.bunifuButtonDiseaseAdd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButtonDiseaseAdd.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -469,16 +462,15 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuDataGridViewDisease.EnableHeadersVisualStyles = false;
             this.bunifuDataGridViewDisease.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(184)))), ((int)(((byte)(196)))));
             this.bunifuDataGridViewDisease.HeaderBackColor = System.Drawing.Color.Crimson;
-            this.bunifuDataGridViewDisease.HeaderBackColor = System.Drawing.Color.Empty;
+            this.bunifuDataGridViewDisease.HeaderBgColor = System.Drawing.Color.Empty;
             this.bunifuDataGridViewDisease.HeaderForeColor = System.Drawing.Color.White;
-            this.bunifuDataGridViewDisease.Location = new System.Drawing.Point(66, 180);
-            this.bunifuDataGridViewDisease.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuDataGridViewDisease.Location = new System.Drawing.Point(44, 117);
             this.bunifuDataGridViewDisease.Name = "bunifuDataGridViewDisease";
             this.bunifuDataGridViewDisease.RowHeadersVisible = false;
             this.bunifuDataGridViewDisease.RowHeadersWidth = 62;
             this.bunifuDataGridViewDisease.RowTemplate.Height = 40;
             this.bunifuDataGridViewDisease.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.bunifuDataGridViewDisease.Size = new System.Drawing.Size(1338, 812);
+            this.bunifuDataGridViewDisease.Size = new System.Drawing.Size(892, 528);
             this.bunifuDataGridViewDisease.TabIndex = 4;
             this.bunifuDataGridViewDisease.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Crimson;
             // 
@@ -496,14 +488,14 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifubuttonDiseaseDeleteSearch.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifubuttonDiseaseDeleteSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(70)))), ((int)(((byte)(113)))));
             this.bunifubuttonDiseaseDeleteSearch.IdleBorderThickness = 1;
-            this.bunifubuttonDiseaseDeleteSearch.IdleCornerRadius = 60;
+            this.bunifubuttonDiseaseDeleteSearch.IdleCornerRadius = 45;
             this.bunifubuttonDiseaseDeleteSearch.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(220)))), ((int)(((byte)(213)))));
             this.bunifubuttonDiseaseDeleteSearch.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(70)))), ((int)(((byte)(113)))));
             this.bunifubuttonDiseaseDeleteSearch.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(58)))), ((int)(((byte)(82)))));
-            this.bunifubuttonDiseaseDeleteSearch.Location = new System.Drawing.Point(1119, 69);
-            this.bunifubuttonDiseaseDeleteSearch.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.bunifubuttonDiseaseDeleteSearch.Location = new System.Drawing.Point(747, 36);
+            this.bunifubuttonDiseaseDeleteSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifubuttonDiseaseDeleteSearch.Name = "bunifubuttonDiseaseDeleteSearch";
-            this.bunifubuttonDiseaseDeleteSearch.Size = new System.Drawing.Size(202, 83);
+            this.bunifubuttonDiseaseDeleteSearch.Size = new System.Drawing.Size(152, 67);
             this.bunifubuttonDiseaseDeleteSearch.TabIndex = 3;
             this.bunifubuttonDiseaseDeleteSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -515,11 +507,10 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.Font = new System.Drawing.Font("Cambria", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(70)))), ((int)(((byte)(113)))));
-            this.bunifuLabel1.Location = new System.Drawing.Point(164, 94);
-            this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuLabel1.Location = new System.Drawing.Point(109, 61);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(127, 31);
+            this.bunifuLabel1.Size = new System.Drawing.Size(83, 20);
             this.bunifuLabel1.TabIndex = 2;
             this.bunifuLabel1.Text = "Tìm kiếm :";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -552,10 +543,9 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuTextBoxDiseaseSearch.IconRight = null;
             this.bunifuTextBoxDiseaseSearch.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuTextBoxDiseaseSearch.Lines = new string[0];
-            this.bunifuTextBoxDiseaseSearch.Location = new System.Drawing.Point(316, 78);
-            this.bunifuTextBoxDiseaseSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuTextBoxDiseaseSearch.Location = new System.Drawing.Point(211, 51);
             this.bunifuTextBoxDiseaseSearch.MaxLength = 32767;
-            this.bunifuTextBoxDiseaseSearch.MinimumSize = new System.Drawing.Size(2, 2);
+            this.bunifuTextBoxDiseaseSearch.MinimumSize = new System.Drawing.Size(1, 1);
             this.bunifuTextBoxDiseaseSearch.Modified = false;
             this.bunifuTextBoxDiseaseSearch.Multiline = false;
             this.bunifuTextBoxDiseaseSearch.Name = "bunifuTextBoxDiseaseSearch";
@@ -579,7 +569,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.bunifuTextBoxDiseaseSearch.OnIdleState = stateProperties4;
-            this.bunifuTextBoxDiseaseSearch.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuTextBoxDiseaseSearch.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.bunifuTextBoxDiseaseSearch.PasswordChar = '\0';
             this.bunifuTextBoxDiseaseSearch.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.bunifuTextBoxDiseaseSearch.PlaceholderText = "Enter text";
@@ -589,7 +579,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuTextBoxDiseaseSearch.SelectionLength = 0;
             this.bunifuTextBoxDiseaseSearch.SelectionStart = 0;
             this.bunifuTextBoxDiseaseSearch.ShortcutsEnabled = true;
-            this.bunifuTextBoxDiseaseSearch.Size = new System.Drawing.Size(777, 60);
+            this.bunifuTextBoxDiseaseSearch.Size = new System.Drawing.Size(518, 39);
             this.bunifuTextBoxDiseaseSearch.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.bunifuTextBoxDiseaseSearch.TabIndex = 1;
             this.bunifuTextBoxDiseaseSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -617,7 +607,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuSnackbar1.ErrorOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(199)))));
             this.bunifuSnackbar1.ErrorOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.bunifuSnackbar1.ErrorOptions.ForeColor = System.Drawing.Color.Black;
-            this.bunifuSnackbar1.ErrorOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon")));
+            this.bunifuSnackbar1.ErrorOptions.Icon = null;
             this.bunifuSnackbar1.ErrorOptions.IconLeftMargin = 12;
             this.bunifuSnackbar1.FadeCloseIcon = false;
             this.bunifuSnackbar1.Host = Bunifu.UI.WinForms.BunifuSnackbar.Hosts.FormOwner;
@@ -631,7 +621,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuSnackbar1.InformationOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(213)))), ((int)(((byte)(255)))));
             this.bunifuSnackbar1.InformationOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.bunifuSnackbar1.InformationOptions.ForeColor = System.Drawing.Color.Black;
-            this.bunifuSnackbar1.InformationOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon1")));
+            this.bunifuSnackbar1.InformationOptions.Icon = null;
             this.bunifuSnackbar1.InformationOptions.IconLeftMargin = 12;
             this.bunifuSnackbar1.Margin = 10;
             this.bunifuSnackbar1.MaximumSize = new System.Drawing.Size(0, 0);
@@ -652,7 +642,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuSnackbar1.SuccessOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(255)))), ((int)(((byte)(237)))));
             this.bunifuSnackbar1.SuccessOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.bunifuSnackbar1.SuccessOptions.ForeColor = System.Drawing.Color.Black;
-            this.bunifuSnackbar1.SuccessOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon2")));
+            this.bunifuSnackbar1.SuccessOptions.Icon = null;
             this.bunifuSnackbar1.SuccessOptions.IconLeftMargin = 12;
             this.bunifuSnackbar1.ViewsMargin = 7;
             this.bunifuSnackbar1.WarningOptions.ActionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -665,17 +655,18 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuSnackbar1.WarningOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(143)))));
             this.bunifuSnackbar1.WarningOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.bunifuSnackbar1.WarningOptions.ForeColor = System.Drawing.Color.Black;
-            this.bunifuSnackbar1.WarningOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon3")));
+            this.bunifuSnackbar1.WarningOptions.Icon = null;
             this.bunifuSnackbar1.WarningOptions.IconLeftMargin = 12;
             this.bunifuSnackbar1.ZoomCloseIcon = true;
             // 
             // FormMainDisease
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.bunifuGradientPanel1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormMainDisease";
-            this.Size = new System.Drawing.Size(1500, 1226);
+            this.Size = new System.Drawing.Size(1000, 797);
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuShadowPanel1.ResumeLayout(false);
             this.bunifuShadowPanel1.PerformLayout();

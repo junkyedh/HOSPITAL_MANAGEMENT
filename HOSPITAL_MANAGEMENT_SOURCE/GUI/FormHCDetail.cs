@@ -7,13 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using HOSPITAL_MANAGEMENT_SOURCE.DAL;
+using HOSPITAL_MANAGEMENT_SOURCE.DTO;
 using System.Windows.Forms;
 
 namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
 {
     public partial class FormHCDetail : Form
     {
-        public HospitalizationCertificate HCDetail { get; set; }
+        public HospitalizationCertificateDTO HCDetail { get; set; }
         public String UserAction { get; set; }
         public FormHCDetail()
         {
@@ -55,14 +56,14 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             bunifuDatePickerHospitalizate.Enabled = false;
             bunifuDatePickerHospitalizate.Value = DateTime.Today;
         }
-        public FormHCDetail(HospitalizationCertificate hcDetail, String userAction)
+        public FormHCDetail(HospitalizationCertificateDTO hcDetail, String userAction)
         {
             InitializeComponent();
             this.HCDetail = hcDetail;
             this.UserAction = userAction;
             SetHCDetail(hcDetail);
         }
-        private void SetHCDetail(HospitalizationCertificate hcDetail)
+        private void SetHCDetail(HospitalizationCertificateDTO hcDetail)
         {
             bunifuTextBoxHICD.Text = hcDetail.HCID.ToString();
             bunifuTextBoxStaffID.Text = hcDetail.StaffID.ToString();
@@ -153,6 +154,11 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
         }
 
         private void bunifuTextBoxStaffID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuTextBoxHICD_TextChanged(object sender, EventArgs e)
         {
 
         }
