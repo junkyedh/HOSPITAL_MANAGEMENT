@@ -11,7 +11,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
     public static class SqlResult
     {
         //Get ConnectionString in app.config
-        private static string sqlConnectString = ConfigurationManager.ConnectionStrings[""].ConnectionString;
+        private static string sqlConnectString = ConfigurationManager.ConnectionStrings["Server=ep-jolly-cherry-a5ub2x8e.us-east-2.aws.neon.tech;Port=5432;Database=hospital_management;User Id=hospital_management_owner;Password=sIFZ6kcA0iTj;"].ConnectionString;
 
         //Execute insert, update, delete command without parameters
         public static int ExecuteNonQuery(string commandString)

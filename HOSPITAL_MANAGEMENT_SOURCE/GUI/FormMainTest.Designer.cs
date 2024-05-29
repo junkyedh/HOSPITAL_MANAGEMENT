@@ -630,7 +630,7 @@
             this.bunifuDataGridViewMaterial.EnableHeadersVisualStyles = false;
             this.bunifuDataGridViewMaterial.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(184)))), ((int)(((byte)(196)))));
             this.bunifuDataGridViewMaterial.HeaderBackColor = System.Drawing.Color.Crimson;
-            this.bunifuDataGridViewMaterial.HeaderBgColor = System.Drawing.Color.Empty;
+            this.bunifuDataGridViewMaterial.HeaderBackColor = System.Drawing.Color.Empty;
             this.bunifuDataGridViewMaterial.HeaderForeColor = System.Drawing.Color.White;
             this.bunifuDataGridViewMaterial.Location = new System.Drawing.Point(35, 120);
             this.bunifuDataGridViewMaterial.Name = "bunifuDataGridViewMaterial";
@@ -989,7 +989,7 @@
             this.bunifuDataGridView1.EnableHeadersVisualStyles = false;
             this.bunifuDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(184)))), ((int)(((byte)(196)))));
             this.bunifuDataGridView1.HeaderBackColor = System.Drawing.Color.Crimson;
-            this.bunifuDataGridView1.HeaderBgColor = System.Drawing.Color.Empty;
+            this.bunifuDataGridView1.HeaderBackColor = System.Drawing.Color.Empty;
             this.bunifuDataGridView1.HeaderForeColor = System.Drawing.Color.White;
             this.bunifuDataGridView1.Location = new System.Drawing.Point(70, 195);
             this.bunifuDataGridView1.Name = "bunifuDataGridView1";
@@ -1053,7 +1053,7 @@
             this.bunifuDataGridView2.EnableHeadersVisualStyles = false;
             this.bunifuDataGridView2.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(184)))), ((int)(((byte)(196)))));
             this.bunifuDataGridView2.HeaderBackColor = System.Drawing.Color.Crimson;
-            this.bunifuDataGridView2.HeaderBgColor = System.Drawing.Color.Empty;
+            this.bunifuDataGridView2.HeaderBackColor = System.Drawing.Color.Empty;
             this.bunifuDataGridView2.HeaderForeColor = System.Drawing.Color.White;
             this.bunifuDataGridView2.Location = new System.Drawing.Point(70, 430);
             this.bunifuDataGridView2.Name = "bunifuDataGridView2";

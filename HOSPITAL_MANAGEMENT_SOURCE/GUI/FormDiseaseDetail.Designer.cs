@@ -323,7 +323,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuToolTip1.SetToolTipIcon(this.buttonClose, null);
             this.bunifuToolTip1.SetToolTipTitle(this.buttonClose, "");
             this.buttonClose.UseDefaultRadiusAndThickness = true;
-            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
+            //this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
             // buttonOk
             // 
@@ -416,7 +416,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuToolTip1.SetToolTipIcon(this.buttonOk, null);
             this.bunifuToolTip1.SetToolTipTitle(this.buttonOk, "");
             this.buttonOk.UseDefaultRadiusAndThickness = true;
-            this.buttonOk.Click += new System.EventHandler(this.buttonOk_Click);
+            //this.buttonOk.Click += new System.EventHandler(this.buttonOk_Click);
             // 
             // labelDiseaseSymptom
             // 
@@ -514,7 +514,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuToolTip1.SetToolTipTitle(this.textBoxDiseaseSymptom, "Warning");
             this.textBoxDiseaseSymptom.UseSystemPasswordChar = false;
             this.textBoxDiseaseSymptom.WordWrap = true;
-            this.textBoxDiseaseSymptom.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxDiseaseSymptom_KeyPress);
+            //this.textBoxDiseaseSymptom.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxDiseaseSymptom_KeyPress);
             // 
             // labelDiseaseName
             // 
@@ -612,7 +612,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuToolTip1.SetToolTipTitle(this.textBoxDiseaseName, "Warning");
             this.textBoxDiseaseName.UseSystemPasswordChar = false;
             this.textBoxDiseaseName.WordWrap = true;
-            this.textBoxDiseaseName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxDiseaseName_KeyPress);
+            //this.textBoxDiseaseName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxDiseaseName_KeyPress);
             // 
             // textBoxDiseaseID
             // 
@@ -751,7 +751,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuToolTip1.SetToolTipIcon(this.bunifuPictureBox1, null);
             this.bunifuToolTip1.SetToolTipTitle(this.bunifuPictureBox1, "");
             this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
-            this.bunifuPictureBox1.Click += new System.EventHandler(this.bunifuPictureBox1_Click);
+            //this.bunifuPictureBox1.Click += new System.EventHandler(this.bunifuPictureBox1_Click);
             // 
             // bunifuPictureBox2
             // 

@@ -14,7 +14,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
 {
     public partial class FormAssignDetail : Form
     {
-       /// public Assignment AssignDetail { get; set; }
+        public Assignment AssignDetail { get; set; }
         public String UserAction { get; set; }
         private static List<Staff> listStaff = new List<Staff>();
         private static List<AssignmentDetail> listAD = new List<AssignmentDetail>();
@@ -49,16 +49,16 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             }
             listBoxSystemStaff.SelectedIndex = 0;
 
-           /* DataTable dtAD = AssignmentDetail.GetListAssignmentDetails(assignDetail.AssignID);*/
-            /*for (int i = 0; i < dtAD.Rows.Count; i++)
+            List<AssignmentDetailDTO> assignmentDetails = AssignmentDetail.GetListAssignmentDetails(assignDetail.AssignID);
+            foreach (var detail in assignmentDetails)
             {
-                String staffName = dtAD.Rows[i][2].ToString() + " " + dtAD.Rows[i][3].ToString();
+                String staffName = detail.StaffName;
                 AssignmentDetail newAD = new AssignmentDetail();
-                newAD.AssignID = Convert.ToInt32(dtAD.Rows[i][0]);
-                newAD.StaffID = Convert.ToInt32(dtAD.Rows[i][1]);
+                newAD.AssignID = detail.AssignID;
+                newAD.StaffID = detail.StaffID;
                 listAD.Add(newAD);
                 listBoxCurrentStaff.Items.Add(staffName);
-            }*/
+            }
             if (listBoxCurrentStaff.Items.Count > 0)
                 listBoxCurrentStaff.SelectedIndex = 0;
         }
@@ -66,7 +66,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
        
         private void SetADForInsert(int patientID)
         {
-            HospitalizationCertificate newHC = HospitalizationCertificate.GetHC(Convert.ToDecimal(patientID));
+            HospitalizationCertificateDTO newHC = HospitalizationCertificate.GetHC(Convert.ToDecimal(patientID));
             textBoxPatientID.Text = patientID.ToString();
             dateDischarge.Value = DateTime.Today;
             dateCreate.Value = DateTime.Today;
@@ -95,7 +95,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
                 {
                     try
                     {
-                        Assignment newAssign = new Assignment();
+                        AssignmentDTO newAssign = new AssignmentDTO();
                         newAssign.PatientID = Convert.ToInt32(textBoxPatientID.Text);
                         newAssign.DischargedDate = dateDischarge.Value;
                         newAssign.HospitalizateDate = dateHospitalize.Value;
@@ -113,7 +113,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
                                     {
                                         AssignmentDetail newAD = listAD[i];
                                         newAD.AssignID = newAssign.AssignID;
-                                        AssignmentDetail.InsertAssignmentDetails(newAD);
+                                        AssignmentDetail.InsertAssignmentDetails(newAD.ToDTO());
                                     }
                                     listAD.Clear();
                                     bunifuSnackbar1.Show(this, "Cập nhập thông tin bảng phân công thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
@@ -130,7 +130,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
                                 for (int i = 0; i < listAD.Count; i++)
                                 {
                                     listAD[i].AssignID = curAssignID;
-                                    AssignmentDetail.InsertAssignmentDetails(listAD[i]);
+                                    AssignmentDetail.InsertAssignmentDetails(listAD[i].ToDTO());
                                 }
                                 bunifuSnackbar1.Show(this, "Thêm bảng phân công thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                                 return;
@@ -246,6 +246,11 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
         }
 
         private void dateHospitalize_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonInsertFunction_Click_1(object sender, EventArgs e)
         {
 
         }

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using HOSPITAL_MANAGEMENT_SOURCE.DAL;
 using HOSPITAL_MANAGEMENT_SOURCE.DTO;
 using System.Globalization;
 
@@ -15,7 +16,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
 {
     public partial class FormBillDetail : Form
     {
-        public Bill BillDetail { get; set; }
+        public BillDTO BillDetail { get; set; }
         public Staff StaffDetail { get; set; }
         public Patient PatientDetail { get; set; }
         public string UserAction { get; set; }
@@ -76,22 +77,22 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             {
                 case Bill.MEDICINEBILL:
 
-                    MedicineBillDetail newMedicineBillDetail = new MedicineBillDetail();
+                    MedicineBillDetailDTO newMedicineBillDetailDTO = new MedicineBillDetailDTO();
 
                     foreach (DataRow record in ((DataTable)bunifuDataGridViewBillDetail.DataSource).Rows)
                     {
-                        newMedicineBillDetail.BillID = BillDetail.BillID;
-                        newMedicineBillDetail.MedicineID = Convert.ToInt32(record["MEDICINEID"]);
-                        newMedicineBillDetail.Quantity = Convert.ToInt32(record["Số lượng"]);
-                        newMedicineBillDetail.Price = Convert.ToDecimal(record["Giá"]);
+                        newMedicineBillDetailDTO.BillID = BillDetail.BillID;
+                        newMedicineBillDetailDTO.MedicineID = Convert.ToInt32(record["MEDICINEID"]);
+                        newMedicineBillDetailDTO.Quantity = Convert.ToInt32(record["Số lượng"]);
+                        newMedicineBillDetailDTO.Price = Convert.ToDecimal(record["Giá"]);
 
-                        MedicineBillDetail.InsertMedicineBillDetail(newMedicineBillDetail);
+                        MedicineBillDetail.InsertMedicineBillDetail(newMedicineBillDetailDTO);
                     }
                     break;
 
                 case Bill.SERVICEBILL:
 
-                    ServiceBillDetail newServiceBillDetail = new ServiceBillDetail();
+                    ServiceBillDetailDTO newServiceBillDetail = new ServiceBillDetailDTO();
 
                     foreach (DataRow record in ((DataTable)bunifuDataGridViewBillDetail.DataSource).Rows)
                     {
@@ -105,7 +106,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
                     break;
                 case Bill.MATERIALBILL:
 
-                    RentMaterialBillDetail newRentMaterialBillDetail = new RentMaterialBillDetail();
+                    RentMaterialBillDetailDTO newRentMaterialBillDetail = new RentMaterialBillDetailDTO();
 
                     foreach (DataRow record in ((DataTable)bunifuDataGridViewBillDetail.DataSource).Rows)
                     {
@@ -158,9 +159,9 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
                         Bill.UpdateBill(BillDetail);
                     }
 
-                    Bill billReport;
+                    BillDTO billReport;
 
-                    /*if ("insert".Equals(UserAction))
+                    if ("insert".Equals(UserAction))
                     {
                         billReport = Bill.GetBill(Bill.GetCurrentBillID());
                     }
@@ -169,9 +170,9 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
                         billReport = BillDetail;
                     }
 
-                    FormReport reportForm = new FormReport();
+                    //FormReport reportForm = new FormReport();
 
-                    switch (billReport.BillTypeID)
+                    /*switch (billReport.BillTypeID)
                     {
                         case Bill.MEDICINEBILL:
                             reportForm.ReportType = "MEDICINEBILL";
@@ -190,8 +191,8 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
                             return;
                     }
 
-                    reportForm.Show();*/
-
+                    reportForm.Show();
+*/
                     this.Close();
                 }
             }
@@ -256,6 +257,11 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
         }
 
         private void bunifuShadowPanel1_ControlAdded(object sender, ControlEventArgs e)
+        {
+
+        }
+
+        private void bunifuTextBoxBillID_TextChanged(object sender, EventArgs e)
         {
 
         }

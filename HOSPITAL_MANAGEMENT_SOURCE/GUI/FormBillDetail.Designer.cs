@@ -421,6 +421,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuToolTip1.SetToolTipTitle(this.bunifuTextBoxBillID, "");
             this.bunifuTextBoxBillID.UseSystemPasswordChar = false;
             this.bunifuTextBoxBillID.WordWrap = true;
+            this.bunifuTextBoxBillID.TextChanged += new System.EventHandler(this.bunifuTextBoxBillID_TextChanged);
             // 
             // bunifuLabelBillState
             // 

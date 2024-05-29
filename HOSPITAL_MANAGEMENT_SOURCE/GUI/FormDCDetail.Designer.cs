@@ -615,6 +615,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuTextBoxDCID.TextPlaceholder = "Nhập mã phiếu xuất viện";
             this.bunifuTextBoxDCID.UseSystemPasswordChar = false;
             this.bunifuTextBoxDCID.WordWrap = true;
+            this.bunifuTextBoxDCID.TextChanged += new System.EventHandler(this.bunifuTextBoxDCID_TextChanged);
             // 
             // bunifuLabel6
             // 
