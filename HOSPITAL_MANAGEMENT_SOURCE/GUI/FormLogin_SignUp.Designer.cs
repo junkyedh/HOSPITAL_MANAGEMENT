@@ -972,7 +972,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuPictureBox4.BorderRadius = 13;
             this.bunifuPictureBox4.Image = global::HOSPITAL_MANAGEMENT_SOURCE.Properties.Resources.icons8_closed_eye_40;
             this.bunifuPictureBox4.IsCircle = true;
-            this.bunifuPictureBox4.Location = new System.Drawing.Point(398, 81);
+            this.bunifuPictureBox4.Location = new System.Drawing.Point(397, 81);
             this.bunifuPictureBox4.Name = "bunifuPictureBox4";
             this.bunifuPictureBox4.Size = new System.Drawing.Size(27, 27);
             this.bunifuPictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -982,6 +982,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuToolTip1.SetToolTipIcon(this.bunifuPictureBox4, null);
             this.bunifuToolTip1.SetToolTipTitle(this.bunifuPictureBox4, "");
             this.bunifuPictureBox4.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
+            this.bunifuPictureBox4.Click += new System.EventHandler(this.bunifuPictureBox4_Click);
             // 
             // bunifuTextBox2
             // 
@@ -1079,6 +1080,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuToolTip1.SetToolTipIcon(this.bunifuPictureBox5, null);
             this.bunifuToolTip1.SetToolTipTitle(this.bunifuPictureBox5, "");
             this.bunifuPictureBox5.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
+            this.bunifuPictureBox5.Click += new System.EventHandler(this.bunifuPictureBox5_Click);
             // 
             // bunifuButton10
             // 
