@@ -173,5 +173,19 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
             return totalPrice;
         }
+
+        public BillDTO ToDTO ()
+        {
+            return new BillDTO
+            {
+                BillID = this.BillID,
+                BillTypeID = this.BillTypeID,
+                PatientID = this.PatientID,
+                StaffID = this.StaffID,
+                Date = this.Date,
+                TotalPrice = this.TotalPrice,
+                State = this.State
+            };
+        }
     }
 }

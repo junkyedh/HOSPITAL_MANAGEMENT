@@ -21,5 +21,10 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
         {
 
         }
+
+        private void bunifuButtonClose_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

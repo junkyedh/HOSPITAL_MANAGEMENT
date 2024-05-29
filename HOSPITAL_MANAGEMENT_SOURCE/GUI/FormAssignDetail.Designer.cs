@@ -163,7 +163,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(671, 769);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(667, 780);
             this.bunifuGradientPanel1.TabIndex = 1;
             this.bunifuGradientPanel1.Click += new System.EventHandler(this.bunifuGradientPanel1_Click);
             // 
@@ -197,7 +197,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuShadowPanel1.Controls.Add(this.buttonRemoveFunction);
             this.bunifuShadowPanel1.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Gradient;
             this.bunifuShadowPanel1.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
-            this.bunifuShadowPanel1.Location = new System.Drawing.Point(34, 26);
+            this.bunifuShadowPanel1.Location = new System.Drawing.Point(41, 33);
             this.bunifuShadowPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuShadowPanel1.Name = "bunifuShadowPanel1";
             this.bunifuShadowPanel1.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(220)))), ((int)(((byte)(213)))));
@@ -253,7 +253,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.buttonInsertFunction.FadeWhenInactive = true;
             this.buttonInsertFunction.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
             this.buttonInsertFunction.Image = global::HOSPITAL_MANAGEMENT_SOURCE.Properties.Resources._81328514_removebg_preview;
-            this.buttonInsertFunction.ImageActive = null;
+            this.buttonInsertFunction.ActiveImage = null;
             this.buttonInsertFunction.ImageLocation = null;
             this.buttonInsertFunction.ImageMargin = 40;
             this.buttonInsertFunction.ImageSize = new System.Drawing.Size(74, 63);
@@ -271,8 +271,9 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.buttonInsertFunction.TabIndex = 61;
             this.buttonInsertFunction.ToolTipText = "";
             this.buttonInsertFunction.WaitOnLoad = false;
-            this.buttonInsertFunction.Zoom = 40;
+            this.buttonInsertFunction.ImageMargin = 40;
             this.buttonInsertFunction.ZoomSpeed = 10;
+            this.buttonInsertFunction.Click += new System.EventHandler(this.buttonInsertFunction_Click_1);
             // 
             // buttonClose
             // 
@@ -316,7 +317,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.buttonClose.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.buttonClose.IconSize = 25;
             this.buttonClose.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(119)))), ((int)(((byte)(102)))));
-            this.buttonClose.IdleBorderRadius = 60;
+            this.buttonClose.IdleBorderRadius = 40;
             this.buttonClose.IdleBorderThickness = 1;
             this.buttonClose.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(220)))), ((int)(((byte)(213)))));
             this.buttonClose.IdleIconLeftImage = null;
@@ -325,7 +326,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.buttonClose.Location = new System.Drawing.Point(491, 610);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.buttonClose.OnDisabledState.BorderRadius = 60;
+            this.buttonClose.OnDisabledState.BorderRadius = 40;
             this.buttonClose.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.buttonClose.OnDisabledState.BorderThickness = 1;
             this.buttonClose.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -333,7 +334,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.buttonClose.OnDisabledState.IconLeftImage = null;
             this.buttonClose.OnDisabledState.IconRightImage = null;
             this.buttonClose.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.buttonClose.onHoverState.BorderRadius = 60;
+            this.buttonClose.onHoverState.BorderRadius = 40;
             this.buttonClose.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.buttonClose.onHoverState.BorderThickness = 1;
             this.buttonClose.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(217)))), ((int)(((byte)(183)))));
@@ -341,7 +342,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.buttonClose.onHoverState.IconLeftImage = null;
             this.buttonClose.onHoverState.IconRightImage = null;
             this.buttonClose.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(119)))), ((int)(((byte)(102)))));
-            this.buttonClose.OnIdleState.BorderRadius = 60;
+            this.buttonClose.OnIdleState.BorderRadius = 40;
             this.buttonClose.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.buttonClose.OnIdleState.BorderThickness = 1;
             this.buttonClose.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(220)))), ((int)(((byte)(213)))));
@@ -349,7 +350,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.buttonClose.OnIdleState.IconLeftImage = null;
             this.buttonClose.OnIdleState.IconRightImage = null;
             this.buttonClose.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.buttonClose.OnPressedState.BorderRadius = 60;
+            this.buttonClose.OnPressedState.BorderRadius = 40;
             this.buttonClose.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.buttonClose.OnPressedState.BorderThickness = 1;
             this.buttonClose.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
@@ -407,7 +408,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.buttonOk.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.buttonOk.IconSize = 25;
             this.buttonOk.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(119)))), ((int)(((byte)(102)))));
-            this.buttonOk.IdleBorderRadius = 60;
+            this.buttonOk.IdleBorderRadius = 40;
             this.buttonOk.IdleBorderThickness = 1;
             this.buttonOk.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(220)))), ((int)(((byte)(213)))));
             this.buttonOk.IdleIconLeftImage = null;
@@ -416,7 +417,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.buttonOk.Location = new System.Drawing.Point(361, 610);
             this.buttonOk.Name = "buttonOk";
             this.buttonOk.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.buttonOk.OnDisabledState.BorderRadius = 60;
+            this.buttonOk.OnDisabledState.BorderRadius = 40;
             this.buttonOk.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.buttonOk.OnDisabledState.BorderThickness = 1;
             this.buttonOk.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -424,7 +425,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.buttonOk.OnDisabledState.IconLeftImage = null;
             this.buttonOk.OnDisabledState.IconRightImage = null;
             this.buttonOk.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.buttonOk.onHoverState.BorderRadius = 60;
+            this.buttonOk.onHoverState.BorderRadius = 40;
             this.buttonOk.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.buttonOk.onHoverState.BorderThickness = 1;
             this.buttonOk.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(217)))), ((int)(((byte)(183)))));
@@ -432,7 +433,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.buttonOk.onHoverState.IconLeftImage = null;
             this.buttonOk.onHoverState.IconRightImage = null;
             this.buttonOk.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(119)))), ((int)(((byte)(102)))));
-            this.buttonOk.OnIdleState.BorderRadius = 60;
+            this.buttonOk.OnIdleState.BorderRadius = 40;
             this.buttonOk.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.buttonOk.OnIdleState.BorderThickness = 1;
             this.buttonOk.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(220)))), ((int)(((byte)(213)))));
@@ -440,7 +441,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.buttonOk.OnIdleState.IconLeftImage = null;
             this.buttonOk.OnIdleState.IconRightImage = null;
             this.buttonOk.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.buttonOk.OnPressedState.BorderRadius = 60;
+            this.buttonOk.OnPressedState.BorderRadius = 40;
             this.buttonOk.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.buttonOk.OnPressedState.BorderThickness = 1;
             this.buttonOk.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
@@ -490,7 +491,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.labelX5.CursorType = null;
             this.labelX5.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.labelX5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(70)))), ((int)(((byte)(113)))));
-            this.labelX5.Location = new System.Drawing.Point(73, 304);
+            this.labelX5.Location = new System.Drawing.Point(67, 317);
             this.labelX5.Name = "labelX5";
             this.labelX5.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.labelX5.Size = new System.Drawing.Size(64, 19);
@@ -524,7 +525,6 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.dateHospitalize.Size = new System.Drawing.Size(308, 32);
             this.dateHospitalize.TabIndex = 24;
             this.dateHospitalize.Value = new System.DateTime(2023, 12, 8, 4, 30, 0, 0);
-            this.dateHospitalize.ValueChanged += new System.EventHandler(this.dateHospitalize_ValueChanged);
             // 
             // bunifuButton2
             // 
@@ -774,7 +774,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.labelX4.CursorType = null;
             this.labelX4.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.labelX4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(70)))), ((int)(((byte)(113)))));
-            this.labelX4.Location = new System.Drawing.Point(73, 262);
+            this.labelX4.Location = new System.Drawing.Point(67, 271);
             this.labelX4.Name = "labelX4";
             this.labelX4.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.labelX4.Size = new System.Drawing.Size(108, 19);
@@ -790,7 +790,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.labelX3.CursorType = null;
             this.labelX3.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.labelX3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(70)))), ((int)(((byte)(113)))));
-            this.labelX3.Location = new System.Drawing.Point(73, 219);
+            this.labelX3.Location = new System.Drawing.Point(67, 227);
             this.labelX3.Name = "labelX3";
             this.labelX3.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.labelX3.Size = new System.Drawing.Size(114, 19);
@@ -807,7 +807,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.labelRoleName.CursorType = null;
             this.labelRoleName.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.labelRoleName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(70)))), ((int)(((byte)(113)))));
-            this.labelRoleName.Location = new System.Drawing.Point(73, 170);
+            this.labelRoleName.Location = new System.Drawing.Point(67, 175);
             this.labelRoleName.Name = "labelRoleName";
             this.labelRoleName.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.labelRoleName.Size = new System.Drawing.Size(107, 19);
@@ -950,7 +950,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.textBoxAssignID.OnIdleState = stateProperties8;
             this.textBoxAssignID.Padding = new System.Windows.Forms.Padding(4);
             this.textBoxAssignID.PasswordChar = '\0';
-            this.textBoxAssignID.PlaceholderForeColor = System.Drawing.SystemColors.GrayText;
+            this.textBoxAssignID.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.textBoxAssignID.PlaceholderText = "Nhập mã phân công";
             this.textBoxAssignID.ReadOnly = true;
             this.textBoxAssignID.ScrollBars = System.Windows.Forms.ScrollBars.None;
@@ -978,7 +978,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.labelRoleID.CursorType = System.Windows.Forms.Cursors.Default;
             this.labelRoleID.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelRoleID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(70)))), ((int)(((byte)(113)))));
-            this.labelRoleID.Location = new System.Drawing.Point(73, 115);
+            this.labelRoleID.Location = new System.Drawing.Point(67, 121);
             this.labelRoleID.Name = "labelRoleID";
             this.labelRoleID.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.labelRoleID.Size = new System.Drawing.Size(105, 19);
@@ -996,7 +996,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold);
             this.bunifuLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(70)))), ((int)(((byte)(113)))));
-            this.bunifuLabel1.Location = new System.Drawing.Point(270, 53);
+            this.bunifuLabel1.Location = new System.Drawing.Point(287, 46);
             this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1015,7 +1015,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuPictureBox1.BorderRadius = 72;
             this.bunifuPictureBox1.Image = global::HOSPITAL_MANAGEMENT_SOURCE.Properties.Resources._19767_removebg_preview;
             this.bunifuPictureBox1.IsCircle = false;
-            this.bunifuPictureBox1.Location = new System.Drawing.Point(135, -7);
+            this.bunifuPictureBox1.Location = new System.Drawing.Point(135, -29);
             this.bunifuPictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuPictureBox1.Name = "bunifuPictureBox1";
             this.bunifuPictureBox1.Size = new System.Drawing.Size(144, 144);
@@ -1042,7 +1042,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.buttonRemoveFunction.FadeWhenInactive = true;
             this.buttonRemoveFunction.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
             this.buttonRemoveFunction.Image = global::HOSPITAL_MANAGEMENT_SOURCE.Properties.Resources._81328524_removebg_preview;
-            this.buttonRemoveFunction.ImageActive = null;
+            this.buttonRemoveFunction.ActiveImage = null;
             this.buttonRemoveFunction.ImageLocation = null;
             this.buttonRemoveFunction.ImageMargin = 40;
             this.buttonRemoveFunction.ImageSize = new System.Drawing.Size(74, 63);
@@ -1060,14 +1060,14 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.buttonRemoveFunction.TabIndex = 60;
             this.buttonRemoveFunction.ToolTipText = "";
             this.buttonRemoveFunction.WaitOnLoad = false;
-            this.buttonRemoveFunction.Zoom = 40;
+            this.buttonRemoveFunction.ImageMargin = 40;
             this.buttonRemoveFunction.ZoomSpeed = 10;
             // 
             // FormAssignDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(670, 767);
+            this.ClientSize = new System.Drawing.Size(739, 802);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormAssignDetail";

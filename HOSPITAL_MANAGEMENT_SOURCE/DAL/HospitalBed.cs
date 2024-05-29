@@ -139,5 +139,15 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             else
                 return true;
         }
+
+        public HospitalBedDTO ToDTO ()
+        {
+            return new HospitalBedDTO
+            {
+                    BedID = this.BedID,
+                    Patient = this.Patient,
+                    State = this.State
+            };
+        }
     }
 }

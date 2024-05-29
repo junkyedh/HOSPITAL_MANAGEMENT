@@ -6,15 +6,17 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using HOSPITAL_MANAGEMENT_SOURCE.DAL;
+using HOSPITAL_MANAGEMENT_SOURCE.DTO;
 using System.Windows.Forms;
 
 namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
 {
     public partial class FormECDetail : Form
     {
-        //public ExaminationCertificate ECDetail { get; set; }
+        public ExaminationCertificate ECDetail { get; set; }
         public String UserAction { get; set; }
-        //public Staff LoginStaff { get; set; }
+        public Staff LoginStaff { get; set; }
 
         public FormECDetail()
         {
@@ -34,7 +36,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             comboBoxState.Enabled = false;
             dateCreate.Enabled = false;
         }
-       /* public FormECDetail(ExaminationCertificate ecDetail, String userAction)
+        public FormECDetail(ExaminationCertificate ecDetail, String userAction)
         {
             InitializeComponent();
             this.ECDetail = ecDetail;
@@ -72,7 +74,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
 
             dateCreate.Enabled = false;
             comboBoxState.Enabled = false;
-        }*/
+        }
         private void buttonClose_Click(object sender, System.EventArgs e)
         {
             this.Close();
@@ -80,7 +82,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
 
         private void buttonOk_Click(object sender, System.EventArgs e)
         {
-            /*try
+            try
             {
                 if (string.IsNullOrEmpty(textBoxResult.Text))
                 {
@@ -132,7 +134,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
                     newEC.Result = textBoxResult.Text;
                     if (ExaminationCertificate.InsertEC(newEC) > 0)
                     {
-                        FormReport reportForm = new FormReport();
+                        /*FormReport reportForm = new FormReport();
 
                         reportForm.ReportType = "EC";
                         reportForm.ObjectID = ExaminationCertificate.GetCurrentECID();
@@ -144,7 +146,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
 
                         Bill newBill = new Bill(Bill.SERVICEBILL, patientID, staffID);
                         FormBillDetail billDetailForm = new FormBillDetail("insertExamination", newBill);
-                        billDetailForm.ShowDialog();
+                        billDetailForm.ShowDialog();*/
                     }
                 }
             }
@@ -152,7 +154,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             {
                 bunifuSnackbar1.Show(this, "Lỗi dữ liệu", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                 return;
-            }*/
+            }
             this.Close();
         }
 

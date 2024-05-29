@@ -1,10 +1,11 @@
 ﻿using Npgsql;
 using System;
 using System.Data;
+using HOSPITAL_MANAGEMENT_SOURCE.DTO;
 
 namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 {
-    public class HeathMonitoringNoteDTO
+    public class HealthMonitoringNote
     {
         public int HNID { get; set; }
         public int PatientID { get; set; }
@@ -14,7 +15,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         public string BloodPressure { get; set; }
         public string PatientState { get; set; }
 
-        public static int InsertHN(HeathMonitoringNoteDTO newHN)
+        public static int InsertHN(HealthMonitoringNoteDTO newHN)
         {
             string sqlInsert = @"INSERT INTO HEATHMONITORINGNOTE(PATIENTID, STAFFID, DATE, WEIGHT, BLOODPRESSURE, PATIENTSTATE)
                                 VALUES (@PATIENTID, @STAFFID, @DATE, @WEIGHT, @BLOODPRESSURE, @PATIENTSTATE)";
@@ -29,7 +30,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return NpgSqlResult.ExecuteNonQuery(sqlInsert, npgsqlParameters);
         }
 
-        public static int UpdateHN(HeathMonitoringNoteDTO updateHN)
+        public static int UpdateHN(HealthMonitoringNoteDTO updateHN)
         {
             string sqlUpdate = @"UPDATE HEATHMONITORINGNOTE
                                 SET PATIENTID = @PATIENTID, STAFFID = @STAFFID, DATE = @DATE, WEIGHT = @WEIGHT, BLOODPRESSURE = @BLOODPRESSURE, PATIENTSTATE = @PATIENTSTATE
@@ -70,7 +71,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return NpgSqlResult.ExecuteQuery(sqlSelect, npgsqlParameters);
         }
 
-        public static HeathMonitoringNoteDTO GetHN(int hNID)
+        public static HealthMonitoringNoteDTO GetHN(int hNID)
         {
             string sqlSelect = @"SELECT HNID, PATIENTID, STAFFID, DATE, WEIGHT, BLOODPRESSURE, PATIENTSTATE
                                  FROM HEATHMONITORINGNOTE
@@ -79,7 +80,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             DataTable dataTable = NpgSqlResult.ExecuteQuery(sqlSelect, npgsqlParameters);
             if (dataTable.Rows.Count > 0)
             {
-                return new HeathMonitoringNoteDTO
+                return new HealthMonitoringNoteDTO
                 {
                     HNID = Convert.ToInt32(dataTable.Rows[0]["HNID"]),
                     PatientID = Convert.ToInt32(dataTable.Rows[0]["PATIENTID"]),
@@ -91,6 +92,21 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
                 };
             }
             return null;
+        }
+
+        public HealthMonitoringNoteDTO ToDTO ()
+        {
+            return new HealthMonitoringNoteDTO
+            {
+                HNID = this.HNID,
+                PatientID = this.PatientID,
+                StaffID = this.StaffID,
+                Date = this.Date,
+                Weight = this.Weight,
+                BloodPressure = this.BloodPressure,
+                PatientState = this.PatientState
+
+            };
         }
     }
 }

@@ -18,7 +18,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             this.StaffID = staffID;
         }
 
-        public int InsertAssignmentDetails(AssignmentDetailDTO newAD)
+        public static int InsertAssignmentDetails(AssignmentDetailDTO newAD)
         {
             string sqlInsert = @"INSERT INTO ASSIGNMENTDETAIL(ASSIGNID, STAFFID)
                                 VALUES (@ASSIGNID, @STAFFID)";
@@ -40,7 +40,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return NpgSqlResult.ExecuteNonQuery(sqlDelete, npgsqlParameters);
         }
 
-        public int DeleteAssignmentDetails(int assignmentID)
+        public static int DeleteAssignmentDetails(int assignmentID)
         {
             string sqlDelete = @"DELETE FROM ASSIGNMENTDETAIL
                                 WHERE (ASSIGNID = @ASSIGNID)";
@@ -48,7 +48,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return NpgSqlResult.ExecuteNonQuery(sqlDelete, npgsqlParameters);
         }
 
-        public List<AssignmentDetailDTO> GetListAssignmentDetails(int assignmentID)
+        public static List<AssignmentDetailDTO> GetListAssignmentDetails(int assignmentID)
         {
             List<AssignmentDetailDTO> list = new List<AssignmentDetailDTO>();
             string sqlSelect = @"SELECT ASSIGNMENTDETAIL.ASSIGNID, ASSIGNMENTDETAIL.STAFFID, STAFF.LASTNAME, STAFF.FIRSTNAME
@@ -67,6 +67,16 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             }
 
             return list;
+        }
+
+        public AssignmentDetailDTO ToDTO()
+        {
+            return new AssignmentDetailDTO
+            {
+                AssignID = this.AssignID,
+                StaffID = this.StaffID,
+                StaffName = string.Empty
+            };
         }
     }
 }

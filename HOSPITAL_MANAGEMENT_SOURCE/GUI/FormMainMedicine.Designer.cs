@@ -469,7 +469,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuDataGridViewMedicine.EnableHeadersVisualStyles = false;
             this.bunifuDataGridViewMedicine.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(184)))), ((int)(((byte)(196)))));
             this.bunifuDataGridViewMedicine.HeaderBackColor = System.Drawing.Color.Crimson;
-            this.bunifuDataGridViewMedicine.HeaderBgColor = System.Drawing.Color.Empty;
+            this.bunifuDataGridViewMedicine.HeaderBackColor = System.Drawing.Color.Empty;
             this.bunifuDataGridViewMedicine.HeaderForeColor = System.Drawing.Color.White;
             this.bunifuDataGridViewMedicine.Location = new System.Drawing.Point(66, 180);
             this.bunifuDataGridViewMedicine.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
