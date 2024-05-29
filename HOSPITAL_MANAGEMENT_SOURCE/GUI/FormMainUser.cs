@@ -1,13 +1,17 @@
 ﻿using HOSPITAL_MANAGEMENT_SOURCE.DAL;
+using LiveCharts.Wpf;
+using LiveCharts;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Media;
 
 namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
 {
@@ -164,5 +168,31 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             FormLogin_SignUp loginSignup = new FormLogin_SignUp();
             loginSignup.ShowDialog();
         }
+
+        private void bunifuButton22_Click(object sender, EventArgs e)
+        {
+            //ShowMaterialChildForm();
+        }
+        //private void ShowMaterialChildForm()
+        //{
+        //    // Tạo instance của FormHomePage
+        //    FormHomePage homePage = new FormHomePage
+        //    {
+        //        TopLevel = false,
+        //        FormBorderStyle = FormBorderStyle.None,
+        //        Dock = DockStyle.Fill
+        //    };
+
+        //    // Đảm bảo bunifuPanel5 không thay đổi kích thước form chính
+        //    bunifuPanel5.AutoSize = false;
+        //    bunifuPanel5.Controls.Clear();
+        //    bunifuPanel5.Controls.Add(homePage);
+        //    homePage.Show();
+
+        //    // Đặt kích thước và vị trí của form chính
+        //    this.Size = new Size(1460, 820);
+        //    this.StartPosition = FormStartPosition.Manual; // Đảm bảo form không thay đổi vị trí ngẫu nhiên
+        //    this.Location = new Point(0, 0);
+        //}
     }
 }

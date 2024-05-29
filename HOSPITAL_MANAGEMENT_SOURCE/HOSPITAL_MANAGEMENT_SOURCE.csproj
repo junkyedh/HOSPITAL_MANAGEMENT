@@ -283,6 +283,12 @@
     <Compile Include="GUI\FormHNDetail.Designer.cs">
       <DependentUpon>FormHNDetail.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\FormHomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormHomePage.Designer.cs">
+      <DependentUpon>FormHomePage.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\FormHostpitalBedDetail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -489,6 +495,9 @@
     <EmbeddedResource Include="GUI\FormHNDetail.resx">
       <DependentUpon>FormHNDetail.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormHomePage.resx">
+      <DependentUpon>FormHomePage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\FormHostpitalBedDetail.resx">
       <DependentUpon>FormHostpitalBedDetail.cs</DependentUpon>
     </EmbeddedResource>
@@ -684,6 +693,12 @@
     </PackageReference>
     <PackageReference Include="Dapper.Contrib">
       <Version>2.0.78</Version>
+    </PackageReference>
+    <PackageReference Include="LiveCharts.WinForms">
+      <Version>0.9.7.1</Version>
+    </PackageReference>
+    <PackageReference Include="MaterialSkin.2">
+      <Version>2.3.1</Version>
     </PackageReference>
     <PackageReference Include="Npgsql">
       <Version>8.0.3</Version>
