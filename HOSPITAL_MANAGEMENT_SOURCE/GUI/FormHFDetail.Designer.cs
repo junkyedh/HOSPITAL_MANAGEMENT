@@ -351,7 +351,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             stateProperties4.ForeColor = System.Drawing.Color.Black;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBoxTreatment.OnIdleState = stateProperties4;
-            this.textBoxTreatment.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.textBoxTreatment.Padding = new System.Windows.Forms.Padding(3);
             this.textBoxTreatment.PasswordChar = '\0';
             this.textBoxTreatment.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.textBoxTreatment.PlaceholderText = "Nhập hướng điều trị";
@@ -448,7 +448,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             stateProperties8.ForeColor = System.Drawing.Color.Black;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBoxPatientState.OnIdleState = stateProperties8;
-            this.textBoxPatientState.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.textBoxPatientState.Padding = new System.Windows.Forms.Padding(3);
             this.textBoxPatientState.PasswordChar = '\0';
             this.textBoxPatientState.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.textBoxPatientState.PlaceholderText = "Nhập tình trạng";
@@ -564,6 +564,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuToolTip1.SetToolTipIcon(this.buttonClose, null);
             this.bunifuToolTip1.SetToolTipTitle(this.buttonClose, "");
             this.buttonClose.UseDefaultRadiusAndThickness = true;
+            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
             // buttonOk
             // 
@@ -817,7 +818,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             stateProperties12.ForeColor = System.Drawing.Color.Black;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBoxPrehistory.OnIdleState = stateProperties12;
-            this.textBoxPrehistory.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.textBoxPrehistory.Padding = new System.Windows.Forms.Padding(3);
             this.textBoxPrehistory.PasswordChar = '\0';
             this.textBoxPrehistory.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.textBoxPrehistory.PlaceholderText = "Nhập tiền sử bệnh";
@@ -895,7 +896,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             stateProperties16.ForeColor = System.Drawing.Color.Black;
             stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBoxPatientID.OnIdleState = stateProperties16;
-            this.textBoxPatientID.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.textBoxPatientID.Padding = new System.Windows.Forms.Padding(3);
             this.textBoxPatientID.PasswordChar = '\0';
             this.textBoxPatientID.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.textBoxPatientID.PlaceholderText = "Nhập mã bệnh nhân";
@@ -973,7 +974,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             stateProperties20.ForeColor = System.Drawing.Color.Black;
             stateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBoxHFID.OnIdleState = stateProperties20;
-            this.textBoxHFID.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.textBoxHFID.Padding = new System.Windows.Forms.Padding(3);
             this.textBoxHFID.PasswordChar = '\0';
             this.textBoxHFID.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.textBoxHFID.PlaceholderText = "Nhập mã bệnh án";
@@ -1051,7 +1052,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             stateProperties24.ForeColor = System.Drawing.Color.Black;
             stateProperties24.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBoxDisease.OnIdleState = stateProperties24;
-            this.textBoxDisease.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.textBoxDisease.Padding = new System.Windows.Forms.Padding(3);
             this.textBoxDisease.PasswordChar = '\0';
             this.textBoxDisease.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.textBoxDisease.PlaceholderText = "Nhập bệnh mắc phải";
@@ -1122,7 +1123,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.ClientSize = new System.Drawing.Size(647, 701);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormHFDetail";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormHFDetail";

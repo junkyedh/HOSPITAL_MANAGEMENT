@@ -323,7 +323,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuToolTip1.SetToolTipIcon(this.buttonClose, null);
             this.bunifuToolTip1.SetToolTipTitle(this.buttonClose, "");
             this.buttonClose.UseDefaultRadiusAndThickness = true;
-            //this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
+            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
             // buttonOk
             // 
@@ -416,7 +416,6 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuToolTip1.SetToolTipIcon(this.buttonOk, null);
             this.bunifuToolTip1.SetToolTipTitle(this.buttonOk, "");
             this.buttonOk.UseDefaultRadiusAndThickness = true;
-            //this.buttonOk.Click += new System.EventHandler(this.buttonOk_Click);
             // 
             // labelDiseaseSymptom
             // 
@@ -491,7 +490,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             stateProperties4.ForeColor = System.Drawing.Color.Black;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBoxDiseaseSymptom.OnIdleState = stateProperties4;
-            this.textBoxDiseaseSymptom.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.textBoxDiseaseSymptom.Padding = new System.Windows.Forms.Padding(3);
             this.textBoxDiseaseSymptom.PasswordChar = '\0';
             this.textBoxDiseaseSymptom.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.textBoxDiseaseSymptom.PlaceholderText = "Nhập triệu chứng";
@@ -514,7 +513,6 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuToolTip1.SetToolTipTitle(this.textBoxDiseaseSymptom, "Warning");
             this.textBoxDiseaseSymptom.UseSystemPasswordChar = false;
             this.textBoxDiseaseSymptom.WordWrap = true;
-            //this.textBoxDiseaseSymptom.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxDiseaseSymptom_KeyPress);
             // 
             // labelDiseaseName
             // 
@@ -589,7 +587,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             stateProperties8.ForeColor = System.Drawing.Color.Black;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBoxDiseaseName.OnIdleState = stateProperties8;
-            this.textBoxDiseaseName.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.textBoxDiseaseName.Padding = new System.Windows.Forms.Padding(3);
             this.textBoxDiseaseName.PasswordChar = '\0';
             this.textBoxDiseaseName.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.textBoxDiseaseName.PlaceholderText = "Nhập tên bệnh";
@@ -612,7 +610,6 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuToolTip1.SetToolTipTitle(this.textBoxDiseaseName, "Warning");
             this.textBoxDiseaseName.UseSystemPasswordChar = false;
             this.textBoxDiseaseName.WordWrap = true;
-            //this.textBoxDiseaseName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxDiseaseName_KeyPress);
             // 
             // textBoxDiseaseID
             // 
@@ -668,7 +665,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             stateProperties12.ForeColor = System.Drawing.Color.Black;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBoxDiseaseID.OnIdleState = stateProperties12;
-            this.textBoxDiseaseID.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.textBoxDiseaseID.Padding = new System.Windows.Forms.Padding(3);
             this.textBoxDiseaseID.PasswordChar = '\0';
             this.textBoxDiseaseID.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.textBoxDiseaseID.PlaceholderText = "Nhập mã nhân viên";
@@ -741,7 +738,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuPictureBox1.Image = global::HOSPITAL_MANAGEMENT_SOURCE.Properties.Resources._5l61_4oxe_180209_removebg_preview;
             this.bunifuPictureBox1.IsCircle = true;
             this.bunifuPictureBox1.Location = new System.Drawing.Point(341, 24);
-            this.bunifuPictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bunifuPictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuPictureBox1.Name = "bunifuPictureBox1";
             this.bunifuPictureBox1.Size = new System.Drawing.Size(67, 67);
             this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -751,7 +748,6 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuToolTip1.SetToolTipIcon(this.bunifuPictureBox1, null);
             this.bunifuToolTip1.SetToolTipTitle(this.bunifuPictureBox1, "");
             this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
-            //this.bunifuPictureBox1.Click += new System.EventHandler(this.bunifuPictureBox1_Click);
             // 
             // bunifuPictureBox2
             // 
@@ -762,7 +758,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuPictureBox2.Image = global::HOSPITAL_MANAGEMENT_SOURCE.Properties.Resources.i88i_lnik_180209_removebg_preview;
             this.bunifuPictureBox2.IsCircle = true;
             this.bunifuPictureBox2.Location = new System.Drawing.Point(129, 24);
-            this.bunifuPictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bunifuPictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuPictureBox2.Name = "bunifuPictureBox2";
             this.bunifuPictureBox2.Size = new System.Drawing.Size(64, 64);
             this.bunifuPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -780,7 +776,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.ClientSize = new System.Drawing.Size(608, 472);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormDiseaseDetail";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormDiseaseDetail";

@@ -63,5 +63,10 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
         {
 
         }
+
+        private void bunifuButtonLogin_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -14,7 +14,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         public string PatientState { get; set; }
         public string PreHistory { get; set; }
         public string Disease { get; set; }
-        public string Treament { get; set; }
+        public string Treatment { get; set; }
 
         public HealthFile() { }
 
@@ -26,7 +26,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             PatientState = patientState;
             PreHistory = preHistory;
             Disease = disease;
-            Treament = treatment;
+            Treatment = treatment;
         }
 
         public static int InsertHeathFile(HealthFileDTO newHF)
@@ -106,6 +106,19 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@PATIENTID", patientID) };
             DataTable dataTable = NpgSqlResult.ExecuteQuery(sqlSelect, npgsqlParameters);
             return dataTable.Rows.Count > 0;
+        }
+
+        public HealthFileDTO ToDTO()
+        {
+            return new HealthFileDTO {
+                HeathFileID = this.HeathFileID,
+                PatientID = this.PatientID,
+                Date = this.Date,
+                PatientState = this.PatientState,
+                PreHistory = this.PreHistory,
+                Disease = this.Disease,
+                Treatment = this.Treatment
+            };
         }
     }
 }

@@ -189,7 +189,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuToolTip1.SetToolTip(this.bunifuGradientPanel1, "");
             this.bunifuToolTip1.SetToolTipIcon(this.bunifuGradientPanel1, null);
             this.bunifuToolTip1.SetToolTipTitle(this.bunifuGradientPanel1, "");
-            this.bunifuGradientPanel1.Click += new System.EventHandler(this.bunifuGradientPanel1_Click);
+            //this.bunifuGradientPanel1.Click += new System.EventHandler(this.bunifuGradientPanel1_Click);
             // 
             // bunifuShadowPanel1
             // 
@@ -320,7 +320,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuToolTip1.SetToolTipTitle(this.bunifuTextBoxDepartmentName, "Warning");
             this.bunifuTextBoxDepartmentName.UseSystemPasswordChar = false;
             this.bunifuTextBoxDepartmentName.WordWrap = true;
-            this.bunifuTextBoxDepartmentName.TextChanged += new System.EventHandler(this.bunifuTextBoxDepartmentName_TextChanged);
+            //this.bunifuTextBoxDepartmentName.TextChanged += new System.EventHandler(this.bunifuTextBoxDepartmentName_TextChanged);
             // 
             // bunifuTextBoxDepartmentID
             // 
