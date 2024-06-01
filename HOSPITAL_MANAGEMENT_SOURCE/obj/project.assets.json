@@ -8,10 +8,14 @@
           "System.Configuration"
         ],
         "compile": {
-          "lib/net462/System.Configuration.ConfigurationManager.dll": {}
+          "lib/net462/System.Configuration.ConfigurationManager.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net462/System.Configuration.ConfigurationManager.dll": {}
+          "lib/net462/System.Configuration.ConfigurationManager.dll": {
+            "related": ".xml"
+          }
         },
         "build": {
           "buildTransitive/net462/_._": {}
@@ -25,10 +29,35 @@
           "System.Configuration"
         ],
         "compile": {
-          "lib/net462/System.Configuration.ConfigurationManager.dll": {}
+          "lib/net462/System.Configuration.ConfigurationManager.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net462/System.Configuration.ConfigurationManager.dll": {}
+          "lib/net462/System.Configuration.ConfigurationManager.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win-arm64": {
+      "System.Configuration.ConfigurationManager/8.0.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Configuration"
+        ],
+        "compile": {
+          "lib/net462/System.Configuration.ConfigurationManager.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/System.Configuration.ConfigurationManager.dll": {
+            "related": ".xml"
+          }
         },
         "build": {
           "buildTransitive/net462/_._": {}
@@ -42,10 +71,14 @@
           "System.Configuration"
         ],
         "compile": {
-          "lib/net462/System.Configuration.ConfigurationManager.dll": {}
+          "lib/net462/System.Configuration.ConfigurationManager.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net462/System.Configuration.ConfigurationManager.dll": {}
+          "lib/net462/System.Configuration.ConfigurationManager.dll": {
+            "related": ".xml"
+          }
         },
         "build": {
           "buildTransitive/net462/_._": {}
@@ -59,10 +92,14 @@
           "System.Configuration"
         ],
         "compile": {
-          "lib/net462/System.Configuration.ConfigurationManager.dll": {}
+          "lib/net462/System.Configuration.ConfigurationManager.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net462/System.Configuration.ConfigurationManager.dll": {}
+          "lib/net462/System.Configuration.ConfigurationManager.dll": {
+            "related": ".xml"
+          }
         },
         "build": {
           "buildTransitive/net462/_._": {}
@@ -108,20 +145,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {}
+    "C:\\Users\\Acer\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\HOSPITAL_MANAGEMENT_SOURCE.csproj",
+      "projectUniqueName": "D:\\Thanh\\New HOSPITAL MANAGEMENT\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\HOSPITAL_MANAGEMENT_SOURCE.csproj",
       "projectName": "HOSPITAL_MANAGEMENT_SOURCE",
-      "projectPath": "C:\\Users\\Admin\\source\\repos\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\HOSPITAL_MANAGEMENT_SOURCE.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\source\\repos\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\obj\\",
+      "projectPath": "D:\\Thanh\\New HOSPITAL MANAGEMENT\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\HOSPITAL_MANAGEMENT_SOURCE.csproj",
+      "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
+      "outputPath": "D:\\Thanh\\New HOSPITAL MANAGEMENT\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -135,6 +177,11 @@
         "net472": {
           "projectReferences": {}
         }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -149,6 +196,9 @@
     },
     "runtimes": {
       "win": {
+        "#import": []
+      },
+      "win-arm64": {
         "#import": []
       },
       "win-x64": {

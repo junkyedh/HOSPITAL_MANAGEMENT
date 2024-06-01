@@ -16,7 +16,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new GUI.FormBillDetail());
+            Application.Run(new GUI.FormMainUser());
         }
     }
 }

@@ -146,11 +146,80 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL\Assignment.cs" />
+    <Compile Include="DAL\AssignmentDetail.cs" />
+    <Compile Include="DAL\Bcrypt.cs" />
+    <Compile Include="DAL\Bill.cs" />
+    <Compile Include="DAL\BillType.cs" />
+    <Compile Include="DAL\DbConnect.cs" />
+    <Compile Include="DAL\Department.cs" />
+    <Compile Include="DAL\DischargeCertificate.cs" />
+    <Compile Include="DAL\Disease.cs" />
+    <Compile Include="DAL\ExaminationCertificate.cs" />
+    <Compile Include="DAL\HealthFile.cs" />
+    <Compile Include="DAL\HealthMonitoringNote.cs" />
+    <Compile Include="DAL\HIC.cs" />
+    <Compile Include="DAL\HospitalBed.cs" />
+    <Compile Include="DAL\HospitalizationCerificate.cs" />
+    <Compile Include="DAL\Major.cs" />
+    <Compile Include="DAL\Material.cs" />
+    <Compile Include="DAL\Medicine.cs" />
+    <Compile Include="DAL\MedicineBillDetail.cs" />
+    <Compile Include="DAL\NpgSqlResult.cs" />
+    <Compile Include="DAL\Patient.cs" />
+    <Compile Include="DAL\Prescription.cs" />
+    <Compile Include="DAL\PrescriptionDetail.cs" />
+    <Compile Include="DAL\RentMaterialBillDetail.cs" />
+    <Compile Include="DAL\Role.cs" />
+    <Compile Include="DAL\RoleDetail.cs" />
+    <Compile Include="DAL\RoleFunction.cs" />
+    <Compile Include="DAL\Service.cs" />
+    <Compile Include="DAL\ServiceBillDetail.cs" />
     <Compile Include="DAL\SqlResult.cs" />
+    <Compile Include="DAL\Staff.cs" />
+    <Compile Include="DAL\Surgical.cs" />
+    <Compile Include="DAL\SurgicalDetail.cs" />
+    <Compile Include="DAL\TestCertificate.cs" />
+    <Compile Include="DAL\TestDetail.cs" />
+    <Compile Include="DAL\TestType.cs" />
+    <Compile Include="DTO\Assignment.cs" />
+    <Compile Include="DTO\AssignmentDetail.cs" />
+    <Compile Include="DTO\Bcrypt.cs" />
+    <Compile Include="DTO\Bill.cs" />
+    <Compile Include="DTO\BillType.cs" />
+    <Compile Include="DTO\DbConnect.cs" />
+    <Compile Include="DTO\Department.cs" />
     <Compile Include="DTO\Desease.cs" />
+    <Compile Include="DTO\DischargeCertificate.cs" />
+    <Compile Include="DTO\Disease.cs" />
     <Compile Include="DTO\ElipseControl.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="DTO\ExaminationCertificate.cs" />
+    <Compile Include="DTO\HealthFile.cs" />
+    <Compile Include="DTO\HealthMonitoringNote.cs" />
+    <Compile Include="DTO\HIC.cs" />
+    <Compile Include="DTO\HospitalBed.cs" />
+    <Compile Include="DTO\HospitalizationCerificate.cs" />
+    <Compile Include="DTO\Major.cs" />
+    <Compile Include="DTO\Material.cs" />
+    <Compile Include="DTO\Medicine.cs" />
+    <Compile Include="DTO\MedicineBillDetail.cs" />
+    <Compile Include="DTO\Patient.cs" />
+    <Compile Include="DTO\Prescription.cs" />
+    <Compile Include="DTO\PrescriptionDetail.cs" />
+    <Compile Include="DTO\RentMaterialBillDetail.cs" />
+    <Compile Include="DTO\Role.cs" />
+    <Compile Include="DTO\RoleDetail.cs" />
+    <Compile Include="DTO\RoleFunction.cs" />
+    <Compile Include="DTO\Service.cs" />
+    <Compile Include="DTO\ServiceBillDetail.cs" />
+    <Compile Include="DTO\Staff.cs" />
+    <Compile Include="DTO\Surgical.cs" />
+    <Compile Include="DTO\SurgicalDetail.cs" />
+    <Compile Include="DTO\TestCertificate.cs" />
+    <Compile Include="DTO\TestDetail.cs" />
+    <Compile Include="DTO\TestType.cs" />
     <Compile Include="GUI\FormAssignDetail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -198,6 +267,12 @@
     </Compile>
     <Compile Include="GUI\FormMainTest.Designer.cs">
       <DependentUpon>FormMainTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormMainUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormMainUser.Designer.cs">
+      <DependentUpon>FormMainUser.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\FormMajorDetail.cs">
       <SubType>Form</SubType>
@@ -296,6 +371,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\FormMainTest.resx">
       <DependentUpon>FormMainTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormMainUser.resx">
+      <DependentUpon>FormMainUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\FormMajorDetail.resx">
       <DependentUpon>FormMajorDetail.cs</DependentUpon>

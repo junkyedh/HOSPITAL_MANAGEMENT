@@ -1,16 +1,41 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Thanh\\Cong nghe Phan Mem\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\",
+  "WorkspaceRootPath": "D:\\Thanh\\New HOSPITAL MANAGEMENT\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\",
   "Documents": [
     {
-<<<<<<< HEAD
-      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|d:\\thanh\\cong nghe phan mem\\hospital_management\\hospital_management_source\\gui\\formroledetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:gui\\formroledetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|D:\\Thanh\\New HOSPITAL MANAGEMENT\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\gui\\formmainuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:gui\\formmainuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-=======
->>>>>>> main
-      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|d:\\thanh\\cong nghe phan mem\\hospital_management\\hospital_management_source\\gui\\formassigndetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|d:\\thanh\\new hospital management\\hospital_management\\hospital_management_source\\gui\\formmainrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:gui\\formmainrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|d:\\thanh\\new hospital management\\hospital_management\\hospital_management_source\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|D:\\Thanh\\New HOSPITAL MANAGEMENT\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\gui\\formmaintest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:gui\\formmaintest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|D:\\Thanh\\New HOSPITAL MANAGEMENT\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\gui\\formmainuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:gui\\formmainuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|D:\\Thanh\\New HOSPITAL MANAGEMENT\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\gui\\formdepartmentdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:gui\\formdepartmentdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|D:\\Thanh\\New HOSPITAL MANAGEMENT\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\gui\\formtestdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:gui\\formtestdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|D:\\Thanh\\New HOSPITAL MANAGEMENT\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\gui\\formservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:gui\\formservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|D:\\Thanh\\New HOSPITAL MANAGEMENT\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\gui\\formassigndetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:gui\\formassigndetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -21,34 +46,112 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-<<<<<<< HEAD
-              "Title": "FormRoleDetail.cs [Design]",
-              "DocumentMoniker": "D:\\Thanh\\Cong nghe Phan Mem\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\GUI\\FormRoleDetail.cs",
-              "RelativeDocumentMoniker": "GUI\\FormRoleDetail.cs",
-              "ToolTip": "D:\\Thanh\\Cong nghe Phan Mem\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\GUI\\FormRoleDetail.cs [Design]",
-              "RelativeToolTip": "GUI\\FormRoleDetail.cs [Design]",
+              "DocumentIndex": 1,
+              "Title": "FormMainRole.cs [Design]",
+              "DocumentMoniker": "D:\\Thanh\\New HOSPITAL MANAGEMENT\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\GUI\\FormMainRole.cs",
+              "RelativeDocumentMoniker": "GUI\\FormMainRole.cs",
+              "ToolTip": "D:\\Thanh\\New HOSPITAL MANAGEMENT\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\GUI\\FormMainRole.cs [Design]",
+              "RelativeToolTip": "GUI\\FormMainRole.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T07:36:33.293Z",
+              "WhenOpened": "2024-05-30T18:14:50.462Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-=======
->>>>>>> main
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Thanh\\New HOSPITAL MANAGEMENT\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Thanh\\New HOSPITAL MANAGEMENT\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAgwBIAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T08:38:51.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormMainUser.cs [Design]",
+              "DocumentMoniker": "D:\\Thanh\\New HOSPITAL MANAGEMENT\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\GUI\\FormMainUser.cs",
+              "RelativeDocumentMoniker": "GUI\\FormMainUser.cs",
+              "ToolTip": "D:\\Thanh\\New HOSPITAL MANAGEMENT\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\GUI\\FormMainUser.cs [Design]",
+              "RelativeToolTip": "GUI\\FormMainUser.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T08:33:23.629Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormMainTest.cs [Design]",
+              "DocumentMoniker": "D:\\Thanh\\New HOSPITAL MANAGEMENT\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\GUI\\FormMainTest.cs",
+              "RelativeDocumentMoniker": "GUI\\FormMainTest.cs",
+              "ToolTip": "D:\\Thanh\\New HOSPITAL MANAGEMENT\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\GUI\\FormMainTest.cs [Design]",
+              "RelativeToolTip": "GUI\\FormMainTest.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T08:33:19.911Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormMainUser.cs",
+              "DocumentMoniker": "D:\\Thanh\\New HOSPITAL MANAGEMENT\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\GUI\\FormMainUser.cs",
+              "RelativeDocumentMoniker": "GUI\\FormMainUser.cs",
+              "ToolTip": "D:\\Thanh\\New HOSPITAL MANAGEMENT\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\GUI\\FormMainUser.cs",
+              "RelativeToolTip": "GUI\\FormMainUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T08:33:14.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FormDepartmentDetail.cs [Design]",
+              "DocumentMoniker": "D:\\Thanh\\New HOSPITAL MANAGEMENT\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\GUI\\FormDepartmentDetail.cs",
+              "RelativeDocumentMoniker": "GUI\\FormDepartmentDetail.cs",
+              "ToolTip": "D:\\Thanh\\New HOSPITAL MANAGEMENT\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\GUI\\FormDepartmentDetail.cs [Design]",
+              "RelativeToolTip": "GUI\\FormDepartmentDetail.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T08:33:11.965Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FormTestDetail.cs [Design]",
+              "DocumentMoniker": "D:\\Thanh\\New HOSPITAL MANAGEMENT\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\GUI\\FormTestDetail.cs",
+              "RelativeDocumentMoniker": "GUI\\FormTestDetail.cs",
+              "ToolTip": "D:\\Thanh\\New HOSPITAL MANAGEMENT\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\GUI\\FormTestDetail.cs [Design]",
+              "RelativeToolTip": "GUI\\FormTestDetail.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T09:16:06.905Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FormService.cs [Design]",
+              "DocumentMoniker": "D:\\Thanh\\New HOSPITAL MANAGEMENT\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\GUI\\FormService.cs",
+              "RelativeDocumentMoniker": "GUI\\FormService.cs",
+              "ToolTip": "D:\\Thanh\\New HOSPITAL MANAGEMENT\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\GUI\\FormService.cs [Design]",
+              "RelativeToolTip": "GUI\\FormService.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T09:16:03.735Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "FormAssignDetail.cs [Design]",
-              "DocumentMoniker": "D:\\Thanh\\Cong nghe Phan Mem\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\GUI\\FormAssignDetail.cs",
+              "DocumentMoniker": "D:\\Thanh\\New HOSPITAL MANAGEMENT\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\GUI\\FormAssignDetail.cs",
               "RelativeDocumentMoniker": "GUI\\FormAssignDetail.cs",
-              "ToolTip": "D:\\Thanh\\Cong nghe Phan Mem\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\GUI\\FormAssignDetail.cs [Design]",
+              "ToolTip": "D:\\Thanh\\New HOSPITAL MANAGEMENT\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\GUI\\FormAssignDetail.cs [Design]",
               "RelativeToolTip": "GUI\\FormAssignDetail.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T07:59:17.354Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-20T09:15:55.163Z"
             }
           ]
         }
