@@ -17,7 +17,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int InsertHN(HealthMonitoringNoteDTO newHN)
         {
-            string sqlInsert = @"INSERT INTO HEATHMONITORINGNOTE(PATIENTID, STAFFID, DATE, WEIGHT, BLOODPRESSURE, PATIENTSTATE)
+            string sqlInsert = @"INSERT INTO ""HEATHMONITORINGNOTE""(PATIENTID, STAFFID, DATE, WEIGHT, BLOODPRESSURE, PATIENTSTATE)
                                 VALUES (@PATIENTID, @STAFFID, @DATE, @WEIGHT, @BLOODPRESSURE, @PATIENTSTATE)";
             NpgsqlParameter[] npgsqlParameters = {
                 new NpgsqlParameter("@PATIENTID", newHN.PatientID),
@@ -32,7 +32,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int UpdateHN(HealthMonitoringNoteDTO updateHN)
         {
-            string sqlUpdate = @"UPDATE HEATHMONITORINGNOTE
+            string sqlUpdate = @"UPDATE ""HEATHMONITORINGNOTE""
                                 SET PATIENTID = @PATIENTID, STAFFID = @STAFFID, DATE = @DATE, WEIGHT = @WEIGHT, BLOODPRESSURE = @BLOODPRESSURE, PATIENTSTATE = @PATIENTSTATE
                                 WHERE HNID = @HNID";
             NpgsqlParameter[] npgsqlParameters = {
@@ -49,7 +49,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int DeleteHN(int hNID)
         {
-            string sqlDelete = @"DELETE FROM HEATHMONITORINGNOTE
+            string sqlDelete = @"DELETE FROM ""HEATHMONITORINGNOTE""
                                 WHERE HNID = @HNID";
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@HNID", hNID) };
             return NpgSqlResult.ExecuteNonQuery(sqlDelete, npgsqlParameters);
@@ -58,14 +58,14 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         public static DataTable GetListHN()
         {
             string sqlSelect = @"SELECT HNID, PATIENTID, STAFFID, DATE, WEIGHT, BLOODPRESSURE, PATIENTSTATE
-                                 FROM HEATHMONITORINGNOTE";
+                                 FROM ""HEATHMONITORINGNOTE""";
             return NpgSqlResult.ExecuteQuery(sqlSelect);
         }
 
         public static DataTable GetListHN(int patientID)
         {
             string sqlSelect = @"SELECT HNID, PATIENTID, STAFFID, DATE, WEIGHT, BLOODPRESSURE, PATIENTSTATE
-                                 FROM HEATHMONITORINGNOTE
+                                 FROM ""HEATHMONITORINGNOTE""
                                  WHERE PATIENTID = @PATIENTID";
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@PATIENTID", patientID) };
             return NpgSqlResult.ExecuteQuery(sqlSelect, npgsqlParameters);
@@ -74,7 +74,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         public static HealthMonitoringNoteDTO GetHN(int hNID)
         {
             string sqlSelect = @"SELECT HNID, PATIENTID, STAFFID, DATE, WEIGHT, BLOODPRESSURE, PATIENTSTATE
-                                 FROM HEATHMONITORINGNOTE
+                                 FROM ""HEATHMONITORINGNOTE""
                                  WHERE HNID = @HNID";
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@HNID", hNID) };
             DataTable dataTable = NpgSqlResult.ExecuteQuery(sqlSelect, npgsqlParameters);

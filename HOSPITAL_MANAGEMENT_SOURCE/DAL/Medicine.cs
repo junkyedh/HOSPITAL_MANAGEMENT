@@ -24,7 +24,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int InsertMedicine(MedicineDTO newMedicine)
         {
-            string sqlInsert = @"INSERT INTO MEDICINE(MEDICINENAME, QUANTITY, PRICE)
+            string sqlInsert = @"INSERT INTO ""MEDICINE""(MEDICINENAME, QUANTITY, PRICE)
                                 VALUES (@MEDICINENAME, @QUANTITY, @PRICE)";
 
             NpgsqlParameter[] npgsqlParameters = {
@@ -38,7 +38,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int UpdateMedicine(MedicineDTO updateMedicine)
         {
-            string sqlUpdate = @"UPDATE MEDICINE
+            string sqlUpdate = @"UPDATE ""MEDICINE""
                                 SET MEDICINENAME = @MEDICINENAME, QUANTITY = @QUANTITY, PRICE = @PRICE
                                 WHERE (MEDICINEID = @MEDICINEID)";
 
@@ -54,7 +54,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int DeleteMedicine(int medicineID)
         {
-            string sqlDelete = @"DELETE FROM MEDICINE
+            string sqlDelete = @"DELETE FROM ""MEDICINE""
                                 WHERE (MEDICINEID = @MEDICINEID)";
 
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@MEDICINEID", medicineID) };
@@ -65,7 +65,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         public static DataTable GetListMedicine()
         {
             string sqlSelect = @"SELECT MEDICINEID, MEDICINENAME, QUANTITY, PRICE
-                                FROM MEDICINE";
+                                FROM ""MEDICINE""";
 
             DataTable dataTable = NpgSqlResult.ExecuteQuery(sqlSelect);
 
@@ -75,7 +75,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         public static MedicineDTO GetMedicine(int medicineID)
         {
             string sqlSelect = @"SELECT MEDICINEID, MEDICINENAME, QUANTITY, PRICE
-                                FROM MEDICINE
+                                FROM ""MEDICINE""
                                 WHERE (MEDICINEID = @MEDICINEID)";
 
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@MEDICINEID", medicineID) };

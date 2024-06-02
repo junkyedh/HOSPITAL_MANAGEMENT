@@ -22,7 +22,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int InsertFunction(RoleFunctionDTO newFunction)
         {
-            string sqlInsert = @"INSERT INTO ROLEFUNCTION(FunctionName, Button)
+            string sqlInsert = @"INSERT INTO ""ROLEFUNCTION""(FunctionName, Button)
                                 VALUES (@FunctionName, @Button)";
 
             NpgsqlParameter[] npgsqlParameters = {
@@ -35,7 +35,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int UpdateFunction(RoleFunctionDTO updateFunction)
         {
-            string sqlUpdate = @"UPDATE ROLEFUNCTION
+            string sqlUpdate = @"UPDATE ""ROLEFUNCTION""
                                 SET FunctionName = @FunctionName, Button = @Button
                                 WHERE FunctionID = @FunctionID";
 
@@ -50,7 +50,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int DeleteFunction(int functionID)
         {
-            string sqlDelete = @"DELETE FROM ROLEFUNCTION
+            string sqlDelete = @"DELETE FROM ""ROLEFUNCTION""
                                 WHERE FunctionID = @FunctionID";
 
             NpgsqlParameter[] npgsqlParameters = {
@@ -63,7 +63,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         public static DataTable GetListFunction()
         {
             string sqlSelect = @"SELECT FunctionID, FunctionName, Button
-                                FROM ROLEFUNCTION";
+                                FROM ""ROLEFUNCTION""";
 
             return NpgSqlResult.ExecuteQuery(sqlSelect);
         }
@@ -73,7 +73,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             RoleFunction newFunction = new RoleFunction();
             int tempInteger;
             string sqlSelect = @"SELECT FunctionID, FunctionName, Button
-                                FROM ROLEFUNCTION
+                                FROM ""ROLEFUNCTION""
                                 WHERE FunctionID = @FunctionID";
 
             NpgsqlParameter[] npgsqlParameters = {

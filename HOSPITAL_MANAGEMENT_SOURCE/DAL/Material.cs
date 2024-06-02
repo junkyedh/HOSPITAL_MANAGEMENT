@@ -24,7 +24,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int InsertMaterial(MaterialDTO newMaterial)
         {
-            string sqlInsert = @"INSERT INTO MATERIAL(MATERIALNAME, QUANTITY, PRICE)
+            string sqlInsert = @"INSERT INTO ""MATERIAL""(MATERIALNAME, QUANTITY, PRICE)
                                 VALUES (@MATERIALNAME, @QUANTITY, @PRICE)";
 
             NpgsqlParameter[] npgsqlParameters = {
@@ -38,7 +38,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int UpdateMaterial(MaterialDTO updateMaterial)
         {
-            string sqlUpdate = @"UPDATE MATERIAL
+            string sqlUpdate = @"UPDATE ""MATERIAL""
                                 SET MATERIALNAME = @MATERIALNAME, QUANTITY = @QUANTITY, PRICE = @PRICE
                                 WHERE (MATERIALID = @MATERIALID)";
 
@@ -54,7 +54,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int DeleteMaterial(int materialID)
         {
-            string sqlDelete = @"DELETE FROM MATERIAL
+            string sqlDelete = @"DELETE FROM ""MATERIAL""
                                 WHERE (MATERIALID = @MATERIALID)";
 
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@MATERIALID", materialID) };
@@ -65,7 +65,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         public static DataTable GetListMaterial()
         {
             string sqlSelect = @"SELECT MATERIALID, MATERIALNAME, QUANTITY, PRICE
-                                FROM MATERIAL";
+                                FROM ""MATERIAL""";
 
             DataTable dataTable = NpgSqlResult.ExecuteQuery(sqlSelect);
 
@@ -75,7 +75,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         public static MaterialDTO GetMaterial(int materialID)
         {
             string sqlSelect = @"SELECT MATERIALID, MATERIALNAME, QUANTITY, PRICE
-                                FROM MATERIAL
+                                FROM ""MATERIAL""
                                 WHERE (MATERIALID = @MATERIALID)";
 
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@MATERIALID", materialID) };

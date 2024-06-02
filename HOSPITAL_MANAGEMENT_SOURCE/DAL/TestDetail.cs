@@ -23,7 +23,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int InsertTestDetail(TestDetailDTO newTD)
         {
-            string sqlInsert = @"INSERT INTO TESTDETAIL(TCID, TESTTYPEID, RESULT)
+            string sqlInsert = @"INSERT INTO ""TESTDETAIL""(TCID, TESTTYPEID, RESULT)
                                 VALUES (@TCID, @TESTTYPEID, @RESULT)";
             NpgsqlParameter[] npgsqlParameters = {
                 new NpgsqlParameter("@TCID", newTD.TCID),
@@ -40,7 +40,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int DeleteTestDetail(int tCID, int testTypeID)
         {
-            string sqlDelete = @"DELETE FROM TESTDETAIL
+            string sqlDelete = @"DELETE FROM ""TESTDETAIL""
                                 WHERE TCID = @TCID AND TESTTYPEID = @TESTTYPEID";
             NpgsqlParameter[] npgsqlParameters = {
                 new NpgsqlParameter("@TCID", tCID),
@@ -51,7 +51,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int DeleteTestDetail(int tCID)
         {
-            string sqlDelete = @"DELETE FROM TESTDETAIL
+            string sqlDelete = @"DELETE FROM ""TESTDETAIL""
                                 WHERE TCID = @TCID";
             NpgsqlParameter[] npgsqlParameters = {
                 new NpgsqlParameter("@TCID", tCID)
@@ -62,10 +62,10 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         public static DataTable GetListTestDetail(int tCID)
         {
             DataTable dtTD = new DataTable();
-            string sqlSelect = @"SELECT TESTDETAIL.TCID, TESTDETAIL.TESTTYPEID, TESTDETAIL.RESULT, TESTTYPE.TYPENAME
-                                 FROM TESTTYPE
-                                 INNER JOIN TESTDETAIL ON TESTTYPE.TESTTYPEID = TESTDETAIL.TESTTYPEID
-                                 WHERE TESTDETAIL.TCID = @TCID";
+            string sqlSelect = @"SELECT ""TESTDETAIL"".TCID, ""TESTDETAIL"".TESTTYPEID, ""TESTDETAIL"".RESULT, ""TESTTYPE"".TYPENAME
+                                 FROM ""TESTTYPE""
+                                 INNER JOIN ""TESTDETAIL"" ON ""TESTTYPE"".TESTTYPEID = ""TESTDETAIL"".TESTTYPEID
+                                 WHERE ""TESTDETAIL"".TCID = @TCID";
             NpgsqlParameter[] npgsqlParameters = {
                 new NpgsqlParameter("@TCID", tCID)
             };

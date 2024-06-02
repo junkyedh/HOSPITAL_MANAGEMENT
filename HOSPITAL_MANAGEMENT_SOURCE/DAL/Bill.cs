@@ -24,7 +24,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int InsertBill(BillDTO newBill)
         {
-            string sqlInsert = @"INSERT INTO BILL(BILLTYPEID, PATIENTID, STAFFID, DATE, STATE, TOTALPRICE)
+            string sqlInsert = @"INSERT INTO ""BILL""(BILLTYPEID, PATIENTID, STAFFID, DATE, STATE, TOTALPRICE)
                                 VALUES (@BILLTYPEID, @PATIENTID, @STAFFID, @DATE, @STATE, @TOTALPRICE)";
 
             NpgsqlParameter[] npgsqlParameters = {
@@ -41,7 +41,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int UpdateBill(BillDTO updateBill)
         {
-            string sqlUpdate = @"UPDATE BILL
+            string sqlUpdate = @"UPDATE ""BILL""
                                 SET STATE = @STATE, TOTALPRICE = @TOTALPRICE
                                 WHERE BILLID = @BILLID";
 
@@ -56,7 +56,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int DeleteBill(int billID)
         {
-            string sqlDelete = @"DELETE FROM BILL
+            string sqlDelete = @"DELETE FROM ""BILL""
                                 WHERE BILLID = @BILLID";
 
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@BILLID", billID) };
@@ -66,14 +66,14 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static DataTable GetListBill()
         {
-            string sqlSelect = @"SELECT BILL.BILLID, BILLTYPE.TYPENAME, PATIENT.FIRSTNAME AS PATIENTFIRSTNAME,
-                                PATIENT.LASTNAME AS PATIENTLASTNAME, BILL.BILLTYPEID, BILL.PATIENTID, BILL.STAFFID,
-                                BILL.DATE, BILL.TOTALPRICE,BILL.STATE, STAFF.LASTNAME AS STAFFLASTNAME,
-                                STAFF.FIRSTNAME AS STAFFFIRSTNAME
-                                FROM BILL INNER JOIN
-                                BILLTYPE ON BILL.BILLTYPEID = BILLTYPE.BILLTYPEID INNER JOIN
-                                PATIENT ON BILL.PATIENTID = PATIENT.PATIENTID INNER JOIN
-                                STAFF ON BILL.STAFFID = STAFF.STAFFID";
+            string sqlSelect = @"SELECT ""BILL"".BILLID, ""BILLTYPE"".TYPENAME, ""PATIENT"".FIRSTNAME AS PATIENTFIRSTNAME,
+                                ""PATIENT"".LASTNAME AS PATIENTLASTNAME, ""BILL"".BILLTYPEID, ""BILL"".PATIENTID, ""BILL"".STAFFID,
+                                ""BILL"".DATE, ""BILL"".TOTALPRICE,""BILL"".STATE, ""STAFF"".LASTNAME AS STAFFLASTNAME,
+                                ""STAFF"".FIRSTNAME AS STAFFFIRSTNAME
+                                FROM ""BILL"" INNER JOIN
+                                ""BILLTYPE"" ON ""BILL"".BILLTYPEID = ""BILLTYPE"".BILLTYPEID INNER JOIN
+                                ""PATIENT"" ON ""BILL"".PATIENTID = ""PATIENT"".PATIENTID INNER JOIN
+                                ""STAFF"" ON ""BILL"".STAFFID = ""STAFF"".STAFFID";
 
             return NpgSqlResult.ExecuteQuery(sqlSelect);
         }
@@ -81,7 +81,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         public static DataTable GetPatientBill(int patientID)
         {
             string sqlSelect = @"SELECT BILLID, BILLTYPEID, PATIENTID, STAFFID, DATE, TOTALPRICE, STATE
-                                FROM BILL
+                                FROM ""BILL""
                                 WHERE (PATIENTID = @PATIENTID)";
 
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@PATIENTID", patientID) };
@@ -106,7 +106,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         public static BillDTO GetBill(int billID)
         {
             string sqlSelect = @"SELECT BILLID, BILLTYPEID, PATIENTID, STAFFID, DATE, TOTALPRICE, STATE
-                                FROM BILL
+                                FROM ""BILL""
                                 WHERE BILLID=@BILLID";
 
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@BILLID", billID) };
@@ -147,7 +147,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         public static DataTable GetPatientNotPayBill(int patientID)
         {
             string sqlSelect = @"SELECT BILLID, BILLTYPEID, PATIENTID, STAFFID, DATE, TOTALPRICE, STATE
-                                FROM BILL
+                                FROM ""BILL""
                                 WHERE (PATIENTID = @PATIENTID) AND (STATE = 0)";
 
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@PATIENTID", patientID) };
@@ -160,7 +160,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             decimal totalPrice = 0;
 
             string sqlSelect = @"SELECT SUM(TOTALPRICE)
-                                FROM BILL
+                                FROM ""BILL""
                                 WHERE (PATIENTID = @PATIENTID) AND (STATE = 0)";
 
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@PATIENTID", patientID) };

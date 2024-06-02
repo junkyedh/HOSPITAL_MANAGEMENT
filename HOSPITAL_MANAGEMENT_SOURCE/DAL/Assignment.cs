@@ -29,7 +29,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int InsertAssignment(AssignmentDTO newAssignment)
         {
-            string sqlInsert = @"INSERT INTO ASSIGNMENT (PATIENTID, DATE, DISCHARGEDDATE, HOPITALIZATEDATE)
+            string sqlInsert = @"INSERT INTO ""ASSIGNMENT"" (PATIENTID, DATE, DISCHARGEDDATE, HOPITALIZATEDATE)
                                 VALUES (@PATIENTID, @DATE, @DISCHARGEDDATE, @HOPITALIZATEDATE)";
             NpgsqlParameter[] npgsqlParameters = {
                 new NpgsqlParameter("@PATIENTID", newAssignment.PatientID),
@@ -42,7 +42,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int UpdateAssignment(AssignmentDTO updateAssignment)
         {
-            string sqlUpdate = @"UPDATE ASSIGNMENT
+            string sqlUpdate = @"UPDATE ""ASSIGNMENT""
                                 SET DATE = @DATE, DISCHARGEDDATE = @DISCHARGEDDATE
                                 WHERE ASSIGNID = @ASSIGNID";
             NpgsqlParameter[] NpgsqlParameters = {
@@ -55,7 +55,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int DeleteAssignment(int assignmentID)
         {
-            string sqlDelete = @"DELETE FROM ASSIGNMENT
+            string sqlDelete = @"DELETE FROM ""ASSIGNMENT""
                                 WHERE ASSIGNID = @ASSIGNID";
             NpgsqlParameter[] NpgsqlParameters = { new NpgsqlParameter("@ASSIGNID", assignmentID) };
             return NpgSqlResult.ExecuteNonQuery(sqlDelete, NpgsqlParameters);
@@ -65,8 +65,8 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         {
             List<Assignment> assignments = new List<Assignment>();
             string sqlSelect = @"SELECT ASSIGNID, a.PATIENTID, DATE, DISCHARGEDDATE, HOPITALIZATEDATE, p.LASTNAME +' '+p.FIRSTNAME as 'PATIENT NAME'
-                                FROM ASSIGNMENT a 
-                                JOIN PATIENT p ON a.PATIENTID = p.PATIENTID";
+                                FROM ""ASSIGNMENT"" a 
+                                JOIN ""PATIENT"" p ON a.PATIENTID = p.PATIENTID";
             DataTable dataTable = NpgSqlResult.ExecuteQuery(sqlSelect);
             foreach (DataRow row in dataTable.Rows)
             {
@@ -85,7 +85,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         public static Assignment GetAssignment(int assignID)
         {
             string sqlSelect = @"SELECT ASSIGNID, PATIENTID, DATE, DISCHARGEDDATE, HOPITALIZATEDATE
-                                FROM ASSIGNMENT
+                                FROM ""ASSIGNMENT""
                                 WHERE ASSIGNID = @ASSIGNID";
             NpgsqlParameter[] NpgsqlParameters = { new NpgsqlParameter("@ASSIGNID", assignID) };
             DataTable dataTable = NpgSqlResult.ExecuteQuery(sqlSelect, NpgsqlParameters);
@@ -114,7 +114,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         public static bool IsPatientHadAssignment(int patientID)
         {
             string sqlSelect = @"SELECT ASSIGNID, DATE, HOPITALIZATEDATE, DISCHARGEDDATE, PATIENTID
-                                FROM ASSIGNMENT
+                                FROM ""ASSIGNMENT""
                                 WHERE PATIENTID = @PATIENTID";
             NpgsqlParameter[] NpgsqlParameters = { new NpgsqlParameter("@PATIENTID", patientID) };
             DataTable dataTable = NpgSqlResult.ExecuteQuery(sqlSelect, NpgsqlParameters);

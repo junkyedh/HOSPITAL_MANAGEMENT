@@ -25,7 +25,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         public static int InsertMedicineBillDetail(MedicineBillDetailDTO newMBD)
         {
             string sqlInsert = @"INSERT INTO 
-                                    MEDICINEBILLDETAIL(BILLID, MEDICINEID, QUANTITY, PRICE)
+                                    ""MEDICINEBILLDETAIL""(BILLID, MEDICINEID, QUANTITY, PRICE)
                                 VALUES 
                                     (@BILLID, @MEDICINEID, @QUANTITY, @PRICE)";
 
@@ -41,7 +41,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int DeleteMedicineBillDetail(int billID, int medicineID)
         {
-            string sqlDelete = @"DELETE FROM MEDICINEBILLDETAIL
+            string sqlDelete = @"DELETE FROM ""MEDICINEBILLDETAIL""
                                 WHERE BILLID = @BILLID AND MEDICINEID = @MEDICINEID";
 
             NpgsqlParameter[] npgsqlParameters = {
@@ -54,7 +54,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int DeleteMedicineBillDetail(int billID)
         {
-            string sqlDelete = @"DELETE FROM MEDICINEBILLDETAIL
+            string sqlDelete = @"DELETE FROM ""MEDICINEBILLDETAIL""
                                 WHERE BILLID = @BILLID";
 
             NpgsqlParameter[] npgsqlParameters = {
@@ -68,9 +68,9 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         {
             DataTable dtMBD = new DataTable();
 
-            string sqlSelect = @"SELECT MEDICINE.MEDICINENAME, MEDICINEBILLDETAIL.QUANTITY, MEDICINEBILLDETAIL.PRICE
-                                FROM MEDICINEBILLDETAIL
-                                INNER JOIN MEDICINE ON MEDICINEBILLDETAIL.MEDICINEID = MEDICINE.MEDICINEID
+            string sqlSelect = @"SELECT ""MEDICINE"".MEDICINENAME, ""MEDICINEBILLDETAIL"".QUANTITY, ""MEDICINEBILLDETAIL"".PRICE
+                                FROM ""MEDICINEBILLDETAIL""
+                                INNER JOIN ""MEDICINE"" ON ""MEDICINEBILLDETAIL"".MEDICINEID = ""MEDICINE"".MEDICINEID
                                 WHERE BILLID = @BILLID";
 
             NpgsqlParameter[] npgsqlParameters = {

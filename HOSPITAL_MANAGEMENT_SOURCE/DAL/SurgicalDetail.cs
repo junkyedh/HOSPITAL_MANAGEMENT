@@ -20,7 +20,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int InsertSurgicalDetail(SurgicalDetailDTO newSD)
         {
-            string sqlInsert = @"INSERT INTO SURGICALDETAIL (SURGICALID, STAFFID)
+            string sqlInsert = @"INSERT INTO ""SURGICALDETAIL"" (SURGICALID, STAFFID)
                                  VALUES (@SURGICALID, @STAFFID)";
             NpgsqlParameter[] npgsqlParameters = {
                 new NpgsqlParameter("@SURGICALID", newSD.SurgicalID),
@@ -35,7 +35,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int DeleteSurgicalDetail(int surgicalID, int staffID)
         {
-            string sqlDelete = @"DELETE FROM SURGICALDETAIL
+            string sqlDelete = @"DELETE FROM ""SURGICALDETAIL""
                                  WHERE SURGICALID = @SURGICALID AND STAFFID = @STAFFID";
             NpgsqlParameter[] npgsqlParameters = {
                 new NpgsqlParameter("@SURGICALID", surgicalID),
@@ -47,7 +47,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int DeleteSurgicalDetail(int surgicalID)
         {
-            string sqlDelete = @"DELETE FROM SURGICALDETAIL
+            string sqlDelete = @"DELETE FROM ""SURGICALDETAIL""
                                  WHERE SURGICALID = @SURGICALID";
             NpgsqlParameter[] npgsqlParameters = {
                 new NpgsqlParameter("@SURGICALID", surgicalID)
@@ -59,8 +59,8 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         {
             DataTable dtSD = new DataTable();
             string sqlSelect = @"SELECT sd.SURGICALID, s.STAFFID, s.LASTNAME, s.FIRSTNAME
-                                 FROM SURGICALDETAIL sd
-                                 INNER JOIN STAFF s ON sd.STAFFID = s.STAFFID
+                                 FROM ""SURGICALDETAIL"" sd
+                                 INNER JOIN ""STAFF"" s ON sd.STAFFID = s.STAFFID
                                  WHERE sd.SURGICALID = @SURGICALID";
             NpgsqlParameter[] npgsqlParameters = {
                 new NpgsqlParameter("@SURGICALID", surgicalID)

@@ -18,14 +18,14 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         }
         public static int InsertDepartment(DepartmentDTO newDepartment)
         {
-            string sqlInsert = @"INSERT INTO DEPARTMENT (DEPARTMENTNAME) VALUES (@DEPARTMENTNAME)";
+            string sqlInsert = @"INSERT INTO ""DEPARTMENT"" (DEPARTMENTNAME) VALUES (@DEPARTMENTNAME)";
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@DEPARTMENTNAME", newDepartment.DepartmentName) };
             return NpgSqlResult.ExecuteNonQuery(sqlInsert, npgsqlParameters);
         }
 
         public static int UpdateDepartment(DepartmentDTO updateDepartment)
         {
-            string sqlUpdate = @"UPDATE DEPARTMENT SET DEPARTMENTNAME = @DEPARTMENTNAME WHERE (DEPARTMENTID = @DEPARTMENTID)";
+            string sqlUpdate = @"UPDATE ""DEPARTMENT"" SET DEPARTMENTNAME = @DEPARTMENTNAME WHERE (DEPARTMENTID = @DEPARTMENTID)";
             NpgsqlParameter[] npgsqlParameters = {
                 new NpgsqlParameter("@DEPARTMENTID", updateDepartment.DepartmentID),
                 new NpgsqlParameter("@DEPARTMENTNAME", updateDepartment.DepartmentName)
@@ -35,14 +35,14 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int DeleteDepartment(int departmentID)
         {
-            string sqlDelete = @"DELETE FROM DEPARTMENT WHERE (DEPARTMENTID = @DEPARTMENTID)";
+            string sqlDelete = @"DELETE FROM ""DEPARTMENT"" WHERE (DEPARTMENTID = @DEPARTMENTID)";
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@DEPARTMENTID", departmentID) };
             return NpgSqlResult.ExecuteNonQuery(sqlDelete, npgsqlParameters);
         }
 
         public static DepartmentDTO GetDepartment(int departmentID)
         {
-            string sqlSelect = @"SELECT DEPARTMENTID, DEPARTMENTNAME FROM DEPARTMENT WHERE (DEPARTMENTID = @DEPARTMENTID)";
+            string sqlSelect = @"SELECT DEPARTMENTID, DEPARTMENTNAME FROM ""DEPARTMENT"" WHERE (DEPARTMENTID = @DEPARTMENTID)";
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@DEPARTMENTID", departmentID) };
             DataTable dataTable = NpgSqlResult.ExecuteQuery(sqlSelect, npgsqlParameters);
             if (dataTable.Rows.Count > 0)
@@ -59,7 +59,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static DataTable GetListDepartment()
         {
-            string sqlSelect = @"SELECT DEPARTMENTID, DEPARTMENTNAME FROM DEPARTMENT";
+            string sqlSelect = @"SELECT DEPARTMENTID, DEPARTMENTNAME FROM ""DEPARTMENT""";
             return NpgSqlResult.ExecuteQuery(sqlSelect);
         }
 

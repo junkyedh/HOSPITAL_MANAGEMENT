@@ -23,7 +23,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         public static int InsertHospitalBed()
         {
             HospitalBedDTO newHB = new HospitalBedDTO(0, 0, 0);
-            String sqlInsert = @"INSERT INTO HOSPITALBED(PATIENT,STATE)
+            String sqlInsert = @"INSERT INTO ""HOSPITALBED""(PATIENT,STATE)
                                 VALUES        (@PATIENT,@STATE)";
 
             NpgsqlParameter[] npgsqlParameters =
@@ -37,7 +37,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int UpdateHospitalBed(HospitalBedDTO updateHB)
         {
-            string sqlUpdate = @"UPDATE       HOSPITALBED
+            string sqlUpdate = @"UPDATE       ""HOSPITALBED""
                                 SET           PATIENT = @PATIENT, STATE = @STATE
                                 WHERE         BEDID=@BEDID";
 
@@ -53,7 +53,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int DeleteHospitalBed(int bedID)
         {
-            string sqlDelete = @"DELETE FROM HOSPITALBED
+            string sqlDelete = @"DELETE FROM ""HOSPITALBED""
                                 WHERE (BEDID = @BEDID)";
 
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@BEDID", bedID) };
@@ -70,7 +70,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         {
             DataTable dtHB = new DataTable();
             string sqlSelect = @"SELECT        BEDID,PATIENT, h.STATE, COALESCE(p.LASTNAME + ' ' + p.FIRSTNAME, '') AS 'PATIENT NAME'
-                                FROM            HOSPITALBED h left join PATIENT p on h.PATIENT = p.PATIENTID";
+                                FROM            ""HOSPITALBED"" h left join ""PATIENT"" p on h.PATIENT = p.PATIENTID";
 
             dtHB = NpgSqlResult.ExecuteQuery(sqlSelect);
 
@@ -82,7 +82,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             HospitalBedDTO hB = new HospitalBedDTO();
             int tempInterger;
             string sqlSelect = @"SELECT        BEDID,PATIENT, STATE
-                                FROM            HOSPITALBED
+                                FROM            ""HOSPITALBED""
                                 WHERE          (BEDID=@BEDID)";
 
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@BEDID", bedID) };
@@ -101,7 +101,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         {
             HospitalBedDTO hB = new HospitalBedDTO();
             string sqlSelect = @"SELECT        BEDID, PATIENT, STATE
-                                FROM            HOSPITALBED
+                                FROM            ""HOSPITALBED""
                                 WHERE          (PATIENT=@PATIENT)";
 
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@PATIENT", int.Parse(patient)) };
@@ -122,7 +122,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         {
             HospitalBedDTO hB = new HospitalBedDTO();
             string sqlSelect = @"SELECT        PATIENT, STATE, BEDID
-                                FROM            HOSPITALBED
+                                FROM            ""HOSPITALBED""
                                 WHERE          (PATIENT=@PATIENT)";
 
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@PATIENT", patientID) };

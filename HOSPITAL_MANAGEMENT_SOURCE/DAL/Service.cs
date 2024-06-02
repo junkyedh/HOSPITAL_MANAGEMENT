@@ -22,7 +22,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int InsertService(ServiceDTO newService)
         {
-            string sqlInsert = @"INSERT INTO SERVICE(ServiceName, Price)
+            string sqlInsert = @"INSERT INTO ""SERVICE""(ServiceName, Price)
                                 VALUES (@ServiceName, @Price)";
 
             NpgsqlParameter[] npgsqlParameters = {
@@ -35,7 +35,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int UpdateService(ServiceDTO updateService)
         {
-            string sqlUpdate = @"UPDATE SERVICE
+            string sqlUpdate = @"UPDATE ""SERVICE""
                                 SET ServiceName = @ServiceName, Price = @Price
                                 WHERE ServiceID = @ServiceID";
 
@@ -50,7 +50,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int DeleteService(int serviceID)
         {
-            string sqlDelete = @"DELETE FROM SERVICE
+            string sqlDelete = @"DELETE FROM ""SERVICE""
                                 WHERE ServiceID = @ServiceID";
 
             NpgsqlParameter[] npgsqlParameters = {
@@ -63,7 +63,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         public static DataTable GetListService()
         {
             string sqlSelect = @"SELECT ServiceID, ServiceName, Price
-                                FROM SERVICE";
+                                FROM ""SERVICE""";
 
             return NpgSqlResult.ExecuteQuery(sqlSelect);
         }
@@ -73,7 +73,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             Service newService = new Service();
             int tempInteger;
             string sqlSelect = @"SELECT ServiceID, ServiceName, Price
-                                FROM SERVICE
+                                FROM ""SERVICE""
                                 WHERE ServiceID = @ServiceID";
 
             NpgsqlParameter[] npgsqlParameters = {
@@ -98,7 +98,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             Service newService = new Service();
             int tempInteger;
             string sqlSelect = @"SELECT ServiceID, ServiceName, Price
-                                FROM SERVICE
+                                FROM ""SERVICE""
                                 WHERE ServiceID = 100";
 
             DataTable dataTable = NpgSqlResult.ExecuteQuery(sqlSelect);

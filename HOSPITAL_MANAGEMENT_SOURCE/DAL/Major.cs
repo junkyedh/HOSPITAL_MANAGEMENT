@@ -20,7 +20,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public int InsertMajor(MajorDTO major)
         {
-            string sqlInsert = @"INSERT INTO MAJOR(MAJORNAME)
+            string sqlInsert = @"INSERT INTO ""MAJOR""(MAJORNAME)
                                 VALUES (@MajorName)";
 
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@MajorName", major.MajorName) };
@@ -30,7 +30,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public int UpdateMajor(MajorDTO major)
         {
-            string sqlUpdate = @"UPDATE MAJOR
+            string sqlUpdate = @"UPDATE ""MAJOR""
                                 SET MAJORNAME = @MajorName
                                 WHERE (MAJORID = @MajorID)";
 
@@ -44,7 +44,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public int DeleteMajor(int majorID)
         {
-            string sqlDelete = @"DELETE FROM MAJOR
+            string sqlDelete = @"DELETE FROM ""MAJOR""
                                 WHERE (MAJORID = @MajorID)";
 
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@MajorID", majorID) };
@@ -55,7 +55,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         public DataTable GetListMajor()
         {
             string sqlSelect = @"SELECT MAJORID, MAJORNAME
-                                FROM MAJOR";
+                                FROM ""MAJOR""";
 
             DataTable dataTable = NpgSqlResult.ExecuteQuery(sqlSelect);
 
@@ -65,7 +65,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         public MajorDTO GetMajor(int majorID)
         {
             string sqlSelect = @"SELECT MAJORID, MAJORNAME
-                                FROM MAJOR
+                                FROM ""MAJOR""
                                 WHERE (MAJORID = @MAJORID)";
 
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@MAJORID", majorID) };

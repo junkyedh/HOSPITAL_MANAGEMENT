@@ -47,7 +47,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int InsertStaff(Staff staff)
         {
-            string sqlInsert = @"INSERT INTO STAFF
+            string sqlInsert = @"INSERT INTO ""STAFF""
                                 (DEPARTMENTID, MAJORID, ROLEID, PASSWORD, FIRSTNAME, LASTNAME, BIRTHDAY, GENDER, ICN, ADDRESS, STATE, EMAIL)
                                 VALUES
                                 (@DepartmentID, @MajorID, @RoleID, @Password, @FirstName, @LastName, @BirthDay, @Gender, @ICN
@@ -73,7 +73,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int UpdateStaff(Staff staff)
         {
-            string sqlUpdate = @"UPDATE STAFF
+            string sqlUpdate = @"UPDATE ""STAFF""
                                 SET DEPARTMENTID = @DepartmentID, MAJORID = @MajorID, ROLEID = @RoleID, PASSWORD = @Password
                                                  , FIRSTNAME = @FirstName, LASTNAME = @LastName, BIRTHDAY = @BirthDay, GENDER = @Gender
                                                  , ICN = @ICN, ADDRESS = @Address, STATE = @State, EMAIL = @Mail
@@ -100,7 +100,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int DeleteStaff(int staffID)
         {
-            string sqlDelete = @"DELETE FROM STAFF
+            string sqlDelete = @"DELETE FROM ""STAFF""
                                 WHERE (STAFFID = @StaffID)";
 
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@StaffID", staffID) };
@@ -110,12 +110,12 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static DataTable GetListStaff()
         {
-            string sqlSelect = @"SELECT STAFF.STAFFID, DEPARTMENT.DEPARTMENTNAME, MAJOR.MAJORNAME, ROLE.ROLENAME, STAFF.PASSWORD
-                                    , STAFF.FIRSTNAME, STAFF.LASTNAME, STAFF.BIRTHDAY, STAFF.GENDER, STAFF.ICN, STAFF.ADDRESS, STAFF.STATE, STAFF.EMAIL
-                                FROM STAFF INNER JOIN
-                                    DEPARTMENT ON STAFF.DEPARTMENTID = DEPARTMENT.DEPARTMENTID INNER JOIN
-                                    MAJOR ON STAFF.MAJORID = MAJOR.MAJORID INNER JOIN
-                                    ROLE ON STAFF.ROLEID = ROLE.ROLEID";
+            string sqlSelect = @"SELECT ""STAFF"".STAFFID, ""DEPARTMENT"".DEPARTMENTNAME, ""MAJOR"".MAJORNAME, ""ROLE"".ROLENAME, ""STAFF"".PASSWORD
+                                    , ""STAFF"".FIRSTNAME, ""STAFF"".LASTNAME, ""STAFF"".BIRTHDAY, ""STAFF"".GENDER, ""STAFF"".ICN, ""STAFF"".ADDRESS, ""STAFF"".STATE, ""STAFF"".EMAIL
+                                FROM ""STAFF"" INNER JOIN
+                                    ""DEPARTMENT"" ON ""STAFF"".DEPARTMENTID = ""DEPARTMENT"".DEPARTMENTID INNER JOIN
+                                    MAJOR ON ""STAFF"".MAJORID = ""MAJOR"".MAJORID INNER JOIN
+                                    ROLE ON ""STAFF"".ROLEID = ""ROLE"".ROLEID";
 
             staffTable = NpgSqlResult.ExecuteQuery(sqlSelect);
 
@@ -128,7 +128,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             DataTable staffDataTable;
             string sqlSelect = @"SELECT STAFFID, DEPARTMENTID, MAJORID, ROLEID, PASSWORD, FIRSTNAME, LASTNAME, BIRTHDAY,
                                         GENDER, ICN, ADDRESS, STATE, EMAIL
-                                FROM STAFF
+                                FROM ""STAFF""
                                 WHERE (STAFFID = @StaffID)";
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@StaffID", staffID) };
 

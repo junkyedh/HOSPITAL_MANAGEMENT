@@ -30,7 +30,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int InsertEC(ExaminationCertificate newEC)
         {
-            string sqlInsert = @"INSERT INTO EXAMINATIONCERTIFICATE(PATIENTID, STAFFID, DATE, RESULT, STATE)
+            string sqlInsert = @"INSERT INTO ""EXAMINATIONCERTIFICATE""(PATIENTID, STAFFID, DATE, RESULT, STATE)
                                 VALUES (@PATIENTID, @STAFFID, @DATE, @RESULT, @STATE)";
             NpgsqlParameter[] npgsqlParameters = {
                 new NpgsqlParameter("@PATIENTID", newEC.PatientID),
@@ -44,7 +44,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int UpdateEC(ExaminationCertificate updateEC)
         {
-            string sqlUpdate = @"UPDATE EXAMINATIONCERTIFICATE
+            string sqlUpdate = @"UPDATE ""EXAMINATIONCERTIFICATE""
                                 SET DATE = @DATE, RESULT = @RESULT, STATE = @STATE
                                 WHERE ECID = @ECID";
             NpgsqlParameter[] npgsqlParameters = {
@@ -58,7 +58,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int DeleteEC(int eCID)
         {
-            string sqlDelete = @"DELETE FROM EXAMINATIONCERTIFICATE
+            string sqlDelete = @"DELETE FROM ""EXAMINATIONCERTIFICATE""
                                 WHERE ECID = @ECID";
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@ECID", eCID) };
             return NpgSqlResult.ExecuteNonQuery(sqlDelete, npgsqlParameters);
@@ -67,14 +67,14 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         public  static DataTable GetListEC()
         {
             string sqlSelect = @"SELECT ECID, PATIENTID, STAFFID, DATE, RESULT, STATE
-                                 FROM EXAMINATIONCERTIFICATE";
+                                 FROM ""EXAMINATIONCERTIFICATE""";
             return NpgSqlResult.ExecuteQuery(sqlSelect);
         }
 
         public static ExaminationCertificate GetEC(int eCID)
         {
             string sqlSelect = @"SELECT ECID, PATIENTID, STAFFID, DATE, RESULT, STATE
-                                 FROM EXAMINATIONCERTIFICATE
+                                 FROM ""EXAMINATIONCERTIFICATE""
                                  WHERE ECID = @ECID";
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@ECID", eCID) };
             DataTable dataTable = NpgSqlResult.ExecuteQuery(sqlSelect, npgsqlParameters);
