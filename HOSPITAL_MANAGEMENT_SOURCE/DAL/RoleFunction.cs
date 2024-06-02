@@ -80,6 +80,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
                 new NpgsqlParameter("@FunctionID", functionID)
             };
 
+
             DataTable dataTable = NpgSqlResult.ExecuteQuery(sqlSelect, npgsqlParameters);
 
             if (dataTable.Rows.Count > 0)

@@ -59,6 +59,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return NpgSqlResult.ExecuteNonQuery(sqlDelete, npgsqlParameters);
         }
 
+
         public static DataTable GetListTestDetail(int tCID)
         {
             DataTable dtTD = new DataTable();

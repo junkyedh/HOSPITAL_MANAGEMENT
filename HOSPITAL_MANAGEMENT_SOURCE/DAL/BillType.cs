@@ -38,6 +38,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
                 return billType;
             }
 
+
             return null;
         }
 

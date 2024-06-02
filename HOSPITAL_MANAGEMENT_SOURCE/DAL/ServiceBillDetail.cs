@@ -73,6 +73,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
                 new NpgsqlParameter("@BILLID", billID)
             };
 
+
             return NpgSqlResult.ExecuteQuery(sqlSelect, npgsqlParameters);
         }
     }

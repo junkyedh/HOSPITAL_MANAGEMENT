@@ -161,6 +161,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
                 Date = this.Date,
                 State = this.State
             };
+
         }
     }
 }

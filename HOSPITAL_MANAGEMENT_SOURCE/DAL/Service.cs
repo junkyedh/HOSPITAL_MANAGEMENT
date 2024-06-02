@@ -111,6 +111,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
                 newService.Price = Convert.ToDecimal(dataTable.Rows[0][2]);
             }
 
+
             return newService;
         }
     }

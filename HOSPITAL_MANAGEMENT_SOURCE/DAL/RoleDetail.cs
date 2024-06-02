@@ -67,6 +67,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
                 new NpgsqlParameter("@RoleID", roleID)
             };
 
+
             return NpgSqlResult.ExecuteQuery(sqlSelect, npgsqlParameters);
         }
     }

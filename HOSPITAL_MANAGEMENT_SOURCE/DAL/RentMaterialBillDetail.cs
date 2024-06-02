@@ -69,6 +69,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
                                 INNER JOIN ""RENTMATERIALBILLDETAIL"" ON ""MATERIAL"".MATERIALID = ""RENTMATERIALBILLDETAIL"".MATERIALID
                                 WHERE BILLID = @BillID";
 
+
             NpgsqlParameter[] npgsqlParameters = {
                 new NpgsqlParameter("@BillID", billID)
             };

@@ -64,6 +64,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return NpgSqlResult.ExecuteNonQuery(sqlDelete, npgsqlParameters);
         }
 
+
         public static DataTable GetListMedicineBillDetail(int billID)
         {
             DataTable dtMBD = new DataTable();

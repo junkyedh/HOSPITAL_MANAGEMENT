@@ -3,16 +3,184 @@
   "WorkspaceRootPath": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|c:\\users\\junkye\\desktop\\m\u1EC1m ver2\\hospital_management\\hospital_management_source\\gui\\formlogin_signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\dal\\npgsqlresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:dal\\npgsqlresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|c:\\users\\junkye\\desktop\\m\u1EC1m ver2\\hospital_management\\hospital_management_source\\dto\\postgrehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:dto\\postgrehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\dal\\testtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:dal\\testtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\dal\\testdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:dal\\testdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\dal\\testcertificate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:dal\\testcertificate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\dal\\surgicaldetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:dal\\surgicaldetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\dal\\surgical.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:dal\\surgical.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\dal\\staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:dal\\staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\dal\\servicebilldetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:dal\\servicebilldetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\dal\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:dal\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\dal\\rolefunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:dal\\rolefunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\dal\\roledetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:dal\\roledetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\dal\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:dal\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\dal\\rentmaterialbilldetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:dal\\rentmaterialbilldetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\dal\\prescriptiondetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:dal\\prescriptiondetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\dal\\prescription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:dal\\prescription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\dal\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:dal\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\dal\\medicinebilldetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:dal\\medicinebilldetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\dal\\medicine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:dal\\medicine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\dal\\material.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:dal\\material.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\dal\\major.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:dal\\major.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\dal\\hospitalizationcerificate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:dal\\hospitalizationcerificate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\dal\\hospitalbed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:dal\\hospitalbed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\dal\\hic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:dal\\hic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\dal\\healthmonitoringnote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:dal\\healthmonitoringnote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\dal\\healthfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:dal\\healthfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\dal\\examinationcertificate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:dal\\examinationcertificate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\dal\\disease.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:dal\\disease.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\dal\\dischargecertificate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:dal\\dischargecertificate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\dal\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:dal\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\dal\\dbconnect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:dal\\dbconnect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\dal\\billtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:dal\\billtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\dal\\bill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:dal\\bill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\dal\\bcrypt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:dal\\bcrypt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\dal\\assignmentdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:dal\\assignmentdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|c:\\users\\junkye\\desktop\\m\u1EC1m ver2\\hospital_management\\hospital_management_source\\dal\\assignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:dal\\assignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\dto\\elipsecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:dto\\elipsecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\dto\\ini.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:dto\\ini.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\dto\\bcrypt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:dto\\bcrypt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\dto\\assignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:dto\\assignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\gui\\formassigndetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:gui\\formassigndetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\gui\\formassigndetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:gui\\formassigndetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\gui\\formlogin_signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:gui\\formlogin_signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\gui\\formlogin_signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:gui\\formlogin_signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\dal\\npgsqlresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:dal\\npgsqlresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\gui\\formmainuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -25,10 +193,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\gui\\formservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -77,26 +241,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\gui\\formdcdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:gui\\formdcdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\dal\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:dal\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\dal\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:dal\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\dal\\billtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:dal\\billtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\dal\\assignmentdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:dal\\assignmentdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\dal\\assignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C97CBF9B-1883-4FBD-9D77-73BA04AF922E}|HOSPITAL_MANAGEMENT_SOURCE.csproj|solutionrelative:dal\\assignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -106,45 +250,574 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "PostgreHelper.cs",
+              "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DTO\\PostgreHelper.cs",
+              "RelativeDocumentMoniker": "DTO\\PostgreHelper.cs",
+              "ToolTip": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DTO\\PostgreHelper.cs",
+              "RelativeToolTip": "DTO\\PostgreHelper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T23:33:14.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Service.cs",
+              "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\Service.cs",
+              "RelativeDocumentMoniker": "DAL\\Service.cs",
+              "ToolTip": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\Service.cs",
+              "RelativeToolTip": "DAL\\Service.cs",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAkwHEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T19:31:18.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ServiceBillDetail.cs",
+              "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\ServiceBillDetail.cs",
+              "RelativeDocumentMoniker": "DAL\\ServiceBillDetail.cs",
+              "ToolTip": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\ServiceBillDetail.cs",
+              "RelativeToolTip": "DAL\\ServiceBillDetail.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAAwEsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T19:32:29.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Staff.cs",
+              "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\Staff.cs",
+              "RelativeDocumentMoniker": "DAL\\Staff.cs",
+              "ToolTip": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\Staff.cs",
+              "RelativeToolTip": "DAL\\Staff.cs",
+              "ViewState": "AQIAAIgAAAAAAAAAAAAwwKMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T19:35:42.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Surgical.cs",
+              "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\Surgical.cs",
+              "RelativeDocumentMoniker": "DAL\\Surgical.cs",
+              "ToolTip": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\Surgical.cs",
+              "RelativeToolTip": "DAL\\Surgical.cs",
+              "ViewState": "AQIAAEEAAAAAAAAAAADwv1AAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T19:39:06.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SurgicalDetail.cs",
+              "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\SurgicalDetail.cs",
+              "RelativeDocumentMoniker": "DAL\\SurgicalDetail.cs",
+              "ToolTip": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\SurgicalDetail.cs",
+              "RelativeToolTip": "DAL\\SurgicalDetail.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAA+wEoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T19:40:13.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TestCertificate.cs",
+              "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\TestCertificate.cs",
+              "RelativeDocumentMoniker": "DAL\\TestCertificate.cs",
+              "ToolTip": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\TestCertificate.cs",
+              "RelativeToolTip": "DAL\\TestCertificate.cs",
+              "ViewState": "AQIAAE0AAAAAAAAAAAAswGYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T19:40:58.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TestDetail.cs",
+              "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\TestDetail.cs",
+              "RelativeDocumentMoniker": "DAL\\TestDetail.cs",
+              "ToolTip": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\TestDetail.cs",
+              "RelativeToolTip": "DAL\\TestDetail.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAAwDwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T19:42:38.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TestType.cs",
+              "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\TestType.cs",
+              "RelativeDocumentMoniker": "DAL\\TestType.cs",
+              "ToolTip": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\TestType.cs",
+              "RelativeToolTip": "DAL\\TestType.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAA7wBoAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T19:44:19.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "NpgSqlResult.cs",
               "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\NpgSqlResult.cs",
               "RelativeDocumentMoniker": "DAL\\NpgSqlResult.cs",
               "ToolTip": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\NpgSqlResult.cs",
               "RelativeToolTip": "DAL\\NpgSqlResult.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T11:57:08.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RoleFunction.cs",
+              "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\RoleFunction.cs",
+              "RelativeDocumentMoniker": "DAL\\RoleFunction.cs",
+              "ToolTip": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\RoleFunction.cs",
+              "RelativeToolTip": "DAL\\RoleFunction.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAAwFIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T19:30:39.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\App.config",
+              "RelativeDocumentMoniker": "App.config",
+              "ToolTip": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\App.config",
+              "RelativeToolTip": "App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-06-02T11:52:05.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RoleDetail.cs",
+              "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\RoleDetail.cs",
+              "RelativeDocumentMoniker": "DAL\\RoleDetail.cs",
+              "ToolTip": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\RoleDetail.cs",
+              "RelativeToolTip": "DAL\\RoleDetail.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAuwEUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T19:29:21.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Role.cs",
+              "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\Role.cs",
+              "RelativeDocumentMoniker": "DAL\\Role.cs",
+              "ToolTip": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\Role.cs",
+              "RelativeToolTip": "DAL\\Role.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAAAcwFcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T11:52:05.4Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "RentMaterialBillDetail.cs",
+              "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\RentMaterialBillDetail.cs",
+              "RelativeDocumentMoniker": "DAL\\RentMaterialBillDetail.cs",
+              "ToolTip": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\RentMaterialBillDetail.cs",
+              "RelativeToolTip": "DAL\\RentMaterialBillDetail.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAAwEYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T19:25:59.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "PrescriptionDetail.cs",
+              "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\PrescriptionDetail.cs",
+              "RelativeDocumentMoniker": "DAL\\PrescriptionDetail.cs",
+              "ToolTip": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\PrescriptionDetail.cs",
+              "RelativeToolTip": "DAL\\PrescriptionDetail.cs",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAkwFkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T19:23:55.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Prescription.cs",
+              "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\Prescription.cs",
+              "RelativeDocumentMoniker": "DAL\\Prescription.cs",
+              "ToolTip": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\Prescription.cs",
+              "RelativeToolTip": "DAL\\Prescription.cs",
+              "ViewState": "AQIAAHQAAAAAAAAAAAA9wIcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T19:22:35.977Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Patient.cs",
+              "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\Patient.cs",
+              "RelativeDocumentMoniker": "DAL\\Patient.cs",
+              "ToolTip": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\Patient.cs",
+              "RelativeToolTip": "DAL\\Patient.cs",
+              "ViewState": "AQIAAJkAAAAAAAAAAAAgwK8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T19:21:09.201Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "MedicineBillDetail.cs",
+              "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\MedicineBillDetail.cs",
+              "RelativeDocumentMoniker": "DAL\\MedicineBillDetail.cs",
+              "ToolTip": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\MedicineBillDetail.cs",
+              "RelativeToolTip": "DAL\\MedicineBillDetail.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAAwEIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T19:17:50.921Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Medicine.cs",
+              "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\Medicine.cs",
+              "RelativeDocumentMoniker": "DAL\\Medicine.cs",
+              "ToolTip": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\Medicine.cs",
+              "RelativeToolTip": "DAL\\Medicine.cs",
+              "ViewState": "AQIAADoAAAAAAAAAAAAYwEoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T19:16:42.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Material.cs",
+              "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\Material.cs",
+              "RelativeDocumentMoniker": "DAL\\Material.cs",
+              "ToolTip": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\Material.cs",
+              "RelativeToolTip": "DAL\\Material.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAYwEoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T19:15:54.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Major.cs",
+              "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\Major.cs",
+              "RelativeDocumentMoniker": "DAL\\Major.cs",
+              "ToolTip": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\Major.cs",
+              "RelativeToolTip": "DAL\\Major.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAuwFAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T19:15:16.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "HospitalizationCerificate.cs",
+              "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\HospitalizationCerificate.cs",
+              "RelativeDocumentMoniker": "DAL\\HospitalizationCerificate.cs",
+              "ToolTip": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\HospitalizationCerificate.cs",
+              "RelativeToolTip": "DAL\\HospitalizationCerificate.cs",
+              "ViewState": "AQIAAIkAAAAAAAAAAAAqwKMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T19:14:00.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "HospitalBed.cs",
+              "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\HospitalBed.cs",
+              "RelativeDocumentMoniker": "DAL\\HospitalBed.cs",
+              "ToolTip": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\HospitalBed.cs",
+              "RelativeToolTip": "DAL\\HospitalBed.cs",
+              "ViewState": "AQIAAIIAAAAAAAAAAAAkwJoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T19:10:21.066Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "HIC.cs",
+              "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\HIC.cs",
+              "RelativeDocumentMoniker": "DAL\\HIC.cs",
+              "ToolTip": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\HIC.cs",
+              "RelativeToolTip": "DAL\\HIC.cs",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAkwGsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T19:09:26.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "HealthMonitoringNote.cs",
+              "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\HealthMonitoringNote.cs",
+              "RelativeDocumentMoniker": "DAL\\HealthMonitoringNote.cs",
+              "ToolTip": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\HealthMonitoringNote.cs",
+              "RelativeToolTip": "DAL\\HealthMonitoringNote.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAAkwF0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T19:08:36.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "HealthFile.cs",
+              "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\HealthFile.cs",
+              "RelativeDocumentMoniker": "DAL\\HealthFile.cs",
+              "ToolTip": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\HealthFile.cs",
+              "RelativeToolTip": "DAL\\HealthFile.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAzwB8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T19:07:30.231Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ExaminationCertificate.cs",
+              "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\ExaminationCertificate.cs",
+              "RelativeDocumentMoniker": "DAL\\ExaminationCertificate.cs",
+              "ToolTip": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\ExaminationCertificate.cs",
+              "RelativeToolTip": "DAL\\ExaminationCertificate.cs",
+              "ViewState": "AQIAAEEAAAAAAAAAAAAswF8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T19:04:43.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Disease.cs",
+              "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\Disease.cs",
+              "RelativeDocumentMoniker": "DAL\\Disease.cs",
+              "ToolTip": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\Disease.cs",
+              "RelativeToolTip": "DAL\\Disease.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAuwE0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T19:04:00.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "DischargeCertificate.cs",
+              "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\DischargeCertificate.cs",
+              "RelativeDocumentMoniker": "DAL\\DischargeCertificate.cs",
+              "ToolTip": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\DischargeCertificate.cs",
+              "RelativeToolTip": "DAL\\DischargeCertificate.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAAwEgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T19:01:55.997Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Department.cs",
+              "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\Department.cs",
+              "RelativeDocumentMoniker": "DAL\\Department.cs",
+              "ToolTip": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\Department.cs",
+              "RelativeToolTip": "DAL\\Department.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T11:52:05.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "DbConnect.cs",
+              "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\DbConnect.cs",
+              "RelativeDocumentMoniker": "DAL\\DbConnect.cs",
+              "ToolTip": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\DbConnect.cs",
+              "RelativeToolTip": "DAL\\DbConnect.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T19:00:40.514Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "BillType.cs",
+              "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\BillType.cs",
+              "RelativeDocumentMoniker": "DAL\\BillType.cs",
+              "ToolTip": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\BillType.cs",
+              "RelativeToolTip": "DAL\\BillType.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAQwCgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T11:52:05.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Bill.cs",
+              "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\Bill.cs",
+              "RelativeDocumentMoniker": "DAL\\Bill.cs",
+              "ToolTip": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\Bill.cs",
+              "RelativeToolTip": "DAL\\Bill.cs",
+              "ViewState": "AQIAAJ0AAAAAAAAAAAAzwLwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T18:45:58.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Bcrypt.cs",
+              "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\Bcrypt.cs",
+              "RelativeDocumentMoniker": "DAL\\Bcrypt.cs",
+              "ToolTip": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\Bcrypt.cs",
+              "RelativeToolTip": "DAL\\Bcrypt.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T18:45:46.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "AssignmentDetail.cs",
+              "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\AssignmentDetail.cs",
+              "RelativeDocumentMoniker": "DAL\\AssignmentDetail.cs",
+              "ToolTip": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\AssignmentDetail.cs",
+              "RelativeToolTip": "DAL\\AssignmentDetail.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAmwDEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T11:52:05.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Assignment.cs",
+              "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\Assignment.cs",
+              "RelativeDocumentMoniker": "DAL\\Assignment.cs",
+              "ToolTip": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\Assignment.cs",
+              "RelativeToolTip": "DAL\\Assignment.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAowCsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T11:52:05.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "ElipseControl.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DTO\\ElipseControl.cs",
+              "RelativeDocumentMoniker": "DTO\\ElipseControl.cs",
+              "ToolTip": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DTO\\ElipseControl.cs [Design]",
+              "RelativeToolTip": "DTO\\ElipseControl.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T19:46:43.545Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Ini.cs",
+              "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DTO\\Ini.cs",
+              "RelativeDocumentMoniker": "DTO\\Ini.cs",
+              "ToolTip": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DTO\\Ini.cs",
+              "RelativeToolTip": "DTO\\Ini.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T11:57:08.054Z"
+              "WhenOpened": "2024-06-02T19:46:30.427Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAA0AAAA",
+              "DocumentIndex": 39,
+              "Title": "Bcrypt.cs",
+              "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DTO\\Bcrypt.cs",
+              "RelativeDocumentMoniker": "DTO\\Bcrypt.cs",
+              "ToolTip": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DTO\\Bcrypt.cs",
+              "RelativeToolTip": "DTO\\Bcrypt.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T11:52:05.1Z"
+              "WhenOpened": "2024-06-02T19:46:15.913Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FormMainUser.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\GUI\\FormMainUser.cs",
-              "RelativeDocumentMoniker": "GUI\\FormMainUser.cs",
-              "ToolTip": "D:\\CoSoNganh\\NhapMonCongNghePhanMem\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\GUI\\FormMainUser.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
-              "WhenOpened": "2024-06-02T11:52:05.141Z"
+              "DocumentIndex": 40,
+              "Title": "Assignment.cs",
+              "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DTO\\Assignment.cs",
+              "RelativeDocumentMoniker": "DTO\\Assignment.cs",
+              "ToolTip": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DTO\\Assignment.cs",
+              "RelativeToolTip": "DTO\\Assignment.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T19:46:13.911Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 41,
+              "Title": "FormAssignDetail.cs",
+              "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\GUI\\FormAssignDetail.cs",
+              "RelativeDocumentMoniker": "GUI\\FormAssignDetail.cs",
+              "ToolTip": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\GUI\\FormAssignDetail.cs",
+              "RelativeToolTip": "GUI\\FormAssignDetail.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T14:14:36.858Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "FormAssignDetail.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\GUI\\FormAssignDetail.cs",
+              "RelativeDocumentMoniker": "GUI\\FormAssignDetail.cs",
+              "ToolTip": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\GUI\\FormAssignDetail.cs [Design]",
+              "RelativeToolTip": "GUI\\FormAssignDetail.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T14:14:32.906Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "FormLogin_SignUp.cs",
+              "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\GUI\\FormLogin_SignUp.cs",
+              "RelativeDocumentMoniker": "GUI\\FormLogin_SignUp.cs",
+              "ToolTip": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\GUI\\FormLogin_SignUp.cs",
+              "RelativeToolTip": "GUI\\FormLogin_SignUp.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAQwCEAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T11:52:05.145Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
               "Title": "FormMainUser.cs",
               "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\GUI\\FormMainUser.cs",
               "RelativeDocumentMoniker": "GUI\\FormMainUser.cs",
@@ -156,32 +829,40 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FormLogin_SignUp.cs",
-              "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\GUI\\FormLogin_SignUp.cs",
-              "RelativeDocumentMoniker": "GUI\\FormLogin_SignUp.cs",
-              "ToolTip": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\GUI\\FormLogin_SignUp.cs*",
-              "RelativeToolTip": "GUI\\FormLogin_SignUp.cs*",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAQwCEAAABJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T11:52:05.145Z",
-              "EditorCaption": ""
+              "DocumentIndex": 45,
+              "Title": "FormMainUser.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\GUI\\FormMainUser.cs",
+              "RelativeDocumentMoniker": "GUI\\FormMainUser.cs",
+              "ToolTip": "D:\\CoSoNganh\\NhapMonCongNghePhanMem\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\GUI\\FormMainUser.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-06-02T11:52:05.141Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 47,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T11:52:05.1Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
               "Title": "FormLogin_SignUp.cs [Design]",
               "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\GUI\\FormLogin_SignUp.cs",
               "RelativeDocumentMoniker": "GUI\\FormLogin_SignUp.cs",
-              "ToolTip": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\GUI\\FormLogin_SignUp.cs [Design]*",
-              "RelativeToolTip": "GUI\\FormLogin_SignUp.cs [Design]*",
+              "ToolTip": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\GUI\\FormLogin_SignUp.cs [Design]",
+              "RelativeToolTip": "GUI\\FormLogin_SignUp.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T11:52:05.383Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-06-02T11:52:05.383Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 49,
               "Title": "FormStaffDetail.cs [Design]",
               "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\GUI\\FormStaffDetail.cs",
               "RelativeDocumentMoniker": "GUI\\FormStaffDetail.cs",
@@ -191,7 +872,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 50,
               "Title": "FormSurgicalDetail.cs [Design]",
               "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\GUI\\FormSurgicalDetail.cs",
               "RelativeDocumentMoniker": "GUI\\FormSurgicalDetail.cs",
@@ -201,19 +882,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\App.config",
-              "RelativeDocumentMoniker": "App.config",
-              "ToolTip": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\App.config",
-              "RelativeToolTip": "App.config",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-06-02T11:52:05.39Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 48,
               "Title": "FormService.cs [Design]",
               "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\GUI\\FormService.cs",
               "RelativeDocumentMoniker": "GUI\\FormService.cs",
@@ -223,7 +892,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 51,
               "Title": "FormTestDetail.cs [Design]",
               "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\GUI\\FormTestDetail.cs",
               "RelativeDocumentMoniker": "GUI\\FormTestDetail.cs",
@@ -233,7 +902,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 53,
               "Title": "FormHNDetail.cs [Design]",
               "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\GUI\\FormHNDetail.cs",
               "RelativeDocumentMoniker": "GUI\\FormHNDetail.cs",
@@ -243,7 +912,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 52,
               "Title": "FormHostpitalBedDetail.cs [Design]",
               "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\GUI\\FormHostpitalBedDetail.cs",
               "RelativeDocumentMoniker": "GUI\\FormHostpitalBedDetail.cs",
@@ -253,7 +922,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 54,
               "Title": "FormHICDetail.cs [Design]",
               "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\GUI\\FormHICDetail.cs",
               "RelativeDocumentMoniker": "GUI\\FormHICDetail.cs",
@@ -263,7 +932,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 55,
               "Title": "FormHFDetail.cs [Design]",
               "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\GUI\\FormHFDetail.cs",
               "RelativeDocumentMoniker": "GUI\\FormHFDetail.cs",
@@ -273,7 +942,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 56,
               "Title": "FormHCDetail.cs [Design]",
               "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\GUI\\FormHCDetail.cs",
               "RelativeDocumentMoniker": "GUI\\FormHCDetail.cs",
@@ -283,7 +952,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 57,
               "Title": "FormDiseaseDetail.cs [Design]",
               "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\GUI\\FormDiseaseDetail.cs",
               "RelativeDocumentMoniker": "GUI\\FormDiseaseDetail.cs",
@@ -293,7 +962,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 58,
               "Title": "FormDepartmentDetail.cs [Design]",
               "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\GUI\\FormDepartmentDetail.cs",
               "RelativeDocumentMoniker": "GUI\\FormDepartmentDetail.cs",
@@ -303,73 +972,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 59,
               "Title": "FormDCDetail.cs [Design]",
               "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\GUI\\FormDCDetail.cs",
               "RelativeDocumentMoniker": "GUI\\FormDCDetail.cs",
               "ToolTip": "D:\\CoSoNganh\\NhapMonCongNghePhanMem\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\GUI\\FormDCDetail.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
               "WhenOpened": "2024-06-02T11:52:05.399Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Role.cs",
-              "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\Role.cs",
-              "RelativeDocumentMoniker": "DAL\\Role.cs",
-              "ToolTip": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\Role.cs",
-              "RelativeToolTip": "DAL\\Role.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAQwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T11:52:05.4Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Department.cs",
-              "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\Department.cs",
-              "RelativeDocumentMoniker": "DAL\\Department.cs",
-              "ToolTip": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\Department.cs",
-              "RelativeToolTip": "DAL\\Department.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T11:52:05.401Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "BillType.cs",
-              "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\BillType.cs",
-              "RelativeDocumentMoniker": "DAL\\BillType.cs",
-              "ToolTip": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\BillType.cs",
-              "RelativeToolTip": "DAL\\BillType.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAgwAEAAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T11:52:05.402Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "AssignmentDetail.cs",
-              "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\AssignmentDetail.cs",
-              "RelativeDocumentMoniker": "DAL\\AssignmentDetail.cs",
-              "ToolTip": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\AssignmentDetail.cs",
-              "RelativeToolTip": "DAL\\AssignmentDetail.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAYwAMAAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T11:52:05.402Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Assignment.cs",
-              "DocumentMoniker": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\Assignment.cs",
-              "RelativeDocumentMoniker": "DAL\\Assignment.cs",
-              "ToolTip": "C:\\Users\\JunKye\\Desktop\\M\u1EC1m ver2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\DAL\\Assignment.cs",
-              "RelativeToolTip": "DAL\\Assignment.cs",
-              "ViewState": "AQIAAGoAAAAAAAAAAAA8wAMAAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T11:52:05.403Z"
             }
           ]
         }

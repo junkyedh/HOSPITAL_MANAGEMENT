@@ -48,6 +48,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return NpgSqlResult.ExecuteNonQuery(sqlDelete, npgsqlParameters);
         }
 
+
         public static List<AssignmentDetailDTO> GetListAssignmentDetails(int assignmentID)
         {
             List<AssignmentDetailDTO> list = new List<AssignmentDetailDTO>();

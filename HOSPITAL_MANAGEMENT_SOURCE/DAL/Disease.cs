@@ -75,6 +75,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
                     DiseaseName = dataTable.Rows[0]["DISEASENAME"].ToString(),
                     Symptom = dataTable.Rows[0]["SYMPTOM"].ToString()
                 };
+
             }
             return null;
         }

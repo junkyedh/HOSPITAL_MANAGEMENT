@@ -161,6 +161,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         {
             return true;
         }
+
         public Boolean ChangeInformation()
         {
             return true;

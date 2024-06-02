@@ -29,6 +29,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             Treatment = treatment;
         }
 
+
         public static int InsertHeathFile(HealthFileDTO newHF)
         {
             string sqlInsert = @"INSERT INTO ""HEATHFILE""(PATIENTID, DATE, PATIENTSTATE, PREHISTORY, DISEASE, TREATMENT)

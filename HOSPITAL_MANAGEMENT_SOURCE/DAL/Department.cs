@@ -16,6 +16,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             this.DepartmentID = departmentID;
             this.DepartmentName = DepartmentName;
         }
+
         public static int InsertDepartment(DepartmentDTO newDepartment)
         {
             string sqlInsert = @"INSERT INTO ""DEPARTMENT"" (DEPARTMENTNAME) VALUES (@DEPARTMENTNAME)";

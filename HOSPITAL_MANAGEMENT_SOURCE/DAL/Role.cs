@@ -86,6 +86,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return newRole;
         }
 
+
         public static int GetCurrentIdentity()
         {
             string sqlSelect = @"SELECT last_value FROM role_roleid_seq";

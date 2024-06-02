@@ -27,6 +27,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             this.PatientName = patientName;
         }
 
+
         public static int InsertAssignment(AssignmentDTO newAssignment)
         {
             string sqlInsert = @"INSERT INTO ""ASSIGNMENT"" (PATIENTID, DATE, DISCHARGEDDATE, HOPITALIZATEDATE)
@@ -39,6 +40,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             };
             return NpgSqlResult.ExecuteNonQuery(sqlInsert, npgsqlParameters);
         }
+
 
         public static int UpdateAssignment(AssignmentDTO updateAssignment)
         {

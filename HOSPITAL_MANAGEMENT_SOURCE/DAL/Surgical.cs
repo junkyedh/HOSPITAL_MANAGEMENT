@@ -78,6 +78,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return newSurgical;
         }
 
+
         public static int GetCurrentIdentity()
         {
             string sqlSelect = @"SELECT last_value FROM SURGICAL_SURGICALID_seq";

@@ -186,6 +186,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
                 TotalPrice = this.TotalPrice,
                 State = this.State
             };
+
         }
     }
 }

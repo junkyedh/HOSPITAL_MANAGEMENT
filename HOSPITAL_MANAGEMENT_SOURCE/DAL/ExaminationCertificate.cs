@@ -93,6 +93,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return null;
         }
 
+
         public static int GetCurrentECID()
         {
             string sqlSelect = @"SELECT last_value FROM EXAMINATIONCERTIFICATE_ECID_seq";

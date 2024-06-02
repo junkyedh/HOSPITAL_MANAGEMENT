@@ -71,6 +71,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return null;
         }
 
+
         public static bool IsPatientHadDC(int patientID)
         {
             string sqlSelect = @"SELECT DCID, STAFFID, PATIENTID, DATE, STATE FROM ""DISCHARGEDCERTIFICATE"" WHERE PATIENTID = @PATIENTID";

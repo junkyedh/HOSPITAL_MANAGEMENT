@@ -100,6 +100,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return newTC;
         }
 
+
         public static int GetCurrentIdentity()
         {
             string sqlSelect = @"SELECT LASTVAL()";

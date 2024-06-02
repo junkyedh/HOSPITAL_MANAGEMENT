@@ -72,6 +72,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return dataTable;
         }
 
+
         public static MedicineDTO GetMedicine(int medicineID)
         {
             string sqlSelect = @"SELECT MEDICINEID, MEDICINENAME, QUANTITY, PRICE

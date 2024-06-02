@@ -13,6 +13,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             set { strConn = value; }
         }
 
+
         public NpgsqlConnection GetNpgsqlConnection()
         {
             return new NpgsqlConnection(StrConn);

@@ -78,5 +78,6 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
             return major;
         }
+
     }
 }

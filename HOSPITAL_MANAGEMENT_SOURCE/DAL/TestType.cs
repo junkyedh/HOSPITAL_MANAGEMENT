@@ -27,6 +27,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return dtT;
         }
 
+
         public static TestTypeDTO GetTestType(int testTypeID)
         {
             TestTypeDTO newTestType = new TestTypeDTO();

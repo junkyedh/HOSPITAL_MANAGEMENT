@@ -86,6 +86,8 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
                 new NpgsqlParameter("@PrescriptionID", prescriptionID)
             };
 
+
+
             return NpgSqlResult.ExecuteQuery(sqlSelect, npgsqlParameters);
         }
     }

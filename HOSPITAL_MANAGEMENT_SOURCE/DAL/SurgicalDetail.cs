@@ -72,5 +72,6 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             dtSD.Columns[3].ColumnName = "Tên";
             return dtSD;
         }
+
     }
 }

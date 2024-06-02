@@ -173,6 +173,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             List<PatientDTO> lstPatient = new List<PatientDTO>();
 
 
+
             return lstPatient;
         }
     }

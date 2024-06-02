@@ -72,6 +72,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return dataTable;
         }
 
+
         public static MaterialDTO GetMaterial(int materialID)
         {
             string sqlSelect = @"SELECT MATERIALID, MATERIALNAME, QUANTITY, PRICE

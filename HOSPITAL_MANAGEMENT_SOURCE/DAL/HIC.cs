@@ -105,6 +105,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return dataTable.Rows.Count > 0;
         }
 
+
         public static bool CheckHICExpiration(int HICID)
         {
             HICDTO newHIC = GetHIC(HICID);
