@@ -15,7 +15,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         public int State { get; set; }
         public static int InsertDC(DischargeCertificateDTO newDC)
         {
-            string sqlInsert = @"INSERT INTO DISCHARGEDCERTIFICATE (STAFFID, PATIENTID, DATE, STATE) VALUES (@STAFFID, @PATIENTID, @DATE, @STATE)";
+            string sqlInsert = @"INSERT INTO ""DISCHARGEDCERTIFICATE"" (STAFFID, PATIENTID, DATE, STATE) VALUES (@STAFFID, @PATIENTID, @DATE, @STATE)";
             NpgsqlParameter[] npgsqlParameters = {
                 new NpgsqlParameter("@STAFFID", newDC.StaffID),
                 new NpgsqlParameter("@PATIENTID", newDC.PatientID),
@@ -27,7 +27,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int UpdateDC(DischargeCertificateDTO updateDC)
         {
-            string sqlUpdate = @"UPDATE DISCHARGEDCERTIFICATE SET STAFFID = @STAFFID, PATIENTID = @PATIENTID, DATE = @DATE, STATE = @STATE WHERE DCID = @DCID";
+            string sqlUpdate = @"UPDATE ""DISCHARGEDCERTIFICATE"" SET STAFFID = @STAFFID, PATIENTID = @PATIENTID, DATE = @DATE, STATE = @STATE WHERE DCID = @DCID";
             NpgsqlParameter[] npgsqlParameters = {
                 new NpgsqlParameter("@DCID", updateDC.DCID),
                 new NpgsqlParameter("@STAFFID", updateDC.StaffID),
@@ -40,20 +40,20 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int DeleteDC(int dCID)
         {
-            string sqlDelete = @"DELETE FROM DISCHARGEDCERTIFICATE WHERE DCID = @DCID";
+            string sqlDelete = @"DELETE FROM ""DISCHARGEDCERTIFICATE"" WHERE DCID = @DCID";
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@DCID", dCID) };
             return NpgSqlResult.ExecuteNonQuery(sqlDelete, npgsqlParameters);
         }
 
         public static DataTable GetListDC()
         {
-            string sqlSelect = @"SELECT DCID, STAFFID, PATIENTID, DATE, STATE FROM DISCHARGEDCERTIFICATE";
+            string sqlSelect = @"SELECT DCID, STAFFID, PATIENTID, DATE, STATE FROM ""DISCHARGEDCERTIFICATE""";
             return NpgSqlResult.ExecuteQuery(sqlSelect);
         }
 
         public static DischargeCertificateDTO GetDC(int dCID)
         {
-            string sqlSelect = @"SELECT DCID, STAFFID, PATIENTID, DATE, STATE FROM DISCHARGEDCERTIFICATE WHERE DCID = @DCID";
+            string sqlSelect = @"SELECT DCID, STAFFID, PATIENTID, DATE, STATE FROM ""DISCHARGEDCERTIFICATE"" WHERE DCID = @DCID";
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@DCID", dCID) };
             DataTable dataTable = NpgSqlResult.ExecuteQuery(sqlSelect, npgsqlParameters);
             if (dataTable.Rows.Count > 0)
@@ -71,9 +71,10 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return null;
         }
 
+
         public static bool IsPatientHadDC(int patientID)
         {
-            string sqlSelect = @"SELECT DCID, STAFFID, PATIENTID, DATE, STATE FROM DISCHARGEDCERTIFICATE WHERE PATIENTID = @PATIENTID";
+            string sqlSelect = @"SELECT DCID, STAFFID, PATIENTID, DATE, STATE FROM ""DISCHARGEDCERTIFICATE"" WHERE PATIENTID = @PATIENTID";
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@PATIENTID", patientID) };
             DataTable dtDC = NpgSqlResult.ExecuteQuery(sqlSelect, npgsqlParameters);
             return dtDC.Rows.Count > 0;

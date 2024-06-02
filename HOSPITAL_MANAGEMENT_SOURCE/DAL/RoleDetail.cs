@@ -20,7 +20,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int InsertRoleDetail(RoleDetailDTO newRD)
         {
-            string sqlInsert = @"INSERT INTO ROLEDETAIL(RoleID, FunctionID)
+            string sqlInsert = @"INSERT INTO ""ROLEDETAIL""(RoleID, FunctionID)
                                 VALUES (@RoleID, @FunctionID)";
 
             NpgsqlParameter[] npgsqlParameters = {
@@ -33,7 +33,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int DeleteRoleDetail(int roleID, int functionID)
         {
-            string sqlDelete = @"DELETE FROM ROLEDETAIL
+            string sqlDelete = @"DELETE FROM ""ROLEDETAIL""
                                 WHERE RoleID = @RoleID AND FunctionID = @FunctionID";
 
             NpgsqlParameter[] npgsqlParameters = {
@@ -46,7 +46,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int DeleteRoleDetail(int roleID)
         {
-            string sqlDelete = @"DELETE FROM ROLEDETAIL
+            string sqlDelete = @"DELETE FROM ""ROLEDETAIL""
                                 WHERE RoleID = @RoleID";
 
             NpgsqlParameter[] npgsqlParameters = {
@@ -59,13 +59,14 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         public static DataTable GetListStaffFunction(int roleID)
         {
             string sqlSelect = @"SELECT RF.FunctionID, RF.FunctionName, RF.Button
-                                FROM ROLEDETAIL RD
-                                INNER JOIN ROLEFUNCTION RF ON RD.FunctionID = RF.FunctionID
+                                FROM ""ROLEDETAIL"" RD
+                                INNER JOIN ""ROLEFUNCTION"" RF ON RD.FunctionID = RF.FunctionID
                                 WHERE RD.RoleID = @RoleID";
 
             NpgsqlParameter[] npgsqlParameters = {
                 new NpgsqlParameter("@RoleID", roleID)
             };
+
 
             return NpgSqlResult.ExecuteQuery(sqlSelect, npgsqlParameters);
         }

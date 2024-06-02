@@ -24,7 +24,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int InsertPrescriptionDetail(PrescriptionDetailDTO newPD)
         {
-            string sqlInsert = @"INSERT INTO PRESCRIPTIONDETAIL(PRESCRIPTIONID, MEDICINEID, QUANTITY, INSTRUCTION)
+            string sqlInsert = @"INSERT INTO ""PRESCRIPTIONDETAIL""(PRESCRIPTIONID, MEDICINEID, QUANTITY, INSTRUCTION)
                                 VALUES (@PrescriptionID, @MedicineID, @Quantity, @Instruction)";
 
             NpgsqlParameter[] npgsqlParameters = {
@@ -39,7 +39,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int DeletePrescriptionDetail(int prescriptionID, int medicineID)
         {
-            string sqlDelete = @"DELETE FROM PRESCRIPTIONDETAIL
+            string sqlDelete = @"DELETE FROM ""PRESCRIPTIONDETAIL""
                                 WHERE PRESCRIPTIONID = @PrescriptionID AND MEDICINEID = @MedicineID";
 
             NpgsqlParameter[] npgsqlParameters = {
@@ -52,7 +52,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int DeletePrescriptionDetail(int prescriptionID)
         {
-            string sqlDelete = @"DELETE FROM PRESCRIPTIONDETAIL
+            string sqlDelete = @"DELETE FROM ""PRESCRIPTIONDETAIL""
                                 WHERE PRESCRIPTIONID = @PrescriptionID";
 
             NpgsqlParameter[] npgsqlParameters = {
@@ -65,7 +65,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         public static DataTable GetListPrescriptionDetail(int prescriptionID)
         {
             string sqlSelect = @"SELECT PRESCRIPTIONID, MEDICINEID, QUANTITY, INSTRUCTION
-                                FROM PRESCRIPTIONDETAIL
+                                FROM ""PRESCRIPTIONDETAIL""
                                 WHERE PRESCRIPTIONID = @PrescriptionID";
 
             NpgsqlParameter[] npgsqlParameters = {
@@ -77,14 +77,16 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static DataTable GetListPrescriptionDetailWithMedicine(int prescriptionID)
         {
-            string sqlSelect = @"SELECT MEDICINE.MEDICINEID, MEDICINE.MEDICINENAME, PRESCRIPTIONDETAIL.QUANTITY, MEDICINE.PRICE * PRESCRIPTIONDETAIL.QUANTITY AS PRICE
-                                FROM PRESCRIPTIONDETAIL
-                                INNER JOIN MEDICINE ON PRESCRIPTIONDETAIL.MEDICINEID = MEDICINE.MEDICINEID
-                                WHERE PRESCRIPTIONDETAIL.PRESCRIPTIONID = @PrescriptionID";
+            string sqlSelect = @"SELECT ""MEDICINE"".MEDICINEID, ""MEDICINE"".MEDICINENAME, ""PRESCRIPTIONDETAIL"".QUANTITY, ""MEDICINE"".PRICE * ""PRESCRIPTIONDETAIL"".QUANTITY AS PRICE
+                                FROM ""PRESCRIPTIONDETAIL""
+                                INNER JOIN ""MEDICINE"" ON ""PRESCRIPTIONDETAIL"".MEDICINEID = ""MEDICINE"".MEDICINEID
+                                WHERE ""PRESCRIPTIONDETAIL"".PRESCRIPTIONID = @PrescriptionID";
 
             NpgsqlParameter[] npgsqlParameters = {
                 new NpgsqlParameter("@PrescriptionID", prescriptionID)
             };
+
+
 
             return NpgSqlResult.ExecuteQuery(sqlSelect, npgsqlParameters);
         }

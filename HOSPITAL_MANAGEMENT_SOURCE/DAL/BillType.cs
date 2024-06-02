@@ -21,7 +21,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         public static BillType GetBillType(int billTypeID)
         {
             string sqlSelect = @"SELECT BILLTYPEID, TYPENAME
-                                FROM BILLTYPE
+                                FROM ""BILLTYPE""
                                 WHERE BILLTYPEID = @BILLTYPEID";
 
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@BILLTYPEID", billTypeID) };
@@ -38,6 +38,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
                 return billType;
             }
 
+
             return null;
         }
 
@@ -45,7 +46,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         public static DataTable GetListBillType()
         {
             string sqlSelect = @"SELECT BILLTYPEID AS 'Mã loại hóa đơn', TYPENAME AS 'Tên loại hóa đơn'
-                                FROM BILLTYPE";
+                                FROM ""BILLTYPE""";
 
             return NpgSqlResult.ExecuteQuery(sqlSelect);
         }

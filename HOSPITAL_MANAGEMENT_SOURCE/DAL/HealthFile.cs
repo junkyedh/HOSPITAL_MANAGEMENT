@@ -29,9 +29,10 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             Treatment = treatment;
         }
 
+
         public static int InsertHeathFile(HealthFileDTO newHF)
         {
-            string sqlInsert = @"INSERT INTO HEATHFILE(PATIENTID, DATE, PATIENTSTATE, PREHISTORY, DISEASE, TREATMENT)
+            string sqlInsert = @"INSERT INTO ""HEATHFILE""(PATIENTID, DATE, PATIENTSTATE, PREHISTORY, DISEASE, TREATMENT)
                                 VALUES (@PATIENTID, @DATE, @PATIENTSTATE, @PREHISTORY, @DISEASE, @TREATMENT)";
             NpgsqlParameter[] npgsqlParameters = {
                 new NpgsqlParameter("@PATIENTID", newHF.PatientID),
@@ -46,7 +47,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int UpdateHeathFile(HealthFileDTO updateHF)
         {
-            string sqlUpdate = @"UPDATE HEATHFILE
+            string sqlUpdate = @"UPDATE ""HEATHFILE""
                                 SET DATE = @DATE, PATIENTSTATE = @PATIENTSTATE, PREHISTORY = @PREHISTORY, DISEASE = @DISEASE, TREATMENT = @TREATMENT
                                 WHERE HEATHFILEID = @HEATHFILEID";
             NpgsqlParameter[] npgsqlParameters = {
@@ -62,7 +63,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int DeleteHeathFile(int heathFileID)
         {
-            string sqlDelete = @"DELETE FROM HEATHFILE
+            string sqlDelete = @"DELETE FROM ""HEATHFILE""
                                 WHERE HEATHFILEID = @HEATHFILEID";
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@HEATHFILEID", heathFileID) };
             return NpgSqlResult.ExecuteNonQuery(sqlDelete, npgsqlParameters);
@@ -71,14 +72,14 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         public static DataTable GetListHeathFile()   //cho nay co doi thanh static de chay dc trong formmainhf
         {
             string sqlSelect = @"SELECT HEATHFILEID, PATIENTID, DATE, PATIENTSTATE, PREHISTORY, DISEASE, TREATMENT
-                                 FROM HEATHFILE";
+                                 FROM ""HEATHFILE""";
             return NpgSqlResult.ExecuteQuery(sqlSelect);
         }
 
         public static HealthFileDTO GetHeathFile(int heathFileID)
         {
             string sqlSelect = @"SELECT HEATHFILEID, PATIENTID, DATE, PATIENTSTATE, PREHISTORY, DISEASE, TREATMENT
-                                 FROM HEATHFILE
+                                 FROM ""HEATHFILE""
                                  WHERE HEATHFILEID = @HEATHFILEID";
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@HEATHFILEID", heathFileID) };
             DataTable dataTable = NpgSqlResult.ExecuteQuery(sqlSelect, npgsqlParameters);
@@ -101,7 +102,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         public static bool DidPatientHaveHF(int patientID)
         {
             string sqlSelect = @"SELECT HEATHFILEID, PATIENTID, DATE, PATIENTSTATE, PREHISTORY, DISEASE, TREATMENT
-                                FROM HEATHFILE
+                                FROM ""HEATHFILE""
                                 WHERE PATIENTID = @PATIENTID";
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@PATIENTID", patientID) };
             DataTable dataTable = NpgSqlResult.ExecuteQuery(sqlSelect, npgsqlParameters);

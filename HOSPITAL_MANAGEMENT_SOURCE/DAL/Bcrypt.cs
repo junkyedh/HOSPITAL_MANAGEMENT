@@ -9,6 +9,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 {
     internal class Bcrypt
     {
+
         public static string CreateMD5(string input)
         {
             // Step 1, calculate MD5 hash from input

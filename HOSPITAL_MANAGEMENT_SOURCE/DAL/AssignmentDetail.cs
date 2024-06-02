@@ -20,7 +20,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int InsertAssignmentDetails(AssignmentDetailDTO newAD)
         {
-            string sqlInsert = @"INSERT INTO ASSIGNMENTDETAIL(ASSIGNID, STAFFID)
+            string sqlInsert = @"INSERT INTO ""ASSIGNMENTDETAIL""(ASSIGNID, STAFFID)
                                 VALUES (@ASSIGNID, @STAFFID)";
             NpgsqlParameter[] npgsqlParameters = {
                 new NpgsqlParameter("@ASSIGNID", newAD.AssignID),
@@ -31,7 +31,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public int DeleteAssignmentDetails(AssignmentDetailDTO deleteAD)
         {
-            string sqlDelete = @"DELETE FROM ASSIGNMENTDETAIL
+            string sqlDelete = @"DELETE FROM ""ASSIGNMENTDETAIL""
                                 WHERE (ASSIGNID = @ASSIGNID AND STAFFID = @STAFFID)";
             NpgsqlParameter[] npgsqlParameters = {
                 new NpgsqlParameter("@ASSIGNID", deleteAD.AssignID),
@@ -42,18 +42,19 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int DeleteAssignmentDetails(int assignmentID)
         {
-            string sqlDelete = @"DELETE FROM ASSIGNMENTDETAIL
+            string sqlDelete = @"DELETE FROM ""ASSIGNMENTDETAIL""
                                 WHERE (ASSIGNID = @ASSIGNID)";
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@ASSIGNID", assignmentID) };
             return NpgSqlResult.ExecuteNonQuery(sqlDelete, npgsqlParameters);
         }
 
+
         public static List<AssignmentDetailDTO> GetListAssignmentDetails(int assignmentID)
         {
             List<AssignmentDetailDTO> list = new List<AssignmentDetailDTO>();
-            string sqlSelect = @"SELECT ASSIGNMENTDETAIL.ASSIGNID, ASSIGNMENTDETAIL.STAFFID, STAFF.LASTNAME, STAFF.FIRSTNAME
-                                FROM ASSIGNMENTDETAIL INNER JOIN STAFF ON ASSIGNMENTDETAIL.STAFFID = STAFF.STAFFID
-                                WHERE (ASSIGNMENTDETAIL.ASSIGNID = @ASSIGNID)";
+            string sqlSelect = @"SELECT ""ASSIGNMENTDETAIL"".ASSIGNID, ""ASSIGNMENTDETAIL"".STAFFID, ""STAFF"".LASTNAME, ""STAFF"".FIRSTNAME
+                                FROM ""ASSIGNMENTDETAIL"" INNER JOIN ""STAFF"" ON ""ASSIGNMENTDETAIL"".STAFFID = ""STAFF"".STAFFID
+                                WHERE (""ASSIGNMENTDETAIL"".ASSIGNID = @ASSIGNID)";
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@ASSIGNID", assignmentID) };
             DataTable dtAD = NpgSqlResult.ExecuteQuery(sqlSelect, npgsqlParameters);
 

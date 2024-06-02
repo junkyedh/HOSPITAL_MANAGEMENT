@@ -175,7 +175,6 @@
     <Compile Include="DAL\RoleFunction.cs" />
     <Compile Include="DAL\Service.cs" />
     <Compile Include="DAL\ServiceBillDetail.cs" />
-    <Compile Include="DAL\SqlResult.cs" />
     <Compile Include="DAL\Staff.cs" />
     <Compile Include="DAL\Surgical.cs" />
     <Compile Include="DAL\SurgicalDetail.cs" />

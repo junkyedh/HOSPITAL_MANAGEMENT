@@ -25,7 +25,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int InsertPrescription(PrescriptionDTO newP)
         {
-            string sqlInsert = @"INSERT INTO PRESCRIPTION(STAFFID, PATIENTID, DATE)
+            string sqlInsert = @"INSERT INTO ""PRESCRIPTION""(STAFFID, PATIENTID, DATE)
                                 VALUES (@StaffID, @PatientID, @Date)";
 
             NpgsqlParameter[] npgsqlParameters = {
@@ -39,7 +39,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int UpdatePrescription(PrescriptionDTO updateP)
         {
-            string sqlUpdate = @"UPDATE PRESCRIPTION
+            string sqlUpdate = @"UPDATE ""PRESCRIPTION""
                                 SET PATIENTID = @PatientID, DATE = @Date
                                 WHERE PRESCRIPTIONID = @PrescriptionID";
 
@@ -54,7 +54,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int DeletePrescription(int prescriptionID)
         {
-            string sqlDelete = @"DELETE FROM PRESCRIPTION
+            string sqlDelete = @"DELETE FROM ""PRESCRIPTION""
                                 WHERE PRESCRIPTIONID = @PrescriptionID";
 
             NpgsqlParameter[] npgsqlParameters = {
@@ -69,7 +69,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             List<PrescriptionDTO> prescriptionList = new List<PrescriptionDTO>();
 
             string sqlSelect = @"SELECT PRESCRIPTIONID, STAFFID, PATIENTID, DATE
-                                FROM PRESCRIPTION";
+                                FROM ""PRESCRIPTION""";
 
             DataTable dataTable = NpgSqlResult.ExecuteQuery(sqlSelect);
 
@@ -94,7 +94,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             PrescriptionDTO newPrescription = new PrescriptionDTO();
 
             string sqlSelect = @"SELECT PRESCRIPTIONID, STAFFID, PATIENTID, DATE
-                                FROM PRESCRIPTION
+                                FROM ""PRESCRIPTION""
                                 WHERE PRESCRIPTIONID = @PrescriptionID";
 
             NpgsqlParameter[] npgsqlParameters = {
@@ -126,12 +126,13 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         public static int GetPatientIDInPrescription(int prescriptionID)
         {
             string sqlSelect = @"SELECT PATIENTID
-                                FROM PRESCRIPTION
+                                FROM ""PRESCRIPTION""
                                 WHERE PRESCRIPTIONID = @PrescriptionID";
 
             NpgsqlParameter[] npgsqlParameters = {
                 new NpgsqlParameter("@PrescriptionID", prescriptionID)
             };
+
 
             object ob = NpgSqlResult.ExecuteScalar(sqlSelect, npgsqlParameters);
 

@@ -24,7 +24,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int InsertDisease(Disease newDisease)
         {
-            string sqlInsert = @"INSERT INTO DISEASE(DISEASENAME, SYMPTOM)
+            string sqlInsert = @"INSERT INTO ""DISEASE""(DISEASENAME, SYMPTOM)
                                  VALUES (@DISEASENAME, @SYMPTOM)";
             NpgsqlParameter[] npgsqlParameters = {
                 new NpgsqlParameter("@DISEASENAME", newDisease.DiseaseName),
@@ -35,7 +35,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int UpdateDisease(Disease updateDisease)
         {
-            string sqlUpdate = @"UPDATE DISEASE
+            string sqlUpdate = @"UPDATE ""DISEASE""
                                  SET DISEASENAME = @DISEASENAME, SYMPTOM = @SYMPTOM
                                  WHERE DISEASEID = @DISEASEID";
             NpgsqlParameter[] npgsqlParameters = {
@@ -48,14 +48,14 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int DeleteDisease(int diseaseID)
         {
-            string sqlDelete = @"DELETE FROM DISEASE WHERE DISEASEID = @DISEASEID";
+            string sqlDelete = @"DELETE FROM ""DISEASE"" WHERE DISEASEID = @DISEASEID";
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@DISEASEID", diseaseID) };
             return NpgSqlResult.ExecuteNonQuery(sqlDelete, npgsqlParameters);
         }
 
         public static DataTable GetListDisease()
         {
-            string sqlSelect = @"SELECT DISEASEID, DISEASENAME, SYMPTOM FROM DISEASE";
+            string sqlSelect = @"SELECT DISEASEID, DISEASENAME, SYMPTOM FROM ""DISEASE""";
             return NpgSqlResult.ExecuteQuery(sqlSelect);
         }
 
@@ -63,7 +63,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         public static Disease GetDisease(int diseaseID)
         {
             string sqlSelect = @"SELECT DISEASEID, DISEASENAME, SYMPTOM
-                                 FROM DISEASE
+                                 FROM ""DISEASE""
                                  WHERE DISEASEID = @DISEASEID";
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@DISEASEID", diseaseID) };
             DataTable dataTable = NpgSqlResult.ExecuteQuery(sqlSelect, npgsqlParameters);
@@ -75,6 +75,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
                     DiseaseName = dataTable.Rows[0]["DISEASENAME"].ToString(),
                     Symptom = dataTable.Rows[0]["SYMPTOM"].ToString()
                 };
+
             }
             return null;
         }
