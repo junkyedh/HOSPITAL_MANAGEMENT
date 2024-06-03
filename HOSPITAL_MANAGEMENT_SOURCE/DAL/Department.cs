@@ -5,13 +5,13 @@ using System;
 
 namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 {
-    
+
     public class Department
     {
         public int DepartmentID { get; set; }
         public string DepartmentName { get; set; }
 
-        public Department (int departmentID, string DepartmentName)
+        public Department(int departmentID, string DepartmentName)
         {
             this.DepartmentID = departmentID;
             this.DepartmentName = DepartmentName;

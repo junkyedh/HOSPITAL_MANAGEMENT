@@ -7,7 +7,6 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 {
     public class HealthFile
     {
-
         public int HeathFileID { get; set; }
         public int PatientID { get; set; }
         public DateTime Date { get; set; }
@@ -111,7 +110,8 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public HealthFileDTO ToDTO()
         {
-            return new HealthFileDTO {
+            return new HealthFileDTO
+            {
                 HeathFileID = this.HeathFileID,
                 PatientID = this.PatientID,
                 Date = this.Date,

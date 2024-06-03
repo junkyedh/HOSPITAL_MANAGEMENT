@@ -174,7 +174,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return totalPrice;
         }
 
-        public BillDTO ToDTO ()
+        public BillDTO ToDTO()
         {
             return new BillDTO
             {

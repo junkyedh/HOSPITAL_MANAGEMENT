@@ -7,7 +7,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 {
     public class Disease
     {
-       
+
         public int DiseaseID { get; set; }
         public string DiseaseName { get; set; }
         public string Symptom { get; set; }

@@ -171,9 +171,6 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         public List<PatientDTO> GetResidentPatientList()
         {
             List<PatientDTO> lstPatient = new List<PatientDTO>();
-
-
-
             return lstPatient;
         }
     }
