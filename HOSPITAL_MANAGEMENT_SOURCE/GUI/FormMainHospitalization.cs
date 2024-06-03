@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using HOSPITAL_MANAGEMENT_SOURCE.DAL;
-using HOSPITAL_MANAGEMENT_SOURCE.DTO;
 using System.Windows.Forms;
 
 namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
@@ -102,8 +101,8 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
                     DialogResult dialogResult = MessageBox.Show("Xác nhận giấy nhận viện", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                     if (dialogResult == DialogResult.Yes)
                     {
-                        HospitalizationCertificateDTO confirmHC = HospitalizationCertificate.GetHC(hcID);
-                        PatientDTO updatePatient = Patient.GetPatient(confirmHC.PatientID);
+                        HospitalizationCertificate confirmHC = HospitalizationCertificate.GetHC(hcID);
+                        Patient updatePatient = Patient.GetPatient(confirmHC.PatientID);
                         updatePatient.State = 1;
                         confirmHC.State = 1;
                         if (HospitalizationCertificate.UpdateHC(confirmHC) > 0 && Patient.UpdatePatient(updatePatient) > 0)
@@ -157,7 +156,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             if (bunifuDataGridViewHC.SelectedRows.Count > 0)
             {
                 int hcID = Convert.ToInt32(bunifuDataGridViewHC.SelectedRows[0].Cells[0].Value);
-                HospitalizationCertificateDTO updateHC = HospitalizationCertificate.GetHC(hcID);
+                HospitalizationCertificate updateHC = HospitalizationCertificate.GetHC(hcID);
                 FormHCDetail formHCD = new FormHCDetail(updateHC, "edit");
                 formHCD.ShowDialog();
 
@@ -170,7 +169,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             if (bunifuDataGridViewHC.SelectedRows.Count > 0)
             {
                 int hcID = Convert.ToInt32(bunifuDataGridViewHC.SelectedRows[0].Cells[0].Value);
-                HospitalizationCertificateDTO updateHC = HospitalizationCertificate.GetHC(hcID);
+                HospitalizationCertificate updateHC = HospitalizationCertificate.GetHC(hcID);
                 FormHCDetail formHCD = new FormHCDetail(updateHC, "edit");
                 formHCD.ShowDialog();
 

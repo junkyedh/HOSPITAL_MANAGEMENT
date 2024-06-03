@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using HOSPITAL_MANAGEMENT_SOURCE.DAL;
-using HOSPITAL_MANAGEMENT_SOURCE.DTO;
 using System.Windows.Forms;
 
 namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
@@ -101,7 +100,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
 
                 if (state != 1)
                 {
-                    DischargeCertificateDTO confirmDC = DischargeCertificate.GetDC(dcID);
+                    DischargeCertificate confirmDC = DischargeCertificate.GetDC(dcID);
                     if (HospitalBed.ConfirmPatient(confirmDC.PatientID))
                     {
                         if (Bill.ConfirmPatient(confirmDC.PatientID))
@@ -109,7 +108,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
                             DialogResult dialogResult = MessageBox.Show("Xác nhận giấy xuất viện", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                             if (dialogResult == DialogResult.Yes)
                             {
-                                PatientDTO updatePatient = Patient.GetPatient(confirmDC.PatientID);
+                                Patient updatePatient = Patient.GetPatient(confirmDC.PatientID);
                                 updatePatient.State = 0;
                                 confirmDC.State = 1;
                                 if (DischargeCertificate.UpdateDC(confirmDC) > 0 && Patient.UpdatePatient(updatePatient) > 0)
@@ -175,7 +174,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             if (bunifuDataGridViewDC.SelectedRows.Count > 0)
             {
                 int dcID = Convert.ToInt32(bunifuDataGridViewDC.SelectedRows[0].Cells[0].Value);
-                DischargeCertificateDTO updateDC = DischargeCertificate.GetDC(dcID);
+                DischargeCertificate updateDC = DischargeCertificate.GetDC(dcID);
                 FormDCDetail formDCD = new FormDCDetail(updateDC, "edit");
                 formDCD.ShowDialog();
 
@@ -188,7 +187,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             if (bunifuDataGridViewDC.SelectedRows.Count > 0)
             {
                 int dcID = Convert.ToInt32(bunifuDataGridViewDC.SelectedRows[0].Cells[0].Value);
-                DischargeCertificateDTO updateDC = DischargeCertificate.GetDC(dcID);
+                DischargeCertificate updateDC = DischargeCertificate.GetDC(dcID);
                 FormDCDetail formDCD = new FormDCDetail(updateDC, "edit");
                 formDCD.ShowDialog();
 

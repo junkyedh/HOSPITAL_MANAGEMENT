@@ -295,12 +295,6 @@
     <Compile Include="GUI\FormLogin_SignUp.Designer.cs">
       <DependentUpon>FormLogin_SignUp.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\FormMain.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\FormMain.Designer.cs">
-      <DependentUpon>FormMain.cs</DependentUpon>
-    </Compile>
     <Compile Include="GUI\FormMainAssigment.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -499,12 +493,6 @@
     <Compile Include="GUI\FormTestDetail.Designer.cs">
       <DependentUpon>FormTestDetail.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\TestCSDL.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\TestCSDL.Designer.cs">
-      <DependentUpon>TestCSDL.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\FormAssignDetail.resx">
@@ -542,9 +530,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\FormLogin_SignUp.resx">
       <DependentUpon>FormLogin_SignUp.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\FormMain.resx">
-      <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\FormMainAssigment.resx">
       <DependentUpon>FormMainAssigment.cs</DependentUpon>
@@ -644,9 +629,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\FormTestDetail.resx">
       <DependentUpon>FormTestDetail.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\TestCSDL.resx">
-      <DependentUpon>TestCSDL.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -751,8 +733,8 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Dapper">
-      <Version>2.1.35</Version>
+    <PackageReference Include="Chart.js">
+      <Version>3.7.1</Version>
     </PackageReference>
     <PackageReference Include="Dapper.Contrib">
       <Version>2.0.78</Version>

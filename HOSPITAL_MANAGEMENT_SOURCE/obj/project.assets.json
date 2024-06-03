@@ -2,7 +2,10 @@
   "version": 3,
   "targets": {
     ".NETFramework,Version=v4.7.2": {
-      "Dapper/2.1.35": {
+      "Chart.js/3.7.1": {
+        "type": "package"
+      },
+      "Dapper/2.0.78": {
         "type": "package",
         "compile": {
           "lib/net461/Dapper.dll": {
@@ -361,7 +364,10 @@
       }
     },
     ".NETFramework,Version=v4.7.2/win": {
-      "Dapper/2.1.35": {
+      "Chart.js/3.7.1": {
+        "type": "package"
+      },
+      "Dapper/2.0.78": {
         "type": "package",
         "compile": {
           "lib/net461/Dapper.dll": {
@@ -720,7 +726,10 @@
       }
     },
     ".NETFramework,Version=v4.7.2/win-arm64": {
-      "Dapper/2.1.35": {
+      "Chart.js/3.7.1": {
+        "type": "package"
+      },
+      "Dapper/2.0.78": {
         "type": "package",
         "compile": {
           "lib/net461/Dapper.dll": {
@@ -1079,7 +1088,10 @@
       }
     },
     ".NETFramework,Version=v4.7.2/win-x64": {
-      "Dapper/2.1.35": {
+      "Chart.js/3.7.1": {
+        "type": "package"
+      },
+      "Dapper/2.0.78": {
         "type": "package",
         "compile": {
           "lib/net461/Dapper.dll": {
@@ -1438,7 +1450,10 @@
       }
     },
     ".NETFramework,Version=v4.7.2/win-x86": {
-      "Dapper/2.1.35": {
+      "Chart.js/3.7.1": {
+        "type": "package"
+      },
+      "Dapper/2.0.78": {
         "type": "package",
         "compile": {
           "lib/net461/Dapper.dll": {
@@ -1798,25 +1813,34 @@
     }
   },
   "libraries": {
-    "Dapper/2.1.35": {
-      "sha512": "YKRwjVfrG7GYOovlGyQoMvr1/IJdn+7QzNXJxyMh0YfFF5yvDmTYaJOVYWsckreNjGsGSEtrMTpnzxTUq/tZQw==",
+    "Chart.js/3.7.1": {
+      "sha512": "gJunTMEueTNdA5Hp92J9sv363msSemW+GSy1VtbrwjxCaMrp+/mgB20EdVezbP34dbM+h+A8G5XbEuL6tOJoCw==",
       "type": "package",
-      "path": "dapper/2.1.35",
+      "path": "chart.js/3.7.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "Dapper.png",
-        "dapper.2.1.35.nupkg.sha512",
+        "chart.js.3.7.1.nupkg.sha512",
+        "chart.js.nuspec",
+        "content/Scripts/chart.js",
+        "content/Scripts/chart.min.js"
+      ]
+    },
+    "Dapper/2.0.78": {
+      "sha512": "vLPwL2HZXp/DN17Eu7sg6GMEj02alq7jcy6atn5Gv8i96b9Hu1UoxlCrhInUPfSFLQQiD8O7pdWAE1fdUEO/1Q==",
+      "type": "package",
+      "path": "dapper/2.0.78",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "dapper.2.0.78.nupkg.sha512",
         "dapper.nuspec",
         "lib/net461/Dapper.dll",
         "lib/net461/Dapper.xml",
         "lib/net5.0/Dapper.dll",
         "lib/net5.0/Dapper.xml",
-        "lib/net7.0/Dapper.dll",
-        "lib/net7.0/Dapper.xml",
         "lib/netstandard2.0/Dapper.dll",
-        "lib/netstandard2.0/Dapper.xml",
-        "readme.md"
+        "lib/netstandard2.0/Dapper.xml"
       ]
     },
     "Dapper.Contrib/2.0.78": {
@@ -2455,31 +2479,31 @@
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.7.2": [
-      "Dapper >= 2.1.35",
+      "Chart.js >= 3.7.1",
       "Dapper.Contrib >= 2.0.78",
       "Npgsql >= 8.0.3",
       "System.Configuration.ConfigurationManager >= 8.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ADMIN\\.nuget\\packages\\": {},
+    "C:\\Users\\JunKye\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\CoSoNganh\\NhapMonCongNghePhanMem\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\HOSPITAL_MANAGEMENT_SOURCE.csproj",
+      "projectUniqueName": "C:\\Users\\JunKye\\Desktop\\MỀM VER2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\HOSPITAL_MANAGEMENT_SOURCE.csproj",
       "projectName": "HOSPITAL_MANAGEMENT_SOURCE",
-      "projectPath": "D:\\CoSoNganh\\NhapMonCongNghePhanMem\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\HOSPITAL_MANAGEMENT_SOURCE.csproj",
-      "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-      "outputPath": "D:\\CoSoNganh\\NhapMonCongNghePhanMem\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\obj\\",
+      "projectPath": "C:\\Users\\JunKye\\Desktop\\MỀM VER2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\HOSPITAL_MANAGEMENT_SOURCE.csproj",
+      "packagesPath": "C:\\Users\\JunKye\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\JunKye\\Desktop\\MỀM VER2\\HOSPITAL_MANAGEMENT\\HOSPITAL_MANAGEMENT_SOURCE\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\JunKye\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2494,14 +2518,19 @@
         "net472": {
           "projectReferences": {}
         }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
       "net472": {
         "dependencies": {
-          "Dapper": {
+          "Chart.js": {
             "target": "Package",
-            "version": "[2.1.35, )"
+            "version": "[3.7.1, )"
           },
           "Dapper.Contrib": {
             "target": "Package",

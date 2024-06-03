@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using HOSPITAL_MANAGEMENT_SOURCE.DAL;
-using HOSPITAL_MANAGEMENT_SOURCE.DTO;
 using System.Windows.Forms;
 
 namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
@@ -73,7 +72,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
                     DialogResult dialogResult = MessageBox.Show("Xác nhận trả giường", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                     if (dialogResult == DialogResult.Yes)
                     {
-                        HospitalBedDTO updateHB = HospitalBed.GetHospitalBed(bedID);
+                        HospitalBed updateHB = HospitalBed.GetHospitalBed(bedID);
                         updateHB.Patient = 0;
                         updateHB.State = 0;
                         if (HospitalBed.UpdateHospitalBed(updateHB) > 0)

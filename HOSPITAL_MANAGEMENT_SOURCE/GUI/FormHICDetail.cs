@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using HOSPITAL_MANAGEMENT_SOURCE.DAL;
-using HOSPITAL_MANAGEMENT_SOURCE.DTO;
 using System.Windows.Forms;
 
 namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
@@ -65,7 +64,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
                 {
                     if (bunifuDatePickerExpire.Value > DateTime.Today)
                     {
-                        HICDTO newHIC = new HICDTO();
+                        HIC newHIC = new HIC();
                         newHIC.HICID = hicID;
                         newHIC.PatientID = patientID;
                         newHIC.IssueDate = bunifuDatePickerIssue.Value;

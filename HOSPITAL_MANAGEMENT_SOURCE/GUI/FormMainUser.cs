@@ -169,32 +169,32 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             loginSignup.ShowDialog();
         }
 
-        //// Nếu mà muốn chạy thử biểu đồ thì bỏ comment cái dưới á
-        //private void LoadData()
-        //{
-        //    TestSplineArea();
-        //}
-        //private void TestSplineArea()
-        //{
-        //    Random rand = new Random();
-        //    chart1.DataSource = null; // Xóa dữ liệu cũ
+        // Nếu mà muốn chạy thử biểu đồ thì bỏ comment cái dưới á
+        private void LoadData()
+        {
+            TestSplineArea();
+        }
+        private void TestSplineArea()
+        {
+            Random rand = new Random();
+            chart1.DataSource = null; // Xóa dữ liệu cũ
 
-        //    DataTable dataTable = new DataTable();
-        //    dataTable.Columns.Add("Date", typeof(DateTime));
-        //    dataTable.Columns.Add("TotalAmount", typeof(double));
+            DataTable dataTable = new DataTable();
+            dataTable.Columns.Add("Date", typeof(DateTime));
+            dataTable.Columns.Add("TotalAmount", typeof(double));
 
-        //    // Tạo dữ liệu ngẫu nhiên cho GrossRevenueList
-        //    for (int i = 0; i < 5; i++)
-        //    {
-        //        DateTime date = DateTime.Today.AddDays(-i); // Ngày ngẫu nhiên trong quá khứ
-        //        double totalAmount = rand.Next(1000, 5000); // Số tiền ngẫu nhiên
-        //        dataTable.Rows.Add(date, totalAmount);
-        //    }
+            // Tạo dữ liệu ngẫu nhiên cho GrossRevenueList
+            for (int i = 0; i < 5; i++)
+            {
+                DateTime date = DateTime.Today.AddDays(-i); // Ngày ngẫu nhiên trong quá khứ
+                double totalAmount = rand.Next(1000, 5000); // Số tiền ngẫu nhiên
+                dataTable.Rows.Add(date, totalAmount);
+            }
 
-        //    chart1.DataSource = dataTable;
-        //    chart1.Series[0].XValueMember = "Date";
-        //    chart1.Series[0].YValueMembers = "TotalAmount";
-        //    chart1.DataBind();
-        //}
+            chart1.DataSource = dataTable;
+            chart1.Series[0].XValueMember = "Date";
+            chart1.Series[0].YValueMembers = "TotalAmount";
+            chart1.DataBind();
+        }
     }
 }

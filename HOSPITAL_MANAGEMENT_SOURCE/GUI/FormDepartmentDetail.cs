@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using HOSPITAL_MANAGEMENT_SOURCE.DAL;
-using HOSPITAL_MANAGEMENT_SOURCE.DTO;
 using System.Windows.Forms;
 
 namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
@@ -50,7 +49,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
                     DialogResult dialogResult = MessageBox.Show("Xác nhận cập nhập thông tin phòng ban", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (dialogResult == DialogResult.Yes)
                     {
-                        if (Department.UpdateDepartment(DepartmentDetail.ToDTO()) > 0)
+                        if (Department.UpdateDepartment(DepartmentDetail) > 0)
                         {
                             bunifuSnackbar1.Show(this, "Cập nhật thông tin phòng ban thành công thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                             return;
@@ -61,7 +60,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
                 else
                 {
                     Department newDepartment = new Department(0, bunifuTextBoxDepartmentName.Text);
-                    if (Department.InsertDepartment(newDepartment.ToDTO()) > 0)
+                    if (Department.InsertDepartment(newDepartment) > 0)
                     {
                         bunifuSnackbar1.Show(this, "Thêm phòng ban thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                         return;

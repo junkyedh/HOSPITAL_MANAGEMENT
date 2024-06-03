@@ -7,31 +7,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using HOSPITAL_MANAGEMENT_SOURCE.DAL;
-using HOSPITAL_MANAGEMENT_SOURCE.DTO;
 using System.Windows.Forms;
 
 namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
 {
     public partial class FormHostpitalBedDetail : Form
     {
-        public HospitalBedDTO HBDetail { get; set; }
+        public HospitalBed HBDetail { get; set; }
         public FormHostpitalBedDetail()
         {
             InitializeComponent();
         }
-        /*public FormHostpitalBedDetail(HospitalBed hbDetail)   ////Chỗ này thử đổi sang DTO để 
+        /*public FormHostpitalBedDetail(HospitalBed hbDetail)   ////Chỗ này thử đổi sang  để 
         {                                                       ////để phù hợp với usercontrol 
             InitializeComponent();
             HBDetail = hbDetail;
             SetHospitalBedDetail(hbDetail);
         }*/
-        public FormHostpitalBedDetail(HospitalBedDTO hbDetail)
+        public FormHostpitalBedDetail(HospitalBed hbDetail)
         {
             InitializeComponent();
             HBDetail = hbDetail;
             SetHospitalBedDetail(hbDetail);
         }
-        private void SetHospitalBedDetail(HospitalBedDTO hbDetail)
+        private void SetHospitalBedDetail(HospitalBed hbDetail)
         {
             textBoxHospitalBedID.Text = hbDetail.BedID.ToString();
             textBoxPatientID.Text = hbDetail.Patient.ToString();

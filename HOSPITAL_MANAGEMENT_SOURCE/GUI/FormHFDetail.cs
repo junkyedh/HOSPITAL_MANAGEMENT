@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using HOSPITAL_MANAGEMENT_SOURCE.DAL;
-using HOSPITAL_MANAGEMENT_SOURCE.DTO;
 using System.Windows.Forms;
 
 namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
@@ -26,7 +25,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             InitializeComponent();
             SetHFDetail(patientID);
         }
-        public FormHFDetail(HealthFileDTO hfDetail, String userAction)
+        public FormHFDetail(HealthFile hfDetail, String userAction)
         {
             InitializeComponent();
             this.UserAction = userAction;
@@ -44,7 +43,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             dateCreate.Value = DateTime.Today;
         }
         //For edit feature
-        private void SetHFDetail(HealthFileDTO hfDetail)
+        private void SetHFDetail(HealthFile hfDetail)
         {
             textBoxHFID.Text = hfDetail.HeathFileID.ToString();
             textBoxPatientID.Text = hfDetail.PatientID.ToString();
@@ -102,7 +101,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
                         DialogResult dialogResult = MessageBox.Show("Xác nhận cập nhập thông tin bệnh án", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                         if (dialogResult == DialogResult.Yes)
                         {
-                            if (HealthFile.UpdateHeathFile(newHF.ToDTO()) > 0)
+                            if (HealthFile.UpdateHeathFile(newHF) > 0)
                             {
                                 bunifuSnackbar1.Show(this, "Cập nhập thông tin bệnh án thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                                 return;
@@ -129,7 +128,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
                             newHF.Disease = textBoxDisease.Text;
                             newHF.Treatment = textBoxTreatment.Text;
                             newHF.Date = dateCreate.Value;
-                            if (HealthFile.InsertHeathFile(newHF.ToDTO()) > 0)
+                            if (HealthFile.InsertHeathFile(newHF) > 0)
                             {
                                 bunifuSnackbar1.Show(this, "Thêm bệnh án thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                                 return;

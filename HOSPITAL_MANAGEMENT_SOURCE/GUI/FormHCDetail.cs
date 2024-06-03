@@ -7,14 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using HOSPITAL_MANAGEMENT_SOURCE.DAL;
-using HOSPITAL_MANAGEMENT_SOURCE.DTO;
 using System.Windows.Forms;
 
 namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
 {
     public partial class FormHCDetail : Form
     {
-        public HospitalizationCertificateDTO HCDetail { get; set; }
+        public HospitalizationCertificate HCDetail { get; set; }
         public String UserAction { get; set; }
         public FormHCDetail()
         {
@@ -56,14 +55,14 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             bunifuDatePickerHospitalizate.Enabled = false;
             bunifuDatePickerHospitalizate.Value = DateTime.Today;
         }
-        public FormHCDetail(HospitalizationCertificateDTO hcDetail, String userAction)
+        public FormHCDetail(HospitalizationCertificate hcDetail, String userAction)
         {
             InitializeComponent();
             this.HCDetail = hcDetail;
             this.UserAction = userAction;
             SetHCDetail(hcDetail);
         }
-        private void SetHCDetail(HospitalizationCertificateDTO hcDetail)
+        private void SetHCDetail(HospitalizationCertificate hcDetail)
         {
             bunifuTextBoxHICD.Text = hcDetail.HCID.ToString();
             bunifuTextBoxStaffID.Text = hcDetail.StaffID.ToString();
@@ -103,7 +102,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
 
                     if (dialogResult == DialogResult.Yes)
                     {
-                        if (HospitalizationCertificate.UpdateHC(newHC.ToDTO()) > 0)
+                        if (HospitalizationCertificate.UpdateHC(newHC) > 0)
                             bunifuSnackbar1.Show(this, "Cập nhật thông tin giấy nhập viện thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                         return;
                     }
@@ -124,7 +123,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
                         newHC.Reason = bunifuTextBoxReason.Text;
                         newHC.State = 0;
                         newHC.Date = bunifuDatePickerHospitalizate.Value;
-                        if (HospitalizationCertificate.InsertHC(newHC.ToDTO()) > 0)
+                        if (HospitalizationCertificate.InsertHC(newHC) > 0)
                         {
                             bunifuSnackbar1.Show(this, "Thêm giấy nhập viện thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                             return;

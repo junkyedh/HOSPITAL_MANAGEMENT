@@ -93,7 +93,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
                         DialogResult dialogResult = MessageBox.Show("Xác nhận cập nhập thông tin phiếu theo dõi sức khỏe", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                         if (dialogResult == DialogResult.Yes)
                         {
-                            if (HealthMonitoringNote.UpdateHN(newHN.ToDTO()) > 0)
+                            if (HealthMonitoringNote.UpdateHN(newHN) > 0)
                             {
                                 bunifuSnackbar1.Show(this, "Cập nhật thông tin phiếu theo dõi sức khỏe thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                                 return;
@@ -111,7 +111,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
                         newHN.Weight = textBoxWeight.Text;
                         newHN.BloodPressure = textBoxBloodPressure.Text;
                         newHN.Date = dateCreate.Value;
-                        if (HealthMonitoringNote.InsertHN(newHN.ToDTO()) > 0)
+                        if (HealthMonitoringNote.InsertHN(newHN) > 0)
                         {
                             bunifuSnackbar1.Show(this, "Thêm phiếu theo dõi sức khỏe thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                             return;

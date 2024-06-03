@@ -7,14 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using HOSPITAL_MANAGEMENT_SOURCE.DAL;
-using HOSPITAL_MANAGEMENT_SOURCE.DTO;
 using System.Windows.Forms;
 
 namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
 {
     public partial class FormDCDetail : Form
     {
-        public DischargeCertificateDTO DCDetail { get; set; }
+        public DischargeCertificate DCDetail { get; set; }
         public String UserAction { get; set; }
         public FormDCDetail()
         {
@@ -36,14 +35,14 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             bunifuDropdownState.Enabled = false;
         }
         //This constructor for update, confirm feature
-        public FormDCDetail(DischargeCertificateDTO dcDetail, String userAction)
+        public FormDCDetail(DischargeCertificate dcDetail, String userAction)
         {
             InitializeComponent();
             this.DCDetail = dcDetail;
             this.UserAction = userAction;
             SetDCForUpdate(dcDetail);
         }
-        private void SetDCForUpdate(DischargeCertificateDTO dcDetail)
+        private void SetDCForUpdate(DischargeCertificate dcDetail)
         {
             bunifuTextBoxDCID.Text = dcDetail.DCID.ToString();
             bunifuTextBoxPatientID.Text = dcDetail.PatientID.ToString();
@@ -62,7 +61,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
         {
             try
             {
-                DischargeCertificateDTO newDC = new DischargeCertificateDTO();
+                DischargeCertificate newDC = new DischargeCertificate();
                 newDC.PatientID = Convert.ToInt32(bunifuTextBoxPatientID.Text);
                 newDC.StaffID = Convert.ToInt32(bunifuTextBoxStaffID.Text);
                 newDC.Date = bunifuDatePickerDischarge.Value;

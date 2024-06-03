@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using HOSPITAL_MANAGEMENT_SOURCE.DAL;
-using HOSPITAL_MANAGEMENT_SOURCE.DTO;
 using System.Windows.Forms;
 
 namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
@@ -28,7 +27,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             if (bunifuDataGridViewBill.SelectedRows.Count > 0)
             {
                 // Get bill for edit
-                BillDTO billDetail = Bill.GetBill(Convert.ToInt32(bunifuDataGridViewBill.SelectedRows[0].Cells[0].Value.ToString()));
+                Bill billDetail = Bill.GetBill(Convert.ToInt32(bunifuDataGridViewBill.SelectedRows[0].Cells[0].Value.ToString()));
 
                 // Open billdetail form for edit
                 FormBillDetail billDetailForm = new FormBillDetail("edit", billDetail);
@@ -112,7 +111,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             if (bunifuDataGridViewBill.SelectedRows.Count > 0)
             {
                 // Get bill for print
-                BillDTO billDetail = Bill.GetBill(Convert.ToInt32(bunifuDataGridViewBill.SelectedRows[0].Cells[0].Value.ToString()));
+                Bill billDetail = Bill.GetBill(Convert.ToInt32(bunifuDataGridViewBill.SelectedRows[0].Cells[0].Value.ToString()));
 
                 /*FormReport reportForm = new FormReport();
 

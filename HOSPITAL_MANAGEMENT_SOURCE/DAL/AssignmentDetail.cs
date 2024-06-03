@@ -9,12 +9,15 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
     {
         public int AssignID { get; set; }
         public int StaffID { get; set; }
+        public string StaffName { get; set; }
+
 
         public AssignmentDetail() { }
-        public AssignmentDetail(int assignID, int staffID)
+        public AssignmentDetail(int assignID, int staffID, string staffName)
         {
             this.AssignID = assignID;
             this.StaffID = staffID;
+            this.StaffName = staffName;
         }
 
         public static int InsertAssignmentDetails(AssignmentDetail newAD)

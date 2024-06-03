@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using HOSPITAL_MANAGEMENT_SOURCE.DTO;
 using HOSPITAL_MANAGEMENT_SOURCE.DAL;
 
 namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
@@ -49,7 +48,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             }
             listBoxSystemStaff.SelectedIndex = 0;
 
-            List<AssignmentDetailDTO> assignmentDetails = AssignmentDetail.GetListAssignmentDetails(assignDetail.AssignID);
+            List<AssignmentDetail> assignmentDetails = AssignmentDetail.GetListAssignmentDetails(assignDetail.AssignID);
             foreach (var detail in assignmentDetails)
             {
                 String staffName = detail.StaffName;
@@ -66,7 +65,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
        
         private void SetADForInsert(int patientID)
         {
-            HospitalizationCertificateDTO newHC = HospitalizationCertificate.GetHC(Convert.ToDecimal(patientID));
+            HospitalizationCertificate newHC = HospitalizationCertificate.GetHC(Convert.ToDecimal(patientID));
             textBoxPatientID.Text = patientID.ToString();
             dateDischarge.Value = DateTime.Today;
             dateCreate.Value = DateTime.Today;
@@ -95,7 +94,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
                 {
                     try
                     {
-                        AssignmentDTO newAssign = new AssignmentDTO();
+                        Assignment newAssign = new Assignment();
                         newAssign.PatientID = Convert.ToInt32(textBoxPatientID.Text);
                         newAssign.DischargedDate = dateDischarge.Value;
                         newAssign.HospitalizateDate = dateHospitalize.Value;
@@ -113,7 +112,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
                                     {
                                         AssignmentDetail newAD = listAD[i];
                                         newAD.AssignID = newAssign.AssignID;
-                                        AssignmentDetail.InsertAssignmentDetails(newAD.ToDTO());
+                                        AssignmentDetail.InsertAssignmentDetails(newAD);
                                     }
                                     listAD.Clear();
                                     bunifuSnackbar1.Show(this, "Cập nhập thông tin bảng phân công thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
@@ -130,7 +129,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
                                 for (int i = 0; i < listAD.Count; i++)
                                 {
                                     listAD[i].AssignID = curAssignID;
-                                    AssignmentDetail.InsertAssignmentDetails(listAD[i].ToDTO());
+                                    AssignmentDetail.InsertAssignmentDetails(listAD[i]);
                                 }
                                 bunifuSnackbar1.Show(this, "Thêm bảng phân công thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
                                 return;
@@ -193,7 +192,9 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             }
             else
             {
-                AssignmentDetail newAD = new AssignmentDetail(0, listStaff[selectedStaff].StaffID);
+                string staffName = listStaff[selectedStaff].FirstName + " " + listStaff[selectedStaff].LastName;
+
+                AssignmentDetail newAD = new AssignmentDetail(0, listStaff[selectedStaff].StaffID, staffName);
                 listAD.Add(newAD);
                 listBoxCurrentStaff.Items.Add(listBoxSystemStaff.Items[selectedStaff].ToString());
                 listBoxCurrentStaff.SelectedIndex = 0;

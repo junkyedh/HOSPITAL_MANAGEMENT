@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HOSPITAL_MANAGEMENT_SOURCE.DAL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -6,14 +7,13 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using HOSPITAL_MANAGEMENT_SOURCE.DAL;
-using HOSPITAL_MANAGEMENT_SOURCE.DTO;
 using System.Windows.Forms;
 
 namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
 {
     public partial class FormMainHF : UserControl
     {
+
         public FormMainHF()
         {
             InitializeComponent();
@@ -80,10 +80,12 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             if (bunifuDataGridViewHF.SelectedRows.Count > 0)
             {
                 int heathFileID = Convert.ToInt32(bunifuDataGridViewHF.SelectedRows[0].Cells[0].Value);
-                FormHFDetail formHFDetail = new FormHFDetail(HealthFile.GetHeathFile(heathFileID), "edit");
+                HealthFile updateHeathFile = HealthFile.GetHeathFile(heathFileID);
+                FormHFDetail formHFDetail = new FormHFDetail(updateHeathFile, "edit");
                 formHFDetail.ShowDialog();
 
                 refreshDataViewHeathFile();
+
             }
         }
 
@@ -138,6 +140,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
 
                 refreshDataViewHeathFile();
             }
+           
         }
     }
 }

@@ -9,16 +9,15 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using HOSPITAL_MANAGEMENT_SOURCE.DAL;
-using HOSPITAL_MANAGEMENT_SOURCE.DTO;
 using System.Globalization;
 
 namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
 {
     public partial class FormBillDetail : Form
     {
-        public BillDTO BillDetail { get; set; }       // O day sua thanh DTO 
+        public Bill BillDetail { get; set; }       // O day sua thanh  
         public Staff StaffDetail { get; set; }
-        public PatientDTO PatientDetail { get; set; }
+        public Patient PatientDetail { get; set; }
         public string UserAction { get; set; }
         public int PrescriptionID { get; set; }
         public int HICID { get; set; }
@@ -31,7 +30,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             InitializeComponent();
         }
 
-        public FormBillDetail(string userAction, BillDTO bill)
+        public FormBillDetail(string userAction, Bill bill)
         {
             InitializeComponent();
 
@@ -90,22 +89,22 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             {
                 case Bill.MEDICINEBILL:
 
-                    MedicineBillDetailDTO newMedicineBillDetailDTO = new MedicineBillDetailDTO();
+                    MedicineBillDetail newMedicineBillDetail = new MedicineBillDetail();
 
                     foreach (DataRow record in ((DataTable)bunifuDataGridViewBillDetail.DataSource).Rows)
                     {
-                        newMedicineBillDetailDTO.BillID = BillDetail.BillID;
-                        newMedicineBillDetailDTO.MedicineID = Convert.ToInt32(record["MEDICINEID"]);
-                        newMedicineBillDetailDTO.Quantity = Convert.ToInt32(record["Số lượng"]);
-                        newMedicineBillDetailDTO.Price = Convert.ToDecimal(record["Giá"]);
+                        newMedicineBillDetail.BillID = BillDetail.BillID;
+                        newMedicineBillDetail.MedicineID = Convert.ToInt32(record["MEDICINEID"]);
+                        newMedicineBillDetail.Quantity = Convert.ToInt32(record["Số lượng"]);
+                        newMedicineBillDetail.Price = Convert.ToDecimal(record["Giá"]);
 
-                        MedicineBillDetail.InsertMedicineBillDetail(newMedicineBillDetailDTO);
+                        MedicineBillDetail.InsertMedicineBillDetail(newMedicineBillDetail);
                     }
                     break;
 
                 case Bill.SERVICEBILL:
 
-                    ServiceBillDetailDTO newServiceBillDetail = new ServiceBillDetailDTO();
+                    ServiceBillDetail newServiceBillDetail = new ServiceBillDetail();
 
                     foreach (DataRow record in ((DataTable)bunifuDataGridViewBillDetail.DataSource).Rows)
                     {
@@ -119,7 +118,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
                     break;
                 case Bill.MATERIALBILL:
 
-                    RentMaterialBillDetailDTO newRentMaterialBillDetail = new RentMaterialBillDetailDTO();
+                    RentMaterialBillDetail newRentMaterialBillDetail = new RentMaterialBillDetail();
 
                     foreach (DataRow record in ((DataTable)bunifuDataGridViewBillDetail.DataSource).Rows)
                     {
@@ -172,7 +171,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
                         Bill.UpdateBill(BillDetail);
                     }
 
-                    BillDTO billReport;
+                    Bill billReport;
 
                     if ("insert".Equals(UserAction))
                     {
