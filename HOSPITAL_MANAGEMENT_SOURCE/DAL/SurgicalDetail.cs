@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Data;
 using Npgsql;
-using HOSPITAL_MANAGEMENT_SOURCE.DTO;
 
 namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 {
@@ -18,7 +17,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             this.StaffID = staffID;
         }
 
-        public static int InsertSurgicalDetail(SurgicalDetailDTO newSD)
+        public static int InsertSurgicalDetail(SurgicalDetail newSD)
         {
             string sqlInsert = @"INSERT INTO ""SURGICALDETAIL"" (SURGICALID, STAFFID)
                                  VALUES (@SURGICALID, @STAFFID)";

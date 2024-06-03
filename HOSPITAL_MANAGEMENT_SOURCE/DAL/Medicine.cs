@@ -1,6 +1,5 @@
 ﻿using System.Data;
 using Npgsql;
-using HOSPITAL_MANAGEMENT_SOURCE.DTO;
 using System;
 
 namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
@@ -22,7 +21,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             Price = price;
         }
 
-        public static int InsertMedicine(MedicineDTO newMedicine)
+        public static int InsertMedicine(Medicine newMedicine)
         {
             string sqlInsert = @"INSERT INTO ""MEDICINE""(MEDICINENAME, QUANTITY, PRICE)
                                 VALUES (@MEDICINENAME, @QUANTITY, @PRICE)";
@@ -36,7 +35,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return NpgSqlResult.ExecuteNonQuery(sqlInsert, npgsqlParameters);
         }
 
-        public static int UpdateMedicine(MedicineDTO updateMedicine)
+        public static int UpdateMedicine(Medicine updateMedicine)
         {
             string sqlUpdate = @"UPDATE ""MEDICINE""
                                 SET MEDICINENAME = @MEDICINENAME, QUANTITY = @QUANTITY, PRICE = @PRICE
@@ -73,7 +72,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         }
 
 
-        public static MedicineDTO GetMedicine(int medicineID)
+        public static Medicine GetMedicine(int medicineID)
         {
             string sqlSelect = @"SELECT MEDICINEID, MEDICINENAME, QUANTITY, PRICE
                                 FROM ""MEDICINE""
@@ -83,7 +82,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
             DataTable dataTable = NpgSqlResult.ExecuteQuery(sqlSelect, npgsqlParameters);
 
-            MedicineDTO medicine = new MedicineDTO();
+            Medicine medicine = new Medicine();
             medicine.MedicineID = Convert.ToInt32(dataTable.Rows[0]["MEDICINEID"]);
             medicine.MedicineName = Convert.ToString(dataTable.Rows[0]["MEDICINENAME"]);
             medicine.Quantity = Convert.ToInt32(dataTable.Rows[0]["QUANTITY"]);

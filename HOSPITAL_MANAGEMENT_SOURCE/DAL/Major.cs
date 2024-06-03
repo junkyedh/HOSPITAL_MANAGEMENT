@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Data;
 using Npgsql;
-using HOSPITAL_MANAGEMENT_SOURCE.DTO;
 
 namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 {
@@ -18,7 +17,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             MajorName = majorName;
         }
 
-        public int InsertMajor(MajorDTO major)
+        public int InsertMajor(Major major)
         {
             string sqlInsert = @"INSERT INTO ""MAJOR""(MAJORNAME)
                                 VALUES (@MajorName)";
@@ -28,7 +27,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return NpgSqlResult.ExecuteNonQuery(sqlInsert, npgsqlParameters);
         }
 
-        public int UpdateMajor(MajorDTO major)
+        public int UpdateMajor(Major major)
         {
             string sqlUpdate = @"UPDATE ""MAJOR""
                                 SET MAJORNAME = @MajorName
@@ -62,7 +61,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return dataTable;
         }
 
-        public MajorDTO GetMajor(int majorID)
+        public Major GetMajor(int majorID)
         {
             string sqlSelect = @"SELECT MAJORID, MAJORNAME
                                 FROM ""MAJOR""
@@ -72,7 +71,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
             DataTable dataTable = NpgSqlResult.ExecuteQuery(sqlSelect, npgsqlParameters);
 
-            MajorDTO major = new MajorDTO();
+            Major major = new Major();
             major.MajorID = Convert.ToInt32(dataTable.Rows[0]["MAJORID"]);
             major.MajorName = Convert.ToString(dataTable.Rows[0]["MAJORNAME"]);
 

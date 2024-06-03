@@ -1,5 +1,4 @@
-﻿using HOSPITAL_MANAGEMENT_SOURCE.DTO;
-using Npgsql;
+﻿using Npgsql;
 using System;
 using System.Data;
 
@@ -22,7 +21,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int InsertHospitalBed()
         {
-            HospitalBedDTO newHB = new HospitalBedDTO(0, 0, 0);
+            HospitalBed newHB = new HospitalBed(0, 0, 0);
             String sqlInsert = @"INSERT INTO ""HOSPITALBED""(PATIENT,STATE)
                                 VALUES        (@PATIENT,@STATE)";
 
@@ -35,7 +34,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return NpgSqlResult.ExecuteNonQuery(sqlInsert, npgsqlParameters);
         }
 
-        public static int UpdateHospitalBed(HospitalBedDTO updateHB)
+        public static int UpdateHospitalBed(HospitalBed updateHB)
         {
             string sqlUpdate = @"UPDATE       ""HOSPITALBED""
                                 SET           PATIENT = @PATIENT, STATE = @STATE
@@ -77,9 +76,9 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return dtHB;
         }
 
-        public static HospitalBedDTO GetHospitalBed(int bedID)
+        public static HospitalBed GetHospitalBed(int bedID)
         {
-            HospitalBedDTO hB = new HospitalBedDTO();
+            HospitalBed hB = new HospitalBed();
             int tempInterger;
             string sqlSelect = @"SELECT        BEDID,PATIENT, STATE
                                 FROM            ""HOSPITALBED""
@@ -97,9 +96,9 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return hB;
         }
 
-        public static HospitalBedDTO GetHospitalBed(String patient)
+        public static HospitalBed GetHospitalBed(String patient)
         {
-            HospitalBedDTO hB = new HospitalBedDTO();
+            HospitalBed hB = new HospitalBed();
             string sqlSelect = @"SELECT        BEDID, PATIENT, STATE
                                 FROM            ""HOSPITALBED""
                                 WHERE          (PATIENT=@PATIENT)";
@@ -120,7 +119,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static Boolean CheckPatient(int patientID)
         {
-            HospitalBedDTO hB = new HospitalBedDTO();
+            HospitalBed hB = new HospitalBed();
             string sqlSelect = @"SELECT        PATIENT, STATE, BEDID
                                 FROM            ""HOSPITALBED""
                                 WHERE          (PATIENT=@PATIENT)";
@@ -140,15 +139,6 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
                 return true;
         }
 
-        public HospitalBedDTO ToDTO ()
-        {
-            return new HospitalBedDTO
-            {
-                    BedID = this.BedID,
-                    Patient = this.Patient,
-                    State = this.State
-            };
-        }
     }
 }
 

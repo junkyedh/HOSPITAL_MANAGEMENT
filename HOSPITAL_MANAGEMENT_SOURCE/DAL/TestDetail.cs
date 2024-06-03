@@ -1,5 +1,4 @@
-﻿using HOSPITAL_MANAGEMENT_SOURCE.DTO;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using Npgsql;
@@ -21,7 +20,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             this.Result = result;
         }
 
-        public static int InsertTestDetail(TestDetailDTO newTD)
+        public static int InsertTestDetail(TestDetail newTD)
         {
             string sqlInsert = @"INSERT INTO ""TESTDETAIL""(TCID, TESTTYPEID, RESULT)
                                 VALUES (@TCID, @TESTTYPEID, @RESULT)";

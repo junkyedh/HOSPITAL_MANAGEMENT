@@ -1,5 +1,4 @@
-﻿using HOSPITAL_MANAGEMENT_SOURCE.DTO;
-using System;
+﻿using System;
 using System.Data;
 using Npgsql;
 
@@ -18,7 +17,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             FunctionID = functionID;
         }
 
-        public static int InsertRoleDetail(RoleDetailDTO newRD)
+        public static int InsertRoleDetail(RoleDetail newRD)
         {
             string sqlInsert = @"INSERT INTO ""ROLEDETAIL""(RoleID, FunctionID)
                                 VALUES (@RoleID, @FunctionID)";

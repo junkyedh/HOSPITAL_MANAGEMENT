@@ -1,5 +1,4 @@
-﻿using HOSPITAL_MANAGEMENT_SOURCE.DTO;
-using Npgsql;
+﻿using Npgsql;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -27,7 +26,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             this.State = state;
         }
 
-        public static int InsertHC(HospitalizationCertificateDTO newHC)
+        public static int InsertHC(HospitalizationCertificate newHC)
         {
             String sqlInsert = @"INSERT INTO ""HOSPITALIZATIONCERTIFICATE""(PATIENTID, STAFFID, REASON, DATE, STATE)
                                 VALUES        (@PATIENTID,@STAFFID,@REASON,@DATE,@STATE)";
@@ -44,7 +43,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return NpgSqlResult.ExecuteNonQuery(sqlInsert, npgsqlParameters);
         }
 
-        public static int UpdateHC(HospitalizationCertificateDTO updateHC)
+        public static int UpdateHC(HospitalizationCertificate updateHC)
         {
             string sqlUpdate = @"UPDATE      ""HOSPITALIZATIONCERTIFICATE""
                                 SET                PATIENTID =@PATIENTID, STAFFID =@STAFFID, REASON =@REASON, DATE =@DATE, STATE =@STATE
@@ -84,9 +83,9 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return dtHC;
         }
 
-        public static HospitalizationCertificateDTO GetHC(int hCID)
+        public static HospitalizationCertificate GetHC(int hCID)
         {
-            HospitalizationCertificateDTO hC = new HospitalizationCertificateDTO();
+            HospitalizationCertificate hC = new HospitalizationCertificate();
             string sqlSelect = @"SELECT        HCID, PATIENTID, STAFFID, REASON, DATE, STATE
                                 FROM            ""HOSPITALIZATIONCERTIFICATE""
                                 WHERE        HCID=@HCID";
@@ -109,9 +108,9 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         }
 
         // Lấy giấy nhập viện dựa vào thông tin của bệnh nhân 
-        public static HospitalizationCertificateDTO GetHC(decimal patientID)
+        public static HospitalizationCertificate GetHC(decimal patientID)
         {
-            HospitalizationCertificateDTO hC = new HospitalizationCertificateDTO();
+            HospitalizationCertificate hC = new HospitalizationCertificate();
             string sqlSelect = @"SELECT        HCID, PATIENTID, STAFFID, REASON, DATE, STATE
                                 FROM            ""HOSPITALIZATIONCERTIFICATE""
                                 WHERE        PATIENTID=@PATIENTID";
@@ -149,19 +148,6 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
                 return true;
 
             return false;
-        }
-        public HospitalizationCertificateDTO ToDTO()
-        {
-            return new HospitalizationCertificateDTO
-            {
-                HCID = this.HCID,
-                PatientID = this.PatientID,
-                StaffID = this.StaffID,
-                Reason = this.Reason,
-                Date = this.Date,
-                State = this.State
-            };
-
         }
     }
 }

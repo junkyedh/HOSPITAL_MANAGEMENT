@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Data;
 using Npgsql;
-using HOSPITAL_MANAGEMENT_SOURCE.DTO;
 
 namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 {
@@ -28,7 +27,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         }
 
 
-        public static int InsertAssignment(AssignmentDTO newAssignment)
+        public static int InsertAssignment(Assignment newAssignment)
         {
             string sqlInsert = @"INSERT INTO ""ASSIGNMENT"" (PATIENTID, DATE, DISCHARGEDDATE, HOPITALIZATEDATE)
                                 VALUES (@PATIENTID, @DATE, @DISCHARGEDDATE, @HOPITALIZATEDATE)";
@@ -42,7 +41,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         }
 
 
-        public static int UpdateAssignment(AssignmentDTO updateAssignment)
+        public static int UpdateAssignment(Assignment updateAssignment)
         {
             string sqlUpdate = @"UPDATE ""ASSIGNMENT""
                                 SET DATE = @DATE, DISCHARGEDDATE = @DISCHARGEDDATE

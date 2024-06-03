@@ -1,5 +1,4 @@
-﻿using HOSPITAL_MANAGEMENT_SOURCE.DTO;
-using System;
+﻿using System;
 using System.Data;
 using Npgsql;
 
@@ -20,7 +19,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             Button = button;
         }
 
-        public static int InsertFunction(RoleFunctionDTO newFunction)
+        public static int InsertFunction(RoleFunction newFunction)
         {
             string sqlInsert = @"INSERT INTO ""ROLEFUNCTION""(FunctionName, Button)
                                 VALUES (@FunctionName, @Button)";
@@ -33,7 +32,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return NpgSqlResult.ExecuteNonQuery(sqlInsert, npgsqlParameters);
         }
 
-        public static int UpdateFunction(RoleFunctionDTO updateFunction)
+        public static int UpdateFunction(RoleFunction updateFunction)
         {
             string sqlUpdate = @"UPDATE ""ROLEFUNCTION""
                                 SET FunctionName = @FunctionName, Button = @Button

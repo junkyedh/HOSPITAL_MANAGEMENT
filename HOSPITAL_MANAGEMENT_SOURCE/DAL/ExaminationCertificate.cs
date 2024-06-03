@@ -1,5 +1,4 @@
-﻿using HOSPITAL_MANAGEMENT_SOURCE.DTO;
-using Npgsql;
+﻿using Npgsql;
 using System;
 using System.Data;
 
