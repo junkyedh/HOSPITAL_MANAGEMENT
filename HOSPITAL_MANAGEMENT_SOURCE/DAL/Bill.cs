@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data;
 using Npgsql;
 
@@ -172,6 +172,5 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
             return totalPrice;
         }
-
     }
 }

@@ -63,7 +63,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return NpgSqlResult.ExecuteNonQuery(sqlDelete, npgsqlParameters);
         }
 
-        public  static DataTable GetListEC()
+        public static DataTable GetListEC()
         {
             string sqlSelect = @"SELECT ECID, PATIENTID, STAFFID, DATE, RESULT, STATE
                                  FROM ""EXAMINATIONCERTIFICATE""";

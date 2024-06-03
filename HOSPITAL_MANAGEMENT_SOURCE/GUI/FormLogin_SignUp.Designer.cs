@@ -691,7 +691,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuLabel10.Location = new System.Drawing.Point(97, 224);
             this.bunifuLabel10.Name = "bunifuLabel10";
             this.bunifuLabel10.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel10.Size = new System.Drawing.Size(138, 45);
+            this.bunifuLabel10.Size = new System.Drawing.Size(59, 19);
             this.bunifuLabel10.TabIndex = 2;
             this.bunifuLabel10.Text = "Mật khẩu";
             this.bunifuLabel10.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -709,7 +709,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuLabel11.Location = new System.Drawing.Point(97, 181);
             this.bunifuLabel11.Name = "bunifuLabel11";
             this.bunifuLabel11.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel11.Size = new System.Drawing.Size(141, 45);
+            this.bunifuLabel11.Size = new System.Drawing.Size(59, 19);
             this.bunifuLabel11.TabIndex = 1;
             this.bunifuLabel11.Text = "Tài khoản";
             this.bunifuLabel11.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -727,7 +727,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuLabel12.Location = new System.Drawing.Point(245, 95);
             this.bunifuLabel12.Name = "bunifuLabel12";
             this.bunifuLabel12.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel12.Size = new System.Drawing.Size(362, 133);
+            this.bunifuLabel12.Size = new System.Drawing.Size(76, 30);
             this.bunifuLabel12.TabIndex = 0;
             this.bunifuLabel12.Text = "Đăng kí";
             this.bunifuLabel12.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -1730,7 +1730,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuButtonRememberPassword.IdleIconLeftImage = null;
             this.bunifuButtonRememberPassword.IdleIconRightImage = null;
             this.bunifuButtonRememberPassword.IndicateFocus = false;
-            this.bunifuButtonRememberPassword.Location = new System.Drawing.Point(130, 356);
+            this.bunifuButtonRememberPassword.Location = new System.Drawing.Point(126, 354);
             this.bunifuButtonRememberPassword.Name = "bunifuButtonRememberPassword";
             this.bunifuButtonRememberPassword.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButtonRememberPassword.OnDisabledState.BorderRadius = 1;
@@ -1937,7 +1937,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuButtonSignUp.IdleIconLeftImage = null;
             this.bunifuButtonSignUp.IdleIconRightImage = null;
             this.bunifuButtonSignUp.IndicateFocus = false;
-            this.bunifuButtonSignUp.Location = new System.Drawing.Point(397, 356);
+            this.bunifuButtonSignUp.Location = new System.Drawing.Point(388, 354);
             this.bunifuButtonSignUp.Name = "bunifuButtonSignUp";
             this.bunifuButtonSignUp.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButtonSignUp.OnDisabledState.BorderRadius = 1;
@@ -1981,6 +1981,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuToolTip1.SetToolTipIcon(this.bunifuButtonSignUp, null);
             this.bunifuToolTip1.SetToolTipTitle(this.bunifuButtonSignUp, "");
             this.bunifuButtonSignUp.UseDefaultRadiusAndThickness = true;
+            this.bunifuButtonSignUp.Click += new System.EventHandler(this.bunifuButtonSignUp_Click);
             // 
             // bunifuPictureBox2
             // 
@@ -1990,7 +1991,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuPictureBox2.BorderRadius = 53;
             this.bunifuPictureBox2.Image = global::HOSPITAL_MANAGEMENT_SOURCE.Properties.Resources._5245433_removebg_preview;
             this.bunifuPictureBox2.IsCircle = true;
-            this.bunifuPictureBox2.Location = new System.Drawing.Point(419, -24);
+            this.bunifuPictureBox2.Location = new System.Drawing.Point(413, 3);
             this.bunifuPictureBox2.Name = "bunifuPictureBox2";
             this.bunifuPictureBox2.Size = new System.Drawing.Size(107, 107);
             this.bunifuPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -2401,7 +2402,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuLabel6.Location = new System.Drawing.Point(97, 224);
             this.bunifuLabel6.Name = "bunifuLabel6";
             this.bunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel6.Size = new System.Drawing.Size(138, 45);
+            this.bunifuLabel6.Size = new System.Drawing.Size(59, 19);
             this.bunifuLabel6.TabIndex = 2;
             this.bunifuLabel6.Text = "Mật khẩu";
             this.bunifuLabel6.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -2419,7 +2420,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuLabel7.Location = new System.Drawing.Point(97, 181);
             this.bunifuLabel7.Name = "bunifuLabel7";
             this.bunifuLabel7.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel7.Size = new System.Drawing.Size(141, 45);
+            this.bunifuLabel7.Size = new System.Drawing.Size(59, 19);
             this.bunifuLabel7.TabIndex = 1;
             this.bunifuLabel7.Text = "Tài khoản";
             this.bunifuLabel7.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -2437,7 +2438,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuLabel8.Location = new System.Drawing.Point(245, 95);
             this.bunifuLabel8.Name = "bunifuLabel8";
             this.bunifuLabel8.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel8.Size = new System.Drawing.Size(362, 133);
+            this.bunifuLabel8.Size = new System.Drawing.Size(76, 30);
             this.bunifuLabel8.TabIndex = 0;
             this.bunifuLabel8.Text = "Đăng kí";
             this.bunifuLabel8.TextAlignment = System.Drawing.ContentAlignment.TopLeft;

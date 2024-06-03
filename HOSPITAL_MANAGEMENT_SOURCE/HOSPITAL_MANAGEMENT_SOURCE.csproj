@@ -135,6 +135,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -294,6 +295,18 @@
     <Compile Include="GUI\FormLogin_SignUp.Designer.cs">
       <DependentUpon>FormLogin_SignUp.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormMainAssigment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\FormMainAssigment.Designer.cs">
+      <DependentUpon>FormMainAssigment.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\FormMainBed.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -305,6 +318,12 @@
     </Compile>
     <Compile Include="GUI\FormMainBill.Designer.cs">
       <DependentUpon>FormMainBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormmainDeptMajor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\FormmainDeptMajor.Designer.cs">
+      <DependentUpon>FormmainDeptMajor.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\FormMainDischarged.cs">
       <SubType>UserControl</SubType>
@@ -354,11 +373,35 @@
     <Compile Include="GUI\FormMainMonitor.Designer.cs">
       <DependentUpon>FormMainMonitor.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\FormMainPatient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\FormMainPatient.Designer.cs">
+      <DependentUpon>FormMainPatient.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\FormMainRole.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="GUI\FormMainRole.Designer.cs">
       <DependentUpon>FormMainRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormMainRoleFunction.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\FormMainRoleFunction.Designer.cs">
+      <DependentUpon>FormMainRoleFunction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormMainService.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\FormMainService.Designer.cs">
+      <DependentUpon>FormMainService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormMainStaff.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\FormMainStaff.Designer.cs">
+      <DependentUpon>FormMainStaff.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\FormMainSurgeryDetail.cs">
       <SubType>UserControl</SubType>
@@ -413,6 +456,12 @@
     </Compile>
     <Compile Include="GUI\FormPrescriptionDetail.Designer.cs">
       <DependentUpon>FormPrescriptionDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormResetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormResetPassword.Designer.cs">
+      <DependentUpon>FormResetPassword.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\FormRoleDetail.cs">
       <SubType>UserControl</SubType>
@@ -494,11 +543,20 @@
     <EmbeddedResource Include="GUI\FormLogin_SignUp.resx">
       <DependentUpon>FormLogin_SignUp.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormMainAssigment.resx">
+      <DependentUpon>FormMainAssigment.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\FormMainBed.resx">
       <DependentUpon>FormMainBed.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\FormMainBill.resx">
       <DependentUpon>FormMainBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormmainDeptMajor.resx">
+      <DependentUpon>FormmainDeptMajor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\FormMainDischarged.resx">
       <DependentUpon>FormMainDischarged.cs</DependentUpon>
@@ -524,8 +582,20 @@
     <EmbeddedResource Include="GUI\FormMainMonitor.resx">
       <DependentUpon>FormMainMonitor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormMainPatient.resx">
+      <DependentUpon>FormMainPatient.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\FormMainRole.resx">
       <DependentUpon>FormMainRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormMainRoleFunction.resx">
+      <DependentUpon>FormMainRoleFunction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormMainService.resx">
+      <DependentUpon>FormMainService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormMainStaff.resx">
+      <DependentUpon>FormMainStaff.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\FormMainSurgeryDetail.resx">
       <DependentUpon>FormMainSurgeryDetail.cs</DependentUpon>
@@ -553,6 +623,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\FormPrescriptionDetail.resx">
       <DependentUpon>FormPrescriptionDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormResetPassword.resx">
+      <DependentUpon>FormResetPassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\FormRoleDetail.resx">
       <DependentUpon>FormRoleDetail.cs</DependentUpon>

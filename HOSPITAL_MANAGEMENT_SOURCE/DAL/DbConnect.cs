@@ -12,8 +12,6 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             get { return strConn; }
             set { strConn = value; }
         }
-
-
         public NpgsqlConnection GetNpgsqlConnection()
         {
             return new NpgsqlConnection(StrConn);

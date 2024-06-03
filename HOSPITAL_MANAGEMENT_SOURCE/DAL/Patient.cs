@@ -1,4 +1,4 @@
-﻿using System.Data;
+using System.Data;
 using Npgsql;
 using System.Collections.Generic;
 using System;
@@ -170,9 +170,6 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         public List<Patient> GetResidentPatientList()
         {
             List<Patient> lstPatient = new List<Patient>();
-
-
-
             return lstPatient;
         }
     }

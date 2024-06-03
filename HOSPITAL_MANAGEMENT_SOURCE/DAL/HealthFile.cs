@@ -1,12 +1,11 @@
-﻿using Npgsql;
-using System;
 using System.Data;
+using Npgsql;
+using System;
 
 namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 {
     public class HealthFile
     {
-
         public int HeathFileID { get; set; }
         public int PatientID { get; set; }
         public DateTime Date { get; set; }
@@ -107,6 +106,5 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             DataTable dataTable = NpgSqlResult.ExecuteQuery(sqlSelect, npgsqlParameters);
             return dataTable.Rows.Count > 0;
         }
-
     }
 }

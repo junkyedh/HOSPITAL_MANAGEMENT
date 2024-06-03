@@ -19,7 +19,6 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DTO
 
             using (var connection = dataSource.OpenConnection())
             {
-
                 try
                 {
                     return connection.Query<T>(statement).ToList();
@@ -46,7 +45,6 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DTO
                 {
                     return null;
                 }
-
             }
         }
 
@@ -57,7 +55,6 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DTO
 
             using (var connection = dataSource.OpenConnection())
             {
-
                 try
                 {
                     return connection.Get<T>(id);
@@ -76,7 +73,6 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DTO
 
             using (var connection = dataSource.OpenConnection())
             {
-
                 try
                 {
                     return connection.GetAll<T>().ToList();
@@ -85,7 +81,6 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DTO
                 {
                     return new List<T>();
                 }
-
             }
         }
 
