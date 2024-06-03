@@ -18,7 +18,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             RoleName = roleName;
         }
 
-        public static int InsertRole(RoleDTO newRole)
+        public static int InsertRole(Role newRole)
         {
             string sqlInsert = @"INSERT INTO ""Role"" (RoleName)
                                 VALUES (@RoleName)";
@@ -30,7 +30,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return NpgSqlResult.ExecuteNonQuery(sqlInsert, npgsqlParameters);
         }
 
-        public static int UpdateRole(RoleDTO updateRole)
+        public static int UpdateRole(Role updateRole)
         {
             string sqlUpdate = @"UPDATE ""Role""
                                 SET RoleName = @RoleName

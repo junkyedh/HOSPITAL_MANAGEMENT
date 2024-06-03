@@ -1,6 +1,5 @@
 ﻿using System.Data;
 using Npgsql;
-using HOSPITAL_MANAGEMENT_SOURCE.DTO;
 using System;
 
 namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
@@ -22,7 +21,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             Price = price;
         }
 
-        public static int InsertMaterial(MaterialDTO newMaterial)
+        public static int InsertMaterial(Material newMaterial)
         {
             string sqlInsert = @"INSERT INTO ""MATERIAL""(MATERIALNAME, QUANTITY, PRICE)
                                 VALUES (@MATERIALNAME, @QUANTITY, @PRICE)";
@@ -36,7 +35,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return NpgSqlResult.ExecuteNonQuery(sqlInsert, npgsqlParameters);
         }
 
-        public static int UpdateMaterial(MaterialDTO updateMaterial)
+        public static int UpdateMaterial(Material updateMaterial)
         {
             string sqlUpdate = @"UPDATE ""MATERIAL""
                                 SET MATERIALNAME = @MATERIALNAME, QUANTITY = @QUANTITY, PRICE = @PRICE
@@ -73,7 +72,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         }
 
 
-        public static MaterialDTO GetMaterial(int materialID)
+        public static Material GetMaterial(int materialID)
         {
             string sqlSelect = @"SELECT MATERIALID, MATERIALNAME, QUANTITY, PRICE
                                 FROM ""MATERIAL""
@@ -83,7 +82,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
             DataTable dataTable = NpgSqlResult.ExecuteQuery(sqlSelect, npgsqlParameters);
 
-            MaterialDTO material = new MaterialDTO();
+            Material material = new Material();
             material.MaterialID = Convert.ToInt32(dataTable.Rows[0]["MATERIALID"]);
             material.MaterialName = Convert.ToString(dataTable.Rows[0]["MATERIALNAME"]);
             material.Quantity = Convert.ToInt32(dataTable.Rows[0]["QUANTITY"]);

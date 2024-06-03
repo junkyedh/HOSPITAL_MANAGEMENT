@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using Npgsql;
 using System.Data;
-using HOSPITAL_MANAGEMENT_SOURCE.DTO;
 
 namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 {
@@ -13,7 +12,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         public int PatientID { get; set; }
         public DateTime Date { get; set; }
         public int State { get; set; }
-        public static int InsertDC(DischargeCertificateDTO newDC)
+        public static int InsertDC(DischargeCertificate newDC)
         {
             string sqlInsert = @"INSERT INTO ""DISCHARGEDCERTIFICATE"" (STAFFID, PATIENTID, DATE, STATE) VALUES (@STAFFID, @PATIENTID, @DATE, @STATE)";
             NpgsqlParameter[] npgsqlParameters = {
@@ -25,7 +24,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return NpgSqlResult.ExecuteNonQuery(sqlInsert, npgsqlParameters);
         }
 
-        public static int UpdateDC(DischargeCertificateDTO updateDC)
+        public static int UpdateDC(DischargeCertificate updateDC)
         {
             string sqlUpdate = @"UPDATE ""DISCHARGEDCERTIFICATE"" SET STAFFID = @STAFFID, PATIENTID = @PATIENTID, DATE = @DATE, STATE = @STATE WHERE DCID = @DCID";
             NpgsqlParameter[] npgsqlParameters = {
@@ -51,14 +50,14 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return NpgSqlResult.ExecuteQuery(sqlSelect);
         }
 
-        public static DischargeCertificateDTO GetDC(int dCID)
+        public static DischargeCertificate GetDC(int dCID)
         {
             string sqlSelect = @"SELECT DCID, STAFFID, PATIENTID, DATE, STATE FROM ""DISCHARGEDCERTIFICATE"" WHERE DCID = @DCID";
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@DCID", dCID) };
             DataTable dataTable = NpgSqlResult.ExecuteQuery(sqlSelect, npgsqlParameters);
             if (dataTable.Rows.Count > 0)
             {
-                var dC = new DischargeCertificateDTO
+                var dC = new DischargeCertificate
                 {
                     DCID = Convert.ToInt32(dataTable.Rows[0]["DCID"]),
                     StaffID = Convert.ToInt32(dataTable.Rows[0]["STAFFID"]),

@@ -1,5 +1,4 @@
-﻿using HOSPITAL_MANAGEMENT_SOURCE.DTO;
-using System.Data;
+﻿using System.Data;
 using Npgsql;
 using System.Collections.Generic;
 using System;
@@ -43,7 +42,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         }
 
         // Insert new patient
-        public static int InsertPatient(PatientDTO patient)
+        public static int InsertPatient(Patient patient)
         {
             string sqlInsert = @"INSERT INTO ""PATIENT""
                                 (FIRSTNAME, LASTNAME, BIRTHDAY, GENDER, ICN, PROFESSION, ADDRESS, DEPOSIT, STATE)
@@ -66,7 +65,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         }
 
         // Update patient by patientid
-        public static int UpdatePatient(PatientDTO patient)
+        public static int UpdatePatient(Patient patient)
         {
             string sqlUpdate = @"UPDATE ""PATIENT""
                                 SET FIRSTNAME = @FirstName, LASTNAME = @LastName, BIRTHDAY = @BirthDay, GENDER = @Gender,
@@ -110,10 +109,10 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         }
 
         // Get patient by patientid
-        public static PatientDTO GetPatient(int patientID)
+        public static Patient GetPatient(int patientID)
         {
             DataTable patientDataTable;
-            PatientDTO newPatient = new PatientDTO();
+            Patient newPatient = new Patient();
 
             string sqlSelect = @"SELECT PATIENTID, FIRSTNAME, LASTNAME, BIRTHDAY, GENDER, ICN, PROFESSION, ADDRESS, DEPOSIT, STATE 
                                 FROM ""PATIENT""
@@ -168,9 +167,9 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return true;
         }
 
-        public List<PatientDTO> GetResidentPatientList()
+        public List<Patient> GetResidentPatientList()
         {
-            List<PatientDTO> lstPatient = new List<PatientDTO>();
+            List<Patient> lstPatient = new List<Patient>();
 
 
 

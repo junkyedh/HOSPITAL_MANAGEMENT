@@ -1,5 +1,4 @@
-﻿using HOSPITAL_MANAGEMENT_SOURCE.DTO;
-using System.Data;
+﻿using System.Data;
 using Npgsql;
 using System;
 
@@ -28,9 +27,9 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         }
 
 
-        public static TestTypeDTO GetTestType(int testTypeID)
+        public static TestType GetTestType(int testTypeID)
         {
-            TestTypeDTO newTestType = new TestTypeDTO();
+            TestType newTestType = new TestType();
             string sqlSelect = @"SELECT TESTTYPEID, TYPENAME FROM ""TESTTYPE"" WHERE TESTTYPEID = @TESTTYPEID";
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@TESTTYPEID", testTypeID) };
             DataTable dataTable = NpgSqlResult.ExecuteQuery(sqlSelect, npgsqlParameters);

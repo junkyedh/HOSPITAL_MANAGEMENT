@@ -1,5 +1,4 @@
-﻿using HOSPITAL_MANAGEMENT_SOURCE.DTO;
-using System;
+﻿using System;
 using System.Data;
 using Npgsql;
 
@@ -20,7 +19,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             Price = price;
         }
 
-        public static int InsertService(ServiceDTO newService)
+        public static int InsertService(Service newService)
         {
             string sqlInsert = @"INSERT INTO ""SERVICE""(ServiceName, Price)
                                 VALUES (@ServiceName, @Price)";
@@ -33,7 +32,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return NpgSqlResult.ExecuteNonQuery(sqlInsert, npgsqlParameters);
         }
 
-        public static int UpdateService(ServiceDTO updateService)
+        public static int UpdateService(Service updateService)
         {
             string sqlUpdate = @"UPDATE ""SERVICE""
                                 SET ServiceName = @ServiceName, Price = @Price

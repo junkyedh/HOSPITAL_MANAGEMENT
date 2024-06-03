@@ -1,5 +1,4 @@
-﻿using HOSPITAL_MANAGEMENT_SOURCE.DTO;
-using System;
+﻿using System;
 using System.Data;
 using Npgsql;
 using System.Collections.Generic;
@@ -23,7 +22,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             Date = date;
         }
 
-        public static int InsertPrescription(PrescriptionDTO newP)
+        public static int InsertPrescription(Prescription newP)
         {
             string sqlInsert = @"INSERT INTO ""PRESCRIPTION""(STAFFID, PATIENTID, DATE)
                                 VALUES (@StaffID, @PatientID, @Date)";
@@ -37,7 +36,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return NpgSqlResult.ExecuteNonQuery(sqlInsert, npgsqlParameters);
         }
 
-        public static int UpdatePrescription(PrescriptionDTO updateP)
+        public static int UpdatePrescription(Prescription updateP)
         {
             string sqlUpdate = @"UPDATE ""PRESCRIPTION""
                                 SET PATIENTID = @PatientID, DATE = @Date
@@ -64,9 +63,9 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return NpgSqlResult.ExecuteNonQuery(sqlDelete, npgsqlParameters);
         }
 
-        public static List<PrescriptionDTO> GetListPrescription()
+        public static List<Prescription> GetListPrescription()
         {
-            List<PrescriptionDTO> prescriptionList = new List<PrescriptionDTO>();
+            List<Prescription> prescriptionList = new List<Prescription>();
 
             string sqlSelect = @"SELECT PRESCRIPTIONID, STAFFID, PATIENTID, DATE
                                 FROM ""PRESCRIPTION""";
@@ -75,7 +74,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
             foreach (DataRow row in dataTable.Rows)
             {
-                PrescriptionDTO prescription = new PrescriptionDTO
+                Prescription prescription = new Prescription
                 {
                     PrescriptionID = Convert.ToInt32(row["PRESCRIPTIONID"]),
                     StaffID = Convert.ToInt32(row["STAFFID"]),
@@ -89,9 +88,9 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return prescriptionList;
         }
 
-        public static PrescriptionDTO GetPrescription(int prescriptionID)
+        public static Prescription GetPrescription(int prescriptionID)
         {
-            PrescriptionDTO newPrescription = new PrescriptionDTO();
+            Prescription newPrescription = new Prescription();
 
             string sqlSelect = @"SELECT PRESCRIPTIONID, STAFFID, PATIENTID, DATE
                                 FROM ""PRESCRIPTION""

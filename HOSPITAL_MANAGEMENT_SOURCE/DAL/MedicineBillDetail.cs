@@ -1,6 +1,5 @@
 ﻿using System.Data;
 using Npgsql;
-using HOSPITAL_MANAGEMENT_SOURCE.DTO;
 using System.Data.SqlClient;
 
 namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
@@ -22,7 +21,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             this.Price = price;
         }
 
-        public static int InsertMedicineBillDetail(MedicineBillDetailDTO newMBD)
+        public static int InsertMedicineBillDetail(MedicineBillDetail newMBD)
         {
             string sqlInsert = @"INSERT INTO 
                                     ""MEDICINEBILLDETAIL""(BILLID, MEDICINEID, QUANTITY, PRICE)

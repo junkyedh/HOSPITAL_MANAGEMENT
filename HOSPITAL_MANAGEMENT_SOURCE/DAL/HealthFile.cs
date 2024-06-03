@@ -1,5 +1,4 @@
-﻿using HOSPITAL_MANAGEMENT_SOURCE.DTO;
-using Npgsql;
+﻿using Npgsql;
 using System;
 using System.Data;
 
@@ -30,7 +29,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         }
 
 
-        public static int InsertHeathFile(HealthFileDTO newHF)
+        public static int InsertHeathFile(HealthFile newHF)
         {
             string sqlInsert = @"INSERT INTO ""HEATHFILE""(PATIENTID, DATE, PATIENTSTATE, PREHISTORY, DISEASE, TREATMENT)
                                 VALUES (@PATIENTID, @DATE, @PATIENTSTATE, @PREHISTORY, @DISEASE, @TREATMENT)";
@@ -45,7 +44,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return NpgSqlResult.ExecuteNonQuery(sqlInsert, npgsqlParameters);
         }
 
-        public static int UpdateHeathFile(HealthFileDTO updateHF)
+        public static int UpdateHeathFile(HealthFile updateHF)
         {
             string sqlUpdate = @"UPDATE ""HEATHFILE""
                                 SET DATE = @DATE, PATIENTSTATE = @PATIENTSTATE, PREHISTORY = @PREHISTORY, DISEASE = @DISEASE, TREATMENT = @TREATMENT
@@ -76,7 +75,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return NpgSqlResult.ExecuteQuery(sqlSelect);
         }
 
-        public static HealthFileDTO GetHeathFile(int heathFileID)
+        public static HealthFile GetHeathFile(int heathFileID)
         {
             string sqlSelect = @"SELECT HEATHFILEID, PATIENTID, DATE, PATIENTSTATE, PREHISTORY, DISEASE, TREATMENT
                                  FROM ""HEATHFILE""
@@ -85,7 +84,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             DataTable dataTable = NpgSqlResult.ExecuteQuery(sqlSelect, npgsqlParameters);
             if (dataTable.Rows.Count > 0)
             {
-                return new HealthFileDTO
+                return new HealthFile
                 {
                     HeathFileID = Convert.ToInt32(dataTable.Rows[0]["HEATHFILEID"]),
                     PatientID = Convert.ToInt32(dataTable.Rows[0]["PATIENTID"]),
@@ -109,17 +108,5 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return dataTable.Rows.Count > 0;
         }
 
-        public HealthFileDTO ToDTO()
-        {
-            return new HealthFileDTO {
-                HeathFileID = this.HeathFileID,
-                PatientID = this.PatientID,
-                Date = this.Date,
-                PatientState = this.PatientState,
-                PreHistory = this.PreHistory,
-                Disease = this.Disease,
-                Treatment = this.Treatment
-            };
-        }
     }
 }

@@ -1,11 +1,10 @@
-﻿using HOSPITAL_MANAGEMENT_SOURCE.DTO;
-using System;
+﻿using System;
 using System.Data;
 using Npgsql;
 
 namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 {
-    public class SurgicalDTO
+    public class Surgical
     {
         public int SurgicalID { get; set; }
         public int PatientID { get; set; }
@@ -14,9 +13,9 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         public int State { get; set; }
         public string PatientName { get; set; }
 
-        public SurgicalDTO() { }
+        public Surgical() { }
 
-        public static int InsertSurgical(SurgicalDTO newSurgical)
+        public static int InsertSurgical(Surgical newSurgical)
         {
             String sqlInsert = @"INSERT INTO ""SURGICAL""(PATIENTID, DATE, DESCRIPTION, STATE)
                                 VALUES        (@PATIENTID,@DATE,@DESCRIPTION,@STATE)";
@@ -29,7 +28,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return NpgSqlResult.ExecuteNonQuery(sqlInsert, npgsqlParameters);
         }
 
-        public static int UpdateSurgical(SurgicalDTO updateSurgical)
+        public static int UpdateSurgical(Surgical updateSurgical)
         {
             string sqlUpdate = @"UPDATE       ""SURGICAL""
                                 SET                DATE =@DATE, DESCRIPTION =@DESCRIPTION, STATE =@STATE
@@ -58,9 +57,9 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return NpgSqlResult.ExecuteQuery(sqlSelect);
         }
 
-        public static SurgicalDTO GetSurgical(int surgicalID)
+        public static Surgical GetSurgical(int surgicalID)
         {
-            SurgicalDTO newSurgical = new SurgicalDTO();
+            Surgical newSurgical = new Surgical();
             string sqlSelect = @"SELECT        SURGICALID, PATIENTID, DATE, DESCRIPTION, STATE
                                 FROM            ""SURGICAL""
                                 WHERE        SURGICALID=@SURGICALID";

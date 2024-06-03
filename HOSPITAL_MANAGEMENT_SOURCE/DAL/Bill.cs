@@ -1,5 +1,4 @@
-﻿using HOSPITAL_MANAGEMENT_SOURCE.DTO;
-using System;
+﻿using System;
 using System.Data;
 using Npgsql;
 
@@ -22,7 +21,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         public decimal TotalPrice { get; set; }
         public int State { get; set; }
 
-        public static int InsertBill(BillDTO newBill)
+        public static int InsertBill(Bill newBill)
         {
             string sqlInsert = @"INSERT INTO ""BILL""(BILLTYPEID, PATIENTID, STAFFID, DATE, STATE, TOTALPRICE)
                                 VALUES (@BILLTYPEID, @PATIENTID, @STAFFID, @DATE, @STATE, @TOTALPRICE)";
@@ -39,7 +38,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return NpgSqlResult.ExecuteNonQuery(sqlInsert, npgsqlParameters);
         }
 
-        public static int UpdateBill(BillDTO updateBill)
+        public static int UpdateBill(Bill updateBill)
         {
             string sqlUpdate = @"UPDATE ""BILL""
                                 SET STATE = @STATE, TOTALPRICE = @TOTALPRICE
@@ -103,7 +102,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return Convert.ToInt32(NpgSqlResult.ExecuteScalar(sqlSelect));
         }
 
-        public static BillDTO GetBill(int billID)
+        public static Bill GetBill(int billID)
         {
             string sqlSelect = @"SELECT BILLID, BILLTYPEID, PATIENTID, STAFFID, DATE, TOTALPRICE, STATE
                                 FROM ""BILL""
@@ -116,7 +115,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             if (dataTable.Rows.Count > 0)
             {
                 DataRow row = dataTable.Rows[0];
-                BillDTO billDTO = new BillDTO
+                Bill Bill = new Bill
                 {
                     BillID = Convert.ToInt32(row["BILLID"]),
                     BillTypeID = Convert.ToInt32(row["BILLTYPEID"]),
@@ -126,7 +125,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
                     TotalPrice = Convert.ToDecimal(row["TOTALPRICE"]),
                     State = Convert.ToInt32(row["STATE"])
                 };
-                return billDTO;
+                return Bill;
             }
 
             return null;
@@ -174,19 +173,5 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return totalPrice;
         }
 
-        public BillDTO ToDTO ()
-        {
-            return new BillDTO
-            {
-                BillID = this.BillID,
-                BillTypeID = this.BillTypeID,
-                PatientID = this.PatientID,
-                StaffID = this.StaffID,
-                Date = this.Date,
-                TotalPrice = this.TotalPrice,
-                State = this.State
-            };
-
-        }
     }
 }

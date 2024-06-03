@@ -1,6 +1,4 @@
-﻿using HOSPITAL_MANAGEMENT_SOURCE.DTO;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Data;
 using Npgsql;
 
@@ -25,7 +23,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             this.State = state;
         }
 
-        public static int InsertTC(TestCertificateDTO newTC)
+        public static int InsertTC(TestCertificate newTC)
         {
             string sqlInsert = @"INSERT INTO ""TESTCERTIFICATE""(PATIENTID, STAFFID, DATE, STATE)
                                  VALUES (@PATIENTID, @STAFFID, @DATE, @STATE)";
@@ -38,7 +36,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return NpgSqlResult.ExecuteNonQuery(sqlInsert, npgsqlParameters);
         }
 
-        public static int UpdateTC(TestCertificateDTO updateTC)
+        public static int UpdateTC(TestCertificate updateTC)
         {
             string sqlUpdate = @"UPDATE ""TESTCERTIFICATE""
                                  SET DATE = @DATE, STATE = @STATE
@@ -79,9 +77,9 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return dtTC;
         }
 
-        public static TestCertificateDTO GetTC(int tCID)
+        public static TestCertificate GetTC(int tCID)
         {
-            TestCertificateDTO newTC = new TestCertificateDTO();
+            TestCertificate newTC = new TestCertificate();
             string sqlSelect = @"SELECT TCID, PATIENTID, STAFFID, DATE, STATE
                                  FROM ""TESTCERTIFICATE""
                                  WHERE TCID = @TCID";

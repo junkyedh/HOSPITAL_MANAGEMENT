@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Data;
 using Npgsql;
-using HOSPITAL_MANAGEMENT_SOURCE.DTO;
 
 namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 {
@@ -18,7 +17,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             this.StaffID = staffID;
         }
 
-        public static int InsertAssignmentDetails(AssignmentDetailDTO newAD)
+        public static int InsertAssignmentDetails(AssignmentDetail newAD)
         {
             string sqlInsert = @"INSERT INTO ""ASSIGNMENTDETAIL""(ASSIGNID, STAFFID)
                                 VALUES (@ASSIGNID, @STAFFID)";
@@ -29,7 +28,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return NpgSqlResult.ExecuteNonQuery(sqlInsert, npgsqlParameters);
         }
 
-        public int DeleteAssignmentDetails(AssignmentDetailDTO deleteAD)
+        public int DeleteAssignmentDetails(AssignmentDetail deleteAD)
         {
             string sqlDelete = @"DELETE FROM ""ASSIGNMENTDETAIL""
                                 WHERE (ASSIGNID = @ASSIGNID AND STAFFID = @STAFFID)";
@@ -49,9 +48,9 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         }
 
 
-        public static List<AssignmentDetailDTO> GetListAssignmentDetails(int assignmentID)
+        public static List<AssignmentDetail> GetListAssignmentDetails(int assignmentID)
         {
-            List<AssignmentDetailDTO> list = new List<AssignmentDetailDTO>();
+            List<AssignmentDetail> list = new List<AssignmentDetail>();
             string sqlSelect = @"SELECT ""ASSIGNMENTDETAIL"".ASSIGNID, ""ASSIGNMENTDETAIL"".STAFFID, ""STAFF"".LASTNAME, ""STAFF"".FIRSTNAME
                                 FROM ""ASSIGNMENTDETAIL"" INNER JOIN ""STAFF"" ON ""ASSIGNMENTDETAIL"".STAFFID = ""STAFF"".STAFFID
                                 WHERE (""ASSIGNMENTDETAIL"".ASSIGNID = @ASSIGNID)";
@@ -60,19 +59,19 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
             foreach (DataRow row in dtAD.Rows)
             {
-                AssignmentDetailDTO assignmentDetailDTO = new AssignmentDetailDTO();
-                assignmentDetailDTO.AssignID = Convert.ToInt32(row["ASSIGNID"]);
-                assignmentDetailDTO.StaffID = Convert.ToInt32(row["STAFFID"]);
-                assignmentDetailDTO.StaffName = row["LASTNAME"] + " " + row["FIRSTNAME"];
-                list.Add(assignmentDetailDTO);
+                AssignmentDetail AssignmentDetail = new AssignmentDetail();
+                AssignmentDetail.AssignID = Convert.ToInt32(row["ASSIGNID"]);
+                AssignmentDetail.StaffID = Convert.ToInt32(row["STAFFID"]);
+                AssignmentDetail.StaffName = row["LASTNAME"] + " " + row["FIRSTNAME"];
+                list.Add(AssignmentDetail);
             }
 
             return list;
         }
 
-        public AssignmentDetailDTO ToDTO()
+        public AssignmentDetail ToDTO()
         {
-            return new AssignmentDetailDTO
+            return new AssignmentDetail
             {
                 AssignID = this.AssignID,
                 StaffID = this.StaffID,

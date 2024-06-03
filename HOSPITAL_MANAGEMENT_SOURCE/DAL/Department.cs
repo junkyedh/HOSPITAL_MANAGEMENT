@@ -11,20 +11,21 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         public int DepartmentID { get; set; }
         public string DepartmentName { get; set; }
 
+        public Department() {}
         public Department (int departmentID, string DepartmentName)
         {
             this.DepartmentID = departmentID;
             this.DepartmentName = DepartmentName;
         }
 
-        public static int InsertDepartment(DepartmentDTO newDepartment)
+        public static int InsertDepartment(Department newDepartment)
         {
             string sqlInsert = @"INSERT INTO ""DEPARTMENT"" (DEPARTMENTNAME) VALUES (@DEPARTMENTNAME)";
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@DEPARTMENTNAME", newDepartment.DepartmentName) };
             return NpgSqlResult.ExecuteNonQuery(sqlInsert, npgsqlParameters);
         }
 
-        public static int UpdateDepartment(DepartmentDTO updateDepartment)
+        public static int UpdateDepartment(Department updateDepartment)
         {
             string sqlUpdate = @"UPDATE ""DEPARTMENT"" SET DEPARTMENTNAME = @DEPARTMENTNAME WHERE (DEPARTMENTID = @DEPARTMENTID)";
             NpgsqlParameter[] npgsqlParameters = {
@@ -41,14 +42,14 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return NpgSqlResult.ExecuteNonQuery(sqlDelete, npgsqlParameters);
         }
 
-        public static DepartmentDTO GetDepartment(int departmentID)
+        public static Department GetDepartment(int departmentID)
         {
             string sqlSelect = @"SELECT DEPARTMENTID, DEPARTMENTNAME FROM ""DEPARTMENT"" WHERE (DEPARTMENTID = @DEPARTMENTID)";
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@DEPARTMENTID", departmentID) };
             DataTable dataTable = NpgSqlResult.ExecuteQuery(sqlSelect, npgsqlParameters);
             if (dataTable.Rows.Count > 0)
             {
-                DepartmentDTO department = new DepartmentDTO
+                Department department = new Department
                 {
                     DepartmentID = Convert.ToInt32(dataTable.Rows[0]["DEPARTMENTID"]),
                     DepartmentName = dataTable.Rows[0]["DEPARTMENTNAME"].ToString()
@@ -64,13 +65,6 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return NpgSqlResult.ExecuteQuery(sqlSelect);
         }
 
-        public DepartmentDTO ToDTO()
-        {
-            return new DepartmentDTO
-            {
-                DepartmentID = this.DepartmentID,
-                DepartmentName = this.DepartmentName
-            };
-        }
+
     }
 }

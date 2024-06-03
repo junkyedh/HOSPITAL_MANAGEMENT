@@ -1,5 +1,4 @@
-﻿using HOSPITAL_MANAGEMENT_SOURCE.DTO;
-using System;
+﻿using System;
 using System.Data;
 using Npgsql;
 
@@ -22,7 +21,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             Instruction = instruction;
         }
 
-        public static int InsertPrescriptionDetail(PrescriptionDetailDTO newPD)
+        public static int InsertPrescriptionDetail(PrescriptionDetail newPD)
         {
             string sqlInsert = @"INSERT INTO ""PRESCRIPTIONDETAIL""(PRESCRIPTIONID, MEDICINEID, QUANTITY, INSTRUCTION)
                                 VALUES (@PrescriptionID, @MedicineID, @Quantity, @Instruction)";
