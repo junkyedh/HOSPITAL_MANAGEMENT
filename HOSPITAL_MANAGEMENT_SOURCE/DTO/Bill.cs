@@ -15,5 +15,17 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DTO
         public DateTime Date { get; set; }
         public decimal TotalPrice { get; set; }
         public int State { get; set; }
+
+        public BillDTO() { }
+        public BillDTO(int billID, int billTypeID, int patientID, int staffID, DateTime date, decimal totalPrice, int state)
+        {
+            this.BillID = billID;
+            this.BillTypeID = billTypeID;
+            this.PatientID = patientID;
+            this.StaffID = staffID;
+            this.Date = date;
+            this.TotalPrice = totalPrice;
+            this.State = state;
+        }
     }
 }

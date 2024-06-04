@@ -11,5 +11,14 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DTO
         public int DiseaseID { get; set; }
         public string DiseaseName { get; set; }
         public string Symptom { get; set; }
+        public DiseaseDTO() { }
+
+        public DiseaseDTO(int diseaseID, string diseaseName, string symptom)
+        {
+            DiseaseID = diseaseID;
+            DiseaseName = diseaseName;
+            Symptom = symptom;
+        }
     }
+
 }

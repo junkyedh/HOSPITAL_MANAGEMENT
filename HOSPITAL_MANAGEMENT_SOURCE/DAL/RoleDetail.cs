@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HOSPITAL_MANAGEMENT_SOURCE.DTO;
+using System;
 using System.Data;
 using Npgsql;
 
@@ -17,9 +18,9 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             FunctionID = functionID;
         }
 
-        public static int InsertRoleDetail(RoleDetail newRD)
+        public static int InsertRoleDetail(RoleDetailDTO newRD)
         {
-            string sqlInsert = @"INSERT INTO ""ROLEDETAIL""(RoleID, FunctionID)
+            string sqlInsert = @"INSERT INTO ROLEDETAIL(RoleID, FunctionID)
                                 VALUES (@RoleID, @FunctionID)";
 
             NpgsqlParameter[] npgsqlParameters = {
@@ -32,7 +33,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int DeleteRoleDetail(int roleID, int functionID)
         {
-            string sqlDelete = @"DELETE FROM ""ROLEDETAIL""
+            string sqlDelete = @"DELETE FROM ROLEDETAIL
                                 WHERE RoleID = @RoleID AND FunctionID = @FunctionID";
 
             NpgsqlParameter[] npgsqlParameters = {
@@ -45,7 +46,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int DeleteRoleDetail(int roleID)
         {
-            string sqlDelete = @"DELETE FROM ""ROLEDETAIL""
+            string sqlDelete = @"DELETE FROM ROLEDETAIL
                                 WHERE RoleID = @RoleID";
 
             NpgsqlParameter[] npgsqlParameters = {
@@ -58,14 +59,13 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         public static DataTable GetListStaffFunction(int roleID)
         {
             string sqlSelect = @"SELECT RF.FunctionID, RF.FunctionName, RF.Button
-                                FROM ""ROLEDETAIL"" RD
-                                INNER JOIN ""ROLEFUNCTION"" RF ON RD.FunctionID = RF.FunctionID
+                                FROM ROLEDETAIL RD
+                                INNER JOIN ROLEFUNCTION RF ON RD.FunctionID = RF.FunctionID
                                 WHERE RD.RoleID = @RoleID";
 
             NpgsqlParameter[] npgsqlParameters = {
                 new NpgsqlParameter("@RoleID", roleID)
             };
-
 
             return NpgSqlResult.ExecuteQuery(sqlSelect, npgsqlParameters);
         }

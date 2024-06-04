@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HOSPITAL_MANAGEMENT_SOURCE.DTO;
+using System;
 using System.Data;
 using Npgsql;
 using System.Collections.Generic;
@@ -22,9 +23,9 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             Date = date;
         }
 
-        public static int InsertPrescription(Prescription newP)
+        public static int InsertPrescription(PrescriptionDTO newP)
         {
-            string sqlInsert = @"INSERT INTO ""PRESCRIPTION""(STAFFID, PATIENTID, DATE)
+            string sqlInsert = @"INSERT INTO PRESCRIPTION(STAFFID, PATIENTID, DATE)
                                 VALUES (@StaffID, @PatientID, @Date)";
 
             NpgsqlParameter[] npgsqlParameters = {
@@ -36,9 +37,9 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return NpgSqlResult.ExecuteNonQuery(sqlInsert, npgsqlParameters);
         }
 
-        public static int UpdatePrescription(Prescription updateP)
+        public static int UpdatePrescription(PrescriptionDTO updateP)
         {
-            string sqlUpdate = @"UPDATE ""PRESCRIPTION""
+            string sqlUpdate = @"UPDATE PRESCRIPTION
                                 SET PATIENTID = @PatientID, DATE = @Date
                                 WHERE PRESCRIPTIONID = @PrescriptionID";
 
@@ -53,7 +54,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int DeletePrescription(int prescriptionID)
         {
-            string sqlDelete = @"DELETE FROM ""PRESCRIPTION""
+            string sqlDelete = @"DELETE FROM PRESCRIPTION
                                 WHERE PRESCRIPTIONID = @PrescriptionID";
 
             NpgsqlParameter[] npgsqlParameters = {
@@ -63,18 +64,18 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return NpgSqlResult.ExecuteNonQuery(sqlDelete, npgsqlParameters);
         }
 
-        public static List<Prescription> GetListPrescription()
+        public static List<PrescriptionDTO> GetListPrescription()
         {
-            List<Prescription> prescriptionList = new List<Prescription>();
+            List<PrescriptionDTO> prescriptionList = new List<PrescriptionDTO>();
 
             string sqlSelect = @"SELECT PRESCRIPTIONID, STAFFID, PATIENTID, DATE
-                                FROM ""PRESCRIPTION""";
+                                FROM PRESCRIPTION";
 
             DataTable dataTable = NpgSqlResult.ExecuteQuery(sqlSelect);
 
             foreach (DataRow row in dataTable.Rows)
             {
-                Prescription prescription = new Prescription
+                PrescriptionDTO prescription = new PrescriptionDTO
                 {
                     PrescriptionID = Convert.ToInt32(row["PRESCRIPTIONID"]),
                     StaffID = Convert.ToInt32(row["STAFFID"]),
@@ -88,12 +89,12 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return prescriptionList;
         }
 
-        public static Prescription GetPrescription(int prescriptionID)
+        public static PrescriptionDTO GetPrescription(int prescriptionID)
         {
-            Prescription newPrescription = new Prescription();
+            PrescriptionDTO newPrescription = new PrescriptionDTO();
 
             string sqlSelect = @"SELECT PRESCRIPTIONID, STAFFID, PATIENTID, DATE
-                                FROM ""PRESCRIPTION""
+                                FROM PRESCRIPTION
                                 WHERE PRESCRIPTIONID = @PrescriptionID";
 
             NpgsqlParameter[] npgsqlParameters = {
@@ -125,13 +126,12 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         public static int GetPatientIDInPrescription(int prescriptionID)
         {
             string sqlSelect = @"SELECT PATIENTID
-                                FROM ""PRESCRIPTION""
+                                FROM PRESCRIPTION
                                 WHERE PRESCRIPTIONID = @PrescriptionID";
 
             NpgsqlParameter[] npgsqlParameters = {
                 new NpgsqlParameter("@PrescriptionID", prescriptionID)
             };
-
 
             object ob = NpgSqlResult.ExecuteScalar(sqlSelect, npgsqlParameters);
 

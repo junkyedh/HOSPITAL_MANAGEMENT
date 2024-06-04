@@ -13,5 +13,15 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DTO
         public int Quantity { get; set; }
         public decimal Price { get; set; }
 
+        public MaterialDTO() { }
+
+        public MaterialDTO(int materialID, string materialName, int quantity, decimal price)
+        {
+            MaterialID = materialID;
+            MaterialName = materialName;
+            Quantity = quantity;
+            Price = price;
+        }
+
     }
 }

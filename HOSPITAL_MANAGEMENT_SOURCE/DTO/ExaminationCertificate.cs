@@ -14,5 +14,17 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DTO
         public DateTime Date { get; set; }
         public string Result { get; set; }
         public int State { get; set; }
+
+        public ExaminationCertificateDTO() { }
+
+        public ExaminationCertificateDTO(int eCID, int patientID, int staffID, DateTime date, string result, int state)
+        {
+            ECID = eCID;
+            PatientID = patientID;
+            StaffID = staffID;
+            Date = date;
+            Result = result;
+            State = state;
+        }
     }
 }

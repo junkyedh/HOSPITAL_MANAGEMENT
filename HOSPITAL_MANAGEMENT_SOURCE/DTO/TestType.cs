@@ -10,5 +10,11 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DTO
     {
         public int TestTypeID { get; set; }
         public string TestName { get; set; }
+        public TestTypeDTO() { }
+        public TestTypeDTO(int testTypeID, string testName)
+        {
+            this.TestTypeID = testTypeID;
+            this.TestName = testName;
+        }
     }
 }

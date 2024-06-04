@@ -12,5 +12,14 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DTO
         public int PatientID { get; set; }
         public DateTime ExpireDate { get; set; }
         public DateTime IssueDate { get; set; }
+
+        public HICDTO() { }
+        public HICDTO(int hicID, int patientID, DateTime expireDate, DateTime issueDate)
+        {
+            this.HICID = hicID;
+            this.PatientID = patientID;
+            this.ExpireDate = expireDate;
+            this.IssueDate = issueDate;
+        }
     }
 }

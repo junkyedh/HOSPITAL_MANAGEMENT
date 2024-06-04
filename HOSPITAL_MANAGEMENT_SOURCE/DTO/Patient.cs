@@ -18,5 +18,23 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DTO
         public string Address { get; set; }
         public decimal Deposit { get; set; }
         public int State { get; set; }
+
+        public PatientDTO() { }
+
+        // Constructor set all properties
+        public PatientDTO(int patientID, string firstName, string lastName, DateTime birthDay,
+            int gender, decimal iCN, string profession, string address, decimal deposit, int state)
+        {
+            PatientID = patientID;
+            FirstName = firstName;
+            LastName = lastName;
+            BirthDay = birthDay;
+            Gender = gender;
+            ICN = iCN;
+            Profession = profession;
+            Address = address;
+            Deposit = deposit;
+            State = state;
+        }
     }
 }

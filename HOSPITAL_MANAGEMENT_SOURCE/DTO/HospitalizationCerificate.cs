@@ -16,5 +16,18 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DTO
         public int State { get; set; }
         public string PatientName { get; set; }
         public string StaffName { get; set; }
+
+
+        public HospitalizationCertificateDTO() { }
+
+        public HospitalizationCertificateDTO(int hCID, int patientID, int staffID, String reason, DateTime date, int state)
+        {
+            this.HCID = hCID;
+            this.PatientID = patientID;
+            this.StaffID = staffID;
+            this.Reason = reason;
+            this.Date = date;
+            this.State = state;
+        }
     }
 }

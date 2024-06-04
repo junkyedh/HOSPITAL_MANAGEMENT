@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HOSPITAL_MANAGEMENT_SOURCE.DTO;
+using System;
 using System.Data;
 using Npgsql;
 
@@ -21,9 +22,9 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             Price = price;
         }
 
-        public static int InsertServiceBillDetail(ServiceBillDetail newSBD)
+        public static int InsertServiceBillDetail(ServiceBillDetailDTO newSBD)
         {
-            string sqlInsert = @"INSERT INTO ""SERVICEBILLDETAIL""(BILLID, SERVICEID, QUANTITY, PRICE)
+            string sqlInsert = @"INSERT INTO SERVICEBILLDETAIL(BILLID, SERVICEID, QUANTITY, PRICE)
                                 VALUES (@BILLID, @SERVICEID, @QUANTITY, @PRICE)";
 
             NpgsqlParameter[] npgsqlParameters = {
@@ -38,7 +39,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int DeleteServiceBillDetail(int billID, int serviceID)
         {
-            string sqlDelete = @"DELETE FROM ""SERVICEBILLDETAIL""
+            string sqlDelete = @"DELETE FROM SERVICEBILLDETAIL
                                 WHERE BILLID = @BILLID AND SERVICEID = @SERVICEID";
 
             NpgsqlParameter[] npgsqlParameters = {
@@ -51,7 +52,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int DeleteServiceBillDetail(int billID)
         {
-            string sqlDelete = @"DELETE FROM ""SERVICEBILLDETAIL""
+            string sqlDelete = @"DELETE FROM SERVICEBILLDETAIL
                                 WHERE BILLID = @BILLID";
 
             NpgsqlParameter[] npgsqlParameters = {
@@ -63,15 +64,14 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static DataTable GetListServiceBillDetail(int billID)
         {
-            string sqlSelect = @"SELECT ""SERVICE"".SERVICENAME, ""SERVICEBILLDETAIL"".QUANTITY, ""SERVICEBILLDETAIL"".PRICE
-                                FROM ""SERVICEBILLDETAIL""
-                                INNER JOIN ""SERVICE"" ON ""SERVICEBILLDETAIL"".SERVICEID = ""SERVICE"".SERVICEID
+            string sqlSelect = @"SELECT SERVICE.SERVICENAME, SERVICEBILLDETAIL.QUANTITY, SERVICEBILLDETAIL.PRICE
+                                FROM SERVICEBILLDETAIL
+                                INNER JOIN SERVICE ON SERVICEBILLDETAIL.SERVICEID = SERVICE.SERVICEID
                                 WHERE BILLID = @BILLID";
 
             NpgsqlParameter[] npgsqlParameters = {
                 new NpgsqlParameter("@BILLID", billID)
             };
-
 
             return NpgSqlResult.ExecuteQuery(sqlSelect, npgsqlParameters);
         }

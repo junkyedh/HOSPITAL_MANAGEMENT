@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HOSPITAL_MANAGEMENT_SOURCE.DTO;
+using System;
 using System.Data;
 using Npgsql;
 
@@ -45,7 +46,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             SDT = sdt;
         }
 
-        public static int InsertStaff(Staff staff)
+        public static int InsertStaff(StaffDTO staff)
         {
             string sqlInsert = @"INSERT INTO ""STAFF""
                                 (DEPARTMENTID, MAJORID, ROLEID, PASSWORD, FIRSTNAME, LASTNAME, BIRTHDAY, GENDER, ICN, ADDRESS, STATE, EMAIL, SDT)
@@ -72,7 +73,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return NpgSqlResult.ExecuteNonQuery(sqlInsert, npgsqlParameters);
         }
 
-        public static int UpdateStaff(Staff staff)
+        public static int UpdateStaff(StaffDTO staff)
         {
             string sqlUpdate = @"UPDATE ""STAFF""
                                 SET DEPARTMENTID = @DepartmentID, MAJORID = @MajorID, ROLEID = @RoleID, PASSWORD = @Password
@@ -112,20 +113,21 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static DataTable GetListStaff()
         {
-            string sqlSelect = @"SELECT STAFF.STAFFID, DEPARTMENT.DEPARTMENTNAME, MAJOR.MAJORNAME, ROLE.ROLENAME, STAFF.PASSWORD
-                                    , STAFF.FIRSTNAME, STAFF.LASTNAME, STAFF.BIRTHDAY, STAFF.GENDER, STAFF.ICN, STAFF.ADDRESS, STAFF.STATE, STAFF.EMAIL, STAFF.SDT
-                                FROM ""STAFF"" INNER JOIN
-                                    ""DEPARTMENT"" ON STAFF.DEPARTMENTID = DEPARTMENT.DEPARTMENTID INNER JOIN
-                                    ""MAJOR"" ON STAFF.MAJORID = MAJOR.MAJORID INNER JOIN
-                                    ""ROLE"" ON STAFF.ROLEID = ROLE.ROLEID";
+            string sqlSelect = @"SELECT 
+                ""STAFF"".STAFFID, ""DEPARTMENT"".DEPARTMENTNAME, ""MAJOR"".MAJORNAME, ""ROLE"".ROLENAME, ""STAFF"".PASSWORD,
+                ""STAFF"".FIRSTNAME, ""STAFF"".LASTNAME, ""STAFF"".BIRTHDAY, ""STAFF"".GENDER, ""STAFF"".ICN, ""STAFF"".ADDRESS, 
+                ""STAFF"".STATE, ""STAFF"".EMAIL, ""STAFF"".SDT
+                FROM ""STAFF"" INNER JOIN
+                ""DEPARTMENT"" ON ""STAFF"".DEPARTMENTID = ""DEPARTMENT"".DEPARTMENTID INNER JOIN
+                ""MAJOR"" ON ""STAFF"".MAJORID = ""MAJOR"".MAJORID INNER JOIN
+                ""ROLE"" ON ""STAFF"".ROLEID = ""ROLE"".ROLEID";
 
             staffTable = NpgSqlResult.ExecuteQuery(sqlSelect);
-
             return staffTable;
         }
-        public static Staff GetStaff(int staffID)
+        public static StaffDTO GetStaff(int staffID)
         {
-            Staff newStaff = new Staff();
+            StaffDTO newStaff = new StaffDTO();
             DataTable staffDataTable;
             string sqlSelect = @"SELECT STAFFID, DEPARTMENTID, MAJORID, ROLEID, PASSWORD, FIRSTNAME, LASTNAME, BIRTHDAY,
                                         GENDER, ICN, ADDRESS, STATE, EMAIL, SDT

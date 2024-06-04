@@ -9,6 +9,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
     {
         public int BillTypeID { get; set; }
         public string TypeName { get; set; }
+        public BillType() { }
 
         // Phương thức khởi tạo
         public BillType(int billTypeID, string typeName)
@@ -18,10 +19,10 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         }
 
         // Phương thức lấy thông tin của một loại hóa đơn
-        public static BillType GetBillType(int billTypeID)
+        public static BillTypeDTO GetBillType(int billTypeID)
         {
             string sqlSelect = @"SELECT BILLTYPEID, TYPENAME
-                                FROM ""BILLTYPE""
+                                FROM BILLTYPE
                                 WHERE BILLTYPEID = @BILLTYPEID";
 
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@BILLTYPEID", billTypeID) };
@@ -31,13 +32,12 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             if (dataTable.Rows.Count > 0)
             {
                 DataRow row = dataTable.Rows[0];
-                BillType billType = new BillType(
+                BillTypeDTO billType = new BillTypeDTO(
                     Convert.ToInt32(row["BILLTYPEID"]),
                     row["TYPENAME"].ToString()
                 );
                 return billType;
             }
-
 
             return null;
         }
@@ -46,7 +46,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         public static DataTable GetListBillType()
         {
             string sqlSelect = @"SELECT BILLTYPEID AS 'Mã loại hóa đơn', TYPENAME AS 'Tên loại hóa đơn'
-                                FROM ""BILLTYPE""";
+                                FROM BILLTYPE";
 
             return NpgSqlResult.ExecuteQuery(sqlSelect);
         }

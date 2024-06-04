@@ -1,4 +1,6 @@
-﻿using System;
+﻿using HOSPITAL_MANAGEMENT_SOURCE.DTO;
+using System;
+using System.Collections.Generic;
 using System.Data;
 using Npgsql;
 
@@ -23,9 +25,9 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             this.State = state;
         }
 
-        public static int InsertTC(TestCertificate newTC)
+        public static int InsertTC(TestCertificateDTO newTC)
         {
-            string sqlInsert = @"INSERT INTO ""TESTCERTIFICATE""(PATIENTID, STAFFID, DATE, STATE)
+            string sqlInsert = @"INSERT INTO TESTCERTIFICATE(PATIENTID, STAFFID, DATE, STATE)
                                  VALUES (@PATIENTID, @STAFFID, @DATE, @STATE)";
             NpgsqlParameter[] npgsqlParameters = {
                 new NpgsqlParameter("@PATIENTID", newTC.PatientID),
@@ -36,9 +38,9 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return NpgSqlResult.ExecuteNonQuery(sqlInsert, npgsqlParameters);
         }
 
-        public static int UpdateTC(TestCertificate updateTC)
+        public static int UpdateTC(TestCertificateDTO updateTC)
         {
-            string sqlUpdate = @"UPDATE ""TESTCERTIFICATE""
+            string sqlUpdate = @"UPDATE TESTCERTIFICATE
                                  SET DATE = @DATE, STATE = @STATE
                                  WHERE TCID = @TCID";
             NpgsqlParameter[] npgsqlParameters = {
@@ -51,7 +53,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int DeleteTC(int tCID)
         {
-            string sqlDelete = @"DELETE FROM ""TESTCERTIFICATE""
+            string sqlDelete = @"DELETE FROM TESTCERTIFICATE
                                  WHERE TCID = @TCID";
             NpgsqlParameter[] npgsqlParameters = {
                 new NpgsqlParameter("@TCID", tCID)
@@ -63,9 +65,9 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         {
             DataTable dtTC = new DataTable();
             string sqlSelect = @"SELECT TCID, t.PATIENTID, t.STAFFID, DATE, t.STATE, p.LASTNAME || ' ' || p.FIRSTNAME AS PATIENT_NAME, s.LASTNAME || ' ' || s.FIRSTNAME AS STAFF_NAME
-                                 FROM ""TESTCERTIFICATE"" t
-                                 JOIN ""PATIENT"" p ON t.PATIENTID = p.PATIENTID
-                                 JOIN ""STAFF"" s ON t.STAFFID = s.STAFFID";
+                                 FROM TESTCERTIFICATE t
+                                 JOIN PATIENT p ON t.PATIENTID = p.PATIENTID
+                                 JOIN STAFF s ON t.STAFFID = s.STAFFID";
             dtTC = NpgSqlResult.ExecuteQuery(sqlSelect);
             dtTC.Columns[0].ColumnName = "Mã phiếu xét nghiệm";
             dtTC.Columns[1].ColumnName = "Mã bệnh nhân";
@@ -77,11 +79,11 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return dtTC;
         }
 
-        public static TestCertificate GetTC(int tCID)
+        public static TestCertificateDTO GetTC(int tCID)
         {
-            TestCertificate newTC = new TestCertificate();
+            TestCertificateDTO newTC = new TestCertificateDTO();
             string sqlSelect = @"SELECT TCID, PATIENTID, STAFFID, DATE, STATE
-                                 FROM ""TESTCERTIFICATE""
+                                 FROM TESTCERTIFICATE
                                  WHERE TCID = @TCID";
             NpgsqlParameter[] npgsqlParameters = {
                 new NpgsqlParameter("@TCID", tCID)
@@ -97,7 +99,6 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             }
             return newTC;
         }
-
 
         public static int GetCurrentIdentity()
         {

@@ -13,5 +13,15 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DTO
         public int PatientID { get; set; }
         public DateTime Date { get; set; }
         public int State { get; set; }
+
+        public DischargeCertificateDTO() { }
+        public DischargeCertificateDTO(int dcID, int staffID, int patientID, DateTime date, int state)
+        {
+            this.DCID = dcID;
+            this.StaffID = staffID;
+            this.PatientID = patientID;
+            this.Date = date;
+            this.State = state;
+        }
     }
 }

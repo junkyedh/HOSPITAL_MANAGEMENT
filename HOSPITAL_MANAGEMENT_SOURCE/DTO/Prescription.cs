@@ -14,5 +14,15 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DTO
         public DateTime Date { get; set; }
         public string PatientName { get; set; }
         public string StaffName { get; set; }
+
+        public PrescriptionDTO() { }
+
+        public PrescriptionDTO(int prescriptionID, int staffID, int patientID, DateTime date)
+        {
+            PrescriptionID = prescriptionID;
+            StaffID = staffID;
+            PatientID = patientID;
+            Date = date;
+        }
     }
 }
