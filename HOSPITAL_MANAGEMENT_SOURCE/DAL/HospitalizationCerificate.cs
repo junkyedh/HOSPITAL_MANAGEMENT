@@ -1,4 +1,5 @@
-﻿using Npgsql;
+﻿using HOSPITAL_MANAGEMENT_SOURCE.DTO;
+using Npgsql;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -26,9 +27,9 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             this.State = state;
         }
 
-        public static int InsertHC(HospitalizationCertificate newHC)
+        public static int InsertHC(HospitalizationCertificateDTO newHC)
         {
-            String sqlInsert = @"INSERT INTO ""HOSPITALIZATIONCERTIFICATE""(PATIENTID, STAFFID, REASON, DATE, STATE)
+            String sqlInsert = @"INSERT INTO HOSPITALIZATIONCERTIFICATE(PATIENTID, STAFFID, REASON, DATE, STATE)
                                 VALUES        (@PATIENTID,@STAFFID,@REASON,@DATE,@STATE)";
 
             NpgsqlParameter[] npgsqlParameters =
@@ -43,9 +44,9 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return NpgSqlResult.ExecuteNonQuery(sqlInsert, npgsqlParameters);
         }
 
-        public static int UpdateHC(HospitalizationCertificate updateHC)
+        public static int UpdateHC(HospitalizationCertificateDTO updateHC)
         {
-            string sqlUpdate = @"UPDATE      ""HOSPITALIZATIONCERTIFICATE""
+            string sqlUpdate = @"UPDATE       HOSPITALIZATIONCERTIFICATE
                                 SET                PATIENTID =@PATIENTID, STAFFID =@STAFFID, REASON =@REASON, DATE =@DATE, STATE =@STATE
                                 WHERE         HCID=@HCID ";
 
@@ -64,7 +65,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int DeleteHC(int hCID)
         {
-            string sqlDelete = @"DELETE FROM ""HOSPITALIZATIONCERTIFICATE""
+            string sqlDelete = @"DELETE FROM HOSPITALIZATIONCERTIFICATE
                                 WHERE        (HCID=@HCID)";
 
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@HCID", hCID) };
@@ -76,18 +77,18 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         {
             DataTable dtHC = new DataTable();
             string sqlSelect = @"SELECT        HCID, h.PATIENTID, h.STAFFID, REASON, DATE, h.STATE, p.LASTNAME+' '+p.FIRSTNAME AS 'PATIENT NAME', s.LASTNAME+' '+s.FIRSTNAME AS 'STAFF NAME'
-                                FROM            ""HOSPITALIZATIONCERTIFICATE"" h join ""PATIENT"" p on h.PATIENTID = p.PATIENTID join ""STAFF"" s on s.STAFFID = h.STAFFID";
+                                FROM            HOSPITALIZATIONCERTIFICATE h join PATIENT p on h.PATIENTID = p.PATIENTID join STAFF s on s.STAFFID = h.STAFFID";
 
             dtHC = NpgSqlResult.ExecuteQuery(sqlSelect);
 
             return dtHC;
         }
 
-        public static HospitalizationCertificate GetHC(int hCID)
+        public static HospitalizationCertificateDTO GetHC(int hCID)
         {
-            HospitalizationCertificate hC = new HospitalizationCertificate();
+            HospitalizationCertificateDTO hC = new HospitalizationCertificateDTO();
             string sqlSelect = @"SELECT        HCID, PATIENTID, STAFFID, REASON, DATE, STATE
-                                FROM            ""HOSPITALIZATIONCERTIFICATE""
+                                FROM            HOSPITALIZATIONCERTIFICATE
                                 WHERE        HCID=@HCID";
 
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@HCID", hCID) };
@@ -108,11 +109,11 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         }
 
         // Lấy giấy nhập viện dựa vào thông tin của bệnh nhân 
-        public static HospitalizationCertificate GetHC(decimal patientID)
+        public static HospitalizationCertificateDTO GetHC(decimal patientID)
         {
-            HospitalizationCertificate hC = new HospitalizationCertificate();
+            HospitalizationCertificateDTO hC = new HospitalizationCertificateDTO();
             string sqlSelect = @"SELECT        HCID, PATIENTID, STAFFID, REASON, DATE, STATE
-                                FROM            ""HOSPITALIZATIONCERTIFICATE""
+                                FROM            HOSPITALIZATIONCERTIFICATE
                                 WHERE        PATIENTID=@PATIENTID";
 
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@PATIENTID", patientID) };
@@ -137,7 +138,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         {
             DataTable dtHC = new DataTable();
             string sqlSelect = @"SELECT        HCID, PATIENTID, STAFFID, REASON, DATE, STATE
-                                FROM            ""HOSPITALIZATIONCERTIFICATE""
+                                FROM            HOSPITALIZATIONCERTIFICATE
                                 WHERE        PATIENTID=@PATIENTID";
 
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@PATIENTID", patientID) };

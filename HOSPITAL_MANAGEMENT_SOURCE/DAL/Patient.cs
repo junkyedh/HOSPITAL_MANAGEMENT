@@ -1,3 +1,4 @@
+﻿using HOSPITAL_MANAGEMENT_SOURCE.DTO;
 using System.Data;
 using Npgsql;
 using System.Collections.Generic;
@@ -42,9 +43,9 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         }
 
         // Insert new patient
-        public static int InsertPatient(Patient patient)
+        public static int InsertPatient(PatientDTO patient)
         {
-            string sqlInsert = @"INSERT INTO ""PATIENT""
+            string sqlInsert = @"INSERT INTO PATIENT
                                 (FIRSTNAME, LASTNAME, BIRTHDAY, GENDER, ICN, PROFESSION, ADDRESS, DEPOSIT, STATE)
                                 VALUES 
                                 (@FirstName, @LastName, @BirthDay, @Gender, @ICN, @Profession, @Address, @Deposit, @State)";
@@ -65,9 +66,9 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         }
 
         // Update patient by patientid
-        public static int UpdatePatient(Patient patient)
+        public static int UpdatePatient(PatientDTO patient)
         {
-            string sqlUpdate = @"UPDATE ""PATIENT""
+            string sqlUpdate = @"UPDATE PATIENT
                                 SET FIRSTNAME = @FirstName, LASTNAME = @LastName, BIRTHDAY = @BirthDay, GENDER = @Gender,
                                     ICN = @ICN, PROFESSION = @Profession, ADDRESS = @Address, DEPOSIT = @Deposit, STATE = @State
                                 WHERE (PATIENTID = @PatientID)";
@@ -91,7 +92,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         // Delete patient by patientid
         public static int DeletePatient(int patientID)
         {
-            string sqlDelete = @"DELETE FROM ""PATIENT""
+            string sqlDelete = @"DELETE FROM PATIENT
                                 WHERE (PATIENTID = @PatientID)";
 
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@PatientID", patientID) };
@@ -103,19 +104,19 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         public static DataTable GetListPatient()
         {
             string sqlSelect = @"SELECT PATIENTID, FIRSTNAME, LASTNAME, BIRTHDAY, GENDER, ICN, PROFESSION, ADDRESS, DEPOSIT, STATE 
-                                FROM ""PATIENT""";
+                                FROM PATIENT";
 
             return NpgSqlResult.ExecuteQuery(sqlSelect);
         }
 
         // Get patient by patientid
-        public static Patient GetPatient(int patientID)
+        public static PatientDTO GetPatient(int patientID)
         {
             DataTable patientDataTable;
-            Patient newPatient = new Patient();
+            PatientDTO newPatient = new PatientDTO();
 
             string sqlSelect = @"SELECT PATIENTID, FIRSTNAME, LASTNAME, BIRTHDAY, GENDER, ICN, PROFESSION, ADDRESS, DEPOSIT, STATE 
-                                FROM ""PATIENT""
+                                FROM PATIENT 
                                 WHERE PATIENTID = @PatientID";
 
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@PatientID", patientID) };
@@ -146,7 +147,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             DataTable patientDataTable;
 
             string sqlSelect = @"SELECT PATIENTID
-                                FROM ""PATIENT""
+                                FROM PATIENT 
                                 WHERE PATIENTID = @PatientID";
 
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@PatientID", patientID) };
@@ -167,11 +168,20 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return true;
         }
 
-        public List<Patient> GetResidentPatientList()
+        public List<PatientDTO> GetResidentPatientList()
         {
-            List<Patient> lstPatient = new List<Patient>();
+            List<PatientDTO> lstPatient = new List<PatientDTO>();
+
+
             return lstPatient;
         }
     }
 }
 
+
+/*
+- `AutoMapper` được sử dụng để ánh xạ giữa `DataRow` và `PatientDTO`, giúp tự động chuyển đổi dữ liệu.
+- Các phương thức thêm, cập nhật, xóa và lấy danh sách bệnh nhân được cập nhật để sử dụng `PatientDTO`.
+- Các hằng số và các thuộc tính của lớp `Patient` không có thay đổi so với phiên bản ban đầu.
+- Các phương thức như `ChangePatientState()` và `ChargeDeposit()` vẫn giữ nguyên, tuy nhiên, chúng chưa được triển khai logic.
+ */

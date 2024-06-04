@@ -12,5 +12,13 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DTO
         public int StaffID { get; set; }
         public string StaffLastName { get; set; }
         public string StaffFirstName { get; set; }
+
+        public SurgicalDetailDTO() { }
+
+        public SurgicalDetailDTO(int surgicalID, int staffID)
+        {
+            this.SurgicalID = surgicalID;
+            this.StaffID = staffID;
+        }
     }
 }

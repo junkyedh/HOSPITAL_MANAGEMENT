@@ -1,4 +1,5 @@
-﻿using Npgsql;
+﻿using HOSPITAL_MANAGEMENT_SOURCE.DTO;
+using Npgsql;
 using System;
 using System.Data;
 
@@ -11,9 +12,18 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         public DateTime ExpireDate { get; set; }
         public DateTime IssueDate { get; set; }
 
-        public static int InsertHIC(HIC newHIC)
+        public HIC() { }
+        public HIC(int hicID, int patientID, DateTime expireDate, DateTime issueDate)
         {
-            string sqlInsert = @"INSERT INTO ""HIC""(PATIENTID, EXPIREDATE, ISSUEDATE)
+            this.HICID = hicID;
+            this.PatientID = patientID;
+            this.ExpireDate = expireDate;
+            this.IssueDate = issueDate;
+        }
+
+        public static int InsertHIC(HICDTO newHIC)
+        {
+            string sqlInsert = @"INSERT INTO HIC(PATIENTID, EXPIREDATE, ISSUEDATE)
                                 VALUES (@PATIENTID, @EXPIREDATE, @ISSUEDATE)";
             NpgsqlParameter[] npgsqlParameters = {
                 new NpgsqlParameter("@PATIENTID", newHIC.PatientID),
@@ -23,9 +33,9 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return NpgSqlResult.ExecuteNonQuery(sqlInsert, npgsqlParameters);
         }
 
-        public static int UpdateHIC(HIC updateHIC)
+        public static int UpdateHIC(HICDTO updateHIC)
         {
-            string sqlUpdate = @"UPDATE ""HIC""
+            string sqlUpdate = @"UPDATE HIC
                                 SET PATIENTID = @PATIENTID, EXPIREDATE = @EXPIREDATE, ISSUEDATE = @ISSUEDATE
                                 WHERE HICID = @HICID";
             NpgsqlParameter[] npgsqlParameters = {
@@ -39,7 +49,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int DeleteHIC(int hICID)
         {
-            string sqlDelete = @"DELETE FROM ""HIC""
+            string sqlDelete = @"DELETE FROM HIC
                                 WHERE HICID = @HICID";
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@HICID", hICID) };
             return NpgSqlResult.ExecuteNonQuery(sqlDelete, npgsqlParameters);
@@ -48,22 +58,22 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         public static DataTable GetListHIC(int patientID)
         {
             string sqlSelect = @"SELECT HICID, PATIENTID, EXPIREDATE, ISSUEDATE
-                                 FROM ""HIC""
+                                 FROM HIC
                                  WHERE PATIENTID = @PATIENTID";
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@PATIENTID", patientID) };
             return NpgSqlResult.ExecuteQuery(sqlSelect, npgsqlParameters);
         }
 
-        public static HIC GetPatientHIC(int patientID)
+        public static HICDTO GetPatientHIC(int patientID)
         {
             string sqlSelect = @"SELECT HICID, PATIENTID, EXPIREDATE, ISSUEDATE
-                                 FROM ""HIC""
+                                 FROM HIC
                                  WHERE PATIENTID = @PATIENTID";
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@PATIENTID", patientID) };
             DataTable dataTable = NpgSqlResult.ExecuteQuery(sqlSelect, npgsqlParameters);
             if (dataTable.Rows.Count > 0)
             {
-                return new HIC
+                return new HICDTO
                 {
                     HICID = Convert.ToInt32(dataTable.Rows[0]["HICID"]),
                     PatientID = Convert.ToInt32(dataTable.Rows[0]["PATIENTID"]),
@@ -74,16 +84,16 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return null;
         }
 
-        public static HIC GetHIC(int HICID)
+        public static HICDTO GetHIC(int HICID)
         {
             string sqlSelect = @"SELECT HICID, PATIENTID, EXPIREDATE, ISSUEDATE
-                                 FROM ""HIC""
+                                 FROM HIC
                                  WHERE HICID = @HICID";
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@HICID", HICID) };
             DataTable dataTable = NpgSqlResult.ExecuteQuery(sqlSelect, npgsqlParameters);
             if (dataTable.Rows.Count > 0)
             {
-                return new HIC
+                return new HICDTO
                 {
                     HICID = Convert.ToInt32(dataTable.Rows[0]["HICID"]),
                     PatientID = Convert.ToInt32(dataTable.Rows[0]["PATIENTID"]),
@@ -97,17 +107,16 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         public static bool CheckHIC(int patientID)
         {
             string sqlSelect = @"SELECT HICID, PATIENTID, EXPIREDATE, ISSUEDATE
-                                FROM ""HIC""
+                                FROM HIC
                                 WHERE PATIENTID = @PATIENTID";
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@PATIENTID", patientID) };
             DataTable dataTable = NpgSqlResult.ExecuteQuery(sqlSelect, npgsqlParameters);
             return dataTable.Rows.Count > 0;
         }
 
-
         public static bool CheckHICExpiration(int HICID)
         {
-            HIC newHIC = GetHIC(HICID);
+            HICDTO newHIC = GetHIC(HICID);
             return newHIC.ExpireDate < DateTime.Today;
         }
     }

@@ -1,4 +1,5 @@
-﻿using System.Data;
+﻿using HOSPITAL_MANAGEMENT_SOURCE.DTO;
+using System.Data;
 using Npgsql;
 using System;
 
@@ -19,18 +20,17 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         public static DataTable GetListTestType()
         {
             DataTable dtT = new DataTable();
-            string sqlSelect = @"SELECT TESTTYPEID, TYPENAME FROM ""TESTTYPE""";
+            string sqlSelect = @"SELECT TESTTYPEID, TYPENAME FROM TESTTYPE";
             dtT = NpgSqlResult.ExecuteQuery(sqlSelect);
             // dtT.Columns[0].ColumnName = "Mã loại xét nghiệm";
             // dtT.Columns[1].ColumnName = "Tên loại xét nghiệm";
             return dtT;
         }
 
-
-        public static TestType GetTestType(int testTypeID)
+        public static TestTypeDTO GetTestType(int testTypeID)
         {
-            TestType newTestType = new TestType();
-            string sqlSelect = @"SELECT TESTTYPEID, TYPENAME FROM ""TESTTYPE"" WHERE TESTTYPEID = @TESTTYPEID";
+            TestTypeDTO newTestType = new TestTypeDTO();
+            string sqlSelect = @"SELECT TESTTYPEID, TYPENAME FROM TESTTYPE WHERE TESTTYPEID = @TESTTYPEID";
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@TESTTYPEID", testTypeID) };
             DataTable dataTable = NpgSqlResult.ExecuteQuery(sqlSelect, npgsqlParameters);
 

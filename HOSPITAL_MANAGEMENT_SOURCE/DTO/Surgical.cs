@@ -14,5 +14,16 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DTO
         public string Description { get; set; }
         public int State { get; set; }
         public string PatientName { get; set; }
+
+        public SurgicalDTO() { }
+        public SurgicalDTO(int surgicalID, int patientID, DateTime date, string description, int state, string patientName)
+        {
+            this.SurgicalID = surgicalID;
+            this.PatientID = patientID;
+            this.Date = date;
+            this.Description = description;
+            this.State = state;
+            this.PatientName = patientName;
+        }
     }
 }

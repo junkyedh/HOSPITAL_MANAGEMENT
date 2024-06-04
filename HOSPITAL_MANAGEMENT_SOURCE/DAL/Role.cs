@@ -18,9 +18,9 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             RoleName = roleName;
         }
 
-        public static int InsertRole(Role newRole)
+        public static int InsertRole(RoleDTO newRole)
         {
-            string sqlInsert = @"INSERT INTO ""Role"" (RoleName)
+            string sqlInsert = @"INSERT INTO Role (RoleName)
                                 VALUES (@RoleName)";
 
             NpgsqlParameter[] npgsqlParameters = {
@@ -30,9 +30,9 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return NpgSqlResult.ExecuteNonQuery(sqlInsert, npgsqlParameters);
         }
 
-        public static int UpdateRole(Role updateRole)
+        public static int UpdateRole(RoleDTO updateRole)
         {
-            string sqlUpdate = @"UPDATE ""Role""
+            string sqlUpdate = @"UPDATE Role
                                 SET RoleName = @RoleName
                                 WHERE RoleID = @RoleID";
 
@@ -46,7 +46,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int DeleteRole(int roleID)
         {
-            string sqlDelete = @"DELETE FROM ""Role""
+            string sqlDelete = @"DELETE FROM Role
                                 WHERE RoleID = @RoleID";
 
             NpgsqlParameter[] npgsqlParameters = {
@@ -59,7 +59,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         public static DataTable GetListRole()
         {
             string sqlSelect = @"SELECT RoleID, RoleName
-                                FROM ""Role""";
+                                FROM Role";
 
             return NpgSqlResult.ExecuteQuery(sqlSelect);
         }
@@ -68,7 +68,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         {
             Role newRole = new Role();
             string sqlSelect = @"SELECT RoleID, RoleName
-                                FROM ""Role""
+                                FROM Role
                                 WHERE RoleID = @RoleID";
 
             NpgsqlParameter[] npgsqlParameters = {
@@ -85,7 +85,6 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
             return newRole;
         }
-
 
         public static int GetCurrentIdentity()
         {

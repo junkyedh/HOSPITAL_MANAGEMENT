@@ -1,5 +1,6 @@
 ﻿using System.Data;
 using Npgsql;
+using HOSPITAL_MANAGEMENT_SOURCE.DTO;
 using System;
 
 namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
@@ -21,9 +22,9 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             Price = price;
         }
 
-        public static int InsertMaterial(Material newMaterial)
+        public static int InsertMaterial(MaterialDTO newMaterial)
         {
-            string sqlInsert = @"INSERT INTO ""MATERIAL""(MATERIALNAME, QUANTITY, PRICE)
+            string sqlInsert = @"INSERT INTO MATERIAL(MATERIALNAME, QUANTITY, PRICE)
                                 VALUES (@MATERIALNAME, @QUANTITY, @PRICE)";
 
             NpgsqlParameter[] npgsqlParameters = {
@@ -35,9 +36,9 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return NpgSqlResult.ExecuteNonQuery(sqlInsert, npgsqlParameters);
         }
 
-        public static int UpdateMaterial(Material updateMaterial)
+        public static int UpdateMaterial(MaterialDTO updateMaterial)
         {
-            string sqlUpdate = @"UPDATE ""MATERIAL""
+            string sqlUpdate = @"UPDATE MATERIAL
                                 SET MATERIALNAME = @MATERIALNAME, QUANTITY = @QUANTITY, PRICE = @PRICE
                                 WHERE (MATERIALID = @MATERIALID)";
 
@@ -53,7 +54,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int DeleteMaterial(int materialID)
         {
-            string sqlDelete = @"DELETE FROM ""MATERIAL""
+            string sqlDelete = @"DELETE FROM MATERIAL
                                 WHERE (MATERIALID = @MATERIALID)";
 
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@MATERIALID", materialID) };
@@ -64,25 +65,24 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         public static DataTable GetListMaterial()
         {
             string sqlSelect = @"SELECT MATERIALID, MATERIALNAME, QUANTITY, PRICE
-                                FROM ""MATERIAL""";
+                                FROM MATERIAL";
 
             DataTable dataTable = NpgSqlResult.ExecuteQuery(sqlSelect);
 
             return dataTable;
         }
 
-
-        public static Material GetMaterial(int materialID)
+        public static MaterialDTO GetMaterial(int materialID)
         {
             string sqlSelect = @"SELECT MATERIALID, MATERIALNAME, QUANTITY, PRICE
-                                FROM ""MATERIAL""
+                                FROM MATERIAL
                                 WHERE (MATERIALID = @MATERIALID)";
 
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@MATERIALID", materialID) };
 
             DataTable dataTable = NpgSqlResult.ExecuteQuery(sqlSelect, npgsqlParameters);
 
-            Material material = new Material();
+            MaterialDTO material = new MaterialDTO();
             material.MaterialID = Convert.ToInt32(dataTable.Rows[0]["MATERIALID"]);
             material.MaterialName = Convert.ToString(dataTable.Rows[0]["MATERIALNAME"]);
             material.Quantity = Convert.ToInt32(dataTable.Rows[0]["QUANTITY"]);

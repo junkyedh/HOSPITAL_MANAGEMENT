@@ -1,4 +1,5 @@
-﻿using Npgsql;
+﻿using HOSPITAL_MANAGEMENT_SOURCE.DTO;
+using Npgsql;
 using System;
 using System.Data;
 
@@ -21,8 +22,8 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int InsertHospitalBed()
         {
-            HospitalBed newHB = new HospitalBed(0, 0, 0);
-            String sqlInsert = @"INSERT INTO ""HOSPITALBED""(PATIENT,STATE)
+            HospitalBedDTO newHB = new HospitalBedDTO(0, 0, 0);
+            String sqlInsert = @"INSERT INTO HOSPITALBED(PATIENT,STATE)
                                 VALUES        (@PATIENT,@STATE)";
 
             NpgsqlParameter[] npgsqlParameters =
@@ -34,9 +35,9 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return NpgSqlResult.ExecuteNonQuery(sqlInsert, npgsqlParameters);
         }
 
-        public static int UpdateHospitalBed(HospitalBed updateHB)
+        public static int UpdateHospitalBed(HospitalBedDTO updateHB)
         {
-            string sqlUpdate = @"UPDATE       ""HOSPITALBED""
+            string sqlUpdate = @"UPDATE       HOSPITALBED
                                 SET           PATIENT = @PATIENT, STATE = @STATE
                                 WHERE         BEDID=@BEDID";
 
@@ -52,7 +53,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int DeleteHospitalBed(int bedID)
         {
-            string sqlDelete = @"DELETE FROM ""HOSPITALBED""
+            string sqlDelete = @"DELETE FROM HOSPITALBED
                                 WHERE (BEDID = @BEDID)";
 
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@BEDID", bedID) };
@@ -69,19 +70,19 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         {
             DataTable dtHB = new DataTable();
             string sqlSelect = @"SELECT        BEDID,PATIENT, h.STATE, COALESCE(p.LASTNAME + ' ' + p.FIRSTNAME, '') AS 'PATIENT NAME'
-                                FROM            ""HOSPITALBED"" h left join ""PATIENT"" p on h.PATIENT = p.PATIENTID";
+                                FROM            HOSPITALBED h left join PATIENT p on h.PATIENT = p.PATIENTID";
 
             dtHB = NpgSqlResult.ExecuteQuery(sqlSelect);
 
             return dtHB;
         }
 
-        public static HospitalBed GetHospitalBed(int bedID)
+        public static HospitalBedDTO GetHospitalBed(int bedID)
         {
-            HospitalBed hB = new HospitalBed();
+            HospitalBedDTO hB = new HospitalBedDTO();
             int tempInterger;
             string sqlSelect = @"SELECT        BEDID,PATIENT, STATE
-                                FROM            ""HOSPITALBED""
+                                FROM            HOSPITALBED
                                 WHERE          (BEDID=@BEDID)";
 
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@BEDID", bedID) };
@@ -96,11 +97,11 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return hB;
         }
 
-        public static HospitalBed GetHospitalBed(String patient)
+        public static HospitalBedDTO GetHospitalBed(String patient)
         {
-            HospitalBed hB = new HospitalBed();
+            HospitalBedDTO hB = new HospitalBedDTO();
             string sqlSelect = @"SELECT        BEDID, PATIENT, STATE
-                                FROM            ""HOSPITALBED""
+                                FROM            HOSPITALBED
                                 WHERE          (PATIENT=@PATIENT)";
 
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@PATIENT", int.Parse(patient)) };
@@ -119,9 +120,9 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static Boolean CheckPatient(int patientID)
         {
-            HospitalBed hB = new HospitalBed();
+            HospitalBedDTO hB = new HospitalBedDTO();
             string sqlSelect = @"SELECT        PATIENT, STATE, BEDID
-                                FROM            ""HOSPITALBED""
+                                FROM            HOSPITALBED
                                 WHERE          (PATIENT=@PATIENT)";
 
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@PATIENT", patientID) };
@@ -138,7 +139,5 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             else
                 return true;
         }
-
     }
 }
-

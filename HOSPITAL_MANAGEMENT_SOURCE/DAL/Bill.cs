@@ -1,3 +1,4 @@
+﻿using HOSPITAL_MANAGEMENT_SOURCE.DTO;
 using System;
 using System.Data;
 using Npgsql;
@@ -20,10 +21,21 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         public DateTime Date { get; set; }
         public decimal TotalPrice { get; set; }
         public int State { get; set; }
-
-        public static int InsertBill(Bill newBill)
+        
+        public Bill() { }
+        public Bill( int billID, int billTypeID, int patientID, int staffID, DateTime date, decimal totalPrice, int state)
         {
-            string sqlInsert = @"INSERT INTO ""BILL""(BILLTYPEID, PATIENTID, STAFFID, DATE, STATE, TOTALPRICE)
+            this.BillID = billID;
+            this.BillTypeID = billTypeID;
+            this.PatientID = patientID;
+            this.StaffID = staffID;
+            this.Date = date;
+            this.TotalPrice = totalPrice;
+            this.State = state;
+        }
+        public static int InsertBill(BillDTO newBill)
+        {
+            string sqlInsert = @"INSERT INTO BILL(BILLTYPEID, PATIENTID, STAFFID, DATE, STATE, TOTALPRICE)
                                 VALUES (@BILLTYPEID, @PATIENTID, @STAFFID, @DATE, @STATE, @TOTALPRICE)";
 
             NpgsqlParameter[] npgsqlParameters = {
@@ -38,9 +50,9 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return NpgSqlResult.ExecuteNonQuery(sqlInsert, npgsqlParameters);
         }
 
-        public static int UpdateBill(Bill updateBill)
+        public static int UpdateBill(BillDTO updateBill)
         {
-            string sqlUpdate = @"UPDATE ""BILL""
+            string sqlUpdate = @"UPDATE BILL
                                 SET STATE = @STATE, TOTALPRICE = @TOTALPRICE
                                 WHERE BILLID = @BILLID";
 
@@ -55,7 +67,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static int DeleteBill(int billID)
         {
-            string sqlDelete = @"DELETE FROM ""BILL""
+            string sqlDelete = @"DELETE FROM BILL
                                 WHERE BILLID = @BILLID";
 
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@BILLID", billID) };
@@ -65,14 +77,14 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
         public static DataTable GetListBill()
         {
-            string sqlSelect = @"SELECT ""BILL"".BILLID, ""BILLTYPE"".TYPENAME, ""PATIENT"".FIRSTNAME AS PATIENTFIRSTNAME,
-                                ""PATIENT"".LASTNAME AS PATIENTLASTNAME, ""BILL"".BILLTYPEID, ""BILL"".PATIENTID, ""BILL"".STAFFID,
-                                ""BILL"".DATE, ""BILL"".TOTALPRICE,""BILL"".STATE, ""STAFF"".LASTNAME AS STAFFLASTNAME,
-                                ""STAFF"".FIRSTNAME AS STAFFFIRSTNAME
-                                FROM ""BILL"" INNER JOIN
-                                ""BILLTYPE"" ON ""BILL"".BILLTYPEID = ""BILLTYPE"".BILLTYPEID INNER JOIN
-                                ""PATIENT"" ON ""BILL"".PATIENTID = ""PATIENT"".PATIENTID INNER JOIN
-                                ""STAFF"" ON ""BILL"".STAFFID = ""STAFF"".STAFFID";
+            string sqlSelect = @"SELECT BILL.BILLID, BILLTYPE.TYPENAME, PATIENT.FIRSTNAME AS PATIENTFIRSTNAME,
+                                PATIENT.LASTNAME AS PATIENTLASTNAME, BILL.BILLTYPEID, BILL.PATIENTID, BILL.STAFFID,
+                                BILL.DATE, BILL.TOTALPRICE,BILL.STATE, STAFF.LASTNAME AS STAFFLASTNAME,
+                                STAFF.FIRSTNAME AS STAFFFIRSTNAME
+                                FROM BILL INNER JOIN
+                                BILLTYPE ON BILL.BILLTYPEID = BILLTYPE.BILLTYPEID INNER JOIN
+                                PATIENT ON BILL.PATIENTID = PATIENT.PATIENTID INNER JOIN
+                                STAFF ON BILL.STAFFID = STAFF.STAFFID";
 
             return NpgSqlResult.ExecuteQuery(sqlSelect);
         }
@@ -80,7 +92,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         public static DataTable GetPatientBill(int patientID)
         {
             string sqlSelect = @"SELECT BILLID, BILLTYPEID, PATIENTID, STAFFID, DATE, TOTALPRICE, STATE
-                                FROM ""BILL""
+                                FROM BILL
                                 WHERE (PATIENTID = @PATIENTID)";
 
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@PATIENTID", patientID) };
@@ -102,10 +114,10 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return Convert.ToInt32(NpgSqlResult.ExecuteScalar(sqlSelect));
         }
 
-        public static Bill GetBill(int billID)
+        public static BillDTO GetBill(int billID)
         {
             string sqlSelect = @"SELECT BILLID, BILLTYPEID, PATIENTID, STAFFID, DATE, TOTALPRICE, STATE
-                                FROM ""BILL""
+                                FROM BILL
                                 WHERE BILLID=@BILLID";
 
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@BILLID", billID) };
@@ -115,7 +127,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             if (dataTable.Rows.Count > 0)
             {
                 DataRow row = dataTable.Rows[0];
-                Bill Bill = new Bill
+                BillDTO billDTO = new BillDTO
                 {
                     BillID = Convert.ToInt32(row["BILLID"]),
                     BillTypeID = Convert.ToInt32(row["BILLTYPEID"]),
@@ -125,7 +137,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
                     TotalPrice = Convert.ToDecimal(row["TOTALPRICE"]),
                     State = Convert.ToInt32(row["STATE"])
                 };
-                return Bill;
+                return billDTO;
             }
 
             return null;
@@ -146,7 +158,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         public static DataTable GetPatientNotPayBill(int patientID)
         {
             string sqlSelect = @"SELECT BILLID, BILLTYPEID, PATIENTID, STAFFID, DATE, TOTALPRICE, STATE
-                                FROM ""BILL""
+                                FROM BILL
                                 WHERE (PATIENTID = @PATIENTID) AND (STATE = 0)";
 
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@PATIENTID", patientID) };
@@ -159,7 +171,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             decimal totalPrice = 0;
 
             string sqlSelect = @"SELECT SUM(TOTALPRICE)
-                                FROM ""BILL""
+                                FROM BILL
                                 WHERE (PATIENTID = @PATIENTID) AND (STATE = 0)";
 
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@PATIENTID", patientID) };
