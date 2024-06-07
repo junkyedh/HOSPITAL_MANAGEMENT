@@ -16,5 +16,10 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
         {
             InitializeComponent();
         }
+
+        private void bunifuButtonHealthNoteEdit_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

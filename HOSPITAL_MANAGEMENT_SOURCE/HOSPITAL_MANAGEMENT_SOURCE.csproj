@@ -373,11 +373,25 @@
     <Compile Include="GUI\FormMainMonitor.Designer.cs">
       <DependentUpon>FormMainMonitor.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
+    <Compile Include="GUI\FormMainPrescription.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\FormMainPrescription.Designer.cs">
+      <DependentUpon>FormMainPrescription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormMainReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\FormMainReport.Designer.cs">
+      <DependentUpon>FormMainReport.cs</DependentUpon>
+=======
     <Compile Include="GUI\FormMainPatient.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="GUI\FormMainPatient.Designer.cs">
       <DependentUpon>FormMainPatient.cs</DependentUpon>
+>>>>>>> main
     </Compile>
     <Compile Include="GUI\FormMainRole.cs">
       <SubType>UserControl</SubType>
@@ -582,8 +596,16 @@
     <EmbeddedResource Include="GUI\FormMainMonitor.resx">
       <DependentUpon>FormMainMonitor.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
+    <EmbeddedResource Include="GUI\FormMainPrescription.resx">
+      <DependentUpon>FormMainPrescription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormMainReport.resx">
+      <DependentUpon>FormMainReport.cs</DependentUpon>
+=======
     <EmbeddedResource Include="GUI\FormMainPatient.resx">
       <DependentUpon>FormMainPatient.cs</DependentUpon>
+>>>>>>> main
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\FormMainRole.resx">
       <DependentUpon>FormMainRole.cs</DependentUpon>

@@ -30,6 +30,8 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
         {
             bunifuTextBoxPatientID.Text = patientID.ToString();
             bunifuTextBoxStaffID.Text = staffID.ToString();
+            textBoxNameOfStaff.Text = staffID.ToString();
+            textBoxNameOfPatient.Text = patientID.ToString();
             bunifuDatePickerDischarge.Value = DateTime.Today;
             bunifuDropdownState.SelectedIndex = 0;
             bunifuDatePickerDischarge.Enabled = false;
@@ -117,6 +119,11 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
         }
 
         private void bunifuTextBoxDCID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxNameOfPatient_TextChanged(object sender, EventArgs e)
         {
 
         }

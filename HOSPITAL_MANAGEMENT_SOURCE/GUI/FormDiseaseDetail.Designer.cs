@@ -668,7 +668,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.textBoxDiseaseID.Padding = new System.Windows.Forms.Padding(3);
             this.textBoxDiseaseID.PasswordChar = '\0';
             this.textBoxDiseaseID.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.textBoxDiseaseID.PlaceholderText = "Nhập mã nhân viên";
+            this.textBoxDiseaseID.PlaceholderText = "Nhập mã bệnh\r\n";
             this.textBoxDiseaseID.ReadOnly = true;
             this.textBoxDiseaseID.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.textBoxDiseaseID.SelectedText = "";
@@ -682,7 +682,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.textBoxDiseaseID.TextMarginBottom = 0;
             this.textBoxDiseaseID.TextMarginLeft = 3;
             this.textBoxDiseaseID.TextMarginTop = 0;
-            this.textBoxDiseaseID.TextPlaceholder = "Nhập mã nhân viên";
+            this.textBoxDiseaseID.TextPlaceholder = "Nhập mã bệnh\r\n";
             this.bunifuToolTip1.SetToolTip(this.textBoxDiseaseID, "");
             this.bunifuToolTip1.SetToolTipIcon(this.textBoxDiseaseID, null);
             this.bunifuToolTip1.SetToolTipTitle(this.textBoxDiseaseID, "");
