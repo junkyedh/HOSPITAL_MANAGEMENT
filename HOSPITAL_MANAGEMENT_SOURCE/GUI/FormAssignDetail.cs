@@ -36,7 +36,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             dateCreate.Value = assignDetail.Date;
             dateDischarge.Value = assignDetail.DischargedDate;
             dateHospitalize.Value = assignDetail.HospitalizateDate;
-
+            textBoxPatientName.Text = assignDetail.PatientName.ToString();
             dateHospitalize.Enabled = false;
 
             DataTable dtStaff = Staff.GetListStaff();
@@ -68,6 +68,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
         {
             HospitalizationCertificateDTO newHC = HospitalizationCertificate.GetHC(Convert.ToDecimal(patientID));
             textBoxPatientID.Text = patientID.ToString();
+            textBoxPatientName.Text = patientID.ToString();
             dateDischarge.Value = DateTime.Today;
             dateCreate.Value = DateTime.Today;
             dateHospitalize.Value = newHC.Date;
@@ -97,6 +98,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
                     {
                         AssignmentDTO newAssign = new AssignmentDTO();
                         newAssign.PatientID = Convert.ToInt32(textBoxPatientID.Text);
+                        newAssign.PatientName = Convert.ToString(textBoxPatientName.Text);
                         newAssign.DischargedDate = dateDischarge.Value;
                         newAssign.HospitalizateDate = dateHospitalize.Value;
                         newAssign.Date = dateCreate.Value;
