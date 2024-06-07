@@ -26,6 +26,15 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             InitializeComponent();
             var data = PostgreHelper.GetAll<Patient>();
             Console.WriteLine(data);
+
+            //DataTable dataTable = DAL.Staff.GetListStaff();
+            //foreach (DataRow row in dataTable.Rows)
+            //{
+            //    for (int i = 0; i < row.Table.Columns.Count; i++)
+            //    {
+            //        Console.WriteLine(row[i]);
+            //    }
+            //}
         }
         private void groupBox1_Enter(object sender, EventArgs e)
         {
@@ -64,7 +73,6 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
         }
         private void bunifuButtonLogin_Click(object sender, EventArgs e)
         {
-            Console.WriteLine("bunifuButtonLogin_Clicked");
             Login();
         }
         private void Login()
@@ -122,5 +130,12 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.Close();
         }
 
+        private void bunifuButtonSignUp_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormResetPassword resetPassword = new FormResetPassword();
+            resetPassword.ShowDialog();
+            this.Hide();
+        }
     }
 }

@@ -884,7 +884,6 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuToolTip1.SetToolTip(this.groupBox2, "");
             this.bunifuToolTip1.SetToolTipIcon(this.groupBox2, null);
             this.bunifuToolTip1.SetToolTipTitle(this.groupBox2, "");
-            this.groupBox2.Visible = false;
             // 
             // bunifuTextBox1
             // 
@@ -1731,7 +1730,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuButtonRememberPassword.IdleIconLeftImage = null;
             this.bunifuButtonRememberPassword.IdleIconRightImage = null;
             this.bunifuButtonRememberPassword.IndicateFocus = false;
-            this.bunifuButtonRememberPassword.Location = new System.Drawing.Point(130, 356);
+            this.bunifuButtonRememberPassword.Location = new System.Drawing.Point(126, 354);
             this.bunifuButtonRememberPassword.Name = "bunifuButtonRememberPassword";
             this.bunifuButtonRememberPassword.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButtonRememberPassword.OnDisabledState.BorderRadius = 1;
@@ -1938,7 +1937,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuButtonSignUp.IdleIconLeftImage = null;
             this.bunifuButtonSignUp.IdleIconRightImage = null;
             this.bunifuButtonSignUp.IndicateFocus = false;
-            this.bunifuButtonSignUp.Location = new System.Drawing.Point(397, 356);
+            this.bunifuButtonSignUp.Location = new System.Drawing.Point(388, 354);
             this.bunifuButtonSignUp.Name = "bunifuButtonSignUp";
             this.bunifuButtonSignUp.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButtonSignUp.OnDisabledState.BorderRadius = 1;
@@ -1982,6 +1981,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuToolTip1.SetToolTipIcon(this.bunifuButtonSignUp, null);
             this.bunifuToolTip1.SetToolTipTitle(this.bunifuButtonSignUp, "");
             this.bunifuButtonSignUp.UseDefaultRadiusAndThickness = true;
+            this.bunifuButtonSignUp.Click += new System.EventHandler(this.bunifuButtonSignUp_Click);
             // 
             // bunifuPictureBox2
             // 
@@ -1991,7 +1991,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             this.bunifuPictureBox2.BorderRadius = 53;
             this.bunifuPictureBox2.Image = global::HOSPITAL_MANAGEMENT_SOURCE.Properties.Resources._5245433_removebg_preview;
             this.bunifuPictureBox2.IsCircle = true;
-            this.bunifuPictureBox2.Location = new System.Drawing.Point(419, -24);
+            this.bunifuPictureBox2.Location = new System.Drawing.Point(413, 3);
             this.bunifuPictureBox2.Name = "bunifuPictureBox2";
             this.bunifuPictureBox2.Size = new System.Drawing.Size(107, 107);
             this.bunifuPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

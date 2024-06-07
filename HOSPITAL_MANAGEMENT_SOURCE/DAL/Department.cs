@@ -5,17 +5,18 @@ using System;
 
 namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 {
-    
     public class Department
     {
         public int DepartmentID { get; set; }
         public string DepartmentName { get; set; }
 
-        public Department (int departmentID, string DepartmentName)
+        public Department() { }
+        public Department(int departmentID, string DepartmentName)
         {
             this.DepartmentID = departmentID;
             this.DepartmentName = DepartmentName;
         }
+
         public static int InsertDepartment(DepartmentDTO newDepartment)
         {
             string sqlInsert = @"INSERT INTO DEPARTMENT (DEPARTMENTNAME) VALUES (@DEPARTMENTNAME)";
@@ -61,15 +62,6 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         {
             string sqlSelect = @"SELECT DEPARTMENTID, DEPARTMENTNAME FROM DEPARTMENT";
             return NpgSqlResult.ExecuteQuery(sqlSelect);
-        }
-
-        public DepartmentDTO ToDTO()
-        {
-            return new DepartmentDTO
-            {
-                DepartmentID = this.DepartmentID,
-                DepartmentName = this.DepartmentName
-            };
         }
     }
 }

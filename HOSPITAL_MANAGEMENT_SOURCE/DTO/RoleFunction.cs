@@ -11,5 +11,14 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DTO
         public int FunctionID { get; set; }
         public string FunctionName { get; set; }
         public string Button { get; set; }
+
+        public RoleFunctionDTO() { }
+
+        public RoleFunctionDTO(int functionID, string functionName, string button)
+        {
+            FunctionID = functionID;
+            FunctionName = functionName;
+            Button = button;
+        }
     }
 }

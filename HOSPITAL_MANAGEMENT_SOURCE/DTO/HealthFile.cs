@@ -16,5 +16,18 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DTO
         public string Disease { get; set; }
         public string Treatment { get; set; }
 
+        public HealthFileDTO() { }
+
+        public HealthFileDTO(int heathFileID, int patientID, DateTime date, string patientState, string preHistory, string disease, string treatment)
+        {
+            HeathFileID = heathFileID;
+            PatientID = patientID;
+            Date = date;
+            PatientState = patientState;
+            PreHistory = preHistory;
+            Disease = disease;
+            Treatment = treatment;
+        }
+
     }
 }

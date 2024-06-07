@@ -7,7 +7,6 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 {
     public class Disease
     {
-       
         public int DiseaseID { get; set; }
         public string DiseaseName { get; set; }
         public string Symptom { get; set; }
@@ -22,7 +21,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         }
 
 
-        public static int InsertDisease(Disease newDisease)
+        public static int InsertDisease(DiseaseDTO newDisease)
         {
             string sqlInsert = @"INSERT INTO DISEASE(DISEASENAME, SYMPTOM)
                                  VALUES (@DISEASENAME, @SYMPTOM)";
@@ -33,7 +32,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return NpgSqlResult.ExecuteNonQuery(sqlInsert, npgsqlParameters);
         }
 
-        public static int UpdateDisease(Disease updateDisease)
+        public static int UpdateDisease(DiseaseDTO updateDisease)
         {
             string sqlUpdate = @"UPDATE DISEASE
                                  SET DISEASENAME = @DISEASENAME, SYMPTOM = @SYMPTOM
@@ -60,7 +59,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         }
 
 
-        public static Disease GetDisease(int diseaseID)
+        public static DiseaseDTO GetDisease(int diseaseID)
         {
             string sqlSelect = @"SELECT DISEASEID, DISEASENAME, SYMPTOM
                                  FROM DISEASE
@@ -69,7 +68,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             DataTable dataTable = NpgSqlResult.ExecuteQuery(sqlSelect, npgsqlParameters);
             if (dataTable.Rows.Count > 0)
             {
-                return new Disease
+                return new DiseaseDTO
                 {
                     DiseaseID = Convert.ToInt32(dataTable.Rows[0]["DISEASEID"]),
                     DiseaseName = dataTable.Rows[0]["DISEASENAME"].ToString(),

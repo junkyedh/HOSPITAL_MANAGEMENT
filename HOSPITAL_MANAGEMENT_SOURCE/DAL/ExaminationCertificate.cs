@@ -28,7 +28,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         }
 
 
-        public static int InsertEC(ExaminationCertificate newEC)
+        public static int InsertEC(ExaminationCertificateDTO newEC)
         {
             string sqlInsert = @"INSERT INTO EXAMINATIONCERTIFICATE(PATIENTID, STAFFID, DATE, RESULT, STATE)
                                 VALUES (@PATIENTID, @STAFFID, @DATE, @RESULT, @STATE)";
@@ -42,7 +42,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return NpgSqlResult.ExecuteNonQuery(sqlInsert, npgsqlParameters);
         }
 
-        public static int UpdateEC(ExaminationCertificate updateEC)
+        public static int UpdateEC(ExaminationCertificateDTO updateEC)
         {
             string sqlUpdate = @"UPDATE EXAMINATIONCERTIFICATE
                                 SET DATE = @DATE, RESULT = @RESULT, STATE = @STATE
@@ -71,7 +71,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return NpgSqlResult.ExecuteQuery(sqlSelect);
         }
 
-        public static ExaminationCertificate GetEC(int eCID)
+        public static ExaminationCertificateDTO GetEC(int eCID)
         {
             string sqlSelect = @"SELECT ECID, PATIENTID, STAFFID, DATE, RESULT, STATE
                                  FROM EXAMINATIONCERTIFICATE
@@ -80,7 +80,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             DataTable dataTable = NpgSqlResult.ExecuteQuery(sqlSelect, npgsqlParameters);
             if (dataTable.Rows.Count > 0)
             {
-                return new ExaminationCertificate
+                return new ExaminationCertificateDTO
                 {
                     ECID = Convert.ToInt32(dataTable.Rows[0]["ECID"]),
                     PatientID = Convert.ToInt32(dataTable.Rows[0]["PATIENTID"]),

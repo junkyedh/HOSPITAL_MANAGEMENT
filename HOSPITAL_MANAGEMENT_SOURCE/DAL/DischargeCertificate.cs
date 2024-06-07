@@ -13,6 +13,16 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         public int PatientID { get; set; }
         public DateTime Date { get; set; }
         public int State { get; set; }
+
+        public DischargeCertificate() { }
+        public DischargeCertificate(int dcID, int staffID, int patientID, DateTime date, int state)
+        {
+            this.DCID = dcID;
+            this.StaffID = staffID;
+            this.PatientID = patientID;
+            this.Date = date;
+            this.State = state;
+        }
         public static int InsertDC(DischargeCertificateDTO newDC)
         {
             string sqlInsert = @"INSERT INTO DISCHARGEDCERTIFICATE (STAFFID, PATIENTID, DATE, STATE) VALUES (@STAFFID, @PATIENTID, @DATE, @STATE)";

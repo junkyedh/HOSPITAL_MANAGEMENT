@@ -1,7 +1,7 @@
-﻿using Npgsql;
+﻿using HOSPITAL_MANAGEMENT_SOURCE.DTO;
+using Npgsql;
 using System;
 using System.Data;
-using HOSPITAL_MANAGEMENT_SOURCE.DTO;
 
 namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 {
@@ -14,6 +14,18 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         public string Weight { get; set; }
         public string BloodPressure { get; set; }
         public string PatientState { get; set; }
+
+        public HealthMonitoringNote() { }
+        public HealthMonitoringNote(int hnID, int patientID, int staffID, DateTime date, string weight, string bloodPressure, string patientState)
+        {
+            this.HNID = hnID;
+            this.PatientID = patientID;
+            this.StaffID = staffID;
+            this.Date = date;
+            this.Weight = weight;
+            this.BloodPressure = bloodPressure;
+            this.PatientState = patientState;
+        }
 
         public static int InsertHN(HealthMonitoringNoteDTO newHN)
         {
@@ -92,21 +104,6 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
                 };
             }
             return null;
-        }
-
-        public HealthMonitoringNoteDTO ToDTO ()
-        {
-            return new HealthMonitoringNoteDTO
-            {
-                HNID = this.HNID,
-                PatientID = this.PatientID,
-                StaffID = this.StaffID,
-                Date = this.Date,
-                Weight = this.Weight,
-                BloodPressure = this.BloodPressure,
-                PatientState = this.PatientState
-
-            };
         }
     }
 }

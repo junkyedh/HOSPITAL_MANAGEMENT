@@ -10,15 +10,19 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
     {
         public int AssignID { get; set; }
         public int StaffID { get; set; }
+        public string StaffName { get; set; }
+
 
         public AssignmentDetail() { }
-        public AssignmentDetail(int assignID, int staffID)
+        public AssignmentDetail(int assignID, int staffID, string staffName)
         {
             this.AssignID = assignID;
             this.StaffID = staffID;
+            this.StaffName = staffName;
+
         }
 
-        public static int InsertAssignmentDetails(AssignmentDetailDTO newAD)
+        public int InsertAssignmentDetails(AssignmentDetailDTO newAD)
         {
             string sqlInsert = @"INSERT INTO ASSIGNMENTDETAIL(ASSIGNID, STAFFID)
                                 VALUES (@ASSIGNID, @STAFFID)";
@@ -40,7 +44,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return NpgSqlResult.ExecuteNonQuery(sqlDelete, npgsqlParameters);
         }
 
-        public static int DeleteAssignmentDetails(int assignmentID)
+        public int DeleteAssignmentDetails(int assignmentID)
         {
             string sqlDelete = @"DELETE FROM ASSIGNMENTDETAIL
                                 WHERE (ASSIGNID = @ASSIGNID)";
@@ -48,7 +52,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return NpgSqlResult.ExecuteNonQuery(sqlDelete, npgsqlParameters);
         }
 
-        public static List<AssignmentDetailDTO> GetListAssignmentDetails(int assignmentID)
+        public List<AssignmentDetailDTO> GetListAssignmentDetails(int assignmentID)
         {
             List<AssignmentDetailDTO> list = new List<AssignmentDetailDTO>();
             string sqlSelect = @"SELECT ASSIGNMENTDETAIL.ASSIGNID, ASSIGNMENTDETAIL.STAFFID, STAFF.LASTNAME, STAFF.FIRSTNAME
@@ -67,16 +71,6 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             }
 
             return list;
-        }
-
-        public AssignmentDetailDTO ToDTO()
-        {
-            return new AssignmentDetailDTO
-            {
-                AssignID = this.AssignID,
-                StaffID = this.StaffID,
-                StaffName = string.Empty
-            };
         }
     }
 }

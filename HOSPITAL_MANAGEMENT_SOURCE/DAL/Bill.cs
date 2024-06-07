@@ -21,7 +21,18 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         public DateTime Date { get; set; }
         public decimal TotalPrice { get; set; }
         public int State { get; set; }
-
+        
+        public Bill() { }
+        public Bill( int billID, int billTypeID, int patientID, int staffID, DateTime date, decimal totalPrice, int state)
+        {
+            this.BillID = billID;
+            this.BillTypeID = billTypeID;
+            this.PatientID = patientID;
+            this.StaffID = staffID;
+            this.Date = date;
+            this.TotalPrice = totalPrice;
+            this.State = state;
+        }
         public static int InsertBill(BillDTO newBill)
         {
             string sqlInsert = @"INSERT INTO BILL(BILLTYPEID, PATIENTID, STAFFID, DATE, STATE, TOTALPRICE)
@@ -172,20 +183,6 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             }
 
             return totalPrice;
-        }
-
-        public BillDTO ToDTO ()
-        {
-            return new BillDTO
-            {
-                BillID = this.BillID,
-                BillTypeID = this.BillTypeID,
-                PatientID = this.PatientID,
-                StaffID = this.StaffID,
-                Date = this.Date,
-                TotalPrice = this.TotalPrice,
-                State = this.State
-            };
         }
     }
 }

@@ -68,7 +68,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             return NpgSqlResult.ExecuteNonQuery(sqlDelete, npgsqlParameters);
         }
 
-        public static DataTable GetListHeathFile()   //cho nay co doi thanh static de chay dc trong formmainhf
+        public DataTable GetListHeathFile()
         {
             string sqlSelect = @"SELECT HEATHFILEID, PATIENTID, DATE, PATIENTSTATE, PREHISTORY, DISEASE, TREATMENT
                                  FROM HEATHFILE";
@@ -106,19 +106,6 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
             NpgsqlParameter[] npgsqlParameters = { new NpgsqlParameter("@PATIENTID", patientID) };
             DataTable dataTable = NpgSqlResult.ExecuteQuery(sqlSelect, npgsqlParameters);
             return dataTable.Rows.Count > 0;
-        }
-
-        public HealthFileDTO ToDTO()
-        {
-            return new HealthFileDTO {
-                HeathFileID = this.HeathFileID,
-                PatientID = this.PatientID,
-                Date = this.Date,
-                PatientState = this.PatientState,
-                PreHistory = this.PreHistory,
-                Disease = this.Disease,
-                Treatment = this.Treatment
-            };
         }
     }
 }

@@ -12,6 +12,15 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         public DateTime ExpireDate { get; set; }
         public DateTime IssueDate { get; set; }
 
+        public HIC() { }
+        public HIC(int hicID, int patientID, DateTime expireDate, DateTime issueDate)
+        {
+            this.HICID = hicID;
+            this.PatientID = patientID;
+            this.ExpireDate = expireDate;
+            this.IssueDate = issueDate;
+        }
+
         public static int InsertHIC(HICDTO newHIC)
         {
             string sqlInsert = @"INSERT INTO HIC(PATIENTID, EXPIREDATE, ISSUEDATE)

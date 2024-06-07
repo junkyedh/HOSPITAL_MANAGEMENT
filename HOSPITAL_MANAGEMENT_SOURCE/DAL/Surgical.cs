@@ -5,7 +5,7 @@ using Npgsql;
 
 namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 {
-    public class SurgicalDTO
+    public class Surgical
     {
         public int SurgicalID { get; set; }
         public int PatientID { get; set; }
@@ -14,7 +14,16 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
         public int State { get; set; }
         public string PatientName { get; set; }
 
-        public SurgicalDTO() { }
+        public Surgical() { }
+        public Surgical(int surgicalID, int patientID, DateTime date, string description, int state, string patientName)
+        {
+            this.SurgicalID = surgicalID;
+            this.PatientID = patientID;
+            this.Date = date;
+            this.Description = description;
+            this.State = state;
+            this.PatientName = patientName;
+        }
 
         public static int InsertSurgical(SurgicalDTO newSurgical)
         {

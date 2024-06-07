@@ -10,5 +10,11 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DTO
     {
         public int BillTypeID { get; set; }
         public string TypeName { get; set; }
+        public BillTypeDTO() { }
+        public BillTypeDTO(int billTypeID, string typeName)
+        {
+            this.BillTypeID = billTypeID;
+            this.TypeName = typeName;
+        }
     }
 }

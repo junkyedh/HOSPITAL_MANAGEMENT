@@ -21,13 +21,17 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
             Original();
+
+            //// Khúc này để test cái biểu đồ nha
+            //LoadData();
         }
+        
         public FormMainUser(Staff staff)
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
             Original();
-
+          
             loginStaff = staff;
             bunifuSnackbar1.Show(this, "Đăng nhập thành công", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 3000, null, Bunifu.UI.WinForms.BunifuSnackbar.Positions.TopCenter);
             GetStaffInformation();
@@ -50,7 +54,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
         }
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
-
+            
         }
         private void bunifuPictureBox4_Click(object sender, EventArgs e)
         {
@@ -58,7 +62,7 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
         }
         private void bunifuButton11_Click(object sender, EventArgs e)
         {
-
+           
         }
         private void bunifuButton10_Click(object sender, EventArgs e)
         {
@@ -164,5 +168,62 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
             FormLogin_SignUp loginSignup = new FormLogin_SignUp();
             loginSignup.ShowDialog();
         }
+        private void bunifuButton22_Click(object sender, EventArgs e)
+        {
+            //bunifuGradientPanel1.Visible = true;
+            //bunifuGradientPanel1.Show();    
+        }
+
+        //// Nếu mà muốn chạy thử biểu đồ thì bỏ comment cái dưới á
+        //private void LoadData()
+        //{
+        //    TestSplineArea();
+        //    TestDoughnut();
+        //}
+        //private void TestSplineArea()
+        //{
+        //    Random rand = new Random();
+        //    chart1.DataSource = null; // Xóa dữ liệu cũ
+
+        //    DataTable dataTable = new DataTable();
+        //    dataTable.Columns.Add("Date", typeof(DateTime));
+        //    dataTable.Columns.Add("TotalAmount", typeof(double));
+
+        //    // Tạo dữ liệu ngẫu nhiên cho GrossRevenueList
+        //    for (int i = 0; i < 5; i++)
+        //    {
+        //        DateTime date = DateTime.Today.AddDays(-i); // Ngày ngẫu nhiên trong quá khứ
+        //        double totalAmount = rand.Next(1000, 5000); // Số tiền ngẫu nhiên
+        //        dataTable.Rows.Add(date, totalAmount);
+        //    }
+
+        //    chart1.DataSource = dataTable;
+        //    chart1.Series[0].XValueMember = "Date";
+        //    chart1.Series[0].YValueMembers = "TotalAmount";
+        //    chart1.DataBind();
+        //}
+        //private void TestDoughnut()
+        //{
+        //    Random rand = new Random();
+        //    chart2.DataSource = null; // Xóa dữ liệu cũ
+
+        //    DataTable dataTable = new DataTable();
+        //    dataTable.Columns.Add("Product", typeof(string));
+        //    dataTable.Columns.Add("UnitsSold", typeof(int));
+
+        //    string[] products = { "Coffee", "Tea", "Juice", "Smoothie", "Soda" };
+
+        //    // Tạo dữ liệu ngẫu nhiên cho TopProductsList
+        //    for (int i = 0; i < products.Length; i++)
+        //    {
+        //        int unitsSold = rand.Next(50, 200); // Số lượng sản phẩm bán ra ngẫu nhiên
+        //        dataTable.Rows.Add(products[i], unitsSold);
+        //    }
+
+        //    chart2.DataSource = dataTable;
+        //    chart2.Series[0].XValueMember = "Product";
+        //    chart2.Series[0].YValueMembers = "UnitsSold";
+        //    chart2.DataBind();
+        //}
     }
 }

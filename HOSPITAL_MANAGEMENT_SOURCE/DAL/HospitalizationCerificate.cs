@@ -150,17 +150,5 @@ namespace HOSPITAL_MANAGEMENT_SOURCE.DAL
 
             return false;
         }
-        public HospitalizationCertificateDTO ToDTO()
-        {
-            return new HospitalizationCertificateDTO
-            {
-                HCID = this.HCID,
-                PatientID = this.PatientID,
-                StaffID = this.StaffID,
-                Reason = this.Reason,
-                Date = this.Date,
-                State = this.State
-            };
-        }
     }
 }
