@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace HOSPITAL_MANAGEMENT_SOURCE.GUI
 {
-    public partial class FormMainMedicine : UserControl
+    public partial class FormMainPrescription : UserControl
     {
-        public FormMainMedicine()
+        public FormMainPrescription()
         {
             InitializeComponent();
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
