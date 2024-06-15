@@ -1,0 +1,80 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\CoSoNganh\\NhapMonCongNghePhanMem\\HOSPITAL_MANAGEMENT_SOURCE\\HOSPITAL_MANAGEMENT_SOURCE.csproj": {}
+  },
+  "projects": {
+    "D:\\CoSoNganh\\NhapMonCongNghePhanMem\\HOSPITAL_MANAGEMENT_SOURCE\\HOSPITAL_MANAGEMENT_SOURCE.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\CoSoNganh\\NhapMonCongNghePhanMem\\HOSPITAL_MANAGEMENT_SOURCE\\HOSPITAL_MANAGEMENT_SOURCE.csproj",
+        "projectName": "HOSPITAL_MANAGEMENT_SOURCE",
+        "projectPath": "D:\\CoSoNganh\\NhapMonCongNghePhanMem\\HOSPITAL_MANAGEMENT_SOURCE\\HOSPITAL_MANAGEMENT_SOURCE.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "D:\\CoSoNganh\\NhapMonCongNghePhanMem\\HOSPITAL_MANAGEMENT_SOURCE\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.35, )"
+            },
+            "Dapper.Contrib": {
+              "target": "Package",
+              "version": "[2.0.78, )"
+            },
+            "Microsoft.ReportingServices.ReportViewerControl.Winforms": {
+              "target": "Package",
+              "version": "[150.1652.0, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-arm64": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}
